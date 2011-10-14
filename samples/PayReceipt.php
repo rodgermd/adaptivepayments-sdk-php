@@ -14,7 +14,7 @@ require_once('PPLoggingManager.php');
 require_once('Common/Constants.php');
 session_start();
 
-$logger = new PPLoggingManager('PaymentDetails');
+$logger = new PPLoggingManager('Pay');
 $requestEnvelope = new RequestEnvelope();
 $requestEnvelope->errorLanguage = "en_US";
 $actionType = $_REQUEST['actionType'];
