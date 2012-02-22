@@ -5,37 +5,50 @@ require_once('services/AdaptivePayments/AdaptivePaymentsService.php');
 require_once('PPLoggingManager.php');
 
 $logger = new PPLoggingManager('PreapprovalDetails');
-if($_SERVER['REQUEST_METHOD'] == 'POST') {
-	// send request
-	$requestEnvelope = new RequestEnvelope();
-	$requestEnvelope->errorLanguage = "en_US";
-	$PreapprovalDetailsReq = new PreapprovalDetailsRequest($requestEnvelope);
-	$PreapprovalDetailsReq->preapprovalKey = $_POST['PreapprovalKey'];
-	$logger->log("CreatedPreapprovalDetailsRequest Object");
-	$adaptivePayments  = new AdaptivePaymentsService();
-	$PreapprovalDetailsResp = $adaptivePayments->PreapprovalDetails($PreapprovalDetailsReq);
-	$logger->error("Received PreapprovalDetailsResponse:");
-	var_dump($PreapprovalDetailsResp);
-} else {
 
-	?>
+?>
 <html>
 <head>
 <title>PreapprovalDetails Sample API Page</title>
+<link href="Common/sdk.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="Common/sdk_functions.js"></script>
+<script type="text/javascript" src="Common/jquery-1.3.2.min.js"></script>
+<script type="text/javascript" src="Common/jquery.qtip-1.0.0-rc3.min.js"></script>
+<script type="text/javascript">
+	toolTips = {
+	}	
+	$(document).ready( function () {
+		jQuery.each(toolTips, function(id, toolTip) {
+			$("#"+id).attr("title", toolTip);
+		}); 
+		$("input[title]").qtip(qtipConfig);
+		$("select[title]").qtip(qtipConfig);
+	});
+</script>
+
 </head>
 <body>
-<h2>PPreapprovalDetails API sample Page</h2>
-<form method="POST">
-<div class="params">
-<div class="param_name">PreapprovalKey</div>
-<div class="param_value"><input type="text" name="PreapprovalKey"
-	value="PA-38L31611A0020973T" size="50" maxlength="260" /></div>
-
-<input type="submit" name="submit" value="submit" /></div>
-</form>
+	<div id="wrapper">
+		<div id="header">
+			<h3>Preapproval Details</h3>
+			<div id="apidetails">A request to obtain information about an
+				agreement between you and a sender for making payments on the
+				sender’s behalf.</div>
+		</div>
+		<div id="request_form">
+			<form method="POST" action="PreapprovalDetailsReceipt.php">
+				<div class="params">
+					<div class="param_name">Preapproval Key</div>
+					<div class="param_value">
+						<input type="text" name="preapprovalKey"
+							value="PA-2T305990ET0354039" />
+					</div>
+				</div>
+				<div class="submit">
+					<input type="submit" value="Submit" />
+				</div>
+			</form>
+		</div>
+	</div>
 </body>
 </html>
-	<?php
-
-}
-?>
