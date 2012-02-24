@@ -28,29 +28,45 @@ class PPAPIService
 
 	public function makeRequest($apiMethod, $params, $apiUsername = null, $accessToken = null, $tokenSecret = null)
 	{
-
-
+		
+		$authentication = new PPAuthenticationManager();
 		$connectionMgr = PPConnectionManager::getInstance();
 		$connection = $connectionMgr->getConnection();
 
 		$credMgr = PPCredentialManager::getInstance();
 		// $apiUsernam is optional, if null the default account in congif file is taken
 		$apIPPCredential = $credMgr->getCredentialObject($apiUsername );
-		$url = $this->endpoint . $this->serviceName . '/' . $apiMethod;
-		$authentication = new PPAuthenticationManager();
-		$headers = $authentication->getPayPalHeaders($apIPPCredential, $connection , $accessToken, $tokenSecret, $url);
+		$config = PPConfigManager::getInstance();
+		if($config->get('service.Binding') == 'SOAP' )
+		{
+			$url = $this->endpoint;
+			if(isset($accessToken)&& isset($tokenSecret))
+			{
+				$headers = $authentication->getPayPalHeaders( $apIPPCredential, $connection , $accessToken, $tokenSecret, $url);
 
-		$params = $this->marshall($params);
+			}
+			else
+			{
+			$headers = null;
+			$params = $authentication->appendSoapHeader($params, $apIPPCredential, $connection, $accessToken, $tokenSecret, $url);
+			}
+		}
+		else {
+			$url = $this->endpoint . $this->serviceName . '/' . $apiMethod;
+			$headers = $authentication->getPayPalHeaders($apIPPCredential, $connection , $accessToken, $tokenSecret, $url);
+
+		}
+
+
+		
+
+
 		$this->logger->info("Request: $params");
 		$response = $connection->execute($url, $params, $headers);
 		$this->logger->info("Response: $response");
 		return $response;
 	}
 
-	private function marshall($object)
-	{
-		$transformer = new PPObjectTransformer();
-		return $transformer->toString($object);
-	}
+	
 
 }

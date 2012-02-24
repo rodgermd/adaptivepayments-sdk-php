@@ -22,7 +22,11 @@ catch(Exception $ex) {
 	throw new Exception('Error occurred in CancelPreapproval method');
 }
 if($ack != "SUCCESS"){
-	require_once("APIError.php");
+	echo "<b>Error </b>";
+	echo "<pre>";
+	print_r($response);
+	echo "</pre>";
+	require_once 'Common/Response.php';
 	exit;
 }
 ?>
@@ -35,16 +39,17 @@ if($ack != "SUCCESS"){
 </head>
 
 <body>
-	<div id="wrapper">
+<div id="wrapper"><?php
+require_once 'Common/menu.html';
+?>
+<div id="response_form">
+<h3>Cancel Preapproval</h3>
 <?php
-	require_once 'Common/menu.html';
-?>
-		<div id="response_form">
-			<h3>Cancel Preapproval</h3>
-<?php 
-   		 		var_dump($response); 		
-?>
-		</div>
-	</div>
+echo "<pre>";
+print_r($response);
+echo "</pre>";
+require_once 'Common/Response.php';
+?></div>
+</div>
 </body>
 </html>

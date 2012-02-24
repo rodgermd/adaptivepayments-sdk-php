@@ -22,7 +22,11 @@ try {
 }
 
 if($ack != "SUCCESS"){
-	require_once("APIError.php");
+	echo "<b>Error </b>";
+	echo "<pre>";
+	print_r($response);
+	echo "</pre>";
+	require_once 'Common/Response.php';
 	exit;
 }
 ?>
@@ -42,7 +46,10 @@ if($ack != "SUCCESS"){
 		<div id="response_form">
 			<h3>Preapproval Details</h3>
 <?php 
-   		 		var_dump($response); 		
+ echo "<pre>";
+print_r($response);
+echo "</pre>";
+require_once 'Common/Response.php';	
 ?>
 		</div>
 	</div>

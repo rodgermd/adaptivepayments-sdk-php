@@ -40,9 +40,51 @@ class PPAuthenticationManager
 		$headers_arr[] = "X-PAYPAL-RESPONSE-DATA-FORMAT: "  . $config->get('service.Binding');
 		$headers_arr[] = "X-PAYPAL-DEVICE-IPADDRESS: " . PPUtils::getLocalIPAddress();
 		$headers_arr[] = "X-PAYPAL-REQUEST-SOURCE: " . PPUtils::getRequestSource();
+		if($config->get('service.SandboxEmailAddress'))
+		$headers_arr[] = "X-PAYPAL-SANDBOX-EMAIL-ADDRESS: " . $config->get('service.SandboxEmailAddress');		
+		
 		return $headers_arr;
 	}
+	public function appendSoapHeader($payLoad, $apiCred,  $connection,  $accessToken = null, $tokenSecret = null ,$url = null)
+	{
+		$soapHeader = "<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:urn=\"urn:ebay:api:PayPalAPI\" xmlns:ebl=\"urn:ebay:apis:eBLBaseComponents\" xmlns:cc=\"urn:ebay:apis:CoreComponentTypes\" xmlns:ed=\"urn:ebay:apis:EnhancedDataTypes\">";
+					 
+		if(isset($accessToken)&& isset($tokenSecret))
+		{
+			$soapHeader .= "<soapenv:Header>";
+			$soapHeader .="<urn:RequesterCredentials/>";
+			$soapHeader .="</soapenv:Header>";
+		}
+		else if($apiCred instanceof PPSignatureCredential)
+		{
+			$soapHeader .="<soapenv:Header>";
+			$soapHeader .="<urn:RequesterCredentials>";
+			$soapHeader .="<ebl:Credentials>";
+			$soapHeader .="<ebl:Username>".$apiCred->getUserName()."</ebl:Username>";
+			$soapHeader .="<ebl:Password>". $apiCred->getPassword()."</ebl:Password>";
+			$soapHeader .="<ebl:Signature>".$apiCred->getSignature()."</ebl:Signature>";
+			$soapHeader .="</ebl:Credentials>";
+			$soapHeader .="</urn:RequesterCredentials>";
+			$soapHeader .="</soapenv:Header>";
+		}
+		else if($apiCred instanceof PPCertificateCredential)
+		{
+			$soapHeader .="<soapenv:Header>";
+			$soapHeader .="<urn:RequesterCredentials>";
+			$soapHeader .="<ebl:Credentials>";
+			$soapHeader .="<ebl:Username>".$apiCred->getUserName()."</ebl:Username>";
+			$soapHeader .="<ebl:Password>". $apiCred->getPassword()."</ebl:Password>";
+			$soapHeader .="</ebl:Credentials>";
+			$soapHeader .="</urn:RequesterCredentials>";
+			$soapHeader .="</soapenv:Header>";
+		}
+		$soapHeader .="<soapenv:Body>";
+		$soapHeader .=$payLoad;
+		$soapHeader .="</soapenv:Body>";
+		$soapHeader .="</soapenv:Envelope>";
+return $soapHeader;
 
+	}
 
 	private function generateAuthString($apiCred, $accessToken, $tokenSecret, $endpoint)
 	{

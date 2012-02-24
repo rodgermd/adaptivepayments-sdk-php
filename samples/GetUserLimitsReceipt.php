@@ -22,7 +22,11 @@ catch(Exception $ex) {
 	throw new Exception('Error occurred in GetUserLimits method');
 }
 if($ack != "SUCCESS"){
-	require_once("APIError.php");
+	echo "<b>Error </b>";
+	echo "<pre>";
+	print_r($response);
+	echo "</pre>";
+	require_once 'Common/Response.php';
 	exit;
 }
 ?>
@@ -42,7 +46,10 @@ if($ack != "SUCCESS"){
 		<div id="response_form">
 			<h3>Get User Limits</h3>
 <?php 
-   		 		var_dump($response); 		
+echo "<pre>";
+print_r($response);
+echo "</pre>";
+require_once 'Common/Response.php';		
 ?>
 		</div>
 	</div>

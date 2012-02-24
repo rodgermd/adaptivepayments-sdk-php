@@ -30,7 +30,7 @@ class PPHttpConnection
 	/**
 	 * HTTP status codes for which a retry must be attempted
 	 */
-	private static $retryCodes = array('401', '403', '404', '500');
+	private static $retryCodes = array('401', '403', '404', );
 	
 	private $logger;	
 	

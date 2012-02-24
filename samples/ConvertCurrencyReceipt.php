@@ -21,7 +21,7 @@ foreach($_POST['toCurrencyCode'] as $idx => $currencyCode) {
 }
 $convertCurrencyReq = new ConvertCurrencyRequest(new RequestEnvelope("en_US"), $baseAmountList, $convertToCurrencyList);
 if($_POST['countryCode'] != "") {
-	$convertCurrencyReq->countryCode = $_POST['countryCode']; 
+	$convertCurrencyReq->countryCode = $_POST['countryCode'];
 }
 if($_POST['conversionType'] != "" && $_POST['conversionType'] != "- Select -") {
 	$convertCurrencyReq->conversionType = $_POST['conversionType'];
@@ -40,7 +40,11 @@ catch(Exception $ex) {
 	throw new Exception('Error occurred in ConvertCurrency method');
 }
 if($ack != "SUCCESS"){
-	require_once("APIError.php");
+	echo "<b>Error </b>";
+	echo "<pre>";
+	print_r($response);
+	echo "</pre>";
+	require_once 'Common/Response.php';
 	exit;
 }
 ?>
@@ -53,16 +57,17 @@ if($ack != "SUCCESS"){
 </head>
 
 <body>
-	<div id="wrapper">
+<div id="wrapper"><?php
+require_once 'Common/menu.html';
+?>
+<div id="response_form">
+<h3>Convert Currency</h3>
 <?php
-	require_once 'Common/menu.html';
-?>
-		<div id="response_form">
-			<h3>Convert Currency</h3>
-<?php 
-   		 		var_dump($response); 		
-?>
-		</div>
-	</div>
+echo "<pre>";
+print_r($response);
+echo "</pre>";
+require_once 'Common/Response.php';
+?></div>
+</div>
 </body>
 </html>

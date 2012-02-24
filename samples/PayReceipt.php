@@ -108,7 +108,11 @@ resulting errors */
 
 $ack = strtoupper($response->responseEnvelope->ack);
 if($ack != "SUCCESS") {	
-	require_once("APIError.php");
+	echo "<b>Error </b>";
+	echo "<pre>";
+	print_r($response);
+	echo "</pre>";
+	require_once 'Common/Response.php';
 	exit;
 } else {	
 	$payKey = $response->payKey;
@@ -166,7 +170,10 @@ switch($case) {
 		echo"<a href=ExecutePaymentOption.php?payKey=$payKey><b>* \"Execute Payment\" to pay to the secondary receivers</b></a><br>";
 		break;
 }
-var_dump($response);
+echo "<pre>";
+print_r($response);
+echo "</pre>";
+require_once 'Common/Response.php';
 ?>
 		</div>
 	</div>
