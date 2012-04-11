@@ -8,6 +8,7 @@ require_once('PPUtils.php');
  * Auto generated code
  */
 class AdaptivePaymentsService extends PPBaseService {
+private static $SERVICE_VERSION='1.8.0';
 	public function __construct() {
 		parent::__construct('AdaptivePayments');
 	}
@@ -217,6 +218,20 @@ class AdaptivePaymentsService extends PPBaseService {
 	public function GetShippingAddresses($getShippingAddressesRequest, $apiUsername=null) {
 		$ret = new GetShippingAddressesResponse();
 		$resp = $this->call("GetShippingAddresses", $getShippingAddressesRequest, $apiUsername);
+		$ret->init(PPUtils::nvpToMap($resp));
+		return $ret;
+	}
+
+
+	/**
+	 * Service Call: GetUserLimits
+	 * @param GetUserLimitsRequest $getUserLimitsRequest
+	 * @return GetUserLimitsResponse
+	 * @throws APIException
+	 */
+	public function GetUserLimits($getUserLimitsRequest, $apiUsername=null) {
+		$ret = new GetUserLimitsResponse();
+		$resp = $this->call("GetUserLimits", $getUserLimitsRequest, $apiUsername);
 		$ret->init(PPUtils::nvpToMap($resp));
 		return $ret;
 	}

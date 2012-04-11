@@ -3,4 +3,11 @@ PayPal Adaptive Payments PHP SDK - 0.6.86
 
 Release Date - 27-Feb-2012
 
+	- wsdl update version 88.0
+	
+PayPal Adaptive Payments PHP SDK - 0.6.86
+----------------------------------------
+
+Release Date - 27-Feb-2012
+
 	- Initial release
