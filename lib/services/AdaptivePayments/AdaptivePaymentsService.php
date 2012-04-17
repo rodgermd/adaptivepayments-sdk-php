@@ -8,7 +8,7 @@ require_once('PPUtils.php');
  * Auto generated code
  */
 class AdaptivePaymentsService extends PPBaseService {
-private static $SERVICE_VERSION='1.8.0';
+	private static $SERVICE_VERSION='1.8.0';
 	public function __construct() {
 		parent::__construct('AdaptivePayments');
 	}
