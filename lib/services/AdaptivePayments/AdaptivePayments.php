@@ -353,15 +353,13 @@ class ErrorData {
 			if($map != null && array_key_exists($mapKeyName, $map)) {
 				$this->subdomain = $map[$mapKeyName];
 			}
-			if( PPUtils::array_match_key($map, $prefix."severity.") ) {
-				$newPrefix = $prefix ."severity.";
-				$this->severity = new ErrorSeverity();
-				$this->severity->init($map, $newPrefix);
+			$mapKeyName =  $prefix . 'severity';
+			if($map != null && array_key_exists($mapKeyName, $map)) {
+				$this->severity = $map[$mapKeyName];
 			}
-			if( PPUtils::array_match_key($map, $prefix."category.") ) {
-				$newPrefix = $prefix ."category.";
-				$this->category = new ErrorCategory();
-				$this->category->init($map, $newPrefix);
+			$mapKeyName =  $prefix . 'category';
+			if($map != null && array_key_exists($mapKeyName, $map)) {
+				$this->category = $map[$mapKeyName];
 			}
 			$mapKeyName =  $prefix . 'message';
 			if($map != null && array_key_exists($mapKeyName, $map)) {
@@ -563,8 +561,7 @@ class RequestEnvelope {
 		$str = '';
 		$delim = '';
 		if( $this->detailLevel != null ) {
-			$newPrefix = $prefix . 'detailLevel.';
-			$str .= $delim . call_user_func(array($this->detailLevel, 'toNVPString'), $newPrefix);
+			$str .= $delim .  $prefix . 'detailLevel=' . urlencode($this->detailLevel);
 			$delim = '&';
 		}
 		if( $this->errorLanguage != null ) {
@@ -616,10 +613,9 @@ class ResponseEnvelope {
 			if($map != null && array_key_exists($mapKeyName, $map)) {
 				$this->timestamp = $map[$mapKeyName];
 			}
-			if( PPUtils::array_match_key($map, $prefix."ack.") ) {
-				$newPrefix = $prefix ."ack.";
-				$this->ack = new AckCode();
-				$this->ack->init($map, $newPrefix);
+			$mapKeyName =  $prefix . 'ack';
+			if($map != null && array_key_exists($mapKeyName, $map)) {
+				$this->ack = $map[$mapKeyName];
 			}
 			$mapKeyName =  $prefix . 'correlationId';
 			if($map != null && array_key_exists($mapKeyName, $map)) {
@@ -3919,10 +3915,9 @@ class PreapprovalDetailsResponse {
 			if($map != null && array_key_exists($mapKeyName, $map)) {
 				$this->dateOfMonth = $map[$mapKeyName];
 			}
-			if( PPUtils::array_match_key($map, $prefix."dayOfWeek.") ) {
-				$newPrefix = $prefix ."dayOfWeek.";
-				$this->dayOfWeek = new DayOfWeek();
-				$this->dayOfWeek->init($map, $newPrefix);
+			$mapKeyName =  $prefix . 'dayOfWeek';
+			if($map != null && array_key_exists($mapKeyName, $map)) {
+				$this->dayOfWeek = $map[$mapKeyName];
 			}
 			$mapKeyName =  $prefix . 'endingDate';
 			if($map != null && array_key_exists($mapKeyName, $map)) {
@@ -4167,8 +4162,7 @@ class PreapprovalRequest {
 			$delim = '&';
 		}
 		if( $this->dayOfWeek != null ) {
-			$newPrefix = $prefix . 'dayOfWeek.';
-			$str .= $delim . call_user_func(array($this->dayOfWeek, 'toNVPString'), $newPrefix);
+			$str .= $delim .  $prefix . 'dayOfWeek=' . urlencode($this->dayOfWeek);
 			$delim = '&';
 		}
 		if( $this->endingDate != null ) {
