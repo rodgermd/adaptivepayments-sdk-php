@@ -49,13 +49,13 @@
 					</tr>
 				</table>
 				<div class="params">
-					<div class="param_name">Preapproval key *</div>
+					<div class="param_name">Country *</div>
 					<div class="param_value">
 						<input name="country" id="country" value="US" />
 					</div>
 				</div>
 				<div class="params">
-					<div class="param_name">Preapproval key *</div>
+					<div class="param_name">Currency Code *</div>
 					<div class="param_value">
 						<input name="currencyCode" id="currencyCode" value="USD" />
 					</div>
@@ -63,7 +63,7 @@
 				<div class="params">
 					<div class="param_name">Preapproval key *</div>
 					<div class="param_value">
-						<input name="limitType" id="limitType" value="" />
+						<input name="Preapprovalkey" id="Preapprovalkey" value="" />
 					</div>
 				</div>
 				<div class="submit">

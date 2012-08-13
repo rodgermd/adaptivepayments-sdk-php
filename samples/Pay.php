@@ -29,7 +29,7 @@
 	$serverName = $_SERVER['SERVER_NAME'];
 	$serverPort = $_SERVER['SERVER_PORT'];
 	$url=dirname('http://'.$serverName.':'.$serverPort.$_SERVER['REQUEST_URI']);
-	$returnUrl = $url."/Common/WebflowReturnPage.php";
+	$returnUrl = $url."/WebflowReturnPage.php";
 	$cancelUrl =  $url."Pay.php";
 ?>
 
