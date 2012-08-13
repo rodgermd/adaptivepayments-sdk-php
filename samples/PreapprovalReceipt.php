@@ -98,6 +98,11 @@ if($ack != "SUCCESS"){
 echo "<pre>";
 print_r($response);
 echo "</pre>";
+
+	// Redirect to paypal.com here
+	$token = $response->preapprovalKey;
+    $payPalURL = 'https://www.sandbox.paypal.com/webscr&cmd=_ap-preapproval&preapprovalkey='.$token;
+	echo" <a href=$payPalURL><b>* Redirect URL to Complete Preapproval Authorization </b></a><br>";
 require_once 'Common/Response.php';		
 ?>
 		</div>
