@@ -10,7 +10,7 @@ require_once('PPUtils.php');
 class AdaptivePaymentsService extends PPBaseService {
 
 	// Service Version
-	private static $SERVICE_VERSION = "1.8.0";
+	private static $SERVICE_VERSION = "1.8.1";
 
 	// Service Name
 	private static $SERVICE_NAME = "AdaptivePayments";

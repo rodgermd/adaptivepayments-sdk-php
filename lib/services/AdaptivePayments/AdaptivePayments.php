@@ -5,19 +5,19 @@
   * 
   */
 /**
- * No Document Comments
+ * 
  */
 class AccountIdentifier  {
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
 	public $email;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var PhoneNumberType
 	 */ 
@@ -59,54 +59,54 @@ class AccountIdentifier  {
 
 
 /**
- * No Document Comments
+ * 
  */
 class BaseAddress  {
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
 	public $line1;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
 	public $line2;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
 	public $city;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
 	public $state;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
 	public $postalCode;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
 	public $countryCode;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
@@ -159,56 +159,56 @@ class BaseAddress  {
 class ClientDetailsType  {
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
 	public $ipAddress;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
 	public $deviceId;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
 	public $applicationId;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
 	public $model;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
 	public $geoLocation;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
 	public $customerType;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
 	public $partnerName;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
@@ -259,19 +259,19 @@ class ClientDetailsType  {
 
 
 /**
- * No Document Comments
+ * 
  */
 class CurrencyType  {
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
 	public $code;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var double
 	 */ 
@@ -325,56 +325,56 @@ class CurrencyType  {
 class ErrorData  {
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var integer
 	 */ 
 	public $errorId;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
 	public $domain;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
 	public $subdomain;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var ErrorSeverity
 	 */ 
 	public $severity;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var ErrorCategory
 	 */ 
 	public $category;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
 	public $message;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
 	public $exceptionId;
 
 	/**
-	 * No Document Comments
+	 * 
      *@array
 	 *@access public
 	 *@var ErrorParameter
@@ -433,19 +433,19 @@ class ErrorData  {
 
 
 /**
- * No Document Comments
+ * 
  */
 class ErrorParameter  {
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
 	public $name;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
@@ -478,14 +478,14 @@ class ErrorParameter  {
 class FaultMessage  {
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var ResponseEnvelope
 	 */ 
 	public $responseEnvelope;
 
 	/**
-	 * No Document Comments
+	 * 
      *@array
 	 *@access public
 	 *@var ErrorData
@@ -521,26 +521,26 @@ class FaultMessage  {
 
 
 /**
- * No Document Comments
+ * 
  */
 class PhoneNumberType  {
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
 	public $countryCode;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
 	public $phoneNumber;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
@@ -654,7 +654,7 @@ class RequestEnvelope  {
 class ResponseEnvelope  {
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var dateTime
 	 */ 
@@ -668,14 +668,14 @@ class ResponseEnvelope  {
 	public $ack;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
 	public $correlationId;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
@@ -710,26 +710,26 @@ class ResponseEnvelope  {
 
 
 /**
- * No Document Comments
+ * 
  */
 class Address  {
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
 	public $addresseeName;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var BaseAddress
 	 */ 
 	public $baseAddress;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
@@ -761,12 +761,12 @@ class Address  {
 
 
 /**
- * No Document Comments
+ * 
  */
 class AddressList  {
 
 	/**
-	 * No Document Comments
+	 * 
      *@array
 	 *@access public
 	 *@var Address
@@ -802,7 +802,7 @@ class AddressList  {
 class CurrencyCodeList  {
 
 	/**
-	 * No Document Comments
+	 * 
      *@array
 	 *@access public
 	 *@var string
@@ -839,14 +839,14 @@ class CurrencyCodeList  {
 class CurrencyConversionList  {
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var CurrencyType
 	 */ 
 	public $baseAmount;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var CurrencyList
 	 */ 
@@ -881,7 +881,7 @@ class CurrencyConversionList  {
 class CurrencyConversionTable  {
 
 	/**
-	 * No Document Comments
+	 * 
      *@array
 	 *@access public
 	 *@var CurrencyConversionList
@@ -917,7 +917,7 @@ class CurrencyConversionTable  {
 class CurrencyList  {
 
 	/**
-	 * No Document Comments
+	 * 
      *@array
 	 *@access public
 	 *@var CurrencyType
@@ -971,28 +971,28 @@ class CurrencyList  {
 class DisplayOptions  {
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
 	public $emailHeaderImageUrl;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
 	public $emailMarketingImageUrl;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
 	public $headerImageUrl;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
@@ -1048,12 +1048,12 @@ class DisplayOptions  {
 
 
 /**
- * No Document Comments
+ * 
  */
 class ErrorList  {
 
 	/**
-	 * No Document Comments
+	 * 
      *@array
 	 *@access public
 	 *@var ErrorData
@@ -1084,12 +1084,12 @@ class ErrorList  {
 
 
 /**
- * No Document Comments
+ * 
  */
 class FundingConstraint  {
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var FundingTypeList
 	 */ 
@@ -1128,7 +1128,7 @@ class FundingConstraint  {
 class FundingTypeInfo  {
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
@@ -1167,12 +1167,12 @@ class FundingTypeInfo  {
 
 
 /**
- * No Document Comments
+ * 
  */
 class FundingTypeList  {
 
 	/**
-	 * No Document Comments
+	 * 
      *@array
 	 *@access public
 	 *@var FundingTypeInfo
@@ -1225,21 +1225,21 @@ class FundingTypeList  {
 class CurrencyConversion  {
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var CurrencyType
 	 */ 
 	public $from;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var CurrencyType
 	 */ 
 	public $to;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var double
 	 */ 
@@ -1277,35 +1277,35 @@ class CurrencyConversion  {
 class FundingSource  {
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
 	public $lastFourOfAccountNumber;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
 	public $type;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
 	public $displayName;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
 	public $fundingSourceId;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var boolean
 	 */ 
@@ -1349,14 +1349,14 @@ class FundingSource  {
 class FundingPlanCharge  {
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var CurrencyType
 	 */ 
 	public $charge;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var FundingSource
 	 */ 
@@ -1391,42 +1391,42 @@ class FundingPlanCharge  {
 class FundingPlan  {
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
 	public $fundingPlanId;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var CurrencyType
 	 */ 
 	public $fundingAmount;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var FundingSource
 	 */ 
 	public $backupFundingSource;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var CurrencyType
 	 */ 
 	public $senderFees;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var CurrencyConversion
 	 */ 
 	public $currencyConversion;
 
 	/**
-	 * No Document Comments
+	 * 
      *@array
 	 *@access public
 	 *@var FundingPlanCharge
@@ -1489,7 +1489,7 @@ class FundingPlan  {
 class InitiatingEntity  {
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var InstitutionCustomer
 	 */ 
@@ -1575,7 +1575,7 @@ class InstitutionCustomer  {
 	public $countryCode;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
@@ -1672,35 +1672,35 @@ class InstitutionCustomer  {
 class InvoiceItem  {
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
 	public $name;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
 	public $identifier;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var double
 	 */ 
 	public $price;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var double
 	 */ 
 	public $itemPrice;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var integer
 	 */ 
@@ -1770,7 +1770,7 @@ class InvoiceItem  {
 class InvoiceData  {
 
 	/**
-	 * No Document Comments
+	 * 
      *@array
 	 *@access public
 	 *@var InvoiceItem
@@ -1778,14 +1778,14 @@ class InvoiceData  {
 	public $item;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var double
 	 */ 
 	public $totalTax;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var double
 	 */ 
@@ -1847,14 +1847,14 @@ class InvoiceData  {
 class PayError  {
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var Receiver
 	 */ 
 	public $receiver;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var ErrorData
 	 */ 
@@ -1883,12 +1883,12 @@ class PayError  {
 
 
 /**
- * No Document Comments
+ * 
  */
 class PayErrorList  {
 
 	/**
-	 * No Document Comments
+	 * 
      *@array
 	 *@access public
 	 *@var PayError
@@ -1927,56 +1927,56 @@ class PayErrorList  {
 class PaymentInfo  {
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
 	public $transactionId;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
 	public $transactionStatus;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var Receiver
 	 */ 
 	public $receiver;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var double
 	 */ 
 	public $refundedAmount;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var boolean
 	 */ 
 	public $pendingRefund;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
 	public $senderTransactionId;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
 	public $senderTransactionStatus;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
@@ -2028,12 +2028,12 @@ class PaymentInfo  {
 
 
 /**
- * No Document Comments
+ * 
  */
 class PaymentInfoList  {
 
 	/**
-	 * No Document Comments
+	 * 
      *@array
 	 *@access public
 	 *@var PaymentInfo
@@ -2072,49 +2072,49 @@ class PaymentInfoList  {
 class Receiver  {
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var double
 	 */ 
 	public $amount;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
 	public $email;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var PhoneNumberType
 	 */ 
 	public $phone;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var boolean
 	 */ 
 	public $primary;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
 	public $invoiceId;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
 	public $paymentType;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
@@ -2203,12 +2203,12 @@ class Receiver  {
 
 
 /**
- * No Document Comments
+ * 
  */
 class ReceiverList  {
 
 	/**
-	 * No Document Comments
+	 * 
      *@array
 	 *@access public
 	 *@var Receiver
@@ -2270,35 +2270,35 @@ class ReceiverIdentifier  extends AccountIdentifier  {
 class ReceiverOptions  {
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
 	public $description;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
 	public $customId;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var InvoiceData
 	 */ 
 	public $invoiceData;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var ReceiverIdentifier
 	 */ 
 	public $receiver;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
@@ -2379,70 +2379,70 @@ class ReceiverOptions  {
 class RefundInfo  {
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var Receiver
 	 */ 
 	public $receiver;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
 	public $refundStatus;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var double
 	 */ 
 	public $refundNetAmount;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var double
 	 */ 
 	public $refundFeeAmount;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var double
 	 */ 
 	public $refundGrossAmount;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var double
 	 */ 
 	public $totalOfAllRefunds;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var boolean
 	 */ 
 	public $refundHasBecomeFull;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
 	public $encryptedRefundTransactionId;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
 	public $refundTransactionStatus;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var ErrorList
 	 */ 
@@ -2503,12 +2503,12 @@ class RefundInfo  {
 
 
 /**
- * No Document Comments
+ * 
  */
 class RefundInfoList  {
 
 	/**
-	 * No Document Comments
+	 * 
      *@array
 	 *@access public
 	 *@var RefundInfo
@@ -2552,7 +2552,7 @@ class SenderOptions  {
 	public $requireShippingAddressSelection;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
@@ -2592,17 +2592,77 @@ class SenderOptions  {
 
 
 /**
+ * Details about the payer's tax info passed in by the merchant
+ * or partner. 
+ */
+class TaxIdDetails  {
+
+	/**
+	 * Tax id of the merchant/business. 
+	 *@access public
+	 *@var string
+	 */ 
+	public $taxId;
+
+	/**
+	 * Tax type of the Tax Id. 
+	 *@access public
+	 *@var string
+	 */ 
+	public $taxIdType;
+
+
+	public function toNVPString($prefix = '') {
+		$str = '';
+		$delim = '';
+		if($this->taxId != null) {
+			$str .= $delim .  $prefix . 'taxId=' . urlencode($this->taxId);
+			$delim = '&';
+		}
+		if($this->taxIdType != null) {
+			$str .= $delim .  $prefix . 'taxIdType=' . urlencode($this->taxIdType);
+			$delim = '&';
+		}
+		return $str;
+	}
+
+
+	public function init($map = null, $prefix = '') {
+		if($map != null) {
+			$mapKeyName =  $prefix . 'taxId';
+			if($map != null && array_key_exists($mapKeyName, $map)) {
+				$this->taxId = $map[$mapKeyName];
+			}
+			$mapKeyName =  $prefix . 'taxIdType';
+			if($map != null && array_key_exists($mapKeyName, $map)) {
+				$this->taxIdType = $map[$mapKeyName];
+			}
+			
+		}
+	}
+} 
+
+
+
+/**
  * The sender identifier type contains information to identify
  * a PayPal account. 
  */
 class SenderIdentifier  extends AccountIdentifier  {
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var boolean
 	 */ 
 	public $useCredentials;
+
+	/**
+	 * 
+	 *@access public
+	 *@var TaxIdDetails
+	 */ 
+	public $taxIdDetails;
 
 
 	public function toNVPString($prefix = '') {
@@ -2611,6 +2671,11 @@ class SenderIdentifier  extends AccountIdentifier  {
 		parent::toNVPString($prefix = '');
 		if($this->useCredentials != null) {
 			$str .= $delim .  $prefix . 'useCredentials=' . urlencode($this->useCredentials);
+			$delim = '&';
+		}
+		if($this->taxIdDetails != null) {
+			$newPrefix = $prefix . 'taxIdDetails.';
+			$str .= $delim . call_user_func(array($this->taxIdDetails, 'toNVPString'), $newPrefix);
 			$delim = '&';
 		}
 		return $str;
@@ -2623,6 +2688,11 @@ class SenderIdentifier  extends AccountIdentifier  {
 			if($map != null && array_key_exists($mapKeyName, $map)) {
 				$this->useCredentials = $map[$mapKeyName];
 			}
+			if (PPUtils::array_match_key($map, $prefix . "taxIdDetails.")) {
+				$newPrefix = $prefix . "taxIdDetails.";
+				$this->taxIdDetails = new TaxIdDetails();
+				$this->taxIdDetails->init($map, $newPrefix);
+			}
 			
 		}
 	}
@@ -2631,19 +2701,19 @@ class SenderIdentifier  extends AccountIdentifier  {
 
 
 /**
- * No Document Comments
+ * 
  */
 class UserLimit  {
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
 	public $limitType;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var CurrencyType
 	 */ 
@@ -2677,14 +2747,14 @@ class UserLimit  {
 class WarningData  {
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var integer
 	 */ 
 	public $warningId;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
@@ -2711,12 +2781,12 @@ class WarningData  {
 
 
 /**
- * No Document Comments
+ * 
  */
 class WarningDataList  {
 
 	/**
-	 * No Document Comments
+	 * 
      *@array
 	 *@access public
 	 *@var WarningData
@@ -2752,14 +2822,14 @@ class WarningDataList  {
 class CancelPreapprovalRequest  {
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var RequestEnvelope
 	 */ 
 	public $requestEnvelope;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
@@ -2800,14 +2870,14 @@ class CancelPreapprovalRequest  {
 class CancelPreapprovalResponse  {
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var ResponseEnvelope
 	 */ 
 	public $responseEnvelope;
 
 	/**
-	 * No Document Comments
+	 * 
      *@array
 	 *@access public
 	 *@var ErrorData
@@ -2848,28 +2918,28 @@ class CancelPreapprovalResponse  {
 class ConfirmPreapprovalRequest  {
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var RequestEnvelope
 	 */ 
 	public $requestEnvelope;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
 	public $preapprovalKey;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
 	public $fundingSourceId;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
@@ -2918,14 +2988,14 @@ class ConfirmPreapprovalRequest  {
 class ConfirmPreapprovalResponse  {
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var ResponseEnvelope
 	 */ 
 	public $responseEnvelope;
 
 	/**
-	 * No Document Comments
+	 * 
      *@array
 	 *@access public
 	 *@var ErrorData
@@ -2967,21 +3037,21 @@ class ConfirmPreapprovalResponse  {
 class ConvertCurrencyRequest  {
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var RequestEnvelope
 	 */ 
 	public $requestEnvelope;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var CurrencyList
 	 */ 
 	public $baseAmountList;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var CurrencyCodeList
 	 */ 
@@ -2996,7 +3066,7 @@ class ConvertCurrencyRequest  {
 	public $countryCode;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
@@ -3053,21 +3123,21 @@ class ConvertCurrencyRequest  {
 class ConvertCurrencyResponse  {
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var ResponseEnvelope
 	 */ 
 	public $responseEnvelope;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var CurrencyConversionTable
 	 */ 
 	public $estimatedAmountTable;
 
 	/**
-	 * No Document Comments
+	 * 
      *@array
 	 *@access public
 	 *@var ErrorData
@@ -3113,14 +3183,14 @@ class ConvertCurrencyResponse  {
 class ExecutePaymentRequest  {
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var RequestEnvelope
 	 */ 
 	public $requestEnvelope;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
@@ -3134,7 +3204,7 @@ class ExecutePaymentRequest  {
 	public $actionType;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
@@ -3183,28 +3253,28 @@ class ExecutePaymentRequest  {
 class ExecutePaymentResponse  {
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var ResponseEnvelope
 	 */ 
 	public $responseEnvelope;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
 	public $paymentExecStatus;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var PayErrorList
 	 */ 
 	public $payErrorList;
 
 	/**
-	 * No Document Comments
+	 * 
      *@array
 	 *@access public
 	 *@var ErrorData
@@ -3255,14 +3325,14 @@ class ExecutePaymentResponse  {
 class GetAllowedFundingSourcesRequest  {
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var RequestEnvelope
 	 */ 
 	public $requestEnvelope;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
@@ -3304,14 +3374,14 @@ class GetAllowedFundingSourcesRequest  {
 class GetAllowedFundingSourcesResponse  {
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var ResponseEnvelope
 	 */ 
 	public $responseEnvelope;
 
 	/**
-	 * No Document Comments
+	 * 
      *@array
 	 *@access public
 	 *@var FundingSource
@@ -3319,7 +3389,7 @@ class GetAllowedFundingSourcesResponse  {
 	public $fundingSource;
 
 	/**
-	 * No Document Comments
+	 * 
      *@array
 	 *@access public
 	 *@var ErrorData
@@ -3371,14 +3441,14 @@ class GetAllowedFundingSourcesResponse  {
 class GetPaymentOptionsRequest  {
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var RequestEnvelope
 	 */ 
 	public $requestEnvelope;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
@@ -3419,42 +3489,42 @@ class GetPaymentOptionsRequest  {
 class GetPaymentOptionsResponse  {
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var ResponseEnvelope
 	 */ 
 	public $responseEnvelope;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var InitiatingEntity
 	 */ 
 	public $initiatingEntity;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var DisplayOptions
 	 */ 
 	public $displayOptions;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
 	public $shippingAddressId;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var SenderOptions
 	 */ 
 	public $senderOptions;
 
 	/**
-	 * No Document Comments
+	 * 
      *@array
 	 *@access public
 	 *@var ReceiverOptions
@@ -3462,7 +3532,7 @@ class GetPaymentOptionsResponse  {
 	public $receiverOptions;
 
 	/**
-	 * No Document Comments
+	 * 
      *@array
 	 *@access public
 	 *@var ErrorData
@@ -3535,28 +3605,28 @@ class GetPaymentOptionsResponse  {
 class PaymentDetailsRequest  {
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var RequestEnvelope
 	 */ 
 	public $requestEnvelope;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
 	public $payKey;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
 	public $transactionId;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
@@ -3605,126 +3675,126 @@ class PaymentDetailsRequest  {
 class PaymentDetailsResponse  {
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var ResponseEnvelope
 	 */ 
 	public $responseEnvelope;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
 	public $cancelUrl;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
 	public $currencyCode;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
 	public $ipnNotificationUrl;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
 	public $memo;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var PaymentInfoList
 	 */ 
 	public $paymentInfoList;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
 	public $returnUrl;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
 	public $senderEmail;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
 	public $status;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
 	public $trackingId;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
 	public $payKey;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
 	public $actionType;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
 	public $feesPayer;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var boolean
 	 */ 
 	public $reverseAllParallelPaymentsOnError;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
 	public $preapprovalKey;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var FundingConstraint
 	 */ 
 	public $fundingConstraint;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var SenderIdentifier
 	 */ 
 	public $sender;
 
 	/**
-	 * No Document Comments
+	 * 
      *@array
 	 *@access public
 	 *@var ErrorData
@@ -3833,119 +3903,119 @@ class PaymentDetailsResponse  {
 class PayRequest  {
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var RequestEnvelope
 	 */ 
 	public $requestEnvelope;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var ClientDetailsType
 	 */ 
 	public $clientDetails;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
 	public $actionType;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
 	public $cancelUrl;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
 	public $currencyCode;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
 	public $feesPayer;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
 	public $ipnNotificationUrl;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
 	public $memo;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
 	public $pin;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
 	public $preapprovalKey;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var ReceiverList
 	 */ 
 	public $receiverList;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var boolean
 	 */ 
 	public $reverseAllParallelPaymentsOnError;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
 	public $senderEmail;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
 	public $returnUrl;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
 	public $trackingId;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var FundingConstraint
 	 */ 
 	public $fundingConstraint;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var SenderIdentifier
 	 */ 
@@ -4056,42 +4126,42 @@ class PayRequest  {
 class PayResponse  {
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var ResponseEnvelope
 	 */ 
 	public $responseEnvelope;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
 	public $payKey;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
 	public $paymentExecStatus;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var PayErrorList
 	 */ 
 	public $payErrorList;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var FundingPlan
 	 */ 
 	public $defaultFundingPlan;
 
 	/**
-	 * No Document Comments
+	 * 
      *@array
 	 *@access public
 	 *@var ErrorData
@@ -4150,21 +4220,21 @@ class PayResponse  {
 class PreapprovalDetailsRequest  {
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var RequestEnvelope
 	 */ 
 	public $requestEnvelope;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
 	public $preapprovalKey;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var boolean
 	 */ 
@@ -4210,189 +4280,189 @@ class PreapprovalDetailsRequest  {
 class PreapprovalDetailsResponse  {
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var ResponseEnvelope
 	 */ 
 	public $responseEnvelope;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var boolean
 	 */ 
 	public $approved;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
 	public $cancelUrl;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var integer
 	 */ 
 	public $curPayments;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var double
 	 */ 
 	public $curPaymentsAmount;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var integer
 	 */ 
 	public $curPeriodAttempts;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var dateTime
 	 */ 
 	public $curPeriodEndingDate;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
 	public $currencyCode;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var integer
 	 */ 
 	public $dateOfMonth;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var DayOfWeek
 	 */ 
 	public $dayOfWeek;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var dateTime
 	 */ 
 	public $endingDate;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var double
 	 */ 
 	public $maxAmountPerPayment;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var integer
 	 */ 
 	public $maxNumberOfPayments;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var integer
 	 */ 
 	public $maxNumberOfPaymentsPerPeriod;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var double
 	 */ 
 	public $maxTotalAmountOfAllPayments;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
 	public $paymentPeriod;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
 	public $pinType;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
 	public $returnUrl;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
 	public $senderEmail;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
 	public $memo;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var dateTime
 	 */ 
 	public $startingDate;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
 	public $status;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
 	public $ipnNotificationUrl;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var AddressList
 	 */ 
 	public $addressList;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
 	public $feesPayer;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var boolean
 	 */ 
 	public $displayMaxTotalAmount;
 
 	/**
-	 * No Document Comments
+	 * 
      *@array
 	 *@access public
 	 *@var ErrorData
@@ -4537,140 +4607,140 @@ class PreapprovalDetailsResponse  {
 class PreapprovalRequest  {
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var RequestEnvelope
 	 */ 
 	public $requestEnvelope;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var ClientDetailsType
 	 */ 
 	public $clientDetails;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
 	public $cancelUrl;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
 	public $currencyCode;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var integer
 	 */ 
 	public $dateOfMonth;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var DayOfWeek
 	 */ 
 	public $dayOfWeek;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var dateTime
 	 */ 
 	public $endingDate;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var double
 	 */ 
 	public $maxAmountPerPayment;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var integer
 	 */ 
 	public $maxNumberOfPayments;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var integer
 	 */ 
 	public $maxNumberOfPaymentsPerPeriod;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var double
 	 */ 
 	public $maxTotalAmountOfAllPayments;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
 	public $paymentPeriod;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
 	public $returnUrl;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
 	public $memo;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
 	public $ipnNotificationUrl;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
 	public $senderEmail;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var dateTime
 	 */ 
 	public $startingDate;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
 	public $pinType;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
 	public $feesPayer;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var boolean
 	 */ 
@@ -4787,21 +4857,21 @@ class PreapprovalRequest  {
 class PreapprovalResponse  {
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var ResponseEnvelope
 	 */ 
 	public $responseEnvelope;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
 	public $preapprovalKey;
 
 	/**
-	 * No Document Comments
+	 * 
      *@array
 	 *@access public
 	 *@var ErrorData
@@ -4849,42 +4919,42 @@ class PreapprovalResponse  {
 class RefundRequest  {
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var RequestEnvelope
 	 */ 
 	public $requestEnvelope;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
 	public $currencyCode;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
 	public $payKey;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
 	public $transactionId;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
 	public $trackingId;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var ReceiverList
 	 */ 
@@ -4941,28 +5011,28 @@ class RefundRequest  {
 class RefundResponse  {
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var ResponseEnvelope
 	 */ 
 	public $responseEnvelope;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
 	public $currencyCode;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var RefundInfoList
 	 */ 
 	public $refundInfoList;
 
 	/**
-	 * No Document Comments
+	 * 
      *@array
 	 *@access public
 	 *@var ErrorData
@@ -5012,49 +5082,49 @@ class RefundResponse  {
 class SetPaymentOptionsRequest  {
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var RequestEnvelope
 	 */ 
 	public $requestEnvelope;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
 	public $payKey;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var InitiatingEntity
 	 */ 
 	public $initiatingEntity;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var DisplayOptions
 	 */ 
 	public $displayOptions;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
 	public $shippingAddressId;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var SenderOptions
 	 */ 
 	public $senderOptions;
 
 	/**
-	 * No Document Comments
+	 * 
      *@array
 	 *@access public
 	 *@var ReceiverOptions
@@ -5120,14 +5190,14 @@ class SetPaymentOptionsRequest  {
 class SetPaymentOptionsResponse  {
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var ResponseEnvelope
 	 */ 
 	public $responseEnvelope;
 
 	/**
-	 * No Document Comments
+	 * 
      *@array
 	 *@access public
 	 *@var ErrorData
@@ -5169,14 +5239,14 @@ class SetPaymentOptionsResponse  {
 class GetFundingPlansRequest  {
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var RequestEnvelope
 	 */ 
 	public $requestEnvelope;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
@@ -5218,14 +5288,14 @@ class GetFundingPlansRequest  {
 class GetFundingPlansResponse  {
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var ResponseEnvelope
 	 */ 
 	public $responseEnvelope;
 
 	/**
-	 * No Document Comments
+	 * 
      *@array
 	 *@access public
 	 *@var FundingPlan
@@ -5233,7 +5303,7 @@ class GetFundingPlansResponse  {
 	public $fundingPlan;
 
 	/**
-	 * No Document Comments
+	 * 
      *@array
 	 *@access public
 	 *@var ErrorData
@@ -5285,7 +5355,7 @@ class GetFundingPlansResponse  {
 class GetAvailableShippingAddressesRequest  {
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var RequestEnvelope
 	 */ 
@@ -5336,14 +5406,14 @@ class GetAvailableShippingAddressesRequest  {
 class GetAvailableShippingAddressesResponse  {
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var ResponseEnvelope
 	 */ 
 	public $responseEnvelope;
 
 	/**
-	 * No Document Comments
+	 * 
      *@array
 	 *@access public
 	 *@var Address
@@ -5351,7 +5421,7 @@ class GetAvailableShippingAddressesResponse  {
 	public $availableAddress;
 
 	/**
-	 * No Document Comments
+	 * 
      *@array
 	 *@access public
 	 *@var ErrorData
@@ -5403,7 +5473,7 @@ class GetAvailableShippingAddressesResponse  {
 class GetShippingAddressesRequest  {
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var RequestEnvelope
 	 */ 
@@ -5454,21 +5524,21 @@ class GetShippingAddressesRequest  {
 class GetShippingAddressesResponse  {
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var ResponseEnvelope
 	 */ 
 	public $responseEnvelope;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var Address
 	 */ 
 	public $selectedAddress;
 
 	/**
-	 * No Document Comments
+	 * 
      *@array
 	 *@access public
 	 *@var ErrorData
@@ -5514,7 +5584,7 @@ class GetShippingAddressesResponse  {
 class GetUserLimitsRequest  {
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var RequestEnvelope
 	 */ 
@@ -5528,14 +5598,14 @@ class GetUserLimitsRequest  {
 	public $user;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
 	public $country;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var string
 	 */ 
@@ -5600,14 +5670,14 @@ class GetUserLimitsRequest  {
 class GetUserLimitsResponse  {
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var ResponseEnvelope
 	 */ 
 	public $responseEnvelope;
 
 	/**
-	 * No Document Comments
+	 * 
      *@array
 	 *@access public
 	 *@var UserLimit
@@ -5615,14 +5685,14 @@ class GetUserLimitsResponse  {
 	public $userLimit;
 
 	/**
-	 * No Document Comments
+	 * 
 	 *@access public
 	 *@var WarningDataList
 	 */ 
 	public $warningDataList;
 
 	/**
-	 * No Document Comments
+	 * 
      *@array
 	 *@access public
 	 *@var ErrorData
