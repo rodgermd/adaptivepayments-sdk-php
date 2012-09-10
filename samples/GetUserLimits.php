@@ -60,12 +60,7 @@
 						<input name="currencyCode" id="currencyCode" value="USD" />
 					</div>
 				</div>
-				<div class="params">
-					<div class="param_name">Preapproval key *</div>
-					<div class="param_value">
-						<input name="Preapprovalkey" id="Preapprovalkey" value="" />
-					</div>
-				</div>
+				
 				<div class="submit">
 					<input type="submit" value="Submit" />
 				</div>

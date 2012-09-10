@@ -10,6 +10,7 @@ $logger = new PPLoggingManager('SetPaymentOptions');
 // create request
 $setPaymentOptionsRequest = new SetPaymentOptionsRequest(new RequestEnvelope("en_US"));
 
+$setPaymentOptionsRequest->payKey = $_POST["payKey"];
 // set optional params
 if(isset($_POST['receiverEmail'])) {
 	$receiver = array();
@@ -108,10 +109,13 @@ if($ack != "SUCCESS"){
 		<div id="response_form">
 			<h3>Set Payment Options</h3>
 <?php 
-echo "<pre>";
-print_r($response);
-echo "</pre>";
-require_once 'Common/Response.php';	
+		echo "<table>";
+		echo "<tr><td>Ack :</td><td><div id='Ack'>$ack</div> </td></tr>";
+		echo "</table>";
+		echo "<pre>";
+		print_r($response);
+		echo "</pre>";
+		require_once 'Common/Response.php';	
 ?>
 		</div>
 	</div>

@@ -45,10 +45,14 @@ require_once 'Common/menu.html';
 <div id="response_form">
 <h3>Cancel Preapproval</h3>
 <?php
-echo "<pre>";
-print_r($response);
-echo "</pre>";
-require_once 'Common/Response.php';
+		echo "<pre>";
+		print_r($response);
+		echo "</pre>";
+		echo "</pre>";
+		echo "<table>";
+		echo "<tr><td>Ack :</td><td><div id='Ack'>$ack</div> </td></tr>";
+		echo "</table>";
+		require_once 'Common/Response.php';
 ?></div>
 </div>
 </body>

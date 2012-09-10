@@ -3,31 +3,23 @@ $path = '../lib';
 set_include_path(get_include_path() . PATH_SEPARATOR . $path);
 require_once('services/AdaptivePayments/AdaptivePaymentsService.php');
 require_once('PPLoggingManager.php');
+define("DEFAULT_SELECT", "- Select -");
 
-$logger = new PPLoggingManager('PaymentDetails');
+$logger = new PPLoggingManager('ExecutePayment');
 
 // create request
-$requestEnvelope = new RequestEnvelope("en_US");
-$paymentDetailsReq = new PaymentDetailsRequest($requestEnvelope);
-if($_POST['payKey'] != "") {
-	$paymentDetailsReq->payKey = $_POST['payKey'];
-}
-if($_POST['transactionId'] != "") {
-	$paymentDetailsReq->transactionId = $_POST['transactionId'];
-}
-if($_POST['trackingId'] != "") {
-	$paymentDetailsReq->trackingId = $_POST['trackingId'];
-}
-$logger->log("Created paymentDetailsRequest Object");
+$executePaymentRequest = new ExecutePaymentRequest(new RequestEnvelope("en_US"),$_POST['payKey']);
 
+$executePaymentRequest->actionType = $_POST["actionType"];
+$executePaymentRequest->fundingPlanId = $_POST["fundingPlanID"];
 
 $service = new AdaptivePaymentsService();
 try {
-	$response = $service->PaymentDetails($paymentDetailsReq);
-	$logger->error("Received paymentDetailsResponse:");
+	$response = $service->ExecutePayment($executePaymentRequest);
+	$logger->error("Received ExecutePaymentResponse:");
 	$ack = strtoupper($response->responseEnvelope->ack);
 } catch(Exception $ex) {
-	throw new Exception('Error occurred in PaymentDetails method');
+	throw new Exception('Error occurred in ExecutePayment method');
 }
 
 if($ack != "SUCCESS"){
@@ -42,23 +34,23 @@ if($ack != "SUCCESS"){
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
 <head>
-<title>PayPal Adaptive Payment - Payment Details</title>
+<title>PayPal Adaptive Payment - Execute Payment</title>
 <link href="Common/sdk.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="Common/sdk_functions.js"></script>
 </head>
 
 <body>
 	<div id="wrapper">
-<?php
+	<?php
 	require_once 'Common/menu.html';
-?>
+	?>
 		<div id="response_form">
-			<h3>Payment Details</h3>
+			<h3>Execute Payment</h3>
 <?php 
+
 		echo "<table>";
 		echo "<tr><td>Ack :</td><td><div id='Ack'>$ack</div> </td></tr>";
-		echo "<tr><td>PayKey :</td><td><div id='PayKey'>$response->payKey</div> </td></tr>";
-		echo "<tr><td>Status :</td><td><div id='Status'>$response->status</div> </td></tr>";
+		echo "<tr><td>PaymentExecStatus :</td><td><div id='PaymentExecStatus'>$response->paymentExecStatus</div> </td></tr>";
 		echo "</table>";
 		echo "<pre>";
 		print_r($response);

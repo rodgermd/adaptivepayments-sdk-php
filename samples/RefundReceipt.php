@@ -111,16 +111,21 @@ if($ack != "SUCCESS"){
 	require_once 'Common/menu.html';
 	?>
 		<div id="response_form">
-			<h3>Preapproval Details</h3>
+			<h3>Refund Details</h3>
 			
 			
 			
 			
 <?php 
-echo "<pre>";
-print_r($response);
-echo "</pre>";
-require_once 'Common/Response.php';		
+		$status = $response->refundInfoList->refundInfo[0]->refundStatus;
+		echo "<table>";
+		echo "<tr><td>Ack :</td><td><div id='Ack'>$ack</div> </td></tr>";
+		echo "<tr><td>RefundStatus :</td><td><div id='RefundStatus'>$status</div></td></tr>";
+		echo "</table>";
+		echo "<pre>";
+		print_r($response);
+		echo "</pre>";
+		require_once 'Common/Response.php';		
 ?>
 		</div>
 	</div>

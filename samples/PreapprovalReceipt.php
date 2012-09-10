@@ -95,15 +95,20 @@ if($ack != "SUCCESS"){
 		<div id="response_form">
 			<h3>Preapproval</h3>
 <?php 
-echo "<pre>";
-print_r($response);
-echo "</pre>";
-
+	echo "<pre>";
+	print_r($response);
+	echo "</pre>";
+	
 	// Redirect to paypal.com here
 	$token = $response->preapprovalKey;
-    $payPalURL = 'https://www.sandbox.paypal.com/webscr&cmd=_ap-preapproval&preapprovalkey='.$token;
-	echo" <a href=$payPalURL><b>* Redirect URL to Complete Preapproval Authorization </b></a><br>";
-require_once 'Common/Response.php';		
+	$payPalURL = 'https://www.sandbox.paypal.com/webscr&cmd=_ap-preapproval&preapprovalkey='.$token;
+	
+	echo "<table>";
+	echo "<tr><td>Ack :</td><td><div id='Ack'>$ack</div> </td></tr>";
+	echo "<tr><td>PreapprovalKey :</td><td><div id='PreapprovalKey'>$token</div> </td></tr>";
+	echo "<tr><td><a href=$payPalURL><b>Redirect URL to Complete Preapproval Authorization</b></a></td></tr>";
+	echo "</table>";
+	require_once 'Common/Response.php';		
 ?>
 		</div>
 	</div>
