@@ -8,7 +8,13 @@ $logger = new PPLoggingManager('GetUserLimits');
 
 // create request
 $requestEnvelope = new RequestEnvelope("en_US");
-$getUserLimitsReq = new GetUserLimitsRequest($requestEnvelope, $_POST['preapprovalKey']);
+$getUserLimitsReq = new GetUserLimitsRequest($requestEnvelope);
+$accountIdentifier = new AccountIdentifier();
+$accountIdentifier->email =  $_POST['email'];
+$getUserLimitsReq->user = $accountIdentifier;
+$getUserLimitsReq->country = $_POST['country'];
+$getUserLimitsReq->currencyCode = $_POST['currencyCode'];
+
 $logger->log("Created GetUserLimitsRequest Object");
 
 

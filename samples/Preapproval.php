@@ -22,8 +22,13 @@
 </script>
 </head>
 <?php
-	$returnUrl = $_SERVER["PHP_SELF"];
-	$cancelUrl = $_SERVER["PHP_SELF"];	
+    $serverName = $_SERVER['SERVER_NAME'];
+	$serverPort = $_SERVER['SERVER_PORT'];
+	$url=dirname('http://'.$serverName.':'.$serverPort.$_SERVER['REQUEST_URI']);
+	$returnUrl = $url."/Preapproval.php";
+	$cancelUrl =  $url."/CancelPreapproval.php";
+    
+	
 ?>
 <body>
 	<div id="wrapper">

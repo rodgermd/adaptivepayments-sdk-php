@@ -157,13 +157,27 @@ if($ack != "SUCCESS") {
 $token = $response->payKey;
 $payPalURL = PAYPAL_REDIRECT_URL . '_ap-payment&paykey=' . $token;
 switch($case) {
+	case "1" :
+		echo "<table>";
+		echo "<tr><td>Ack :</td><td><div id='Ack'>$ack</div> </td></tr>";
+		echo "<tr><td>PayKey :</td><td><div id='PayKey'>$payKey</div> </td></tr>";
+		echo "</table>";
+		break;
 	case "2" :
-		echo" <a href=$payPalURL><b>* Redirect URL to Complete Payment </b></a><br>";
+		echo "<table>";
+		echo "<tr><td>Ack :</td><td><div id='Ack'>$ack</div> </td></tr>";
+		echo "<tr><td>PayKey :</td><td><div id='PayKey'>$payKey</div> </td></tr>";
+		echo "<tr><td><a href=$payPalURL><b>Redirect URL to Complete Payment </b></a></td></tr>";
+		echo "</table>";
 		break;
 	case "3" :
-		echo" <a href=$payPalURL><b>* Redirect URL to Complete Payment </b></a><br>";
-		echo"<a href=SetPaymentOption.php?payKey=$payKey><b>* Set Payment Options(optional)</b></a><br>";
-		echo"<a href=ExecutePaymentOption.php?payKey=$payKey><b>* Execute Payment Options</b></a><br>";
+		echo "<table>";
+		echo "<tr><td>Ack :</td><td><div id='Ack'>$ack</div> </td></tr>";
+		echo "<tr><td>PayKey :</td><td><div id='PayKey'>$payKey</div> </td></tr>";
+		echo "<tr><td><a href=$payPalURL><b>Redirect URL to Complete Payment </b></a></td></tr>";
+		echo "<tr><td><a href=SetPaymentOption.php?payKey=$payKey><b>Set Payment Options(optional)</b></a></td></tr>";
+		echo "<tr><td><a href=ExecutePaymentOption.php?payKey=$payKey><b>Execute Payment Options</b></a></td></tr>";
+		echo "</table>";
 		break;
 	case "4" :
 		echo"Payment to \"Primary Receiver\" is Complete<br/>";
