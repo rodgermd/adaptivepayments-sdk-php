@@ -1,22 +1,10 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
 <head>
-<title>Adaptive Payment - Get Allowed Funding Sources</title>
+<title>PayPal Adaptive Payments - Get Allowed Funding Sources</title>
 <link href="Common/sdk.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="Common/sdk_functions.js"></script>
 <script type="text/javascript" src="Common/jquery-1.3.2.min.js"></script>
-<script type="text/javascript" src="Common/jquery.qtip-1.0.0-rc3.min.js"></script>
-<script type="text/javascript">
-		toolTips = {			
-		}	
-		$(document).ready( function () {
-			jQuery.each(toolTips, function(id, toolTip) {
-				$("#"+id).attr("title", toolTip);
-			}); 
-			$("input[title]").qtip(qtipConfig);
-			$("select[title]").qtip(qtipConfig);
-		});
-	</script>
 </head>
 <body>
 	<div id="wrapper">
@@ -39,6 +27,7 @@
 				</div>
 			</form>
 		</div>
+		<a href="index.php">Home</a>
 	</div>
 </body>
 </html>

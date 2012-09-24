@@ -2,25 +2,19 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title>PayPal Platform SDK Calls page</title>
+<title>PayPal Adaptive Payments SDK - API Calls sample</title>
 <link href="Common/style.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
 	<div id="wrapper">
-	<?php
-	include 'Common/menu.html';
-	?>
-		<table align="center">
-			<tr>
-				<td>
-					<center>
-						<h3>
-							<b>Adaptive Payments</b>
-						</h3>
-					</center>
-				</td>
-			</tr>
-		</table>
+		<center>
+			<h3>
+				<b>API Calls Sample - Home</b>
+			</h3>
+		</center>
+		<?php
+		include 'Common/menu.html';
+		?>
 	</div>
 </body>
 </html>

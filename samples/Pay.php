@@ -6,38 +6,24 @@
 <script type="text/javascript" src="Common/sdk_functions.js"></script>
 <script type="text/javascript" src="Common/jquery-1.3.2.min.js"></script>
 <script type="text/javascript" src="Common/jquery.qtip-1.0.0-rc3.min.js"></script>
-<script type="text/javascript">
-	toolTips = {
-		actionType : "Whether the Pay request pays the receiver or whether the Pay request is set up to create a payment requesbut not fulfill the payment until the Execute Pay request is called.Allowable values are: <br/ >>> <i>PAY</i> Use this option if you are not using the Pay request in combinations with the ExecutePayment request.<br/><br/> >> <i>CREATE</i> Use this option to set up the payment instructions with the SetPaymentOptions request and then execute the payment at a later time with the ExecutePayment request.<br/><br/> >> <i>PAY_PRIMARY </i> For chained payments only, specify this value to delay payments to the secondary receivers; only the payment to the primary receiver is processed",
-		phoneCountry_0 : "Telephone country code",
-		phoneNumber_0 : "Telephone number",
-		phoneExtn_0 : "Telephone extension",
-		pin : "Sender’s personal identification number, which was specified when the sender signed up for a preapproval."
-	}	
-	$(document).ready( function () {
-		jQuery.each(toolTips, function(id, toolTip) {
-			$("#"+id).attr("title", toolTip);
-		}); 
-		$("input[title]").qtip(qtipConfig);
-		$("select[title]").qtip(qtipConfig);
-	});
-</script>
 </head>
-<?php
-
-	
+<?php	
 	$serverName = $_SERVER['SERVER_NAME'];
 	$serverPort = $_SERVER['SERVER_PORT'];
-	$url=dirname('http://'.$serverName.':'.$serverPort.$_SERVER['REQUEST_URI']);
-	$returnUrl = $url."/WebflowReturnPage.php";
-	$cancelUrl =  $url."Pay.php";
+	$url = dirname('http://' . $serverName . ':' . $serverPort . $_SERVER['REQUEST_URI']);
+	$returnUrl = $url . "/WebflowReturnPage.php";
+	$cancelUrl =  $url . "/Pay.php";
 ?>
 
 <body>
 	<div id="wrapper">
 		<div id="header">
 			<h3>Pay</h3>
-			<div id="apidetails"></div>
+			<div id="apidetails">The Pay API operation is used to transfer
+				funds from a sender's PayPal account to one or more receivers'
+				PayPal accounts. You can use the Pay API operation to make simple
+				payments, chained payments, or parallel payments; these payments can
+				be explicitly approved, preapproved, or implicitly approved.</div>
 		</div>
 		<div id="request_form">
 			<form action="PayReceipt.php" method="post">
@@ -147,11 +133,12 @@
 						</td>						
 					</tr>
 				</table>
+				<a rel="receiverControls"></a>
 				<table align="center">
 					<tr>
-						<td><a onclick="cloneRow('receiverTable', 8)" id="Submit"><span>Add
-									Receiver </span> </a></td>
-						<td><a onclick="deleteRow('receiverTable')" id="Submit"><span> Delete
+						<td><a href="#receiverControls" onclick="cloneRow('receiverTable', 8)" id="Submit"><span> Add
+									Receiver  </span> </a></td>
+						<td><a href="#receiverControls" onclick="deleteRow('receiverTable')" id="Submit"><span>  Delete
 									Receiver</span> </a></td>
 					</tr>
 				</table>
@@ -194,13 +181,20 @@
 				<table class="params">
 					<tr>
 						<th>Email</th>
-						<th>Phone</th>
+						<th>Phone (Country code / Phone number / Extension)</th>
 						<th>Use Credentials</th>
 					</tr>
 					<tr>
 						<td><input name="emailIdentifier" id="emailIdentifier" value="" /></td>
-						<td><input name="phoneIdentifier" id="phoneIdentifier" value="" /></td>
-						<td><input name="useCredentials" id="useCredentials" value="" /></td>
+						<td><input type="text" name="senderCountryCode" class="smallfield"/>
+						<input type="text" name="senderPhoneNumber" /> - <input type="text" name="senderExtension" class="smallfield"/></td>
+						<td>
+							<select name="useCredentials" id="useCredentials">
+								<option></option>
+								<option>true</option>
+								<option>false</option>
+							</select>
+						</td>
 					</tr>
 				</table>				
 				<div class="submit">
@@ -208,6 +202,7 @@
 				</div>
 			</form>
 		</div>
+		<a href="index.php">Home</a>
 	</div>
 </body>
 </html>

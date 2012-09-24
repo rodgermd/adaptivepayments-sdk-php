@@ -9,23 +9,10 @@ $logger = new PPLoggingManager('PreapprovalDetails');
 ?>
 <html>
 <head>
-<title>PreapprovalDetails Sample API Page</title>
+<title>PayPal Adaptive Payments - Preapproval Details</title>
 <link href="Common/sdk.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="Common/sdk_functions.js"></script>
 <script type="text/javascript" src="Common/jquery-1.3.2.min.js"></script>
-<script type="text/javascript" src="Common/jquery.qtip-1.0.0-rc3.min.js"></script>
-<script type="text/javascript">
-	toolTips = {
-	}	
-	$(document).ready( function () {
-		jQuery.each(toolTips, function(id, toolTip) {
-			$("#"+id).attr("title", toolTip);
-		}); 
-		$("input[title]").qtip(qtipConfig);
-		$("select[title]").qtip(qtipConfig);
-	});
-</script>
-
 </head>
 <body>
 	<div id="wrapper">
@@ -49,6 +36,7 @@ $logger = new PPLoggingManager('PreapprovalDetails');
 				</div>
 			</form>
 		</div>
+		<a href="index.php">Home</a>
 	</div>
 </body>
 </html>

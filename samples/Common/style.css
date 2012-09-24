@@ -37,9 +37,7 @@ h3 {
 
 h2,h3 {
 	color: #E27133 !important;
-	font-weight: bold;
-	margin: 25px 25% 0;
-	text-align: left;
+	font-weight: bold;	
 }
 
 .header2 {
@@ -82,12 +80,10 @@ body {
 	line-height: 136.364%;
 	color: #333333;
 	font-family: Verdana, Arial, Helvetica sans-serif;
-	z-index: auto;
-	background: url(file:///Macintosh/Applications/XAMPP/xamppfiles/htdocs/paypal/PayPalNextGen/adaptivepayments-php-sdk/samples/images/body_bg_white.png) no-repeat 50% 190px;
+	z-index: auto;	
 }
 
-body.view-profile-main {
-	background-image: url(file:///Macintosh/Applications/XAMPP/xamppfiles/htdocs/paypal/PayPalNextGen/adaptivepayments-php-sdk/samples/images/body_bg_grey.png);
+body.view-profile-main {	
 }
 
 body.jive-body-home {
@@ -128,8 +124,7 @@ body #jive-wrapper {
   clear: both;
   margin-right: 1.84%;
   margin-left: 1.84%;
-  margin-bottom: 20px;
-  background: url(file:///Macintosh/Applications/XAMPP/xamppfiles/htdocs/paypal/PayPalNextGen/adaptivepayments-php-sdk/samples/Common/header_bg.png) no-repeat 0 0;
+  margin-bottom: 20px;  
   position: relative;
   z-index: 10000;
   height: 85px;
@@ -160,8 +155,7 @@ body #jive-wrapper {
 }
 
 .jive-error-box div {
-	background: transparent url(file:///Macintosh/Applications/XAMPP/xamppfiles/htdocs/paypal/PayPalNextGen/adaptivepayments-php-sdk/samples/images/app-info-caution.png) no-repeat
-		scroll 10px;
+	
 	padding: 15px 10px 15px 44px;
 }
 
@@ -256,7 +250,7 @@ body #jive-wrapper {
 }
 
 #navigation li.hasSub {
-	background: url(file:///Macintosh/Applications/XAMPP/xamppfiles/htdocs/paypal/PayPalNextGen/adaptivepayments-php-sdk/samples/images/down_arrow_icon.png) no-repeat 97% 5px;
+	
 	padding-right: 7px;
 }
 
@@ -293,8 +287,7 @@ body #jive-wrapper {
 	padding: 5px 10px;
 }
 
-#navigation li li.hasSub {
-	background: url(file:///Macintosh/Applications/XAMPP/xamppfiles/htdocs/paypal/PayPalNextGen/adaptivepayments-php-sdk/samples/images/down_arrow_icon.png) no-repeat 100% -190px;
+#navigation li li.hasSub {	
 	margin-right: 3px;
 	padding-right: 2px;
 }
@@ -483,8 +476,7 @@ html .jive-widget-borderless .jive-widget-header h4 {
 	display: none; *
 	display: block;
 	height: 6px;
-	width: 6px;
-	background-image: url(file:///Macintosh/Applications/XAMPP/xamppfiles/htdocs/paypal/PayPalNextGen/adaptivepayments-php-sdk/samples/images/header-corner-sprite.png) !important;
+	width: 6px;	
 	background-repeat: no-repeat;
 	position: absolute;
 	z-index: 999999999999;
@@ -530,10 +522,7 @@ html .jive-widget-borderless .jive-widget-header h4 {
 }
 
 .jive-accordion-toggle {
-	margin-bottom: 0 !important;
-	background: #ededed url(file:///Macintosh/Applications/XAMPP/xamppfiles/htdocs/paypal/PayPalNextGen/adaptivepayments-php-sdk/samples/images/accordion-gradient.png) repeat-x 0 0
-
-		!important;
+	margin-bottom: 0 !important;	
 	border-style: solid;
 	border-color: #ccc;
 	border-width: 2px 0 0;
@@ -787,8 +776,7 @@ html .jive-widget-borderless .jive-widget-header h4 {
 }
 
 .jive-body-tab,span#jive-social-tab-container-tab.jive-body-tabcurrent,span#jive-comments-tab.jive-body-tabcurrent
-	{
-	background: url(file:///Macintosh/Applications/XAMPP/xamppfiles/htdocs/paypal/PayPalNextGen/adaptivepayments-php-sdk/samples/images/tabs.png) no-repeat 0 0;
+	{	
 	height: 24px;
 	line-height: 24px;
 	margin-right: 0px;
@@ -814,8 +802,7 @@ html .jive-widget-borderless .jive-widget-header h4 {
 	/* ugly hacks for IE6-7 */ #
 	display: inline; #
 	vertical-align: auto;
-	/* end ugly hacks */
-	background: url(file:///Macintosh/Applications/XAMPP/xamppfiles/htdocs/paypal/PayPalNextGen/adaptivepayments-php-sdk/samples/images/tabs.png) no-repeat 100% -34px;
+	/* end ugly hacks */	
 	height: 24px !important;
 	line-height: 24px;
 	padding: 0px 14px 0 6px;
@@ -845,8 +832,7 @@ html .jive-widget-borderless .jive-widget-header h4 {
 	border-color: #D5BD98 #935E0D #935E0D #D5BD98;
 	border-width: 1px;
 	padding-left: 5px;
-	padding-right: 5px;
-	background: url(file:///Macintosh/Applications/XAMPP/xamppfiles/htdocs/paypal/PayPalNextGen/adaptivepayments-php-sdk/samples/images/primary-button-bg.gif) repeat-x 50%;
+	padding-right: 5px;	
 }
 
 .jive-form-button-cancel,#jive-compose-buttons input {
@@ -854,8 +840,7 @@ html .jive-widget-borderless .jive-widget-header h4 {
 	border-color: #BFBFBF #908D8D #908D8D #BFBFBF;
 	border-width: 1px;
 	padding-left: 5px;
-	padding-right: 5px;
-	background: url(file:///Macintosh/Applications/XAMPP/xamppfiles/htdocs/paypal/PayPalNextGen/adaptivepayments-php-sdk/samples/images/secondary-button-bg.gif) repeat-x 50%;
+	padding-right: 5px;	
 }
 
 .jive-body-tabcurrent a {
@@ -1114,8 +1099,7 @@ html .jive-widget-borderless .jive-widget-header h4 {
 	padding-right: 10px;
 }
 
-.app-gallery-container .app-container .app-foot .comment-icon {
-	background: url(file:///Macintosh/Applications/XAMPP/xamppfiles/htdocs/paypal/PayPalNextGen/adaptivepayments-php-sdk/samples/images/ppx-comment-icon.png) no-repeat 0 3px;
+.app-gallery-container .app-container .app-foot .comment-icon {	
 	padding-left: 13px;
 }
 
@@ -1131,11 +1115,9 @@ html .jive-widget-borderless .jive-widget-header h4 {
 }
 
 /* Ready to get started widget */ /* pop buttons */
-.ready-to-get-started-widget {
-	background: url(file:///Macintosh/Applications/XAMPP/xamppfiles/htdocs/paypal/PayPalNextGen/adaptivepayments-php-sdk/samples/images/home-hero.png) no-repeat -691px -36px;
+.ready-to-get-started-widget {	
 	padding: 0 0 0 20px;
-	margin: 7px 0 6px;
-	background: url(file:///Macintosh/Applications/XAMPP/xamppfiles/htdocs/paypal/PayPalNextGen/adaptivepayments-php-sdk/samples/images/head-gradient-bg.png) repeat-x 0 25px;
+	margin: 7px 0 6px;	
 }
 
 .ready-to-get-started-widget h2 {
@@ -1202,8 +1184,7 @@ button.pop-button span { *
 }
 
 .pop-button,.pop-button span {
-	cursor: pointer;
-	background: url(file:///Macintosh/Applications/XAMPP/xamppfiles/htdocs/paypal/PayPalNextGen/adaptivepayments-php-sdk/samples/Common/pop-button-sprite.png) 0 0 repeat-x;
+	cursor: pointer;	
 }
 
 .pop-button span {
@@ -1261,8 +1242,7 @@ button.pop-button span { *
 	white-space: nowrap;
 }
 
-#jive-action-sidebar-tab-list_app-useful-stuff-tab li {
-	background: url(file:///Macintosh/Applications/XAMPP/xamppfiles/htdocs/paypal/PayPalNextGen/adaptivepayments-php-sdk/samples/images/bullet-blue.png) no-repeat 0 5px;
+#jive-action-sidebar-tab-list_app-useful-stuff-tab li {	
 	margin-left: 21px;
 	margin-bottom: 2px;
 	padding-left: 13px;
@@ -1281,9 +1261,7 @@ button.pop-button span { *
 }
 
 .app-info-caution {
-	padding-left: 40px;
-	background: #f4f4f4 url(file:///Macintosh/Applications/XAMPP/xamppfiles/htdocs/paypal/PayPalNextGen/adaptivepayments-php-sdk/samples/images/app-info-caution.png) 18px 10px
-		no-repeat;
+	padding-left: 40px;	
 	border-top: 1px solid #ccc;
 	border-bottom: 1px solid #ccc;
 }
@@ -1304,7 +1282,7 @@ button.pop-button span { *
 }
 
 .application-gallery-details-big h2.open span {
-	background-image: url(file:///Macintosh/Applications/XAMPP/xamppfiles/htdocs/paypal/PayPalNextGen/adaptivepayments-php-sdk/samples/images/dogears_grey_icon_open.png) !important;
+	
 }
 
 .application-gallery-details-big h2 span {
@@ -1313,9 +1291,7 @@ button.pop-button span { *
 }
 
 .application-gallery-details-big h2 span,.application-gallery-details-big h2 a
-	{
-	background: #FFFFFF url(file:///Macintosh/Applications/XAMPP/xamppfiles/htdocs/paypal/PayPalNextGen/adaptivepayments-php-sdk/samples/images/dogears_grey_icon.png) no-repeat
-		scroll 0 4px;
+	{	
 	font-size: 14px;
 	font-weight: bold;
 	line-height: 14px;
@@ -1359,8 +1335,7 @@ button.pop-button span { *
 	font-weight: bold;
 	color: #e27133;
 	padding-left: 20px;
-	padding-right: 9px;
-	background: #fff url(file:///Macintosh/Applications/XAMPP/xamppfiles/htdocs/paypal/PayPalNextGen/adaptivepayments-php-sdk/samples/images/dogears_grey_icon.png) no-repeat 0 4px;
+	padding-right: 9px;	
 	position: relative;
 	_position: static;
 	top: -3px;
@@ -1500,8 +1475,7 @@ button.pop-button span { *
 	font-weight: bold;
 	color: #e27133;
 	padding-left: 20px;
-	padding-right: 9px;
-	background: #fff url(file:///Macintosh/Applications/XAMPP/xamppfiles/htdocs/paypal/PayPalNextGen/adaptivepayments-php-sdk/samples/images/dogears_grey_icon.png) no-repeat 0 4px;
+	padding-right: 9px;	
 	position: relative;
 	_position: static;
 	top: -3px;
@@ -1512,8 +1486,7 @@ button.pop-button span { *
 	padding-top: 4px;
 }
 
-.developer-toolsets-large-widget h2.open span {
-	background-image: url(file:///Macintosh/Applications/XAMPP/xamppfiles/htdocs/paypal/PayPalNextGen/adaptivepayments-php-sdk/samples/images/dogears_grey_icon_open.png) !important;
+.developer-toolsets-large-widget h2.open span {	
 }
 
 .developer-toolsets-large-widget h3 {
@@ -1555,8 +1528,7 @@ button.pop-button span { *
 }
 
 .developer-toolsets-large-widget .link-list li {
-	list-style-type: none !important;
-	background: url(file:///Macintosh/Applications/XAMPP/xamppfiles/htdocs/paypal/PayPalNextGen/adaptivepayments-php-sdk/samples/images/bullet-blue.png) no-repeat 0 5px;
+	list-style-type: none !important;	
 	margin-left: 21px;
 	margin-bottom: 2px;
 	padding-left: 13px;
@@ -1621,7 +1593,7 @@ body.jive-body-formpage-move #jive-body-intro {
 
 /* The edit doc page notch had a white background which didnt look good */
 #jive-doc-corner-img {
-	background-image: url(file:///Macintosh/Applications/XAMPP/xamppfiles/htdocs/paypal/PayPalNextGen/adaptivepayments-php-sdk/samples/images/jive-doc-corner.gif);
+	
 }
 
 /* Discussions need more padding at the top of the container */
@@ -1679,8 +1651,7 @@ body.jive-body-formpage-move #jive-body-intro {
 }
 
 #jive-wrapper h1 {
-	background: url("file:///Macintosh/Applications/XAMPP/xamppfiles/htdocs/paypal/PayPalNextGen/adaptivepayments-php-sdk/samples/Common/nav_main_bg.gif") repeat-x scroll left bottom
-		transparent;
+	
 	list-style-type: none;
 	margin: 0;
 	overflow: hidden;
@@ -1688,8 +1659,7 @@ body.jive-body-formpage-move #jive-body-intro {
 }
 
 #navPrimary h2 {
-	background: url("file:///Macintosh/Applications/XAMPP/xamppfiles/htdocs/paypal/PayPalNextGen/adaptivepayments-php-sdk/samples/Common/nav_second_bg.gif") repeat-x scroll left bottom
-		transparent;
+	
 	display: block;
 	left: 0;
 	overflow: visible;
@@ -1700,8 +1670,7 @@ body.jive-body-formpage-move #jive-body-intro {
 }
 
 #header.std {
-	z-index: 9;
-	background: url("file:///Macintosh/Applications/XAMPP/xamppfiles/htdocs/paypal/PayPalNextGen/adaptivepayments-php-sdk/samples/Common/paypal_logo.gif") no-repeat;
+	z-index: 9;	
 }
 
 #header {
@@ -1737,8 +1706,7 @@ td.label a {
 	text-decoration: none;
 }
 
-#titlex {
-	background: url("file:///Macintosh/Applications/XAMPP/xamppfiles/htdocs/paypal/PayPalNextGen/adaptivepayments-php-sdk/samples/Common/paypal_x_logo.gif") no-repeat;
+#titlex {	
 	width: 266px;
 	height: 28px;
 	border: 0px;
@@ -1777,8 +1745,7 @@ td.thinfield3 {
 	border-top: 0px;
 }
 
-.note_top {
-	background-image: url(file:///Macintosh/Applications/XAMPP/xamppfiles/htdocs/paypal/PayPalNextGen/adaptivepayments-php-sdk/samples/Common/nav_second_bg.gif);
+.note_top {	
 	line-height: 18px;
 	height: 18px;
 	text-align: center;
@@ -1790,7 +1757,7 @@ td.thinfield3 {
 }
 
 .header {
-	background-image: url(file:///Macintosh/Applications/XAMPP/xamppfiles/htdocs/paypal/PayPalNextGen/adaptivepayments-php-sdk/samples/Common/nav_second_bg.gif);
+	
 }
 
 .tabitem {

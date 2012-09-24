@@ -9,45 +9,39 @@ $logger = new PPLoggingManager('GetShippingAddresses');
 // create request
 $getShippingAddressesReq = new GetShippingAddressesRequest(new RequestEnvelope("en_US"), $_POST['key']);
 $logger->log("Created GetShippingAddressesRequest Object");
-
-
 $service  = new AdaptivePaymentsService();
 try {
 	$response = $service->GetShippingAddresses($getShippingAddressesReq);
-	$logger->error("Received GetShippingAddressesResponse:");
-	$ack = strtoupper($response->responseEnvelope->ack);
-}
-catch(Exception $ex) {
-	throw new Exception('Error occurred in GetShippingAddresses method');
-}
-if($ack != "SUCCESS"){
-	echo "<b>Error </b>";
-	echo "<pre>";
-	print_r($response);
-	echo "</pre>";
-	require_once 'Common/Response.php';
+} catch(Exception $ex) {
+	require_once 'Comon/Error.php';
 	exit;
 }
+$logger->error("Received GetShippingAddressesResponse:");
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
 <head>
-<title>PayPal Adaptive Payment - Get Shipping Addresses</title>
+<title>PayPal Adaptive Payments - Get Shipping Addresses</title>
 <link href="Common/sdk.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="Common/sdk_functions.js"></script>
 </head>
 
 <body>
 	<div id="wrapper">
-<?php
-	require_once 'Common/menu.html';
-?>
 		<div id="response_form">
 			<h3>Get Shipping Addresses</h3>
 <?php 
-echo "<pre>";
-print_r($response);
-echo "</pre>";
+$ack = strtoupper($response->responseEnvelope->ack);
+if($ack != "SUCCESS"){
+	echo "<b>Error </b>";
+	echo "<pre>";
+	print_r($response);
+	echo "</pre>";
+} else {
+	echo "<pre>";
+	print_r($response);
+	echo "</pre>";
+}
 require_once 'Common/Response.php';	
 ?>
 		</div>

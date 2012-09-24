@@ -62,39 +62,32 @@ $logger->log("Created PreApprovalRequest Object");
 $service = new AdaptivePaymentsService();
 try {
 	$response = $service->Preapproval($preapprovalRequest);
-	$logger->error("Received PreApprovalResponse:");
-	$ack = strtoupper($response->responseEnvelope->ack);
 } catch(Exception $ex) {
-	throw new Exception('Error occurred in PaymentDetails method');
-}
-
-if($ack != "SUCCESS"){
-	echo "<b>Error </b>";
-	echo "<pre>";
-	print_r($response);
-	echo "</pre>";
-	require_once 'Common/Response.php';
-	exit;
+	require_once 'Common/Error.php';
+	exit;	
 }
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
 <head>
-<title>PayPal Adaptive Payment - Preapproval</title>
+<title>PayPal Adaptive Payments - Preapproval</title>
 <link href="Common/sdk.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="Common/sdk_functions.js"></script>
 </head>
 
 <body>
 	<div id="wrapper">
-
-
-	<?php
-	require_once 'Common/menu.html';
-	?>
 		<div id="response_form">
 			<h3>Preapproval</h3>
 <?php 
+$logger->error("Received PreApprovalResponse:");
+$ack = strtoupper($response->responseEnvelope->ack);
+if($ack != "SUCCESS"){
+	echo "<b>Error </b>";
+	echo "<pre>";
+	print_r($response);
+	echo "</pre>";
+} else {
 	echo "<pre>";
 	print_r($response);
 	echo "</pre>";
@@ -108,7 +101,8 @@ if($ack != "SUCCESS"){
 	echo "<tr><td>PreapprovalKey :</td><td><div id='PreapprovalKey'>$token</div> </td></tr>";
 	echo "<tr><td><a href=$payPalURL><b>Redirect URL to Complete Preapproval Authorization</b></a></td></tr>";
 	echo "</table>";
-	require_once 'Common/Response.php';		
+}
+require_once 'Common/Response.php';		
 ?>
 		</div>
 	</div>

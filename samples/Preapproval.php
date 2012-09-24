@@ -1,34 +1,17 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
 <head>
-<title>Adaptive Payment - Preapproval</title>
+<title>PayPal Adaptive Payments - Preapproval</title>
 <link href="Common/sdk.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="Common/sdk_functions.js"></script>
 <script type="text/javascript" src="Common/jquery-1.3.2.min.js"></script>
-<script type="text/javascript" src="Common/jquery.qtip-1.0.0-rc3.min.js"></script>
-<script type="text/javascript">
-	toolTips = {
-		dateOfMonth : "The day of the month on which a monthly payment is to be made. Allowable values are numbers between 0 and 31. A number between 1 and 31 indicates the date of the month. Specifying 0 indicates that payment can be made on any day of the month.",
-		dayOfWeek: "The day of the week that a weekly payment is to be made.",
-		endingDate: "Last date for which the preapproval is valid. It cannot be later than one year from the starting date."
-	}	
-	$(document).ready( function () {
-		jQuery.each(toolTips, function(id, toolTip) {
-			$("#"+id).attr("title", toolTip);
-		}); 
-		$("input[title]").qtip(qtipConfig);
-		$("select[title]").qtip(qtipConfig);
-	});
-</script>
 </head>
 <?php
     $serverName = $_SERVER['SERVER_NAME'];
 	$serverPort = $_SERVER['SERVER_PORT'];
 	$url=dirname('http://'.$serverName.':'.$serverPort.$_SERVER['REQUEST_URI']);
 	$returnUrl = $url."/Preapproval.php";
-	$cancelUrl =  $url."/CancelPreapproval.php";
-    
-	
+	$cancelUrl =  $url."/CancelPreapproval.php";	
 ?>
 <body>
 	<div id="wrapper">
@@ -43,6 +26,12 @@
 			<form id="Form1" name="Form1" method="post"
 				action="PreapprovalReceipt.php">
 				<div class="params">
+					<div class="param_name">Return URL *</div>
+					<div class="param_value">
+						<input name="returnUrl" id="returnUrl" value="<?php echo $returnUrl;?>" />
+					</div>
+				</div>
+				<div class="params">
 					<div class="param_name">Cancel Url *</div>
 					<div class="param_value">
 						<input name="cancelUrl" id="cancelUrl" value="<?php echo $cancelUrl;?>" />
@@ -54,7 +43,18 @@
 						<input name="currencyCode" value="USD" />
 					</div>
 				</div>
-				
+				<div class="params">
+					<div class="param_name">Preapproval start date *</div>
+					<div class="param_value">
+						<input name="startingDate" id="startingDate" value="<?php echo date("Y-m-d");?>" />
+					</div>
+				</div>
+				<div class="params">
+					<div class="param_name">Preapproval end date</div>
+					<div class="param_value">
+						<input name="endingDate" id="endingDate" value="<?php echo date("Y-m-d", time() + 864000);?>" />
+					</div>
+				</div>
 				<div class="params">
 					<div class="param_name">Payment date - Date of month</div>
 					<div class="param_value">
@@ -76,13 +76,7 @@
 							<option>SATURDAY</option>
 						</select>
 					</div>
-				</div>
-				<div class="params">
-					<div class="param_name">Payment end date</div>
-					<div class="param_value">
-						<input name="endingDate" id="endingDate" value="<?php echo date("Y-m-d", time() + 864000);?>" />
-					</div>
-				</div>				
+				</div>												
 				<div class="params">
 					<div class="param_name">Maximum amount per payment</div>
 					<div class="param_value">
@@ -123,11 +117,15 @@
 					</div>
 				</div>
 				<div class="params">
-					<div class="param_name">Return URL *</div>
+					<div class="param_name">Display Maximum Total Amount</div>
 					<div class="param_value">
-						<input name="returnUrl" id="returnUrl" value="<?php echo $returnUrl;?>" />
+						<select name="displayMaxTotalAmount">
+							<option value="">--Select a value--</option>
+							<option value="true">True</option>
+							<option value="false">False</option>
+						</select>
 					</div>
-				</div>
+				</div>								
 				<div class="params">
 					<div class="param_name">Memo</div>
 					<div class="param_value">
@@ -145,13 +143,7 @@
 					<div class="param_value">
 						<input name="senderEmail" id="senderEmail" value="" />
 					</div>
-				</div>
-				<div class="params">
-					<div class="param_name">Starting date *</div>
-					<div class="param_value">
-						<input name="startingDate" id="startingDate" value="<?php echo date("Y-m-d");?>" />
-					</div>
-				</div>
+				</div>				
 				<div class="params">
 					<div class="param_name">Is PIN type required</div>
 					<div class="param_value">
@@ -172,18 +164,13 @@
 							<option value="SECONDARYONLY">SECONDARYONLY</option>
 						</select>
 					</div>
-				</div>
-				<div class="params">
-					<div class="param_name">Display maximum total amount</div>
-					<div class="param_value">
-						<input name="displayMaxTotalAmount" id="displayMaxTotalAmount" value="" />
-					</div>
 				</div>				
 				<div class="submit">
 					<input type="submit" value="Submit" />
 				</div>
 			</form>
 		</div>
+		<a href="index.php">Home</a>
 	</div>
 </body>
 </html>

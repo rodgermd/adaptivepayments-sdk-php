@@ -5,18 +5,6 @@
 <link rel="stylesheet" type="text/css" href="Common/sdk.css" />
 <script type="text/javascript" src="Common/sdk_functions.js"></script>
 <script type="text/javascript" src="Common/jquery-1.3.2.min.js"></script>
-<script type="text/javascript" src="Common/jquery.qtip-1.0.0-rc3.min.js"></script>
-<script type="text/javascript">
-	toolTips = {
-	}	
-	$(document).ready( function () {
-		jQuery.each(toolTips, function(id, toolTip) {
-			$("#"+id).attr("title", toolTip);
-		}); 
-		$("input[title]").qtip(qtipConfig);
-		$("select[title]").qtip(qtipConfig);
-	});
-</script>
 </head>
 <body>
 	<div id="wrapper">
@@ -28,13 +16,10 @@
 				specific receiver of a payKey.</div>
 		</div>
 		<div id="request_form">
-			<form action="RefundReceipt.php" method="post">
-				<div class="params">
-					<div class="param_name">Currency code</div>
-					<div class="param_value">
-						<input name="currencyCode" id="currencyCode" value="USD" />
-					</div>
-				</div>
+			<form action="RefundReceipt.php" method="post">				
+				<div class="note">A refund can be made against the entire
+						payKey,or an individual transaction belonging to a payKey,or a
+						tracking id, or a specific receiver of a payKey.</div>
 				<div class="params">
 					<div class="param_name">Pay key</div>
 					<div class="param_value">
@@ -53,7 +38,18 @@
 						<input name="trackingId" id="trackingId" value="" />
 					</div>
 				</div>
+				<div class="params">
+					<div class="param_name">Currency code</div>
+					<div class="param_value">
+						<input name="currencyCode" id="currencyCode" value="USD" />
+					</div>
+				</div>
 				<div class="section_header">Receiver info</div>
+				<div class="note">Receiver is the party where funds are
+						transferred to. A primary receiver receives a payment directly
+						from the sender in a chained split payment. A primary receiver
+						should not be specified when making a single or parallel split
+						payment. Must set either mail or phone number</div>
 				<table class="params" id="receiverTable">
 					<tr>
 						<th></th>
@@ -105,11 +101,12 @@
 						</td>
 					</tr>
 				</table>
+				<a rel="receiverControls"></a>
 				<table align="center">
 					<tr>
-						<td><a onclick="cloneRow('receiverTable', 8)" id="Submit"><span>Add
+						<td><a href="#receiverControls" onclick="cloneRow('receiverTable', 8)" id="Submit"><span>Add
 									Receiver </span> </a></td>
-						<td><a onclick="deleteRow('receiverTable')" id="Submit"><span>
+						<td><a href="#receiverControls" onclick="deleteRow('receiverTable')" id="Submit"><span>
 									Delete Receiver</span> </a></td>
 					</tr>
 				</table>
@@ -118,6 +115,7 @@
 				</div>
 			</form>
 		</div>
+		<a href="index.php">Home</a>
 	</div>
 </body>
 </html>

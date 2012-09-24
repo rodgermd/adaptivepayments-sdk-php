@@ -1,28 +1,16 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
 <head>
-<title>Adaptive Payment - Set Payment Options</title>
+<title>PayPal Adaptive Payments - Set Payment Options</title>
 <link href="Common/sdk.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="Common/sdk_functions.js"></script>
 <script type="text/javascript" src="Common/jquery-1.3.2.min.js"></script>
-<script type="text/javascript" src="Common/jquery.qtip-1.0.0-rc3.min.js"></script>
-<script type="text/javascript">
-		toolTips = {			
-		}	
-		$(document).ready( function () {
-			jQuery.each(toolTips, function(id, toolTip) {
-				$("#"+id).attr("title", toolTip);
-			}); 
-			$("input[title]").qtip(qtipConfig);
-			$("select[title]").qtip(qtipConfig);
-		});
-	</script>
 </head>
 <body>
 	<div id="wrapper">
 		<div id="header">
 			<h3>Set Payment Options</h3>
-			<div id="apidetails">You us e th e SetPaymentOptions API operation to
+			<div id="apidetails">You use the SetPaymentOptions API operation to
 				specify settings for a payment of the actionType CREATE. This
 				actionType is specified in the PayRequest message.</div>
 		</div>
@@ -33,12 +21,6 @@
 					<div class="param_name">Pay key *</div>
 					<div class="param_value">
 						<input name="payKey" id="payKey" value="" />
-					</div>
-				</div>
-				<div class="params">
-					<div class="param_name">Institution Id</div>
-					<div class="param_value">
-						<input name="institutionId" id="institutionId" value="" />
 					</div>
 				</div>
 				<div class="section_header">Display options</div>
@@ -68,6 +50,52 @@
 						<input name="businessName" id="businessName" value="" />
 					</div>
 				</div>
+				<div class="section_header">Initiating entity</div>
+				<div class="note">Details about the party that initiated this payment. The API user is 
+				making this payment on behalf of the initiator. The initiator can simply be an 
+				institution or a customer of the institution.</div>				
+				<div class="params">
+					<div class="param_name">Institution Id</div>
+					<div class="param_value">
+						<input name="institutionId" id="institutionId" value="" />
+					</div>
+				</div>
+				<div class="params">
+					<div class="param_name">First name</div>
+					<div class="param_value">
+						<input type="text" name="firstName" value="" />
+					</div>
+				</div>
+				<div class="params">
+					<div class="param_name">Last name</div>
+					<div class="param_value">
+						<input name="lastName" id="lastName" value="" />
+					</div>
+				</div>
+				<div class="params">
+					<div class="param_name">Display name</div>
+					<div class="param_value">
+						<input name="displayName" id="displayName" value="" />
+					</div>
+				</div>
+				<div class="params">
+					<div class="param_name">Institution mail</div>
+					<div class="param_value">
+						<input name="institutionMail" id="institutionMail" value="" />
+					</div>
+				</div>				
+				<div class="params">
+					<div class="param_name">Institution customer Id</div>
+					<div class="param_value">
+						<input name="institutionCustomerId" id="institutionCustomerId" value="" />
+					</div>
+				</div>
+				<div class="params">
+					<div class="param_name">Country code</div>
+					<div class="param_value">
+						<input name="countryCode" id="countryCode" value="" />
+					</div>
+				</div>
 				<div class="section_header"></div>
 				<div class="params">
 					<div class="param_name">Shipping address Id</div>
@@ -86,7 +114,7 @@
 				<div class="params">
 					<div class="param_name">Referrer code</div>
 					<div class="param_value">
-						<input name="referrerCode" id="referrerCode" value="" />
+						<input name="senderReferrerCode" id="senderReferrerCode" value="" />
 					</div>
 				</div>
 				<div class="section_header">Receiver options</div>
@@ -102,6 +130,27 @@
 						<input name="customId" id="customId" value="" />
 					</div>
 				</div>
+				<div class="input_header">Receiver identifier</div>
+				<table class="params">
+					<tr>
+						<th>Email</th>
+						<th>Phone</th>
+					</tr>
+					<tr>
+						<td><input name="emailIdentifier" id="emailIdentifier" value="" /></td>
+						<td> 
+							<input type="text" name="phoneCountry" id="phoneCountry" value="" class="xsmallfield" /> - 
+							<input type="text" name="phoneNumber" id="phoneNumber" value="" class="xsmallfield" />
+							<input type="text" name="phoneExtn" id="phoneExtn" value="" class="xsmallfield" />
+						</td>						
+					</tr>
+				</table>
+				<div class="params">
+					<div class="param_name">Referrer code</div>
+					<div class="param_value">
+						<input name="receiverReferrerCode" id="receiverReferrerCode" value="" />
+					</div>
+				</div>	
 				<div class="section_header">Invoice data</div>
 				<div class="input_header">Invoice item</div>
 				<table id="invoiceItemTable">
@@ -122,11 +171,12 @@
 						<td><input type="text" name="itemCount[]" id="itemCount_0" value=""/></td>
 					</tr>
 				</table>
+				<a rel="invoiceItemControls"></a>
 				<table align="center">
 					<tr>
-						<td><a onclick="cloneRow('invoiceItemTable', 10)" id="Submit"><span>Add
+						<td><a href="#invoiceItemControls" onclick="cloneRow('invoiceItemTable', 10)" id="Submit"><span>Add
 									Item </span> </a></td>
-						<td><a onclick="deleteRow('invoiceItemTable')" id="Submit"><span> Delete
+						<td><a href="#invoiceItemControls" onclick="deleteRow('invoiceItemTable')" id="Submit"><span> Delete
 									Item</span> </a></td>
 					</tr>
 				</table>				
@@ -142,32 +192,12 @@
 						<input name="totalShipping" id="totalShipping" value="" />
 					</div>
 				</div>
-				<div class="input_header">Receiver identifier</div>
-				<table class="params">
-					<tr>
-						<th>Email</th>
-						<th>Phone</th>
-					</tr>
-					<tr>
-						<td><input name="emailIdentifier" id="emailIdentifier" value="" /></td>
-						<td> 
-							<input type="text" name="phoneCountry" id="phoneCountry" value="" class="xsmallfield" /> - 
-							<input type="text" name="phoneNumber" id="phoneNumbe0" value="" class="xsmallfield" />
-							<input type="text" name="phoneExtn" id="phoneExtn" value="" class="xsmallfield" />
-						</td>						
-					</tr>
-				</table>
-				<div class="params">
-					<div class="param_name">Referrer code</div>
-					<div class="param_value">
-						<input name="referrerCode" id="referrerCode" value="" />
-					</div>
-				</div>
 				<div class="submit">
 					<input type="submit" value="Submit" />
 				</div>
 			</form>
 		</div>
+		<a href="index.php">Home</a>
 	</div>
 </body>
 </html>

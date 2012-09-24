@@ -22,12 +22,26 @@ $logger->log("Created ConfirmPreapprovalRequest Object");
 $service  = new AdaptivePaymentsService();
 try {
 	$response = $service->ConfirmPreapproval($confirmPreapprovalReq);
-	$logger->error("Received ConfirmPreapprovalResponse:");
-	$ack = strtoupper($response->responseEnvelope->ack);
+} catch(Exception $ex) {
+	require_once 'Common/Error.php';
+	exit;
 }
-catch(Exception $ex) {
-	throw new Exception('Error occurred in ConfirmPreapproval method');
-}
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>PayPal Adaptive Payments - Confirm Preapproval</title>
+<link href="Common/sdk.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="Common/sdk_functions.js"></script>
+</head>
+
+<body>
+	<div id="wrapper">
+		<div id="response_form">
+			<h3>Confirm Preapproval</h3>
+<?php
+$logger->error("Received ConfirmPreapprovalResponse:");
+$ack = strtoupper($response->responseEnvelope->ack);
 if($ack != "SUCCESS"){
 	echo "<b>Error </b>";
 	echo "<pre>";
@@ -35,31 +49,15 @@ if($ack != "SUCCESS"){
 	echo "</pre>";
 	require_once 'Common/Response.php';
 	exit;
+} else {
+	echo "<pre>";
+	print_r($response);
+	echo "</pre>";
+	echo "<table>";
+	echo "<tr><td>Ack :</td><td><div id='Ack'>$ack</div> </td></tr>";
+	echo "</table>";
 }
-?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html>
-<head>
-<title>PayPal Adaptive Payment - Confirm Preapproval</title>
-<link href="Common/sdk.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="Common/sdk_functions.js"></script>
-</head>
-
-<body>
-	<div id="wrapper">
-<?php
-	require_once 'Common/menu.html';
-?>
-		<div id="response_form">
-			<h3>Confirm Preapproval</h3>
-<?php 
-   		echo "<pre>";
-		print_r($response);
-		echo "</pre>";
-		echo "<table>";
-		echo "<tr><td>Ack :</td><td><div id='Ack'>$ack</div> </td></tr>";
-		echo "</table>";
-		require_once 'Common/Response.php';
+require_once 'Common/Response.php';
 ?>
 		</div>
 	</div>

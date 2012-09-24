@@ -51,6 +51,7 @@ input.xsmallfield, select.xsmallfield {
 .note {
 	margin: 10px 10px;
 	font-style: italic;
+	width: 700px;
 }
 
 .section_header {
@@ -84,4 +85,8 @@ ul.wizard li.complete {
 	background-repeat: no-repeat;
 	background-position: center right;
 	padding-right: 50px;
+}
+
+#apiResponse {
+	width: 700px;
 }

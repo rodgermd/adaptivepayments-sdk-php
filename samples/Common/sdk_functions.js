@@ -42,6 +42,7 @@ function addRow(tableID) {
 
 function deleteRow(tableID) {
 	try {
+		var selectionMade = false;
 		var table = document.getElementById(tableID);
 		var rowCount = table.rows.length;
 		if (rowCount > 1) {
@@ -49,11 +50,15 @@ function deleteRow(tableID) {
 				var row = table.rows[i];
 				var chkbox = row.cells[0].childNodes[0];
 				if (null != chkbox && true == chkbox.checked) {
+					selectionMade = true;
 					table.deleteRow(i);
 					rowCount--;
 					i--;
 				}
 			}
+		} 
+		if(!selectionMade){
+			alert("Please select one or more rows to delete");
 		}
 	} catch (e) {
 		alert(e);
