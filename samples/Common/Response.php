@@ -5,14 +5,14 @@
 		<td>Request:</td>
 	</tr>
 	<tr>
-		<td><textarea rows="10" cols="100"><?php echo $service->getLastRequest()?></textarea>
+		<td><textarea rows="10" cols="100"><?php echo htmlspecialchars($service->getLastRequest());?></textarea>
 		</td>
 	</tr>
 	<tr>
 		<td>Response:</td>
 	</tr>
 	<tr>
-		<td><textarea rows="10" cols="100"><?php echo $service->getLastResponse()?></textarea>
+		<td><textarea rows="10" cols="100"><?php echo htmlspecialchars($service->getLastResponse());?></textarea>
 		</td>
 	</tr>
 </table>
