@@ -1,4 +1,13 @@
 
+Version 1.2.95 - September 28, 2012
+ 
+	- Sender details (eg:email,phno) serialization bug fixed(https://github.com/paypal/SDKs/issues/30)
+	- Bug fixed for 'PPLoggingManager.php' to pickup configuration entries.(https://github.com/paypal/SDKs/issues/28)
+	- Updated SDK sample
+	
+--------------------------------------------------------------------------------------------------
+
+
 Version 1.1.93 - August 13, 2012
  
 	- SDK refreshed to Release 1.8.1. Please refer https://www.x.com/developers/paypal/documentation-tools/release-notes#AdaptivePaymentsAPI

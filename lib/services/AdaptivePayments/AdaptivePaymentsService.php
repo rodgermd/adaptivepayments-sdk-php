@@ -26,7 +26,7 @@ class AdaptivePaymentsService extends PPBaseService {
 	 * @return CancelPreapprovalResponse
 	 * @throws APIException
 	 */
-	public function CancelPreapproval($cancelPreapprovalRequest, $apiUsername = null) {
+	public function CancelPreapproval($cancelPreapprovalRequest, $apiUsername = NULL) {
 		$ret = new CancelPreapprovalResponse();
 		$resp = $this->call("CancelPreapproval", $cancelPreapprovalRequest, $apiUsername);
 		$ret->init(PPUtils::nvpToMap($resp));
@@ -40,7 +40,7 @@ class AdaptivePaymentsService extends PPBaseService {
 	 * @return ConfirmPreapprovalResponse
 	 * @throws APIException
 	 */
-	public function ConfirmPreapproval($confirmPreapprovalRequest, $apiUsername = null) {
+	public function ConfirmPreapproval($confirmPreapprovalRequest, $apiUsername = NULL) {
 		$ret = new ConfirmPreapprovalResponse();
 		$resp = $this->call("ConfirmPreapproval", $confirmPreapprovalRequest, $apiUsername);
 		$ret->init(PPUtils::nvpToMap($resp));
@@ -54,7 +54,7 @@ class AdaptivePaymentsService extends PPBaseService {
 	 * @return ConvertCurrencyResponse
 	 * @throws APIException
 	 */
-	public function ConvertCurrency($convertCurrencyRequest, $apiUsername = null) {
+	public function ConvertCurrency($convertCurrencyRequest, $apiUsername = NULL) {
 		$ret = new ConvertCurrencyResponse();
 		$resp = $this->call("ConvertCurrency", $convertCurrencyRequest, $apiUsername);
 		$ret->init(PPUtils::nvpToMap($resp));
@@ -68,7 +68,7 @@ class AdaptivePaymentsService extends PPBaseService {
 	 * @return ExecutePaymentResponse
 	 * @throws APIException
 	 */
-	public function ExecutePayment($executePaymentRequest, $apiUsername = null) {
+	public function ExecutePayment($executePaymentRequest, $apiUsername = NULL) {
 		$ret = new ExecutePaymentResponse();
 		$resp = $this->call("ExecutePayment", $executePaymentRequest, $apiUsername);
 		$ret->init(PPUtils::nvpToMap($resp));
@@ -82,7 +82,7 @@ class AdaptivePaymentsService extends PPBaseService {
 	 * @return GetAllowedFundingSourcesResponse
 	 * @throws APIException
 	 */
-	public function GetAllowedFundingSources($getAllowedFundingSourcesRequest, $apiUsername = null) {
+	public function GetAllowedFundingSources($getAllowedFundingSourcesRequest, $apiUsername = NULL) {
 		$ret = new GetAllowedFundingSourcesResponse();
 		$resp = $this->call("GetAllowedFundingSources", $getAllowedFundingSourcesRequest, $apiUsername);
 		$ret->init(PPUtils::nvpToMap($resp));
@@ -96,7 +96,7 @@ class AdaptivePaymentsService extends PPBaseService {
 	 * @return GetPaymentOptionsResponse
 	 * @throws APIException
 	 */
-	public function GetPaymentOptions($getPaymentOptionsRequest, $apiUsername = null) {
+	public function GetPaymentOptions($getPaymentOptionsRequest, $apiUsername = NULL) {
 		$ret = new GetPaymentOptionsResponse();
 		$resp = $this->call("GetPaymentOptions", $getPaymentOptionsRequest, $apiUsername);
 		$ret->init(PPUtils::nvpToMap($resp));
@@ -110,7 +110,7 @@ class AdaptivePaymentsService extends PPBaseService {
 	 * @return PaymentDetailsResponse
 	 * @throws APIException
 	 */
-	public function PaymentDetails($paymentDetailsRequest, $apiUsername = null) {
+	public function PaymentDetails($paymentDetailsRequest, $apiUsername = NULL) {
 		$ret = new PaymentDetailsResponse();
 		$resp = $this->call("PaymentDetails", $paymentDetailsRequest, $apiUsername);
 		$ret->init(PPUtils::nvpToMap($resp));
@@ -124,7 +124,7 @@ class AdaptivePaymentsService extends PPBaseService {
 	 * @return PayResponse
 	 * @throws APIException
 	 */
-	public function Pay($payRequest, $apiUsername = null) {
+	public function Pay($payRequest, $apiUsername = NULL) {
 		$ret = new PayResponse();
 		$resp = $this->call("Pay", $payRequest, $apiUsername);
 		$ret->init(PPUtils::nvpToMap($resp));
@@ -138,7 +138,7 @@ class AdaptivePaymentsService extends PPBaseService {
 	 * @return PreapprovalDetailsResponse
 	 * @throws APIException
 	 */
-	public function PreapprovalDetails($preapprovalDetailsRequest, $apiUsername = null) {
+	public function PreapprovalDetails($preapprovalDetailsRequest, $apiUsername = NULL) {
 		$ret = new PreapprovalDetailsResponse();
 		$resp = $this->call("PreapprovalDetails", $preapprovalDetailsRequest, $apiUsername);
 		$ret->init(PPUtils::nvpToMap($resp));
@@ -152,7 +152,7 @@ class AdaptivePaymentsService extends PPBaseService {
 	 * @return PreapprovalResponse
 	 * @throws APIException
 	 */
-	public function Preapproval($preapprovalRequest, $apiUsername = null) {
+	public function Preapproval($preapprovalRequest, $apiUsername = NULL) {
 		$ret = new PreapprovalResponse();
 		$resp = $this->call("Preapproval", $preapprovalRequest, $apiUsername);
 		$ret->init(PPUtils::nvpToMap($resp));
@@ -166,7 +166,7 @@ class AdaptivePaymentsService extends PPBaseService {
 	 * @return RefundResponse
 	 * @throws APIException
 	 */
-	public function Refund($refundRequest, $apiUsername = null) {
+	public function Refund($refundRequest, $apiUsername = NULL) {
 		$ret = new RefundResponse();
 		$resp = $this->call("Refund", $refundRequest, $apiUsername);
 		$ret->init(PPUtils::nvpToMap($resp));
@@ -180,7 +180,7 @@ class AdaptivePaymentsService extends PPBaseService {
 	 * @return SetPaymentOptionsResponse
 	 * @throws APIException
 	 */
-	public function SetPaymentOptions($setPaymentOptionsRequest, $apiUsername = null) {
+	public function SetPaymentOptions($setPaymentOptionsRequest, $apiUsername = NULL) {
 		$ret = new SetPaymentOptionsResponse();
 		$resp = $this->call("SetPaymentOptions", $setPaymentOptionsRequest, $apiUsername);
 		$ret->init(PPUtils::nvpToMap($resp));
@@ -194,7 +194,7 @@ class AdaptivePaymentsService extends PPBaseService {
 	 * @return GetFundingPlansResponse
 	 * @throws APIException
 	 */
-	public function GetFundingPlans($getFundingPlansRequest, $apiUsername = null) {
+	public function GetFundingPlans($getFundingPlansRequest, $apiUsername = NULL) {
 		$ret = new GetFundingPlansResponse();
 		$resp = $this->call("GetFundingPlans", $getFundingPlansRequest, $apiUsername);
 		$ret->init(PPUtils::nvpToMap($resp));
@@ -208,7 +208,7 @@ class AdaptivePaymentsService extends PPBaseService {
 	 * @return GetAvailableShippingAddressesResponse
 	 * @throws APIException
 	 */
-	public function GetAvailableShippingAddresses($getAvailableShippingAddressesRequest, $apiUsername = null) {
+	public function GetAvailableShippingAddresses($getAvailableShippingAddressesRequest, $apiUsername = NULL) {
 		$ret = new GetAvailableShippingAddressesResponse();
 		$resp = $this->call("GetAvailableShippingAddresses", $getAvailableShippingAddressesRequest, $apiUsername);
 		$ret->init(PPUtils::nvpToMap($resp));
@@ -222,7 +222,7 @@ class AdaptivePaymentsService extends PPBaseService {
 	 * @return GetShippingAddressesResponse
 	 * @throws APIException
 	 */
-	public function GetShippingAddresses($getShippingAddressesRequest, $apiUsername = null) {
+	public function GetShippingAddresses($getShippingAddressesRequest, $apiUsername = NULL) {
 		$ret = new GetShippingAddressesResponse();
 		$resp = $this->call("GetShippingAddresses", $getShippingAddressesRequest, $apiUsername);
 		$ret->init(PPUtils::nvpToMap($resp));
@@ -236,7 +236,7 @@ class AdaptivePaymentsService extends PPBaseService {
 	 * @return GetUserLimitsResponse
 	 * @throws APIException
 	 */
-	public function GetUserLimits($getUserLimitsRequest, $apiUsername = null) {
+	public function GetUserLimits($getUserLimitsRequest, $apiUsername = NULL) {
 		$ret = new GetUserLimitsResponse();
 		$resp = $this->call("GetUserLimits", $getUserLimitsRequest, $apiUsername);
 		$ret->init(PPUtils::nvpToMap($resp));

@@ -4,6 +4,7 @@
   * Auto generated code 
   * 
   */
+require_once('PPUtils.php');
 /**
  * 
  */
@@ -11,15 +12,15 @@ class AccountIdentifier  {
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $email;
 
 	/**
 	 * 
-	 *@access public
-	 *@var PhoneNumberType
+	 * @access public
+	 * @var PhoneNumberType
 	 */ 
 	public $phone;
 
@@ -27,11 +28,11 @@ class AccountIdentifier  {
 	public function toNVPString($prefix = '') {
 		$str = '';
 		$delim = '';
-		if($this->email != null) {
+		if($this->email != NULL) {
 			$str .= $delim .  $prefix . 'email=' . urlencode($this->email);
 			$delim = '&';
 		}
-		if($this->phone != null) {
+		if($this->phone != NULL) {
 			$newPrefix = $prefix . 'phone.';
 			$str .= $delim . call_user_func(array($this->phone, 'toNVPString'), $newPrefix);
 			$delim = '&';
@@ -39,11 +40,10 @@ class AccountIdentifier  {
 		return $str;
 	}
 
-
-	public function init($map = null, $prefix = '') {
-		if($map != null) {
+	public function init($map = NULL, $prefix = '') {
+		if($map != NULL) {
 			$mapKeyName =  $prefix . 'email';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->email = $map[$mapKeyName];
 			}
 			if (PPUtils::array_match_key($map, $prefix . "phone.")) {
@@ -65,84 +65,83 @@ class BaseAddress  {
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $line1;
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $line2;
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $city;
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $state;
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $postalCode;
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $countryCode;
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $type;
 
 
 
-
-	public function init($map = null, $prefix = '') {
-		if($map != null) {
+	public function init($map = NULL, $prefix = '') {
+		if($map != NULL) {
 			$mapKeyName =  $prefix . 'line1';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->line1 = $map[$mapKeyName];
 			}
 			$mapKeyName =  $prefix . 'line2';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->line2 = $map[$mapKeyName];
 			}
 			$mapKeyName =  $prefix . 'city';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->city = $map[$mapKeyName];
 			}
 			$mapKeyName =  $prefix . 'state';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->state = $map[$mapKeyName];
 			}
 			$mapKeyName =  $prefix . 'postalCode';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->postalCode = $map[$mapKeyName];
 			}
 			$mapKeyName =  $prefix . 'countryCode';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->countryCode = $map[$mapKeyName];
 			}
 			$mapKeyName =  $prefix . 'type';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->type = $map[$mapKeyName];
 			}
 			
@@ -160,57 +159,57 @@ class ClientDetailsType  {
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $ipAddress;
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $deviceId;
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $applicationId;
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $model;
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $geoLocation;
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $customerType;
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $partnerName;
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $customerId;
 
@@ -218,41 +217,40 @@ class ClientDetailsType  {
 	public function toNVPString($prefix = '') {
 		$str = '';
 		$delim = '';
-		if($this->ipAddress != null) {
+		if($this->ipAddress != NULL) {
 			$str .= $delim .  $prefix . 'ipAddress=' . urlencode($this->ipAddress);
 			$delim = '&';
 		}
-		if($this->deviceId != null) {
+		if($this->deviceId != NULL) {
 			$str .= $delim .  $prefix . 'deviceId=' . urlencode($this->deviceId);
 			$delim = '&';
 		}
-		if($this->applicationId != null) {
+		if($this->applicationId != NULL) {
 			$str .= $delim .  $prefix . 'applicationId=' . urlencode($this->applicationId);
 			$delim = '&';
 		}
-		if($this->model != null) {
+		if($this->model != NULL) {
 			$str .= $delim .  $prefix . 'model=' . urlencode($this->model);
 			$delim = '&';
 		}
-		if($this->geoLocation != null) {
+		if($this->geoLocation != NULL) {
 			$str .= $delim .  $prefix . 'geoLocation=' . urlencode($this->geoLocation);
 			$delim = '&';
 		}
-		if($this->customerType != null) {
+		if($this->customerType != NULL) {
 			$str .= $delim .  $prefix . 'customerType=' . urlencode($this->customerType);
 			$delim = '&';
 		}
-		if($this->partnerName != null) {
+		if($this->partnerName != NULL) {
 			$str .= $delim .  $prefix . 'partnerName=' . urlencode($this->partnerName);
 			$delim = '&';
 		}
-		if($this->customerId != null) {
+		if($this->customerId != NULL) {
 			$str .= $delim .  $prefix . 'customerId=' . urlencode($this->customerId);
 			$delim = '&';
 		}
 		return $str;
 	}
-
 
 } 
 
@@ -265,22 +263,22 @@ class CurrencyType  {
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $code;
 
 	/**
 	 * 
-	 *@access public
-	 *@var double
+	 * @access public
+	 * @var double
 	 */ 
 	public $amount;
 
 	/**
 	 * Constructor with arguments
 	 */
-	public function __construct($code = null, $amount = null) {
+	public function __construct($code = NULL, $amount = NULL) {
 		$this->code = $code;
 		$this->amount = $amount;
 	}
@@ -289,26 +287,25 @@ class CurrencyType  {
 	public function toNVPString($prefix = '') {
 		$str = '';
 		$delim = '';
-		if($this->code != null) {
+		if($this->code != NULL) {
 			$str .= $delim .  $prefix . 'code=' . urlencode($this->code);
 			$delim = '&';
 		}
-		if($this->amount != null) {
+		if($this->amount != NULL) {
 			$str .= $delim .  $prefix . 'amount=' . urlencode($this->amount);
 			$delim = '&';
 		}
 		return $str;
 	}
 
-
-	public function init($map = null, $prefix = '') {
-		if($map != null) {
+	public function init($map = NULL, $prefix = '') {
+		if($map != NULL) {
 			$mapKeyName =  $prefix . 'code';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->code = $map[$mapKeyName];
 			}
 			$mapKeyName =  $prefix . 'amount';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->amount = $map[$mapKeyName];
 			}
 			
@@ -326,96 +323,95 @@ class ErrorData  {
 
 	/**
 	 * 
-	 *@access public
-	 *@var integer
+	 * @access public
+	 * @var integer
 	 */ 
 	public $errorId;
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $domain;
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $subdomain;
 
 	/**
 	 * 
-	 *@access public
-	 *@var ErrorSeverity
+	 * @access public
+	 * @var ErrorSeverity
 	 */ 
 	public $severity;
 
 	/**
 	 * 
-	 *@access public
-	 *@var ErrorCategory
+	 * @access public
+	 * @var ErrorCategory
 	 */ 
 	public $category;
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $message;
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $exceptionId;
 
 	/**
 	 * 
-     *@array
-	 *@access public
-	 *@var ErrorParameter
+     * @array
+	 * @access public
+	 * @var ErrorParameter
 	 */ 
 	public $parameter;
 
 
 
-
-	public function init($map = null, $prefix = '') {
-		if($map != null) {
+	public function init($map = NULL, $prefix = '') {
+		if($map != NULL) {
 			$mapKeyName =  $prefix . 'errorId';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->errorId = $map[$mapKeyName];
 			}
 			$mapKeyName =  $prefix . 'domain';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->domain = $map[$mapKeyName];
 			}
 			$mapKeyName =  $prefix . 'subdomain';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->subdomain = $map[$mapKeyName];
 			}
 			$mapKeyName =  $prefix . 'severity';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->severity = $map[$mapKeyName];
 			}
 			$mapKeyName =  $prefix . 'category';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->category = $map[$mapKeyName];
 			}
 			$mapKeyName =  $prefix . 'message';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->message = $map[$mapKeyName];
 			}
 			$mapKeyName =  $prefix . 'exceptionId';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->exceptionId = $map[$mapKeyName];
 			}
 			$i = 0;
-			while(true) {
+			while(TRUE) {
 				if (PPUtils::array_match_key($map, $prefix . "parameter($i)")) {
 					$newPrefix = $prefix . "parameter($i).";
 					$this->parameter[$i] = new ErrorParameter();
@@ -439,29 +435,28 @@ class ErrorParameter  {
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $name;
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $value;
 
 
 
-
-	public function init($map = null, $prefix = '') {
-		if($map != null) {
+	public function init($map = NULL, $prefix = '') {
+		if($map != NULL) {
 			$mapKeyName =  $prefix . 'name';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->name = $map[$mapKeyName];
 			}
 			$mapKeyName =  $prefix . 'value';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->value = $map[$mapKeyName];
 			}
 			
@@ -479,31 +474,30 @@ class FaultMessage  {
 
 	/**
 	 * 
-	 *@access public
-	 *@var ResponseEnvelope
+	 * @access public
+	 * @var ResponseEnvelope
 	 */ 
 	public $responseEnvelope;
 
 	/**
 	 * 
-     *@array
-	 *@access public
-	 *@var ErrorData
+     * @array
+	 * @access public
+	 * @var ErrorData
 	 */ 
 	public $error;
 
 
 
-
-	public function init($map = null, $prefix = '') {
-		if($map != null) {
+	public function init($map = NULL, $prefix = '') {
+		if($map != NULL) {
 			if (PPUtils::array_match_key($map, $prefix . "responseEnvelope.")) {
 				$newPrefix = $prefix . "responseEnvelope.";
 				$this->responseEnvelope = new ResponseEnvelope();
 				$this->responseEnvelope->init($map, $newPrefix);
 			}
 			$i = 0;
-			while(true) {
+			while(TRUE) {
 				if (PPUtils::array_match_key($map, $prefix . "error($i)")) {
 					$newPrefix = $prefix . "error($i).";
 					$this->error[$i] = new ErrorData();
@@ -527,29 +521,29 @@ class PhoneNumberType  {
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $countryCode;
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $phoneNumber;
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $extension;
 
 	/**
 	 * Constructor with arguments
 	 */
-	public function __construct($countryCode = null, $phoneNumber = null) {
+	public function __construct($countryCode = NULL, $phoneNumber = NULL) {
 		$this->countryCode = $countryCode;
 		$this->phoneNumber = $phoneNumber;
 	}
@@ -558,34 +552,33 @@ class PhoneNumberType  {
 	public function toNVPString($prefix = '') {
 		$str = '';
 		$delim = '';
-		if($this->countryCode != null) {
+		if($this->countryCode != NULL) {
 			$str .= $delim .  $prefix . 'countryCode=' . urlencode($this->countryCode);
 			$delim = '&';
 		}
-		if($this->phoneNumber != null) {
+		if($this->phoneNumber != NULL) {
 			$str .= $delim .  $prefix . 'phoneNumber=' . urlencode($this->phoneNumber);
 			$delim = '&';
 		}
-		if($this->extension != null) {
+		if($this->extension != NULL) {
 			$str .= $delim .  $prefix . 'extension=' . urlencode($this->extension);
 			$delim = '&';
 		}
 		return $str;
 	}
 
-
-	public function init($map = null, $prefix = '') {
-		if($map != null) {
+	public function init($map = NULL, $prefix = '') {
+		if($map != NULL) {
 			$mapKeyName =  $prefix . 'countryCode';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->countryCode = $map[$mapKeyName];
 			}
 			$mapKeyName =  $prefix . 'phoneNumber';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->phoneNumber = $map[$mapKeyName];
 			}
 			$mapKeyName =  $prefix . 'extension';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->extension = $map[$mapKeyName];
 			}
 			
@@ -607,23 +600,23 @@ class RequestEnvelope  {
 	 * (e.g., Item, Transaction, etc.). The detail level is
 	 * specified in the DetailLevelCodeType which has all the
 	 * enumerated values of the detail level for each component. 
-	 *@access public
-	 *@var DetailLevelCode
+	 * @access public
+	 * @var DetailLevelCode
 	 */ 
 	public $detailLevel;
 
 	/**
 	 * This should be the standard RFC 3066 language identification
 	 * tag, e.g., en_US. 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $errorLanguage;
 
 	/**
 	 * Constructor with arguments
 	 */
-	public function __construct($errorLanguage = null) {
+	public function __construct($errorLanguage = NULL) {
 		$this->errorLanguage = $errorLanguage;
 	}
 
@@ -631,17 +624,16 @@ class RequestEnvelope  {
 	public function toNVPString($prefix = '') {
 		$str = '';
 		$delim = '';
-		if($this->detailLevel != null) {
+		if($this->detailLevel != NULL) {
 			$str .= $delim .  $prefix . 'detailLevel=' . urlencode($this->detailLevel);
 			$delim = '&';
 		}
-		if($this->errorLanguage != null) {
+		if($this->errorLanguage != NULL) {
 			$str .= $delim .  $prefix . 'errorLanguage=' . urlencode($this->errorLanguage);
 			$delim = '&';
 		}
 		return $str;
 	}
-
 
 } 
 
@@ -655,51 +647,50 @@ class ResponseEnvelope  {
 
 	/**
 	 * 
-	 *@access public
-	 *@var dateTime
+	 * @access public
+	 * @var dateTime
 	 */ 
 	public $timestamp;
 
 	/**
 	 * Application level acknowledgment code. 
-	 *@access public
-	 *@var AckCode
+	 * @access public
+	 * @var AckCode
 	 */ 
 	public $ack;
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $correlationId;
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $build;
 
 
 
-
-	public function init($map = null, $prefix = '') {
-		if($map != null) {
+	public function init($map = NULL, $prefix = '') {
+		if($map != NULL) {
 			$mapKeyName =  $prefix . 'timestamp';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->timestamp = $map[$mapKeyName];
 			}
 			$mapKeyName =  $prefix . 'ack';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->ack = $map[$mapKeyName];
 			}
 			$mapKeyName =  $prefix . 'correlationId';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->correlationId = $map[$mapKeyName];
 			}
 			$mapKeyName =  $prefix . 'build';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->build = $map[$mapKeyName];
 			}
 			
@@ -716,32 +707,31 @@ class Address  {
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $addresseeName;
 
 	/**
 	 * 
-	 *@access public
-	 *@var BaseAddress
+	 * @access public
+	 * @var BaseAddress
 	 */ 
 	public $baseAddress;
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $addressId;
 
 
 
-
-	public function init($map = null, $prefix = '') {
-		if($map != null) {
+	public function init($map = NULL, $prefix = '') {
+		if($map != NULL) {
 			$mapKeyName =  $prefix . 'addresseeName';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->addresseeName = $map[$mapKeyName];
 			}
 			if (PPUtils::array_match_key($map, $prefix . "baseAddress.")) {
@@ -750,7 +740,7 @@ class Address  {
 				$this->baseAddress->init($map, $newPrefix);
 			}
 			$mapKeyName =  $prefix . 'addressId';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->addressId = $map[$mapKeyName];
 			}
 			
@@ -767,19 +757,18 @@ class AddressList  {
 
 	/**
 	 * 
-     *@array
-	 *@access public
-	 *@var Address
+     * @array
+	 * @access public
+	 * @var Address
 	 */ 
 	public $address;
 
 
 
-
-	public function init($map = null, $prefix = '') {
-		if($map != null) {
+	public function init($map = NULL, $prefix = '') {
+		if($map != NULL) {
 			$i = 0;
-			while(true) {
+			while(TRUE) {
 				if (PPUtils::array_match_key($map, $prefix . "address($i)")) {
 					$newPrefix = $prefix . "address($i).";
 					$this->address[$i] = new Address();
@@ -803,16 +792,16 @@ class CurrencyCodeList  {
 
 	/**
 	 * 
-     *@array
-	 *@access public
-	 *@var string
+     * @array
+	 * @access public
+	 * @var string
 	 */ 
 	public $currencyCode;
 
 	/**
 	 * Constructor with arguments
 	 */
-	public function __construct($currencyCode = null) {
+	public function __construct($currencyCode = NULL) {
 		$this->currencyCode = $currencyCode;
 	}
 
@@ -827,7 +816,6 @@ class CurrencyCodeList  {
 		return $str;
 	}
 
-
 } 
 
 
@@ -840,23 +828,22 @@ class CurrencyConversionList  {
 
 	/**
 	 * 
-	 *@access public
-	 *@var CurrencyType
+	 * @access public
+	 * @var CurrencyType
 	 */ 
 	public $baseAmount;
 
 	/**
 	 * 
-	 *@access public
-	 *@var CurrencyList
+	 * @access public
+	 * @var CurrencyList
 	 */ 
 	public $currencyList;
 
 
 
-
-	public function init($map = null, $prefix = '') {
-		if($map != null) {
+	public function init($map = NULL, $prefix = '') {
+		if($map != NULL) {
 			if (PPUtils::array_match_key($map, $prefix . "baseAmount.")) {
 				$newPrefix = $prefix . "baseAmount.";
 				$this->baseAmount = new CurrencyType();
@@ -882,19 +869,18 @@ class CurrencyConversionTable  {
 
 	/**
 	 * 
-     *@array
-	 *@access public
-	 *@var CurrencyConversionList
+     * @array
+	 * @access public
+	 * @var CurrencyConversionList
 	 */ 
 	public $currencyConversionList;
 
 
 
-
-	public function init($map = null, $prefix = '') {
-		if($map != null) {
+	public function init($map = NULL, $prefix = '') {
+		if($map != NULL) {
 			$i = 0;
-			while(true) {
+			while(TRUE) {
 				if (PPUtils::array_match_key($map, $prefix . "currencyConversionList($i)")) {
 					$newPrefix = $prefix . "currencyConversionList($i).";
 					$this->currencyConversionList[$i] = new CurrencyConversionList();
@@ -918,16 +904,16 @@ class CurrencyList  {
 
 	/**
 	 * 
-     *@array
-	 *@access public
-	 *@var CurrencyType
+     * @array
+	 * @access public
+	 * @var CurrencyType
 	 */ 
 	public $currency;
 
 	/**
 	 * Constructor with arguments
 	 */
-	public function __construct($currency = null) {
+	public function __construct($currency = NULL) {
 		$this->currency = $currency;
 	}
 
@@ -943,11 +929,10 @@ class CurrencyList  {
 		return $str;
 	}
 
-
-	public function init($map = null, $prefix = '') {
-		if($map != null) {
+	public function init($map = NULL, $prefix = '') {
+		if($map != NULL) {
 			$i = 0;
-			while(true) {
+			while(TRUE) {
 				if (PPUtils::array_match_key($map, $prefix . "currency($i)")) {
 					$newPrefix = $prefix . "currency($i).";
 					$this->currency[$i] = new CurrencyType();
@@ -972,29 +957,29 @@ class DisplayOptions  {
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $emailHeaderImageUrl;
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $emailMarketingImageUrl;
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $headerImageUrl;
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $businessName;
 
@@ -1002,42 +987,41 @@ class DisplayOptions  {
 	public function toNVPString($prefix = '') {
 		$str = '';
 		$delim = '';
-		if($this->emailHeaderImageUrl != null) {
+		if($this->emailHeaderImageUrl != NULL) {
 			$str .= $delim .  $prefix . 'emailHeaderImageUrl=' . urlencode($this->emailHeaderImageUrl);
 			$delim = '&';
 		}
-		if($this->emailMarketingImageUrl != null) {
+		if($this->emailMarketingImageUrl != NULL) {
 			$str .= $delim .  $prefix . 'emailMarketingImageUrl=' . urlencode($this->emailMarketingImageUrl);
 			$delim = '&';
 		}
-		if($this->headerImageUrl != null) {
+		if($this->headerImageUrl != NULL) {
 			$str .= $delim .  $prefix . 'headerImageUrl=' . urlencode($this->headerImageUrl);
 			$delim = '&';
 		}
-		if($this->businessName != null) {
+		if($this->businessName != NULL) {
 			$str .= $delim .  $prefix . 'businessName=' . urlencode($this->businessName);
 			$delim = '&';
 		}
 		return $str;
 	}
 
-
-	public function init($map = null, $prefix = '') {
-		if($map != null) {
+	public function init($map = NULL, $prefix = '') {
+		if($map != NULL) {
 			$mapKeyName =  $prefix . 'emailHeaderImageUrl';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->emailHeaderImageUrl = $map[$mapKeyName];
 			}
 			$mapKeyName =  $prefix . 'emailMarketingImageUrl';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->emailMarketingImageUrl = $map[$mapKeyName];
 			}
 			$mapKeyName =  $prefix . 'headerImageUrl';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->headerImageUrl = $map[$mapKeyName];
 			}
 			$mapKeyName =  $prefix . 'businessName';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->businessName = $map[$mapKeyName];
 			}
 			
@@ -1054,19 +1038,18 @@ class ErrorList  {
 
 	/**
 	 * 
-     *@array
-	 *@access public
-	 *@var ErrorData
+     * @array
+	 * @access public
+	 * @var ErrorData
 	 */ 
 	public $error;
 
 
 
-
-	public function init($map = null, $prefix = '') {
-		if($map != null) {
+	public function init($map = NULL, $prefix = '') {
+		if($map != NULL) {
 			$i = 0;
-			while(true) {
+			while(TRUE) {
 				if (PPUtils::array_match_key($map, $prefix . "error($i)")) {
 					$newPrefix = $prefix . "error($i).";
 					$this->error[$i] = new ErrorData();
@@ -1090,8 +1073,8 @@ class FundingConstraint  {
 
 	/**
 	 * 
-	 *@access public
-	 *@var FundingTypeList
+	 * @access public
+	 * @var FundingTypeList
 	 */ 
 	public $allowedFundingType;
 
@@ -1099,7 +1082,7 @@ class FundingConstraint  {
 	public function toNVPString($prefix = '') {
 		$str = '';
 		$delim = '';
-		if($this->allowedFundingType != null) {
+		if($this->allowedFundingType != NULL) {
 			$newPrefix = $prefix . 'allowedFundingType.';
 			$str .= $delim . call_user_func(array($this->allowedFundingType, 'toNVPString'), $newPrefix);
 			$delim = '&';
@@ -1107,9 +1090,8 @@ class FundingConstraint  {
 		return $str;
 	}
 
-
-	public function init($map = null, $prefix = '') {
-		if($map != null) {
+	public function init($map = NULL, $prefix = '') {
+		if($map != NULL) {
 			if (PPUtils::array_match_key($map, $prefix . "allowedFundingType.")) {
 				$newPrefix = $prefix . "allowedFundingType.";
 				$this->allowedFundingType = new FundingTypeList();
@@ -1129,15 +1111,15 @@ class FundingTypeInfo  {
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $fundingType;
 
 	/**
 	 * Constructor with arguments
 	 */
-	public function __construct($fundingType = null) {
+	public function __construct($fundingType = NULL) {
 		$this->fundingType = $fundingType;
 	}
 
@@ -1145,18 +1127,17 @@ class FundingTypeInfo  {
 	public function toNVPString($prefix = '') {
 		$str = '';
 		$delim = '';
-		if($this->fundingType != null) {
+		if($this->fundingType != NULL) {
 			$str .= $delim .  $prefix . 'fundingType=' . urlencode($this->fundingType);
 			$delim = '&';
 		}
 		return $str;
 	}
 
-
-	public function init($map = null, $prefix = '') {
-		if($map != null) {
+	public function init($map = NULL, $prefix = '') {
+		if($map != NULL) {
 			$mapKeyName =  $prefix . 'fundingType';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->fundingType = $map[$mapKeyName];
 			}
 			
@@ -1173,16 +1154,16 @@ class FundingTypeList  {
 
 	/**
 	 * 
-     *@array
-	 *@access public
-	 *@var FundingTypeInfo
+     * @array
+	 * @access public
+	 * @var FundingTypeInfo
 	 */ 
 	public $fundingTypeInfo;
 
 	/**
 	 * Constructor with arguments
 	 */
-	public function __construct($fundingTypeInfo = null) {
+	public function __construct($fundingTypeInfo = NULL) {
 		$this->fundingTypeInfo = $fundingTypeInfo;
 	}
 
@@ -1198,11 +1179,10 @@ class FundingTypeList  {
 		return $str;
 	}
 
-
-	public function init($map = null, $prefix = '') {
-		if($map != null) {
+	public function init($map = NULL, $prefix = '') {
+		if($map != NULL) {
 			$i = 0;
-			while(true) {
+			while(TRUE) {
 				if (PPUtils::array_match_key($map, $prefix . "fundingTypeInfo($i)")) {
 					$newPrefix = $prefix . "fundingTypeInfo($i).";
 					$this->fundingTypeInfo[$i] = new FundingTypeInfo();
@@ -1226,30 +1206,29 @@ class CurrencyConversion  {
 
 	/**
 	 * 
-	 *@access public
-	 *@var CurrencyType
+	 * @access public
+	 * @var CurrencyType
 	 */ 
 	public $from;
 
 	/**
 	 * 
-	 *@access public
-	 *@var CurrencyType
+	 * @access public
+	 * @var CurrencyType
 	 */ 
 	public $to;
 
 	/**
 	 * 
-	 *@access public
-	 *@var double
+	 * @access public
+	 * @var double
 	 */ 
 	public $exchangeRate;
 
 
 
-
-	public function init($map = null, $prefix = '') {
-		if($map != null) {
+	public function init($map = NULL, $prefix = '') {
+		if($map != NULL) {
 			if (PPUtils::array_match_key($map, $prefix . "from.")) {
 				$newPrefix = $prefix . "from.";
 				$this->from = new CurrencyType();
@@ -1261,7 +1240,7 @@ class CurrencyConversion  {
 				$this->to->init($map, $newPrefix);
 			}
 			$mapKeyName =  $prefix . 'exchangeRate';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->exchangeRate = $map[$mapKeyName];
 			}
 			
@@ -1278,62 +1257,61 @@ class FundingSource  {
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $lastFourOfAccountNumber;
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $type;
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $displayName;
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $fundingSourceId;
 
 	/**
 	 * 
-	 *@access public
-	 *@var boolean
+	 * @access public
+	 * @var boolean
 	 */ 
 	public $allowed;
 
 
 
-
-	public function init($map = null, $prefix = '') {
-		if($map != null) {
+	public function init($map = NULL, $prefix = '') {
+		if($map != NULL) {
 			$mapKeyName =  $prefix . 'lastFourOfAccountNumber';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->lastFourOfAccountNumber = $map[$mapKeyName];
 			}
 			$mapKeyName =  $prefix . 'type';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->type = $map[$mapKeyName];
 			}
 			$mapKeyName =  $prefix . 'displayName';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->displayName = $map[$mapKeyName];
 			}
 			$mapKeyName =  $prefix . 'fundingSourceId';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->fundingSourceId = $map[$mapKeyName];
 			}
 			$mapKeyName =  $prefix . 'allowed';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->allowed = $map[$mapKeyName];
 			}
 			
@@ -1350,23 +1328,22 @@ class FundingPlanCharge  {
 
 	/**
 	 * 
-	 *@access public
-	 *@var CurrencyType
+	 * @access public
+	 * @var CurrencyType
 	 */ 
 	public $charge;
 
 	/**
 	 * 
-	 *@access public
-	 *@var FundingSource
+	 * @access public
+	 * @var FundingSource
 	 */ 
 	public $fundingSource;
 
 
 
-
-	public function init($map = null, $prefix = '') {
-		if($map != null) {
+	public function init($map = NULL, $prefix = '') {
+		if($map != NULL) {
 			if (PPUtils::array_match_key($map, $prefix . "charge.")) {
 				$newPrefix = $prefix . "charge.";
 				$this->charge = new CurrencyType();
@@ -1392,54 +1369,53 @@ class FundingPlan  {
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $fundingPlanId;
 
 	/**
 	 * 
-	 *@access public
-	 *@var CurrencyType
+	 * @access public
+	 * @var CurrencyType
 	 */ 
 	public $fundingAmount;
 
 	/**
 	 * 
-	 *@access public
-	 *@var FundingSource
+	 * @access public
+	 * @var FundingSource
 	 */ 
 	public $backupFundingSource;
 
 	/**
 	 * 
-	 *@access public
-	 *@var CurrencyType
+	 * @access public
+	 * @var CurrencyType
 	 */ 
 	public $senderFees;
 
 	/**
 	 * 
-	 *@access public
-	 *@var CurrencyConversion
+	 * @access public
+	 * @var CurrencyConversion
 	 */ 
 	public $currencyConversion;
 
 	/**
 	 * 
-     *@array
-	 *@access public
-	 *@var FundingPlanCharge
+     * @array
+	 * @access public
+	 * @var FundingPlanCharge
 	 */ 
 	public $charge;
 
 
 
-
-	public function init($map = null, $prefix = '') {
-		if($map != null) {
+	public function init($map = NULL, $prefix = '') {
+		if($map != NULL) {
 			$mapKeyName =  $prefix . 'fundingPlanId';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->fundingPlanId = $map[$mapKeyName];
 			}
 			if (PPUtils::array_match_key($map, $prefix . "fundingAmount.")) {
@@ -1463,7 +1439,7 @@ class FundingPlan  {
 				$this->currencyConversion->init($map, $newPrefix);
 			}
 			$i = 0;
-			while(true) {
+			while(TRUE) {
 				if (PPUtils::array_match_key($map, $prefix . "charge($i)")) {
 					$newPrefix = $prefix . "charge($i).";
 					$this->charge[$i] = new FundingPlanCharge();
@@ -1490,8 +1466,8 @@ class InitiatingEntity  {
 
 	/**
 	 * 
-	 *@access public
-	 *@var InstitutionCustomer
+	 * @access public
+	 * @var InstitutionCustomer
 	 */ 
 	public $institutionCustomer;
 
@@ -1499,7 +1475,7 @@ class InitiatingEntity  {
 	public function toNVPString($prefix = '') {
 		$str = '';
 		$delim = '';
-		if($this->institutionCustomer != null) {
+		if($this->institutionCustomer != NULL) {
 			$newPrefix = $prefix . 'institutionCustomer.';
 			$str .= $delim . call_user_func(array($this->institutionCustomer, 'toNVPString'), $newPrefix);
 			$delim = '&';
@@ -1507,9 +1483,8 @@ class InitiatingEntity  {
 		return $str;
 	}
 
-
-	public function init($map = null, $prefix = '') {
-		if($map != null) {
+	public function init($map = NULL, $prefix = '') {
+		if($map != NULL) {
 			if (PPUtils::array_match_key($map, $prefix . "institutionCustomer.")) {
 				$newPrefix = $prefix . "institutionCustomer.";
 				$this->institutionCustomer = new InstitutionCustomer();
@@ -1529,62 +1504,62 @@ class InstitutionCustomer  {
 
 	/**
 	 * The unique identifier as assigned to the institution. 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $institutionId;
 
 	/**
 	 * The first (given) name of the end consumer as known by the
 	 * institution. 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $firstName;
 
 	/**
 	 * The last (family) name of the end consumer as known by the
 	 * institution. 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $lastName;
 
 	/**
 	 * The full name of the end consumer as known by the
 	 * institution. 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $displayName;
 
 	/**
 	 * The unique identifier as assigned to the end consumer by the
 	 * institution. 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $institutionCustomerId;
 
 	/**
 	 * The two-character ISO country code of the home country of
 	 * the end consumer 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $countryCode;
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $email;
 
 	/**
 	 * Constructor with arguments
 	 */
-	public function __construct($institutionId = null, $firstName = null, $lastName = null, $displayName = null, $institutionCustomerId = null, $countryCode = null) {
+	public function __construct($institutionId = NULL, $firstName = NULL, $lastName = NULL, $displayName = NULL, $institutionCustomerId = NULL, $countryCode = NULL) {
 		$this->institutionId = $institutionId;
 		$this->firstName = $firstName;
 		$this->lastName = $lastName;
@@ -1597,66 +1572,65 @@ class InstitutionCustomer  {
 	public function toNVPString($prefix = '') {
 		$str = '';
 		$delim = '';
-		if($this->institutionId != null) {
+		if($this->institutionId != NULL) {
 			$str .= $delim .  $prefix . 'institutionId=' . urlencode($this->institutionId);
 			$delim = '&';
 		}
-		if($this->firstName != null) {
+		if($this->firstName != NULL) {
 			$str .= $delim .  $prefix . 'firstName=' . urlencode($this->firstName);
 			$delim = '&';
 		}
-		if($this->lastName != null) {
+		if($this->lastName != NULL) {
 			$str .= $delim .  $prefix . 'lastName=' . urlencode($this->lastName);
 			$delim = '&';
 		}
-		if($this->displayName != null) {
+		if($this->displayName != NULL) {
 			$str .= $delim .  $prefix . 'displayName=' . urlencode($this->displayName);
 			$delim = '&';
 		}
-		if($this->institutionCustomerId != null) {
+		if($this->institutionCustomerId != NULL) {
 			$str .= $delim .  $prefix . 'institutionCustomerId=' . urlencode($this->institutionCustomerId);
 			$delim = '&';
 		}
-		if($this->countryCode != null) {
+		if($this->countryCode != NULL) {
 			$str .= $delim .  $prefix . 'countryCode=' . urlencode($this->countryCode);
 			$delim = '&';
 		}
-		if($this->email != null) {
+		if($this->email != NULL) {
 			$str .= $delim .  $prefix . 'email=' . urlencode($this->email);
 			$delim = '&';
 		}
 		return $str;
 	}
 
-
-	public function init($map = null, $prefix = '') {
-		if($map != null) {
+	public function init($map = NULL, $prefix = '') {
+		if($map != NULL) {
 			$mapKeyName =  $prefix . 'institutionId';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->institutionId = $map[$mapKeyName];
 			}
 			$mapKeyName =  $prefix . 'firstName';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->firstName = $map[$mapKeyName];
 			}
 			$mapKeyName =  $prefix . 'lastName';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->lastName = $map[$mapKeyName];
 			}
 			$mapKeyName =  $prefix . 'displayName';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->displayName = $map[$mapKeyName];
 			}
 			$mapKeyName =  $prefix . 'institutionCustomerId';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->institutionCustomerId = $map[$mapKeyName];
 			}
 			$mapKeyName =  $prefix . 'countryCode';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->countryCode = $map[$mapKeyName];
 			}
 			$mapKeyName =  $prefix . 'email';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->email = $map[$mapKeyName];
 			}
 			
@@ -1673,36 +1647,36 @@ class InvoiceItem  {
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $name;
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $identifier;
 
 	/**
 	 * 
-	 *@access public
-	 *@var double
+	 * @access public
+	 * @var double
 	 */ 
 	public $price;
 
 	/**
 	 * 
-	 *@access public
-	 *@var double
+	 * @access public
+	 * @var double
 	 */ 
 	public $itemPrice;
 
 	/**
 	 * 
-	 *@access public
-	 *@var integer
+	 * @access public
+	 * @var integer
 	 */ 
 	public $itemCount;
 
@@ -1710,50 +1684,49 @@ class InvoiceItem  {
 	public function toNVPString($prefix = '') {
 		$str = '';
 		$delim = '';
-		if($this->name != null) {
+		if($this->name != NULL) {
 			$str .= $delim .  $prefix . 'name=' . urlencode($this->name);
 			$delim = '&';
 		}
-		if($this->identifier != null) {
+		if($this->identifier != NULL) {
 			$str .= $delim .  $prefix . 'identifier=' . urlencode($this->identifier);
 			$delim = '&';
 		}
-		if($this->price != null) {
+		if($this->price != NULL) {
 			$str .= $delim .  $prefix . 'price=' . urlencode($this->price);
 			$delim = '&';
 		}
-		if($this->itemPrice != null) {
+		if($this->itemPrice != NULL) {
 			$str .= $delim .  $prefix . 'itemPrice=' . urlencode($this->itemPrice);
 			$delim = '&';
 		}
-		if($this->itemCount != null) {
+		if($this->itemCount != NULL) {
 			$str .= $delim .  $prefix . 'itemCount=' . urlencode($this->itemCount);
 			$delim = '&';
 		}
 		return $str;
 	}
 
-
-	public function init($map = null, $prefix = '') {
-		if($map != null) {
+	public function init($map = NULL, $prefix = '') {
+		if($map != NULL) {
 			$mapKeyName =  $prefix . 'name';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->name = $map[$mapKeyName];
 			}
 			$mapKeyName =  $prefix . 'identifier';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->identifier = $map[$mapKeyName];
 			}
 			$mapKeyName =  $prefix . 'price';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->price = $map[$mapKeyName];
 			}
 			$mapKeyName =  $prefix . 'itemPrice';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->itemPrice = $map[$mapKeyName];
 			}
 			$mapKeyName =  $prefix . 'itemCount';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->itemCount = $map[$mapKeyName];
 			}
 			
@@ -1771,23 +1744,23 @@ class InvoiceData  {
 
 	/**
 	 * 
-     *@array
-	 *@access public
-	 *@var InvoiceItem
+     * @array
+	 * @access public
+	 * @var InvoiceItem
 	 */ 
 	public $item;
 
 	/**
 	 * 
-	 *@access public
-	 *@var double
+	 * @access public
+	 * @var double
 	 */ 
 	public $totalTax;
 
 	/**
 	 * 
-	 *@access public
-	 *@var double
+	 * @access public
+	 * @var double
 	 */ 
 	public $totalShipping;
 
@@ -1800,22 +1773,21 @@ class InvoiceData  {
 			$str .= $delim . call_user_func(array($this->item[$i], 'toNVPString'), $newPrefix);
 			$delim = '&';
 		}
-		if($this->totalTax != null) {
+		if($this->totalTax != NULL) {
 			$str .= $delim .  $prefix . 'totalTax=' . urlencode($this->totalTax);
 			$delim = '&';
 		}
-		if($this->totalShipping != null) {
+		if($this->totalShipping != NULL) {
 			$str .= $delim .  $prefix . 'totalShipping=' . urlencode($this->totalShipping);
 			$delim = '&';
 		}
 		return $str;
 	}
 
-
-	public function init($map = null, $prefix = '') {
-		if($map != null) {
+	public function init($map = NULL, $prefix = '') {
+		if($map != NULL) {
 			$i = 0;
-			while(true) {
+			while(TRUE) {
 				if (PPUtils::array_match_key($map, $prefix . "item($i)")) {
 					$newPrefix = $prefix . "item($i).";
 					$this->item[$i] = new InvoiceItem();
@@ -1826,11 +1798,11 @@ class InvoiceData  {
 				$i++;
 			}
 			$mapKeyName =  $prefix . 'totalTax';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->totalTax = $map[$mapKeyName];
 			}
 			$mapKeyName =  $prefix . 'totalShipping';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->totalShipping = $map[$mapKeyName];
 			}
 			
@@ -1848,23 +1820,22 @@ class PayError  {
 
 	/**
 	 * 
-	 *@access public
-	 *@var Receiver
+	 * @access public
+	 * @var Receiver
 	 */ 
 	public $receiver;
 
 	/**
 	 * 
-	 *@access public
-	 *@var ErrorData
+	 * @access public
+	 * @var ErrorData
 	 */ 
 	public $error;
 
 
 
-
-	public function init($map = null, $prefix = '') {
-		if($map != null) {
+	public function init($map = NULL, $prefix = '') {
+		if($map != NULL) {
 			if (PPUtils::array_match_key($map, $prefix . "receiver.")) {
 				$newPrefix = $prefix . "receiver.";
 				$this->receiver = new Receiver();
@@ -1889,19 +1860,18 @@ class PayErrorList  {
 
 	/**
 	 * 
-     *@array
-	 *@access public
-	 *@var PayError
+     * @array
+	 * @access public
+	 * @var PayError
 	 */ 
 	public $payError;
 
 
 
-
-	public function init($map = null, $prefix = '') {
-		if($map != null) {
+	public function init($map = NULL, $prefix = '') {
+		if($map != NULL) {
 			$i = 0;
-			while(true) {
+			while(TRUE) {
 				if (PPUtils::array_match_key($map, $prefix . "payError($i)")) {
 					$newPrefix = $prefix . "payError($i).";
 					$this->payError[$i] = new PayError();
@@ -1928,71 +1898,70 @@ class PaymentInfo  {
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $transactionId;
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $transactionStatus;
 
 	/**
 	 * 
-	 *@access public
-	 *@var Receiver
+	 * @access public
+	 * @var Receiver
 	 */ 
 	public $receiver;
 
 	/**
 	 * 
-	 *@access public
-	 *@var double
+	 * @access public
+	 * @var double
 	 */ 
 	public $refundedAmount;
 
 	/**
 	 * 
-	 *@access public
-	 *@var boolean
+	 * @access public
+	 * @var boolean
 	 */ 
 	public $pendingRefund;
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $senderTransactionId;
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $senderTransactionStatus;
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $pendingReason;
 
 
 
-
-	public function init($map = null, $prefix = '') {
-		if($map != null) {
+	public function init($map = NULL, $prefix = '') {
+		if($map != NULL) {
 			$mapKeyName =  $prefix . 'transactionId';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->transactionId = $map[$mapKeyName];
 			}
 			$mapKeyName =  $prefix . 'transactionStatus';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->transactionStatus = $map[$mapKeyName];
 			}
 			if (PPUtils::array_match_key($map, $prefix . "receiver.")) {
@@ -2001,23 +1970,23 @@ class PaymentInfo  {
 				$this->receiver->init($map, $newPrefix);
 			}
 			$mapKeyName =  $prefix . 'refundedAmount';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->refundedAmount = $map[$mapKeyName];
 			}
 			$mapKeyName =  $prefix . 'pendingRefund';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->pendingRefund = $map[$mapKeyName];
 			}
 			$mapKeyName =  $prefix . 'senderTransactionId';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->senderTransactionId = $map[$mapKeyName];
 			}
 			$mapKeyName =  $prefix . 'senderTransactionStatus';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->senderTransactionStatus = $map[$mapKeyName];
 			}
 			$mapKeyName =  $prefix . 'pendingReason';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->pendingReason = $map[$mapKeyName];
 			}
 			
@@ -2034,19 +2003,18 @@ class PaymentInfoList  {
 
 	/**
 	 * 
-     *@array
-	 *@access public
-	 *@var PaymentInfo
+     * @array
+	 * @access public
+	 * @var PaymentInfo
 	 */ 
 	public $paymentInfo;
 
 
 
-
-	public function init($map = null, $prefix = '') {
-		if($map != null) {
+	public function init($map = NULL, $prefix = '') {
+		if($map != NULL) {
 			$i = 0;
-			while(true) {
+			while(TRUE) {
 				if (PPUtils::array_match_key($map, $prefix . "paymentInfo($i)")) {
 					$newPrefix = $prefix . "paymentInfo($i).";
 					$this->paymentInfo[$i] = new PaymentInfo();
@@ -2073,57 +2041,57 @@ class Receiver  {
 
 	/**
 	 * 
-	 *@access public
-	 *@var double
+	 * @access public
+	 * @var double
 	 */ 
 	public $amount;
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $email;
 
 	/**
 	 * 
-	 *@access public
-	 *@var PhoneNumberType
+	 * @access public
+	 * @var PhoneNumberType
 	 */ 
 	public $phone;
 
 	/**
 	 * 
-	 *@access public
-	 *@var boolean
+	 * @access public
+	 * @var boolean
 	 */ 
 	public $primary;
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $invoiceId;
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $paymentType;
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $paymentSubType;
 
 	/**
 	 * Constructor with arguments
 	 */
-	public function __construct($amount = null) {
+	public function __construct($amount = NULL) {
 		$this->amount = $amount;
 	}
 
@@ -2131,47 +2099,46 @@ class Receiver  {
 	public function toNVPString($prefix = '') {
 		$str = '';
 		$delim = '';
-		if($this->amount != null) {
+		if($this->amount != NULL) {
 			$str .= $delim .  $prefix . 'amount=' . urlencode($this->amount);
 			$delim = '&';
 		}
-		if($this->email != null) {
+		if($this->email != NULL) {
 			$str .= $delim .  $prefix . 'email=' . urlencode($this->email);
 			$delim = '&';
 		}
-		if($this->phone != null) {
+		if($this->phone != NULL) {
 			$newPrefix = $prefix . 'phone.';
 			$str .= $delim . call_user_func(array($this->phone, 'toNVPString'), $newPrefix);
 			$delim = '&';
 		}
-		if($this->primary != null) {
+		if($this->primary != NULL) {
 			$str .= $delim .  $prefix . 'primary=' . urlencode($this->primary);
 			$delim = '&';
 		}
-		if($this->invoiceId != null) {
+		if($this->invoiceId != NULL) {
 			$str .= $delim .  $prefix . 'invoiceId=' . urlencode($this->invoiceId);
 			$delim = '&';
 		}
-		if($this->paymentType != null) {
+		if($this->paymentType != NULL) {
 			$str .= $delim .  $prefix . 'paymentType=' . urlencode($this->paymentType);
 			$delim = '&';
 		}
-		if($this->paymentSubType != null) {
+		if($this->paymentSubType != NULL) {
 			$str .= $delim .  $prefix . 'paymentSubType=' . urlencode($this->paymentSubType);
 			$delim = '&';
 		}
 		return $str;
 	}
 
-
-	public function init($map = null, $prefix = '') {
-		if($map != null) {
+	public function init($map = NULL, $prefix = '') {
+		if($map != NULL) {
 			$mapKeyName =  $prefix . 'amount';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->amount = $map[$mapKeyName];
 			}
 			$mapKeyName =  $prefix . 'email';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->email = $map[$mapKeyName];
 			}
 			if (PPUtils::array_match_key($map, $prefix . "phone.")) {
@@ -2180,19 +2147,19 @@ class Receiver  {
 				$this->phone->init($map, $newPrefix);
 			}
 			$mapKeyName =  $prefix . 'primary';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->primary = $map[$mapKeyName];
 			}
 			$mapKeyName =  $prefix . 'invoiceId';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->invoiceId = $map[$mapKeyName];
 			}
 			$mapKeyName =  $prefix . 'paymentType';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->paymentType = $map[$mapKeyName];
 			}
 			$mapKeyName =  $prefix . 'paymentSubType';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->paymentSubType = $map[$mapKeyName];
 			}
 			
@@ -2209,16 +2176,16 @@ class ReceiverList  {
 
 	/**
 	 * 
-     *@array
-	 *@access public
-	 *@var Receiver
+     * @array
+	 * @access public
+	 * @var Receiver
 	 */ 
 	public $receiver;
 
 	/**
 	 * Constructor with arguments
 	 */
-	public function __construct($receiver = null) {
+	public function __construct($receiver = NULL) {
 		$this->receiver = $receiver;
 	}
 
@@ -2234,7 +2201,6 @@ class ReceiverList  {
 		return $str;
 	}
 
-
 } 
 
 
@@ -2247,15 +2213,17 @@ class ReceiverIdentifier  extends AccountIdentifier  {
 
 
 	public function toNVPString($prefix = '') {
-		$str = '';
-		$delim = '';
-		parent::toNVPString($prefix = '');
+		$str = parent::toNVPString($prefix);
+		if(strlen($str) > 0) {
+			$delim = '&';
+		} else {
+			$delim = '';
+		} 
 		return $str;
 	}
 
-
-	public function init($map = null, $prefix = '') {
-		if($map != null) {
+	public function init($map = NULL, $prefix = '') {
+		if($map != NULL) {
 			
 		}
 	}
@@ -2271,43 +2239,43 @@ class ReceiverOptions  {
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $description;
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $customId;
 
 	/**
 	 * 
-	 *@access public
-	 *@var InvoiceData
+	 * @access public
+	 * @var InvoiceData
 	 */ 
 	public $invoiceData;
 
 	/**
 	 * 
-	 *@access public
-	 *@var ReceiverIdentifier
+	 * @access public
+	 * @var ReceiverIdentifier
 	 */ 
 	public $receiver;
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $referrerCode;
 
 	/**
 	 * Constructor with arguments
 	 */
-	public function __construct($receiver = null) {
+	public function __construct($receiver = NULL) {
 		$this->receiver = $receiver;
 	}
 
@@ -2315,40 +2283,39 @@ class ReceiverOptions  {
 	public function toNVPString($prefix = '') {
 		$str = '';
 		$delim = '';
-		if($this->description != null) {
+		if($this->description != NULL) {
 			$str .= $delim .  $prefix . 'description=' . urlencode($this->description);
 			$delim = '&';
 		}
-		if($this->customId != null) {
+		if($this->customId != NULL) {
 			$str .= $delim .  $prefix . 'customId=' . urlencode($this->customId);
 			$delim = '&';
 		}
-		if($this->invoiceData != null) {
+		if($this->invoiceData != NULL) {
 			$newPrefix = $prefix . 'invoiceData.';
 			$str .= $delim . call_user_func(array($this->invoiceData, 'toNVPString'), $newPrefix);
 			$delim = '&';
 		}
-		if($this->receiver != null) {
+		if($this->receiver != NULL) {
 			$newPrefix = $prefix . 'receiver.';
 			$str .= $delim . call_user_func(array($this->receiver, 'toNVPString'), $newPrefix);
 			$delim = '&';
 		}
-		if($this->referrerCode != null) {
+		if($this->referrerCode != NULL) {
 			$str .= $delim .  $prefix . 'referrerCode=' . urlencode($this->referrerCode);
 			$delim = '&';
 		}
 		return $str;
 	}
 
-
-	public function init($map = null, $prefix = '') {
-		if($map != null) {
+	public function init($map = NULL, $prefix = '') {
+		if($map != NULL) {
 			$mapKeyName =  $prefix . 'description';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->description = $map[$mapKeyName];
 			}
 			$mapKeyName =  $prefix . 'customId';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->customId = $map[$mapKeyName];
 			}
 			if (PPUtils::array_match_key($map, $prefix . "invoiceData.")) {
@@ -2362,7 +2329,7 @@ class ReceiverOptions  {
 				$this->receiver->init($map, $newPrefix);
 			}
 			$mapKeyName =  $prefix . 'referrerCode';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->referrerCode = $map[$mapKeyName];
 			}
 			
@@ -2380,114 +2347,113 @@ class RefundInfo  {
 
 	/**
 	 * 
-	 *@access public
-	 *@var Receiver
+	 * @access public
+	 * @var Receiver
 	 */ 
 	public $receiver;
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $refundStatus;
 
 	/**
 	 * 
-	 *@access public
-	 *@var double
+	 * @access public
+	 * @var double
 	 */ 
 	public $refundNetAmount;
 
 	/**
 	 * 
-	 *@access public
-	 *@var double
+	 * @access public
+	 * @var double
 	 */ 
 	public $refundFeeAmount;
 
 	/**
 	 * 
-	 *@access public
-	 *@var double
+	 * @access public
+	 * @var double
 	 */ 
 	public $refundGrossAmount;
 
 	/**
 	 * 
-	 *@access public
-	 *@var double
+	 * @access public
+	 * @var double
 	 */ 
 	public $totalOfAllRefunds;
 
 	/**
 	 * 
-	 *@access public
-	 *@var boolean
+	 * @access public
+	 * @var boolean
 	 */ 
 	public $refundHasBecomeFull;
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $encryptedRefundTransactionId;
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $refundTransactionStatus;
 
 	/**
 	 * 
-	 *@access public
-	 *@var ErrorList
+	 * @access public
+	 * @var ErrorList
 	 */ 
 	public $errorList;
 
 
 
-
-	public function init($map = null, $prefix = '') {
-		if($map != null) {
+	public function init($map = NULL, $prefix = '') {
+		if($map != NULL) {
 			if (PPUtils::array_match_key($map, $prefix . "receiver.")) {
 				$newPrefix = $prefix . "receiver.";
 				$this->receiver = new Receiver();
 				$this->receiver->init($map, $newPrefix);
 			}
 			$mapKeyName =  $prefix . 'refundStatus';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->refundStatus = $map[$mapKeyName];
 			}
 			$mapKeyName =  $prefix . 'refundNetAmount';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->refundNetAmount = $map[$mapKeyName];
 			}
 			$mapKeyName =  $prefix . 'refundFeeAmount';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->refundFeeAmount = $map[$mapKeyName];
 			}
 			$mapKeyName =  $prefix . 'refundGrossAmount';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->refundGrossAmount = $map[$mapKeyName];
 			}
 			$mapKeyName =  $prefix . 'totalOfAllRefunds';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->totalOfAllRefunds = $map[$mapKeyName];
 			}
 			$mapKeyName =  $prefix . 'refundHasBecomeFull';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->refundHasBecomeFull = $map[$mapKeyName];
 			}
 			$mapKeyName =  $prefix . 'encryptedRefundTransactionId';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->encryptedRefundTransactionId = $map[$mapKeyName];
 			}
 			$mapKeyName =  $prefix . 'refundTransactionStatus';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->refundTransactionStatus = $map[$mapKeyName];
 			}
 			if (PPUtils::array_match_key($map, $prefix . "errorList.")) {
@@ -2509,19 +2475,18 @@ class RefundInfoList  {
 
 	/**
 	 * 
-     *@array
-	 *@access public
-	 *@var RefundInfo
+     * @array
+	 * @access public
+	 * @var RefundInfo
 	 */ 
 	public $refundInfo;
 
 
 
-
-	public function init($map = null, $prefix = '') {
-		if($map != null) {
+	public function init($map = NULL, $prefix = '') {
+		if($map != NULL) {
 			$i = 0;
-			while(true) {
+			while(TRUE) {
 				if (PPUtils::array_match_key($map, $prefix . "refundInfo($i)")) {
 					$newPrefix = $prefix . "refundInfo($i).";
 					$this->refundInfo[$i] = new RefundInfo();
@@ -2546,15 +2511,15 @@ class SenderOptions  {
 	/**
 	 * Require the user to select a shipping address during the web
 	 * flow. 
-	 *@access public
-	 *@var boolean
+	 * @access public
+	 * @var boolean
 	 */ 
 	public $requireShippingAddressSelection;
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $referrerCode;
 
@@ -2562,26 +2527,25 @@ class SenderOptions  {
 	public function toNVPString($prefix = '') {
 		$str = '';
 		$delim = '';
-		if($this->requireShippingAddressSelection != null) {
+		if($this->requireShippingAddressSelection != NULL) {
 			$str .= $delim .  $prefix . 'requireShippingAddressSelection=' . urlencode($this->requireShippingAddressSelection);
 			$delim = '&';
 		}
-		if($this->referrerCode != null) {
+		if($this->referrerCode != NULL) {
 			$str .= $delim .  $prefix . 'referrerCode=' . urlencode($this->referrerCode);
 			$delim = '&';
 		}
 		return $str;
 	}
 
-
-	public function init($map = null, $prefix = '') {
-		if($map != null) {
+	public function init($map = NULL, $prefix = '') {
+		if($map != NULL) {
 			$mapKeyName =  $prefix . 'requireShippingAddressSelection';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->requireShippingAddressSelection = $map[$mapKeyName];
 			}
 			$mapKeyName =  $prefix . 'referrerCode';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->referrerCode = $map[$mapKeyName];
 			}
 			
@@ -2599,15 +2563,15 @@ class TaxIdDetails  {
 
 	/**
 	 * Tax id of the merchant/business. 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $taxId;
 
 	/**
 	 * Tax type of the Tax Id. 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $taxIdType;
 
@@ -2615,26 +2579,25 @@ class TaxIdDetails  {
 	public function toNVPString($prefix = '') {
 		$str = '';
 		$delim = '';
-		if($this->taxId != null) {
+		if($this->taxId != NULL) {
 			$str .= $delim .  $prefix . 'taxId=' . urlencode($this->taxId);
 			$delim = '&';
 		}
-		if($this->taxIdType != null) {
+		if($this->taxIdType != NULL) {
 			$str .= $delim .  $prefix . 'taxIdType=' . urlencode($this->taxIdType);
 			$delim = '&';
 		}
 		return $str;
 	}
 
-
-	public function init($map = null, $prefix = '') {
-		if($map != null) {
+	public function init($map = NULL, $prefix = '') {
+		if($map != NULL) {
 			$mapKeyName =  $prefix . 'taxId';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->taxId = $map[$mapKeyName];
 			}
 			$mapKeyName =  $prefix . 'taxIdType';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->taxIdType = $map[$mapKeyName];
 			}
 			
@@ -2652,28 +2615,31 @@ class SenderIdentifier  extends AccountIdentifier  {
 
 	/**
 	 * 
-	 *@access public
-	 *@var boolean
+	 * @access public
+	 * @var boolean
 	 */ 
 	public $useCredentials;
 
 	/**
 	 * 
-	 *@access public
-	 *@var TaxIdDetails
+	 * @access public
+	 * @var TaxIdDetails
 	 */ 
 	public $taxIdDetails;
 
 
 	public function toNVPString($prefix = '') {
-		$str = '';
-		$delim = '';
-		parent::toNVPString($prefix = '');
-		if($this->useCredentials != null) {
+		$str = parent::toNVPString($prefix);
+		if(strlen($str) > 0) {
+			$delim = '&';
+		} else {
+			$delim = '';
+		} 
+		if($this->useCredentials != NULL) {
 			$str .= $delim .  $prefix . 'useCredentials=' . urlencode($this->useCredentials);
 			$delim = '&';
 		}
-		if($this->taxIdDetails != null) {
+		if($this->taxIdDetails != NULL) {
 			$newPrefix = $prefix . 'taxIdDetails.';
 			$str .= $delim . call_user_func(array($this->taxIdDetails, 'toNVPString'), $newPrefix);
 			$delim = '&';
@@ -2681,11 +2647,10 @@ class SenderIdentifier  extends AccountIdentifier  {
 		return $str;
 	}
 
-
-	public function init($map = null, $prefix = '') {
-		if($map != null) {
+	public function init($map = NULL, $prefix = '') {
+		if($map != NULL) {
 			$mapKeyName =  $prefix . 'useCredentials';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->useCredentials = $map[$mapKeyName];
 			}
 			if (PPUtils::array_match_key($map, $prefix . "taxIdDetails.")) {
@@ -2707,25 +2672,24 @@ class UserLimit  {
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $limitType;
 
 	/**
 	 * 
-	 *@access public
-	 *@var CurrencyType
+	 * @access public
+	 * @var CurrencyType
 	 */ 
 	public $limitAmount;
 
 
 
-
-	public function init($map = null, $prefix = '') {
-		if($map != null) {
+	public function init($map = NULL, $prefix = '') {
+		if($map != NULL) {
 			$mapKeyName =  $prefix . 'limitType';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->limitType = $map[$mapKeyName];
 			}
 			if (PPUtils::array_match_key($map, $prefix . "limitAmount.")) {
@@ -2748,29 +2712,28 @@ class WarningData  {
 
 	/**
 	 * 
-	 *@access public
-	 *@var integer
+	 * @access public
+	 * @var integer
 	 */ 
 	public $warningId;
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $message;
 
 
 
-
-	public function init($map = null, $prefix = '') {
-		if($map != null) {
+	public function init($map = NULL, $prefix = '') {
+		if($map != NULL) {
 			$mapKeyName =  $prefix . 'warningId';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->warningId = $map[$mapKeyName];
 			}
 			$mapKeyName =  $prefix . 'message';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->message = $map[$mapKeyName];
 			}
 			
@@ -2787,19 +2750,18 @@ class WarningDataList  {
 
 	/**
 	 * 
-     *@array
-	 *@access public
-	 *@var WarningData
+     * @array
+	 * @access public
+	 * @var WarningData
 	 */ 
 	public $warningData;
 
 
 
-
-	public function init($map = null, $prefix = '') {
-		if($map != null) {
+	public function init($map = NULL, $prefix = '') {
+		if($map != NULL) {
 			$i = 0;
-			while(true) {
+			while(TRUE) {
 				if (PPUtils::array_match_key($map, $prefix . "warningData($i)")) {
 					$newPrefix = $prefix . "warningData($i).";
 					$this->warningData[$i] = new WarningData();
@@ -2823,22 +2785,22 @@ class CancelPreapprovalRequest  {
 
 	/**
 	 * 
-	 *@access public
-	 *@var RequestEnvelope
+	 * @access public
+	 * @var RequestEnvelope
 	 */ 
 	public $requestEnvelope;
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $preapprovalKey;
 
 	/**
 	 * Constructor with arguments
 	 */
-	public function __construct($requestEnvelope = null, $preapprovalKey = null) {
+	public function __construct($requestEnvelope = NULL, $preapprovalKey = NULL) {
 		$this->requestEnvelope = $requestEnvelope;
 		$this->preapprovalKey = $preapprovalKey;
 	}
@@ -2847,18 +2809,17 @@ class CancelPreapprovalRequest  {
 	public function toNVPString($prefix = '') {
 		$str = '';
 		$delim = '';
-		if($this->requestEnvelope != null) {
+		if($this->requestEnvelope != NULL) {
 			$newPrefix = $prefix . 'requestEnvelope.';
 			$str .= $delim . call_user_func(array($this->requestEnvelope, 'toNVPString'), $newPrefix);
 			$delim = '&';
 		}
-		if($this->preapprovalKey != null) {
+		if($this->preapprovalKey != NULL) {
 			$str .= $delim .  $prefix . 'preapprovalKey=' . urlencode($this->preapprovalKey);
 			$delim = '&';
 		}
 		return $str;
 	}
-
 
 } 
 
@@ -2871,31 +2832,30 @@ class CancelPreapprovalResponse  {
 
 	/**
 	 * 
-	 *@access public
-	 *@var ResponseEnvelope
+	 * @access public
+	 * @var ResponseEnvelope
 	 */ 
 	public $responseEnvelope;
 
 	/**
 	 * 
-     *@array
-	 *@access public
-	 *@var ErrorData
+     * @array
+	 * @access public
+	 * @var ErrorData
 	 */ 
 	public $error;
 
 
 
-
-	public function init($map = null, $prefix = '') {
-		if($map != null) {
+	public function init($map = NULL, $prefix = '') {
+		if($map != NULL) {
 			if (PPUtils::array_match_key($map, $prefix . "responseEnvelope.")) {
 				$newPrefix = $prefix . "responseEnvelope.";
 				$this->responseEnvelope = new ResponseEnvelope();
 				$this->responseEnvelope->init($map, $newPrefix);
 			}
 			$i = 0;
-			while(true) {
+			while(TRUE) {
 				if (PPUtils::array_match_key($map, $prefix . "error($i)")) {
 					$newPrefix = $prefix . "error($i).";
 					$this->error[$i] = new ErrorData();
@@ -2919,36 +2879,36 @@ class ConfirmPreapprovalRequest  {
 
 	/**
 	 * 
-	 *@access public
-	 *@var RequestEnvelope
+	 * @access public
+	 * @var RequestEnvelope
 	 */ 
 	public $requestEnvelope;
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $preapprovalKey;
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $fundingSourceId;
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $pin;
 
 	/**
 	 * Constructor with arguments
 	 */
-	public function __construct($requestEnvelope = null, $preapprovalKey = null) {
+	public function __construct($requestEnvelope = NULL, $preapprovalKey = NULL) {
 		$this->requestEnvelope = $requestEnvelope;
 		$this->preapprovalKey = $preapprovalKey;
 	}
@@ -2957,26 +2917,25 @@ class ConfirmPreapprovalRequest  {
 	public function toNVPString($prefix = '') {
 		$str = '';
 		$delim = '';
-		if($this->requestEnvelope != null) {
+		if($this->requestEnvelope != NULL) {
 			$newPrefix = $prefix . 'requestEnvelope.';
 			$str .= $delim . call_user_func(array($this->requestEnvelope, 'toNVPString'), $newPrefix);
 			$delim = '&';
 		}
-		if($this->preapprovalKey != null) {
+		if($this->preapprovalKey != NULL) {
 			$str .= $delim .  $prefix . 'preapprovalKey=' . urlencode($this->preapprovalKey);
 			$delim = '&';
 		}
-		if($this->fundingSourceId != null) {
+		if($this->fundingSourceId != NULL) {
 			$str .= $delim .  $prefix . 'fundingSourceId=' . urlencode($this->fundingSourceId);
 			$delim = '&';
 		}
-		if($this->pin != null) {
+		if($this->pin != NULL) {
 			$str .= $delim .  $prefix . 'pin=' . urlencode($this->pin);
 			$delim = '&';
 		}
 		return $str;
 	}
-
 
 } 
 
@@ -2989,31 +2948,30 @@ class ConfirmPreapprovalResponse  {
 
 	/**
 	 * 
-	 *@access public
-	 *@var ResponseEnvelope
+	 * @access public
+	 * @var ResponseEnvelope
 	 */ 
 	public $responseEnvelope;
 
 	/**
 	 * 
-     *@array
-	 *@access public
-	 *@var ErrorData
+     * @array
+	 * @access public
+	 * @var ErrorData
 	 */ 
 	public $error;
 
 
 
-
-	public function init($map = null, $prefix = '') {
-		if($map != null) {
+	public function init($map = NULL, $prefix = '') {
+		if($map != NULL) {
 			if (PPUtils::array_match_key($map, $prefix . "responseEnvelope.")) {
 				$newPrefix = $prefix . "responseEnvelope.";
 				$this->responseEnvelope = new ResponseEnvelope();
 				$this->responseEnvelope->init($map, $newPrefix);
 			}
 			$i = 0;
-			while(true) {
+			while(TRUE) {
 				if (PPUtils::array_match_key($map, $prefix . "error($i)")) {
 					$newPrefix = $prefix . "error($i).";
 					$this->error[$i] = new ErrorData();
@@ -3038,44 +2996,44 @@ class ConvertCurrencyRequest  {
 
 	/**
 	 * 
-	 *@access public
-	 *@var RequestEnvelope
+	 * @access public
+	 * @var RequestEnvelope
 	 */ 
 	public $requestEnvelope;
 
 	/**
 	 * 
-	 *@access public
-	 *@var CurrencyList
+	 * @access public
+	 * @var CurrencyList
 	 */ 
 	public $baseAmountList;
 
 	/**
 	 * 
-	 *@access public
-	 *@var CurrencyCodeList
+	 * @access public
+	 * @var CurrencyCodeList
 	 */ 
 	public $convertToCurrencyList;
 
 	/**
 	 * The two-character ISO country code where fx suppposed to
 	 * happen 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $countryCode;
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $conversionType;
 
 	/**
 	 * Constructor with arguments
 	 */
-	public function __construct($requestEnvelope = null, $baseAmountList = null, $convertToCurrencyList = null) {
+	public function __construct($requestEnvelope = NULL, $baseAmountList = NULL, $convertToCurrencyList = NULL) {
 		$this->requestEnvelope = $requestEnvelope;
 		$this->baseAmountList = $baseAmountList;
 		$this->convertToCurrencyList = $convertToCurrencyList;
@@ -3085,32 +3043,31 @@ class ConvertCurrencyRequest  {
 	public function toNVPString($prefix = '') {
 		$str = '';
 		$delim = '';
-		if($this->requestEnvelope != null) {
+		if($this->requestEnvelope != NULL) {
 			$newPrefix = $prefix . 'requestEnvelope.';
 			$str .= $delim . call_user_func(array($this->requestEnvelope, 'toNVPString'), $newPrefix);
 			$delim = '&';
 		}
-		if($this->baseAmountList != null) {
+		if($this->baseAmountList != NULL) {
 			$newPrefix = $prefix . 'baseAmountList.';
 			$str .= $delim . call_user_func(array($this->baseAmountList, 'toNVPString'), $newPrefix);
 			$delim = '&';
 		}
-		if($this->convertToCurrencyList != null) {
+		if($this->convertToCurrencyList != NULL) {
 			$newPrefix = $prefix . 'convertToCurrencyList.';
 			$str .= $delim . call_user_func(array($this->convertToCurrencyList, 'toNVPString'), $newPrefix);
 			$delim = '&';
 		}
-		if($this->countryCode != null) {
+		if($this->countryCode != NULL) {
 			$str .= $delim .  $prefix . 'countryCode=' . urlencode($this->countryCode);
 			$delim = '&';
 		}
-		if($this->conversionType != null) {
+		if($this->conversionType != NULL) {
 			$str .= $delim .  $prefix . 'conversionType=' . urlencode($this->conversionType);
 			$delim = '&';
 		}
 		return $str;
 	}
-
 
 } 
 
@@ -3124,31 +3081,30 @@ class ConvertCurrencyResponse  {
 
 	/**
 	 * 
-	 *@access public
-	 *@var ResponseEnvelope
+	 * @access public
+	 * @var ResponseEnvelope
 	 */ 
 	public $responseEnvelope;
 
 	/**
 	 * 
-	 *@access public
-	 *@var CurrencyConversionTable
+	 * @access public
+	 * @var CurrencyConversionTable
 	 */ 
 	public $estimatedAmountTable;
 
 	/**
 	 * 
-     *@array
-	 *@access public
-	 *@var ErrorData
+     * @array
+	 * @access public
+	 * @var ErrorData
 	 */ 
 	public $error;
 
 
 
-
-	public function init($map = null, $prefix = '') {
-		if($map != null) {
+	public function init($map = NULL, $prefix = '') {
+		if($map != NULL) {
 			if (PPUtils::array_match_key($map, $prefix . "responseEnvelope.")) {
 				$newPrefix = $prefix . "responseEnvelope.";
 				$this->responseEnvelope = new ResponseEnvelope();
@@ -3160,7 +3116,7 @@ class ConvertCurrencyResponse  {
 				$this->estimatedAmountTable->init($map, $newPrefix);
 			}
 			$i = 0;
-			while(true) {
+			while(TRUE) {
 				if (PPUtils::array_match_key($map, $prefix . "error($i)")) {
 					$newPrefix = $prefix . "error($i).";
 					$this->error[$i] = new ErrorData();
@@ -3184,36 +3140,36 @@ class ExecutePaymentRequest  {
 
 	/**
 	 * 
-	 *@access public
-	 *@var RequestEnvelope
+	 * @access public
+	 * @var RequestEnvelope
 	 */ 
 	public $requestEnvelope;
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $payKey;
 
 	/**
 	 * Describes the action that is performed by this API 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $actionType;
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $fundingPlanId;
 
 	/**
 	 * Constructor with arguments
 	 */
-	public function __construct($requestEnvelope = null, $payKey = null) {
+	public function __construct($requestEnvelope = NULL, $payKey = NULL) {
 		$this->requestEnvelope = $requestEnvelope;
 		$this->payKey = $payKey;
 	}
@@ -3222,26 +3178,25 @@ class ExecutePaymentRequest  {
 	public function toNVPString($prefix = '') {
 		$str = '';
 		$delim = '';
-		if($this->requestEnvelope != null) {
+		if($this->requestEnvelope != NULL) {
 			$newPrefix = $prefix . 'requestEnvelope.';
 			$str .= $delim . call_user_func(array($this->requestEnvelope, 'toNVPString'), $newPrefix);
 			$delim = '&';
 		}
-		if($this->payKey != null) {
+		if($this->payKey != NULL) {
 			$str .= $delim .  $prefix . 'payKey=' . urlencode($this->payKey);
 			$delim = '&';
 		}
-		if($this->actionType != null) {
+		if($this->actionType != NULL) {
 			$str .= $delim .  $prefix . 'actionType=' . urlencode($this->actionType);
 			$delim = '&';
 		}
-		if($this->fundingPlanId != null) {
+		if($this->fundingPlanId != NULL) {
 			$str .= $delim .  $prefix . 'fundingPlanId=' . urlencode($this->fundingPlanId);
 			$delim = '&';
 		}
 		return $str;
 	}
-
 
 } 
 
@@ -3254,45 +3209,44 @@ class ExecutePaymentResponse  {
 
 	/**
 	 * 
-	 *@access public
-	 *@var ResponseEnvelope
+	 * @access public
+	 * @var ResponseEnvelope
 	 */ 
 	public $responseEnvelope;
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $paymentExecStatus;
 
 	/**
 	 * 
-	 *@access public
-	 *@var PayErrorList
+	 * @access public
+	 * @var PayErrorList
 	 */ 
 	public $payErrorList;
 
 	/**
 	 * 
-     *@array
-	 *@access public
-	 *@var ErrorData
+     * @array
+	 * @access public
+	 * @var ErrorData
 	 */ 
 	public $error;
 
 
 
-
-	public function init($map = null, $prefix = '') {
-		if($map != null) {
+	public function init($map = NULL, $prefix = '') {
+		if($map != NULL) {
 			if (PPUtils::array_match_key($map, $prefix . "responseEnvelope.")) {
 				$newPrefix = $prefix . "responseEnvelope.";
 				$this->responseEnvelope = new ResponseEnvelope();
 				$this->responseEnvelope->init($map, $newPrefix);
 			}
 			$mapKeyName =  $prefix . 'paymentExecStatus';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->paymentExecStatus = $map[$mapKeyName];
 			}
 			if (PPUtils::array_match_key($map, $prefix . "payErrorList.")) {
@@ -3301,7 +3255,7 @@ class ExecutePaymentResponse  {
 				$this->payErrorList->init($map, $newPrefix);
 			}
 			$i = 0;
-			while(true) {
+			while(TRUE) {
 				if (PPUtils::array_match_key($map, $prefix . "error($i)")) {
 					$newPrefix = $prefix . "error($i).";
 					$this->error[$i] = new ErrorData();
@@ -3326,22 +3280,22 @@ class GetAllowedFundingSourcesRequest  {
 
 	/**
 	 * 
-	 *@access public
-	 *@var RequestEnvelope
+	 * @access public
+	 * @var RequestEnvelope
 	 */ 
 	public $requestEnvelope;
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $key;
 
 	/**
 	 * Constructor with arguments
 	 */
-	public function __construct($requestEnvelope = null, $key = null) {
+	public function __construct($requestEnvelope = NULL, $key = NULL) {
 		$this->requestEnvelope = $requestEnvelope;
 		$this->key = $key;
 	}
@@ -3350,18 +3304,17 @@ class GetAllowedFundingSourcesRequest  {
 	public function toNVPString($prefix = '') {
 		$str = '';
 		$delim = '';
-		if($this->requestEnvelope != null) {
+		if($this->requestEnvelope != NULL) {
 			$newPrefix = $prefix . 'requestEnvelope.';
 			$str .= $delim . call_user_func(array($this->requestEnvelope, 'toNVPString'), $newPrefix);
 			$delim = '&';
 		}
-		if($this->key != null) {
+		if($this->key != NULL) {
 			$str .= $delim .  $prefix . 'key=' . urlencode($this->key);
 			$delim = '&';
 		}
 		return $str;
 	}
-
 
 } 
 
@@ -3375,39 +3328,38 @@ class GetAllowedFundingSourcesResponse  {
 
 	/**
 	 * 
-	 *@access public
-	 *@var ResponseEnvelope
+	 * @access public
+	 * @var ResponseEnvelope
 	 */ 
 	public $responseEnvelope;
 
 	/**
 	 * 
-     *@array
-	 *@access public
-	 *@var FundingSource
+     * @array
+	 * @access public
+	 * @var FundingSource
 	 */ 
 	public $fundingSource;
 
 	/**
 	 * 
-     *@array
-	 *@access public
-	 *@var ErrorData
+     * @array
+	 * @access public
+	 * @var ErrorData
 	 */ 
 	public $error;
 
 
 
-
-	public function init($map = null, $prefix = '') {
-		if($map != null) {
+	public function init($map = NULL, $prefix = '') {
+		if($map != NULL) {
 			if (PPUtils::array_match_key($map, $prefix . "responseEnvelope.")) {
 				$newPrefix = $prefix . "responseEnvelope.";
 				$this->responseEnvelope = new ResponseEnvelope();
 				$this->responseEnvelope->init($map, $newPrefix);
 			}
 			$i = 0;
-			while(true) {
+			while(TRUE) {
 				if (PPUtils::array_match_key($map, $prefix . "fundingSource($i)")) {
 					$newPrefix = $prefix . "fundingSource($i).";
 					$this->fundingSource[$i] = new FundingSource();
@@ -3418,7 +3370,7 @@ class GetAllowedFundingSourcesResponse  {
 				$i++;
 			}
 			$i = 0;
-			while(true) {
+			while(TRUE) {
 				if (PPUtils::array_match_key($map, $prefix . "error($i)")) {
 					$newPrefix = $prefix . "error($i).";
 					$this->error[$i] = new ErrorData();
@@ -3442,22 +3394,22 @@ class GetPaymentOptionsRequest  {
 
 	/**
 	 * 
-	 *@access public
-	 *@var RequestEnvelope
+	 * @access public
+	 * @var RequestEnvelope
 	 */ 
 	public $requestEnvelope;
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $payKey;
 
 	/**
 	 * Constructor with arguments
 	 */
-	public function __construct($requestEnvelope = null, $payKey = null) {
+	public function __construct($requestEnvelope = NULL, $payKey = NULL) {
 		$this->requestEnvelope = $requestEnvelope;
 		$this->payKey = $payKey;
 	}
@@ -3466,18 +3418,17 @@ class GetPaymentOptionsRequest  {
 	public function toNVPString($prefix = '') {
 		$str = '';
 		$delim = '';
-		if($this->requestEnvelope != null) {
+		if($this->requestEnvelope != NULL) {
 			$newPrefix = $prefix . 'requestEnvelope.';
 			$str .= $delim . call_user_func(array($this->requestEnvelope, 'toNVPString'), $newPrefix);
 			$delim = '&';
 		}
-		if($this->payKey != null) {
+		if($this->payKey != NULL) {
 			$str .= $delim .  $prefix . 'payKey=' . urlencode($this->payKey);
 			$delim = '&';
 		}
 		return $str;
 	}
-
 
 } 
 
@@ -3490,60 +3441,59 @@ class GetPaymentOptionsResponse  {
 
 	/**
 	 * 
-	 *@access public
-	 *@var ResponseEnvelope
+	 * @access public
+	 * @var ResponseEnvelope
 	 */ 
 	public $responseEnvelope;
 
 	/**
 	 * 
-	 *@access public
-	 *@var InitiatingEntity
+	 * @access public
+	 * @var InitiatingEntity
 	 */ 
 	public $initiatingEntity;
 
 	/**
 	 * 
-	 *@access public
-	 *@var DisplayOptions
+	 * @access public
+	 * @var DisplayOptions
 	 */ 
 	public $displayOptions;
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $shippingAddressId;
 
 	/**
 	 * 
-	 *@access public
-	 *@var SenderOptions
+	 * @access public
+	 * @var SenderOptions
 	 */ 
 	public $senderOptions;
 
 	/**
 	 * 
-     *@array
-	 *@access public
-	 *@var ReceiverOptions
+     * @array
+	 * @access public
+	 * @var ReceiverOptions
 	 */ 
 	public $receiverOptions;
 
 	/**
 	 * 
-     *@array
-	 *@access public
-	 *@var ErrorData
+     * @array
+	 * @access public
+	 * @var ErrorData
 	 */ 
 	public $error;
 
 
 
-
-	public function init($map = null, $prefix = '') {
-		if($map != null) {
+	public function init($map = NULL, $prefix = '') {
+		if($map != NULL) {
 			if (PPUtils::array_match_key($map, $prefix . "responseEnvelope.")) {
 				$newPrefix = $prefix . "responseEnvelope.";
 				$this->responseEnvelope = new ResponseEnvelope();
@@ -3560,7 +3510,7 @@ class GetPaymentOptionsResponse  {
 				$this->displayOptions->init($map, $newPrefix);
 			}
 			$mapKeyName =  $prefix . 'shippingAddressId';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->shippingAddressId = $map[$mapKeyName];
 			}
 			if (PPUtils::array_match_key($map, $prefix . "senderOptions.")) {
@@ -3569,7 +3519,7 @@ class GetPaymentOptionsResponse  {
 				$this->senderOptions->init($map, $newPrefix);
 			}
 			$i = 0;
-			while(true) {
+			while(TRUE) {
 				if (PPUtils::array_match_key($map, $prefix . "receiverOptions($i)")) {
 					$newPrefix = $prefix . "receiverOptions($i).";
 					$this->receiverOptions[$i] = new ReceiverOptions();
@@ -3580,7 +3530,7 @@ class GetPaymentOptionsResponse  {
 				$i++;
 			}
 			$i = 0;
-			while(true) {
+			while(TRUE) {
 				if (PPUtils::array_match_key($map, $prefix . "error($i)")) {
 					$newPrefix = $prefix . "error($i).";
 					$this->error[$i] = new ErrorData();
@@ -3606,36 +3556,36 @@ class PaymentDetailsRequest  {
 
 	/**
 	 * 
-	 *@access public
-	 *@var RequestEnvelope
+	 * @access public
+	 * @var RequestEnvelope
 	 */ 
 	public $requestEnvelope;
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $payKey;
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $transactionId;
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $trackingId;
 
 	/**
 	 * Constructor with arguments
 	 */
-	public function __construct($requestEnvelope = null) {
+	public function __construct($requestEnvelope = NULL) {
 		$this->requestEnvelope = $requestEnvelope;
 	}
 
@@ -3643,26 +3593,25 @@ class PaymentDetailsRequest  {
 	public function toNVPString($prefix = '') {
 		$str = '';
 		$delim = '';
-		if($this->requestEnvelope != null) {
+		if($this->requestEnvelope != NULL) {
 			$newPrefix = $prefix . 'requestEnvelope.';
 			$str .= $delim . call_user_func(array($this->requestEnvelope, 'toNVPString'), $newPrefix);
 			$delim = '&';
 		}
-		if($this->payKey != null) {
+		if($this->payKey != NULL) {
 			$str .= $delim .  $prefix . 'payKey=' . urlencode($this->payKey);
 			$delim = '&';
 		}
-		if($this->transactionId != null) {
+		if($this->transactionId != NULL) {
 			$str .= $delim .  $prefix . 'transactionId=' . urlencode($this->transactionId);
 			$delim = '&';
 		}
-		if($this->trackingId != null) {
+		if($this->trackingId != NULL) {
 			$str .= $delim .  $prefix . 'trackingId=' . urlencode($this->trackingId);
 			$delim = '&';
 		}
 		return $str;
 	}
-
 
 } 
 
@@ -3676,155 +3625,154 @@ class PaymentDetailsResponse  {
 
 	/**
 	 * 
-	 *@access public
-	 *@var ResponseEnvelope
+	 * @access public
+	 * @var ResponseEnvelope
 	 */ 
 	public $responseEnvelope;
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $cancelUrl;
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $currencyCode;
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $ipnNotificationUrl;
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $memo;
 
 	/**
 	 * 
-	 *@access public
-	 *@var PaymentInfoList
+	 * @access public
+	 * @var PaymentInfoList
 	 */ 
 	public $paymentInfoList;
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $returnUrl;
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $senderEmail;
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $status;
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $trackingId;
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $payKey;
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $actionType;
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $feesPayer;
 
 	/**
 	 * 
-	 *@access public
-	 *@var boolean
+	 * @access public
+	 * @var boolean
 	 */ 
 	public $reverseAllParallelPaymentsOnError;
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $preapprovalKey;
 
 	/**
 	 * 
-	 *@access public
-	 *@var FundingConstraint
+	 * @access public
+	 * @var FundingConstraint
 	 */ 
 	public $fundingConstraint;
 
 	/**
 	 * 
-	 *@access public
-	 *@var SenderIdentifier
+	 * @access public
+	 * @var SenderIdentifier
 	 */ 
 	public $sender;
 
 	/**
 	 * 
-     *@array
-	 *@access public
-	 *@var ErrorData
+     * @array
+	 * @access public
+	 * @var ErrorData
 	 */ 
 	public $error;
 
 
 
-
-	public function init($map = null, $prefix = '') {
-		if($map != null) {
+	public function init($map = NULL, $prefix = '') {
+		if($map != NULL) {
 			if (PPUtils::array_match_key($map, $prefix . "responseEnvelope.")) {
 				$newPrefix = $prefix . "responseEnvelope.";
 				$this->responseEnvelope = new ResponseEnvelope();
 				$this->responseEnvelope->init($map, $newPrefix);
 			}
 			$mapKeyName =  $prefix . 'cancelUrl';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->cancelUrl = $map[$mapKeyName];
 			}
 			$mapKeyName =  $prefix . 'currencyCode';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->currencyCode = $map[$mapKeyName];
 			}
 			$mapKeyName =  $prefix . 'ipnNotificationUrl';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->ipnNotificationUrl = $map[$mapKeyName];
 			}
 			$mapKeyName =  $prefix . 'memo';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->memo = $map[$mapKeyName];
 			}
 			if (PPUtils::array_match_key($map, $prefix . "paymentInfoList.")) {
@@ -3833,39 +3781,39 @@ class PaymentDetailsResponse  {
 				$this->paymentInfoList->init($map, $newPrefix);
 			}
 			$mapKeyName =  $prefix . 'returnUrl';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->returnUrl = $map[$mapKeyName];
 			}
 			$mapKeyName =  $prefix . 'senderEmail';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->senderEmail = $map[$mapKeyName];
 			}
 			$mapKeyName =  $prefix . 'status';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->status = $map[$mapKeyName];
 			}
 			$mapKeyName =  $prefix . 'trackingId';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->trackingId = $map[$mapKeyName];
 			}
 			$mapKeyName =  $prefix . 'payKey';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->payKey = $map[$mapKeyName];
 			}
 			$mapKeyName =  $prefix . 'actionType';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->actionType = $map[$mapKeyName];
 			}
 			$mapKeyName =  $prefix . 'feesPayer';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->feesPayer = $map[$mapKeyName];
 			}
 			$mapKeyName =  $prefix . 'reverseAllParallelPaymentsOnError';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->reverseAllParallelPaymentsOnError = $map[$mapKeyName];
 			}
 			$mapKeyName =  $prefix . 'preapprovalKey';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->preapprovalKey = $map[$mapKeyName];
 			}
 			if (PPUtils::array_match_key($map, $prefix . "fundingConstraint.")) {
@@ -3879,7 +3827,7 @@ class PaymentDetailsResponse  {
 				$this->sender->init($map, $newPrefix);
 			}
 			$i = 0;
-			while(true) {
+			while(TRUE) {
 				if (PPUtils::array_match_key($map, $prefix . "error($i)")) {
 					$newPrefix = $prefix . "error($i).";
 					$this->error[$i] = new ErrorData();
@@ -3904,127 +3852,127 @@ class PayRequest  {
 
 	/**
 	 * 
-	 *@access public
-	 *@var RequestEnvelope
+	 * @access public
+	 * @var RequestEnvelope
 	 */ 
 	public $requestEnvelope;
 
 	/**
 	 * 
-	 *@access public
-	 *@var ClientDetailsType
+	 * @access public
+	 * @var ClientDetailsType
 	 */ 
 	public $clientDetails;
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $actionType;
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $cancelUrl;
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $currencyCode;
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $feesPayer;
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $ipnNotificationUrl;
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $memo;
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $pin;
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $preapprovalKey;
 
 	/**
 	 * 
-	 *@access public
-	 *@var ReceiverList
+	 * @access public
+	 * @var ReceiverList
 	 */ 
 	public $receiverList;
 
 	/**
 	 * 
-	 *@access public
-	 *@var boolean
+	 * @access public
+	 * @var boolean
 	 */ 
 	public $reverseAllParallelPaymentsOnError;
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $senderEmail;
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $returnUrl;
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $trackingId;
 
 	/**
 	 * 
-	 *@access public
-	 *@var FundingConstraint
+	 * @access public
+	 * @var FundingConstraint
 	 */ 
 	public $fundingConstraint;
 
 	/**
 	 * 
-	 *@access public
-	 *@var SenderIdentifier
+	 * @access public
+	 * @var SenderIdentifier
 	 */ 
 	public $sender;
 
 	/**
 	 * Constructor with arguments
 	 */
-	public function __construct($requestEnvelope = null, $actionType = null, $cancelUrl = null, $currencyCode = null, $receiverList = null, $returnUrl = null) {
+	public function __construct($requestEnvelope = NULL, $actionType = NULL, $cancelUrl = NULL, $currencyCode = NULL, $receiverList = NULL, $returnUrl = NULL) {
 		$this->requestEnvelope = $requestEnvelope;
 		$this->actionType = $actionType;
 		$this->cancelUrl = $cancelUrl;
@@ -4037,82 +3985,81 @@ class PayRequest  {
 	public function toNVPString($prefix = '') {
 		$str = '';
 		$delim = '';
-		if($this->requestEnvelope != null) {
+		if($this->requestEnvelope != NULL) {
 			$newPrefix = $prefix . 'requestEnvelope.';
 			$str .= $delim . call_user_func(array($this->requestEnvelope, 'toNVPString'), $newPrefix);
 			$delim = '&';
 		}
-		if($this->clientDetails != null) {
+		if($this->clientDetails != NULL) {
 			$newPrefix = $prefix . 'clientDetails.';
 			$str .= $delim . call_user_func(array($this->clientDetails, 'toNVPString'), $newPrefix);
 			$delim = '&';
 		}
-		if($this->actionType != null) {
+		if($this->actionType != NULL) {
 			$str .= $delim .  $prefix . 'actionType=' . urlencode($this->actionType);
 			$delim = '&';
 		}
-		if($this->cancelUrl != null) {
+		if($this->cancelUrl != NULL) {
 			$str .= $delim .  $prefix . 'cancelUrl=' . urlencode($this->cancelUrl);
 			$delim = '&';
 		}
-		if($this->currencyCode != null) {
+		if($this->currencyCode != NULL) {
 			$str .= $delim .  $prefix . 'currencyCode=' . urlencode($this->currencyCode);
 			$delim = '&';
 		}
-		if($this->feesPayer != null) {
+		if($this->feesPayer != NULL) {
 			$str .= $delim .  $prefix . 'feesPayer=' . urlencode($this->feesPayer);
 			$delim = '&';
 		}
-		if($this->ipnNotificationUrl != null) {
+		if($this->ipnNotificationUrl != NULL) {
 			$str .= $delim .  $prefix . 'ipnNotificationUrl=' . urlencode($this->ipnNotificationUrl);
 			$delim = '&';
 		}
-		if($this->memo != null) {
+		if($this->memo != NULL) {
 			$str .= $delim .  $prefix . 'memo=' . urlencode($this->memo);
 			$delim = '&';
 		}
-		if($this->pin != null) {
+		if($this->pin != NULL) {
 			$str .= $delim .  $prefix . 'pin=' . urlencode($this->pin);
 			$delim = '&';
 		}
-		if($this->preapprovalKey != null) {
+		if($this->preapprovalKey != NULL) {
 			$str .= $delim .  $prefix . 'preapprovalKey=' . urlencode($this->preapprovalKey);
 			$delim = '&';
 		}
-		if($this->receiverList != null) {
+		if($this->receiverList != NULL) {
 			$newPrefix = $prefix . 'receiverList.';
 			$str .= $delim . call_user_func(array($this->receiverList, 'toNVPString'), $newPrefix);
 			$delim = '&';
 		}
-		if($this->reverseAllParallelPaymentsOnError != null) {
+		if($this->reverseAllParallelPaymentsOnError != NULL) {
 			$str .= $delim .  $prefix . 'reverseAllParallelPaymentsOnError=' . urlencode($this->reverseAllParallelPaymentsOnError);
 			$delim = '&';
 		}
-		if($this->senderEmail != null) {
+		if($this->senderEmail != NULL) {
 			$str .= $delim .  $prefix . 'senderEmail=' . urlencode($this->senderEmail);
 			$delim = '&';
 		}
-		if($this->returnUrl != null) {
+		if($this->returnUrl != NULL) {
 			$str .= $delim .  $prefix . 'returnUrl=' . urlencode($this->returnUrl);
 			$delim = '&';
 		}
-		if($this->trackingId != null) {
+		if($this->trackingId != NULL) {
 			$str .= $delim .  $prefix . 'trackingId=' . urlencode($this->trackingId);
 			$delim = '&';
 		}
-		if($this->fundingConstraint != null) {
+		if($this->fundingConstraint != NULL) {
 			$newPrefix = $prefix . 'fundingConstraint.';
 			$str .= $delim . call_user_func(array($this->fundingConstraint, 'toNVPString'), $newPrefix);
 			$delim = '&';
 		}
-		if($this->sender != null) {
+		if($this->sender != NULL) {
 			$newPrefix = $prefix . 'sender.';
 			$str .= $delim . call_user_func(array($this->sender, 'toNVPString'), $newPrefix);
 			$delim = '&';
 		}
 		return $str;
 	}
-
 
 } 
 
@@ -4127,63 +4074,62 @@ class PayResponse  {
 
 	/**
 	 * 
-	 *@access public
-	 *@var ResponseEnvelope
+	 * @access public
+	 * @var ResponseEnvelope
 	 */ 
 	public $responseEnvelope;
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $payKey;
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $paymentExecStatus;
 
 	/**
 	 * 
-	 *@access public
-	 *@var PayErrorList
+	 * @access public
+	 * @var PayErrorList
 	 */ 
 	public $payErrorList;
 
 	/**
 	 * 
-	 *@access public
-	 *@var FundingPlan
+	 * @access public
+	 * @var FundingPlan
 	 */ 
 	public $defaultFundingPlan;
 
 	/**
 	 * 
-     *@array
-	 *@access public
-	 *@var ErrorData
+     * @array
+	 * @access public
+	 * @var ErrorData
 	 */ 
 	public $error;
 
 
 
-
-	public function init($map = null, $prefix = '') {
-		if($map != null) {
+	public function init($map = NULL, $prefix = '') {
+		if($map != NULL) {
 			if (PPUtils::array_match_key($map, $prefix . "responseEnvelope.")) {
 				$newPrefix = $prefix . "responseEnvelope.";
 				$this->responseEnvelope = new ResponseEnvelope();
 				$this->responseEnvelope->init($map, $newPrefix);
 			}
 			$mapKeyName =  $prefix . 'payKey';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->payKey = $map[$mapKeyName];
 			}
 			$mapKeyName =  $prefix . 'paymentExecStatus';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->paymentExecStatus = $map[$mapKeyName];
 			}
 			if (PPUtils::array_match_key($map, $prefix . "payErrorList.")) {
@@ -4197,7 +4143,7 @@ class PayResponse  {
 				$this->defaultFundingPlan->init($map, $newPrefix);
 			}
 			$i = 0;
-			while(true) {
+			while(TRUE) {
 				if (PPUtils::array_match_key($map, $prefix . "error($i)")) {
 					$newPrefix = $prefix . "error($i).";
 					$this->error[$i] = new ErrorData();
@@ -4221,29 +4167,29 @@ class PreapprovalDetailsRequest  {
 
 	/**
 	 * 
-	 *@access public
-	 *@var RequestEnvelope
+	 * @access public
+	 * @var RequestEnvelope
 	 */ 
 	public $requestEnvelope;
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $preapprovalKey;
 
 	/**
 	 * 
-	 *@access public
-	 *@var boolean
+	 * @access public
+	 * @var boolean
 	 */ 
 	public $getBillingAddress;
 
 	/**
 	 * Constructor with arguments
 	 */
-	public function __construct($requestEnvelope = null, $preapprovalKey = null) {
+	public function __construct($requestEnvelope = NULL, $preapprovalKey = NULL) {
 		$this->requestEnvelope = $requestEnvelope;
 		$this->preapprovalKey = $preapprovalKey;
 	}
@@ -4252,22 +4198,21 @@ class PreapprovalDetailsRequest  {
 	public function toNVPString($prefix = '') {
 		$str = '';
 		$delim = '';
-		if($this->requestEnvelope != null) {
+		if($this->requestEnvelope != NULL) {
 			$newPrefix = $prefix . 'requestEnvelope.';
 			$str .= $delim . call_user_func(array($this->requestEnvelope, 'toNVPString'), $newPrefix);
 			$delim = '&';
 		}
-		if($this->preapprovalKey != null) {
+		if($this->preapprovalKey != NULL) {
 			$str .= $delim .  $prefix . 'preapprovalKey=' . urlencode($this->preapprovalKey);
 			$delim = '&';
 		}
-		if($this->getBillingAddress != null) {
+		if($this->getBillingAddress != NULL) {
 			$str .= $delim .  $prefix . 'getBillingAddress=' . urlencode($this->getBillingAddress);
 			$delim = '&';
 		}
 		return $str;
 	}
-
 
 } 
 
@@ -4281,290 +4226,289 @@ class PreapprovalDetailsResponse  {
 
 	/**
 	 * 
-	 *@access public
-	 *@var ResponseEnvelope
+	 * @access public
+	 * @var ResponseEnvelope
 	 */ 
 	public $responseEnvelope;
 
 	/**
 	 * 
-	 *@access public
-	 *@var boolean
+	 * @access public
+	 * @var boolean
 	 */ 
 	public $approved;
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $cancelUrl;
 
 	/**
 	 * 
-	 *@access public
-	 *@var integer
+	 * @access public
+	 * @var integer
 	 */ 
 	public $curPayments;
 
 	/**
 	 * 
-	 *@access public
-	 *@var double
+	 * @access public
+	 * @var double
 	 */ 
 	public $curPaymentsAmount;
 
 	/**
 	 * 
-	 *@access public
-	 *@var integer
+	 * @access public
+	 * @var integer
 	 */ 
 	public $curPeriodAttempts;
 
 	/**
 	 * 
-	 *@access public
-	 *@var dateTime
+	 * @access public
+	 * @var dateTime
 	 */ 
 	public $curPeriodEndingDate;
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $currencyCode;
 
 	/**
 	 * 
-	 *@access public
-	 *@var integer
+	 * @access public
+	 * @var integer
 	 */ 
 	public $dateOfMonth;
 
 	/**
 	 * 
-	 *@access public
-	 *@var DayOfWeek
+	 * @access public
+	 * @var DayOfWeek
 	 */ 
 	public $dayOfWeek;
 
 	/**
 	 * 
-	 *@access public
-	 *@var dateTime
+	 * @access public
+	 * @var dateTime
 	 */ 
 	public $endingDate;
 
 	/**
 	 * 
-	 *@access public
-	 *@var double
+	 * @access public
+	 * @var double
 	 */ 
 	public $maxAmountPerPayment;
 
 	/**
 	 * 
-	 *@access public
-	 *@var integer
+	 * @access public
+	 * @var integer
 	 */ 
 	public $maxNumberOfPayments;
 
 	/**
 	 * 
-	 *@access public
-	 *@var integer
+	 * @access public
+	 * @var integer
 	 */ 
 	public $maxNumberOfPaymentsPerPeriod;
 
 	/**
 	 * 
-	 *@access public
-	 *@var double
+	 * @access public
+	 * @var double
 	 */ 
 	public $maxTotalAmountOfAllPayments;
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $paymentPeriod;
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $pinType;
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $returnUrl;
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $senderEmail;
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $memo;
 
 	/**
 	 * 
-	 *@access public
-	 *@var dateTime
+	 * @access public
+	 * @var dateTime
 	 */ 
 	public $startingDate;
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $status;
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $ipnNotificationUrl;
 
 	/**
 	 * 
-	 *@access public
-	 *@var AddressList
+	 * @access public
+	 * @var AddressList
 	 */ 
 	public $addressList;
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $feesPayer;
 
 	/**
 	 * 
-	 *@access public
-	 *@var boolean
+	 * @access public
+	 * @var boolean
 	 */ 
 	public $displayMaxTotalAmount;
 
 	/**
 	 * 
-     *@array
-	 *@access public
-	 *@var ErrorData
+     * @array
+	 * @access public
+	 * @var ErrorData
 	 */ 
 	public $error;
 
 
 
-
-	public function init($map = null, $prefix = '') {
-		if($map != null) {
+	public function init($map = NULL, $prefix = '') {
+		if($map != NULL) {
 			if (PPUtils::array_match_key($map, $prefix . "responseEnvelope.")) {
 				$newPrefix = $prefix . "responseEnvelope.";
 				$this->responseEnvelope = new ResponseEnvelope();
 				$this->responseEnvelope->init($map, $newPrefix);
 			}
 			$mapKeyName =  $prefix . 'approved';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->approved = $map[$mapKeyName];
 			}
 			$mapKeyName =  $prefix . 'cancelUrl';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->cancelUrl = $map[$mapKeyName];
 			}
 			$mapKeyName =  $prefix . 'curPayments';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->curPayments = $map[$mapKeyName];
 			}
 			$mapKeyName =  $prefix . 'curPaymentsAmount';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->curPaymentsAmount = $map[$mapKeyName];
 			}
 			$mapKeyName =  $prefix . 'curPeriodAttempts';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->curPeriodAttempts = $map[$mapKeyName];
 			}
 			$mapKeyName =  $prefix . 'curPeriodEndingDate';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->curPeriodEndingDate = $map[$mapKeyName];
 			}
 			$mapKeyName =  $prefix . 'currencyCode';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->currencyCode = $map[$mapKeyName];
 			}
 			$mapKeyName =  $prefix . 'dateOfMonth';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->dateOfMonth = $map[$mapKeyName];
 			}
 			$mapKeyName =  $prefix . 'dayOfWeek';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->dayOfWeek = $map[$mapKeyName];
 			}
 			$mapKeyName =  $prefix . 'endingDate';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->endingDate = $map[$mapKeyName];
 			}
 			$mapKeyName =  $prefix . 'maxAmountPerPayment';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->maxAmountPerPayment = $map[$mapKeyName];
 			}
 			$mapKeyName =  $prefix . 'maxNumberOfPayments';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->maxNumberOfPayments = $map[$mapKeyName];
 			}
 			$mapKeyName =  $prefix . 'maxNumberOfPaymentsPerPeriod';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->maxNumberOfPaymentsPerPeriod = $map[$mapKeyName];
 			}
 			$mapKeyName =  $prefix . 'maxTotalAmountOfAllPayments';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->maxTotalAmountOfAllPayments = $map[$mapKeyName];
 			}
 			$mapKeyName =  $prefix . 'paymentPeriod';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->paymentPeriod = $map[$mapKeyName];
 			}
 			$mapKeyName =  $prefix . 'pinType';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->pinType = $map[$mapKeyName];
 			}
 			$mapKeyName =  $prefix . 'returnUrl';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->returnUrl = $map[$mapKeyName];
 			}
 			$mapKeyName =  $prefix . 'senderEmail';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->senderEmail = $map[$mapKeyName];
 			}
 			$mapKeyName =  $prefix . 'memo';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->memo = $map[$mapKeyName];
 			}
 			$mapKeyName =  $prefix . 'startingDate';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->startingDate = $map[$mapKeyName];
 			}
 			$mapKeyName =  $prefix . 'status';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->status = $map[$mapKeyName];
 			}
 			$mapKeyName =  $prefix . 'ipnNotificationUrl';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->ipnNotificationUrl = $map[$mapKeyName];
 			}
 			if (PPUtils::array_match_key($map, $prefix . "addressList.")) {
@@ -4573,15 +4517,15 @@ class PreapprovalDetailsResponse  {
 				$this->addressList->init($map, $newPrefix);
 			}
 			$mapKeyName =  $prefix . 'feesPayer';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->feesPayer = $map[$mapKeyName];
 			}
 			$mapKeyName =  $prefix . 'displayMaxTotalAmount';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->displayMaxTotalAmount = $map[$mapKeyName];
 			}
 			$i = 0;
-			while(true) {
+			while(TRUE) {
 				if (PPUtils::array_match_key($map, $prefix . "error($i)")) {
 					$newPrefix = $prefix . "error($i).";
 					$this->error[$i] = new ErrorData();
@@ -4608,148 +4552,148 @@ class PreapprovalRequest  {
 
 	/**
 	 * 
-	 *@access public
-	 *@var RequestEnvelope
+	 * @access public
+	 * @var RequestEnvelope
 	 */ 
 	public $requestEnvelope;
 
 	/**
 	 * 
-	 *@access public
-	 *@var ClientDetailsType
+	 * @access public
+	 * @var ClientDetailsType
 	 */ 
 	public $clientDetails;
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $cancelUrl;
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $currencyCode;
 
 	/**
 	 * 
-	 *@access public
-	 *@var integer
+	 * @access public
+	 * @var integer
 	 */ 
 	public $dateOfMonth;
 
 	/**
 	 * 
-	 *@access public
-	 *@var DayOfWeek
+	 * @access public
+	 * @var DayOfWeek
 	 */ 
 	public $dayOfWeek;
 
 	/**
 	 * 
-	 *@access public
-	 *@var dateTime
+	 * @access public
+	 * @var dateTime
 	 */ 
 	public $endingDate;
 
 	/**
 	 * 
-	 *@access public
-	 *@var double
+	 * @access public
+	 * @var double
 	 */ 
 	public $maxAmountPerPayment;
 
 	/**
 	 * 
-	 *@access public
-	 *@var integer
+	 * @access public
+	 * @var integer
 	 */ 
 	public $maxNumberOfPayments;
 
 	/**
 	 * 
-	 *@access public
-	 *@var integer
+	 * @access public
+	 * @var integer
 	 */ 
 	public $maxNumberOfPaymentsPerPeriod;
 
 	/**
 	 * 
-	 *@access public
-	 *@var double
+	 * @access public
+	 * @var double
 	 */ 
 	public $maxTotalAmountOfAllPayments;
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $paymentPeriod;
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $returnUrl;
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $memo;
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $ipnNotificationUrl;
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $senderEmail;
 
 	/**
 	 * 
-	 *@access public
-	 *@var dateTime
+	 * @access public
+	 * @var dateTime
 	 */ 
 	public $startingDate;
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $pinType;
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $feesPayer;
 
 	/**
 	 * 
-	 *@access public
-	 *@var boolean
+	 * @access public
+	 * @var boolean
 	 */ 
 	public $displayMaxTotalAmount;
 
 	/**
 	 * Constructor with arguments
 	 */
-	public function __construct($requestEnvelope = null, $cancelUrl = null, $currencyCode = null, $returnUrl = null, $startingDate = null) {
+	public function __construct($requestEnvelope = NULL, $cancelUrl = NULL, $currencyCode = NULL, $returnUrl = NULL, $startingDate = NULL) {
 		$this->requestEnvelope = $requestEnvelope;
 		$this->cancelUrl = $cancelUrl;
 		$this->currencyCode = $currencyCode;
@@ -4761,91 +4705,90 @@ class PreapprovalRequest  {
 	public function toNVPString($prefix = '') {
 		$str = '';
 		$delim = '';
-		if($this->requestEnvelope != null) {
+		if($this->requestEnvelope != NULL) {
 			$newPrefix = $prefix . 'requestEnvelope.';
 			$str .= $delim . call_user_func(array($this->requestEnvelope, 'toNVPString'), $newPrefix);
 			$delim = '&';
 		}
-		if($this->clientDetails != null) {
+		if($this->clientDetails != NULL) {
 			$newPrefix = $prefix . 'clientDetails.';
 			$str .= $delim . call_user_func(array($this->clientDetails, 'toNVPString'), $newPrefix);
 			$delim = '&';
 		}
-		if($this->cancelUrl != null) {
+		if($this->cancelUrl != NULL) {
 			$str .= $delim .  $prefix . 'cancelUrl=' . urlencode($this->cancelUrl);
 			$delim = '&';
 		}
-		if($this->currencyCode != null) {
+		if($this->currencyCode != NULL) {
 			$str .= $delim .  $prefix . 'currencyCode=' . urlencode($this->currencyCode);
 			$delim = '&';
 		}
-		if($this->dateOfMonth != null) {
+		if($this->dateOfMonth != NULL) {
 			$str .= $delim .  $prefix . 'dateOfMonth=' . urlencode($this->dateOfMonth);
 			$delim = '&';
 		}
-		if($this->dayOfWeek != null) {
+		if($this->dayOfWeek != NULL) {
 			$str .= $delim .  $prefix . 'dayOfWeek=' . urlencode($this->dayOfWeek);
 			$delim = '&';
 		}
-		if($this->endingDate != null) {
+		if($this->endingDate != NULL) {
 			$str .= $delim .  $prefix . 'endingDate=' . urlencode($this->endingDate);
 			$delim = '&';
 		}
-		if($this->maxAmountPerPayment != null) {
+		if($this->maxAmountPerPayment != NULL) {
 			$str .= $delim .  $prefix . 'maxAmountPerPayment=' . urlencode($this->maxAmountPerPayment);
 			$delim = '&';
 		}
-		if($this->maxNumberOfPayments != null) {
+		if($this->maxNumberOfPayments != NULL) {
 			$str .= $delim .  $prefix . 'maxNumberOfPayments=' . urlencode($this->maxNumberOfPayments);
 			$delim = '&';
 		}
-		if($this->maxNumberOfPaymentsPerPeriod != null) {
+		if($this->maxNumberOfPaymentsPerPeriod != NULL) {
 			$str .= $delim .  $prefix . 'maxNumberOfPaymentsPerPeriod=' . urlencode($this->maxNumberOfPaymentsPerPeriod);
 			$delim = '&';
 		}
-		if($this->maxTotalAmountOfAllPayments != null) {
+		if($this->maxTotalAmountOfAllPayments != NULL) {
 			$str .= $delim .  $prefix . 'maxTotalAmountOfAllPayments=' . urlencode($this->maxTotalAmountOfAllPayments);
 			$delim = '&';
 		}
-		if($this->paymentPeriod != null) {
+		if($this->paymentPeriod != NULL) {
 			$str .= $delim .  $prefix . 'paymentPeriod=' . urlencode($this->paymentPeriod);
 			$delim = '&';
 		}
-		if($this->returnUrl != null) {
+		if($this->returnUrl != NULL) {
 			$str .= $delim .  $prefix . 'returnUrl=' . urlencode($this->returnUrl);
 			$delim = '&';
 		}
-		if($this->memo != null) {
+		if($this->memo != NULL) {
 			$str .= $delim .  $prefix . 'memo=' . urlencode($this->memo);
 			$delim = '&';
 		}
-		if($this->ipnNotificationUrl != null) {
+		if($this->ipnNotificationUrl != NULL) {
 			$str .= $delim .  $prefix . 'ipnNotificationUrl=' . urlencode($this->ipnNotificationUrl);
 			$delim = '&';
 		}
-		if($this->senderEmail != null) {
+		if($this->senderEmail != NULL) {
 			$str .= $delim .  $prefix . 'senderEmail=' . urlencode($this->senderEmail);
 			$delim = '&';
 		}
-		if($this->startingDate != null) {
+		if($this->startingDate != NULL) {
 			$str .= $delim .  $prefix . 'startingDate=' . urlencode($this->startingDate);
 			$delim = '&';
 		}
-		if($this->pinType != null) {
+		if($this->pinType != NULL) {
 			$str .= $delim .  $prefix . 'pinType=' . urlencode($this->pinType);
 			$delim = '&';
 		}
-		if($this->feesPayer != null) {
+		if($this->feesPayer != NULL) {
 			$str .= $delim .  $prefix . 'feesPayer=' . urlencode($this->feesPayer);
 			$delim = '&';
 		}
-		if($this->displayMaxTotalAmount != null) {
+		if($this->displayMaxTotalAmount != NULL) {
 			$str .= $delim .  $prefix . 'displayMaxTotalAmount=' . urlencode($this->displayMaxTotalAmount);
 			$delim = '&';
 		}
 		return $str;
 	}
-
 
 } 
 
@@ -4858,42 +4801,41 @@ class PreapprovalResponse  {
 
 	/**
 	 * 
-	 *@access public
-	 *@var ResponseEnvelope
+	 * @access public
+	 * @var ResponseEnvelope
 	 */ 
 	public $responseEnvelope;
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $preapprovalKey;
 
 	/**
 	 * 
-     *@array
-	 *@access public
-	 *@var ErrorData
+     * @array
+	 * @access public
+	 * @var ErrorData
 	 */ 
 	public $error;
 
 
 
-
-	public function init($map = null, $prefix = '') {
-		if($map != null) {
+	public function init($map = NULL, $prefix = '') {
+		if($map != NULL) {
 			if (PPUtils::array_match_key($map, $prefix . "responseEnvelope.")) {
 				$newPrefix = $prefix . "responseEnvelope.";
 				$this->responseEnvelope = new ResponseEnvelope();
 				$this->responseEnvelope->init($map, $newPrefix);
 			}
 			$mapKeyName =  $prefix . 'preapprovalKey';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->preapprovalKey = $map[$mapKeyName];
 			}
 			$i = 0;
-			while(true) {
+			while(TRUE) {
 				if (PPUtils::array_match_key($map, $prefix . "error($i)")) {
 					$newPrefix = $prefix . "error($i).";
 					$this->error[$i] = new ErrorData();
@@ -4920,50 +4862,50 @@ class RefundRequest  {
 
 	/**
 	 * 
-	 *@access public
-	 *@var RequestEnvelope
+	 * @access public
+	 * @var RequestEnvelope
 	 */ 
 	public $requestEnvelope;
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $currencyCode;
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $payKey;
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $transactionId;
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $trackingId;
 
 	/**
 	 * 
-	 *@access public
-	 *@var ReceiverList
+	 * @access public
+	 * @var ReceiverList
 	 */ 
 	public $receiverList;
 
 	/**
 	 * Constructor with arguments
 	 */
-	public function __construct($requestEnvelope = null) {
+	public function __construct($requestEnvelope = NULL) {
 		$this->requestEnvelope = $requestEnvelope;
 	}
 
@@ -4971,35 +4913,34 @@ class RefundRequest  {
 	public function toNVPString($prefix = '') {
 		$str = '';
 		$delim = '';
-		if($this->requestEnvelope != null) {
+		if($this->requestEnvelope != NULL) {
 			$newPrefix = $prefix . 'requestEnvelope.';
 			$str .= $delim . call_user_func(array($this->requestEnvelope, 'toNVPString'), $newPrefix);
 			$delim = '&';
 		}
-		if($this->currencyCode != null) {
+		if($this->currencyCode != NULL) {
 			$str .= $delim .  $prefix . 'currencyCode=' . urlencode($this->currencyCode);
 			$delim = '&';
 		}
-		if($this->payKey != null) {
+		if($this->payKey != NULL) {
 			$str .= $delim .  $prefix . 'payKey=' . urlencode($this->payKey);
 			$delim = '&';
 		}
-		if($this->transactionId != null) {
+		if($this->transactionId != NULL) {
 			$str .= $delim .  $prefix . 'transactionId=' . urlencode($this->transactionId);
 			$delim = '&';
 		}
-		if($this->trackingId != null) {
+		if($this->trackingId != NULL) {
 			$str .= $delim .  $prefix . 'trackingId=' . urlencode($this->trackingId);
 			$delim = '&';
 		}
-		if($this->receiverList != null) {
+		if($this->receiverList != NULL) {
 			$newPrefix = $prefix . 'receiverList.';
 			$str .= $delim . call_user_func(array($this->receiverList, 'toNVPString'), $newPrefix);
 			$delim = '&';
 		}
 		return $str;
 	}
-
 
 } 
 
@@ -5012,45 +4953,44 @@ class RefundResponse  {
 
 	/**
 	 * 
-	 *@access public
-	 *@var ResponseEnvelope
+	 * @access public
+	 * @var ResponseEnvelope
 	 */ 
 	public $responseEnvelope;
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $currencyCode;
 
 	/**
 	 * 
-	 *@access public
-	 *@var RefundInfoList
+	 * @access public
+	 * @var RefundInfoList
 	 */ 
 	public $refundInfoList;
 
 	/**
 	 * 
-     *@array
-	 *@access public
-	 *@var ErrorData
+     * @array
+	 * @access public
+	 * @var ErrorData
 	 */ 
 	public $error;
 
 
 
-
-	public function init($map = null, $prefix = '') {
-		if($map != null) {
+	public function init($map = NULL, $prefix = '') {
+		if($map != NULL) {
 			if (PPUtils::array_match_key($map, $prefix . "responseEnvelope.")) {
 				$newPrefix = $prefix . "responseEnvelope.";
 				$this->responseEnvelope = new ResponseEnvelope();
 				$this->responseEnvelope->init($map, $newPrefix);
 			}
 			$mapKeyName =  $prefix . 'currencyCode';
-			if($map != null && array_key_exists($mapKeyName, $map)) {
+			if($map != NULL && array_key_exists($mapKeyName, $map)) {
 				$this->currencyCode = $map[$mapKeyName];
 			}
 			if (PPUtils::array_match_key($map, $prefix . "refundInfoList.")) {
@@ -5059,7 +4999,7 @@ class RefundResponse  {
 				$this->refundInfoList->init($map, $newPrefix);
 			}
 			$i = 0;
-			while(true) {
+			while(TRUE) {
 				if (PPUtils::array_match_key($map, $prefix . "error($i)")) {
 					$newPrefix = $prefix . "error($i).";
 					$this->error[$i] = new ErrorData();
@@ -5083,58 +5023,58 @@ class SetPaymentOptionsRequest  {
 
 	/**
 	 * 
-	 *@access public
-	 *@var RequestEnvelope
+	 * @access public
+	 * @var RequestEnvelope
 	 */ 
 	public $requestEnvelope;
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $payKey;
 
 	/**
 	 * 
-	 *@access public
-	 *@var InitiatingEntity
+	 * @access public
+	 * @var InitiatingEntity
 	 */ 
 	public $initiatingEntity;
 
 	/**
 	 * 
-	 *@access public
-	 *@var DisplayOptions
+	 * @access public
+	 * @var DisplayOptions
 	 */ 
 	public $displayOptions;
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $shippingAddressId;
 
 	/**
 	 * 
-	 *@access public
-	 *@var SenderOptions
+	 * @access public
+	 * @var SenderOptions
 	 */ 
 	public $senderOptions;
 
 	/**
 	 * 
-     *@array
-	 *@access public
-	 *@var ReceiverOptions
+     * @array
+	 * @access public
+	 * @var ReceiverOptions
 	 */ 
 	public $receiverOptions;
 
 	/**
 	 * Constructor with arguments
 	 */
-	public function __construct($requestEnvelope = null, $payKey = null) {
+	public function __construct($requestEnvelope = NULL, $payKey = NULL) {
 		$this->requestEnvelope = $requestEnvelope;
 		$this->payKey = $payKey;
 	}
@@ -5143,30 +5083,30 @@ class SetPaymentOptionsRequest  {
 	public function toNVPString($prefix = '') {
 		$str = '';
 		$delim = '';
-		if($this->requestEnvelope != null) {
+		if($this->requestEnvelope != NULL) {
 			$newPrefix = $prefix . 'requestEnvelope.';
 			$str .= $delim . call_user_func(array($this->requestEnvelope, 'toNVPString'), $newPrefix);
 			$delim = '&';
 		}
-		if($this->payKey != null) {
+		if($this->payKey != NULL) {
 			$str .= $delim .  $prefix . 'payKey=' . urlencode($this->payKey);
 			$delim = '&';
 		}
-		if($this->initiatingEntity != null) {
+		if($this->initiatingEntity != NULL) {
 			$newPrefix = $prefix . 'initiatingEntity.';
 			$str .= $delim . call_user_func(array($this->initiatingEntity, 'toNVPString'), $newPrefix);
 			$delim = '&';
 		}
-		if($this->displayOptions != null) {
+		if($this->displayOptions != NULL) {
 			$newPrefix = $prefix . 'displayOptions.';
 			$str .= $delim . call_user_func(array($this->displayOptions, 'toNVPString'), $newPrefix);
 			$delim = '&';
 		}
-		if($this->shippingAddressId != null) {
+		if($this->shippingAddressId != NULL) {
 			$str .= $delim .  $prefix . 'shippingAddressId=' . urlencode($this->shippingAddressId);
 			$delim = '&';
 		}
-		if($this->senderOptions != null) {
+		if($this->senderOptions != NULL) {
 			$newPrefix = $prefix . 'senderOptions.';
 			$str .= $delim . call_user_func(array($this->senderOptions, 'toNVPString'), $newPrefix);
 			$delim = '&';
@@ -5179,7 +5119,6 @@ class SetPaymentOptionsRequest  {
 		return $str;
 	}
 
-
 } 
 
 
@@ -5191,31 +5130,30 @@ class SetPaymentOptionsResponse  {
 
 	/**
 	 * 
-	 *@access public
-	 *@var ResponseEnvelope
+	 * @access public
+	 * @var ResponseEnvelope
 	 */ 
 	public $responseEnvelope;
 
 	/**
 	 * 
-     *@array
-	 *@access public
-	 *@var ErrorData
+     * @array
+	 * @access public
+	 * @var ErrorData
 	 */ 
 	public $error;
 
 
 
-
-	public function init($map = null, $prefix = '') {
-		if($map != null) {
+	public function init($map = NULL, $prefix = '') {
+		if($map != NULL) {
 			if (PPUtils::array_match_key($map, $prefix . "responseEnvelope.")) {
 				$newPrefix = $prefix . "responseEnvelope.";
 				$this->responseEnvelope = new ResponseEnvelope();
 				$this->responseEnvelope->init($map, $newPrefix);
 			}
 			$i = 0;
-			while(true) {
+			while(TRUE) {
 				if (PPUtils::array_match_key($map, $prefix . "error($i)")) {
 					$newPrefix = $prefix . "error($i).";
 					$this->error[$i] = new ErrorData();
@@ -5240,22 +5178,22 @@ class GetFundingPlansRequest  {
 
 	/**
 	 * 
-	 *@access public
-	 *@var RequestEnvelope
+	 * @access public
+	 * @var RequestEnvelope
 	 */ 
 	public $requestEnvelope;
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $payKey;
 
 	/**
 	 * Constructor with arguments
 	 */
-	public function __construct($requestEnvelope = null, $payKey = null) {
+	public function __construct($requestEnvelope = NULL, $payKey = NULL) {
 		$this->requestEnvelope = $requestEnvelope;
 		$this->payKey = $payKey;
 	}
@@ -5264,18 +5202,17 @@ class GetFundingPlansRequest  {
 	public function toNVPString($prefix = '') {
 		$str = '';
 		$delim = '';
-		if($this->requestEnvelope != null) {
+		if($this->requestEnvelope != NULL) {
 			$newPrefix = $prefix . 'requestEnvelope.';
 			$str .= $delim . call_user_func(array($this->requestEnvelope, 'toNVPString'), $newPrefix);
 			$delim = '&';
 		}
-		if($this->payKey != null) {
+		if($this->payKey != NULL) {
 			$str .= $delim .  $prefix . 'payKey=' . urlencode($this->payKey);
 			$delim = '&';
 		}
 		return $str;
 	}
-
 
 } 
 
@@ -5289,39 +5226,38 @@ class GetFundingPlansResponse  {
 
 	/**
 	 * 
-	 *@access public
-	 *@var ResponseEnvelope
+	 * @access public
+	 * @var ResponseEnvelope
 	 */ 
 	public $responseEnvelope;
 
 	/**
 	 * 
-     *@array
-	 *@access public
-	 *@var FundingPlan
+     * @array
+	 * @access public
+	 * @var FundingPlan
 	 */ 
 	public $fundingPlan;
 
 	/**
 	 * 
-     *@array
-	 *@access public
-	 *@var ErrorData
+     * @array
+	 * @access public
+	 * @var ErrorData
 	 */ 
 	public $error;
 
 
 
-
-	public function init($map = null, $prefix = '') {
-		if($map != null) {
+	public function init($map = NULL, $prefix = '') {
+		if($map != NULL) {
 			if (PPUtils::array_match_key($map, $prefix . "responseEnvelope.")) {
 				$newPrefix = $prefix . "responseEnvelope.";
 				$this->responseEnvelope = new ResponseEnvelope();
 				$this->responseEnvelope->init($map, $newPrefix);
 			}
 			$i = 0;
-			while(true) {
+			while(TRUE) {
 				if (PPUtils::array_match_key($map, $prefix . "fundingPlan($i)")) {
 					$newPrefix = $prefix . "fundingPlan($i).";
 					$this->fundingPlan[$i] = new FundingPlan();
@@ -5332,7 +5268,7 @@ class GetFundingPlansResponse  {
 				$i++;
 			}
 			$i = 0;
-			while(true) {
+			while(TRUE) {
 				if (PPUtils::array_match_key($map, $prefix . "error($i)")) {
 					$newPrefix = $prefix . "error($i).";
 					$this->error[$i] = new ErrorData();
@@ -5356,8 +5292,8 @@ class GetAvailableShippingAddressesRequest  {
 
 	/**
 	 * 
-	 *@access public
-	 *@var RequestEnvelope
+	 * @access public
+	 * @var RequestEnvelope
 	 */ 
 	public $requestEnvelope;
 
@@ -5365,15 +5301,15 @@ class GetAvailableShippingAddressesRequest  {
 	 * The key for which to provide the available addresses. Key
 	 * can be an AdaptivePayments key such as payKey or
 	 * preapprovalKey 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $key;
 
 	/**
 	 * Constructor with arguments
 	 */
-	public function __construct($requestEnvelope = null, $key = null) {
+	public function __construct($requestEnvelope = NULL, $key = NULL) {
 		$this->requestEnvelope = $requestEnvelope;
 		$this->key = $key;
 	}
@@ -5382,18 +5318,17 @@ class GetAvailableShippingAddressesRequest  {
 	public function toNVPString($prefix = '') {
 		$str = '';
 		$delim = '';
-		if($this->requestEnvelope != null) {
+		if($this->requestEnvelope != NULL) {
 			$newPrefix = $prefix . 'requestEnvelope.';
 			$str .= $delim . call_user_func(array($this->requestEnvelope, 'toNVPString'), $newPrefix);
 			$delim = '&';
 		}
-		if($this->key != null) {
+		if($this->key != NULL) {
 			$str .= $delim .  $prefix . 'key=' . urlencode($this->key);
 			$delim = '&';
 		}
 		return $str;
 	}
-
 
 } 
 
@@ -5407,39 +5342,38 @@ class GetAvailableShippingAddressesResponse  {
 
 	/**
 	 * 
-	 *@access public
-	 *@var ResponseEnvelope
+	 * @access public
+	 * @var ResponseEnvelope
 	 */ 
 	public $responseEnvelope;
 
 	/**
 	 * 
-     *@array
-	 *@access public
-	 *@var Address
+     * @array
+	 * @access public
+	 * @var Address
 	 */ 
 	public $availableAddress;
 
 	/**
 	 * 
-     *@array
-	 *@access public
-	 *@var ErrorData
+     * @array
+	 * @access public
+	 * @var ErrorData
 	 */ 
 	public $error;
 
 
 
-
-	public function init($map = null, $prefix = '') {
-		if($map != null) {
+	public function init($map = NULL, $prefix = '') {
+		if($map != NULL) {
 			if (PPUtils::array_match_key($map, $prefix . "responseEnvelope.")) {
 				$newPrefix = $prefix . "responseEnvelope.";
 				$this->responseEnvelope = new ResponseEnvelope();
 				$this->responseEnvelope->init($map, $newPrefix);
 			}
 			$i = 0;
-			while(true) {
+			while(TRUE) {
 				if (PPUtils::array_match_key($map, $prefix . "availableAddress($i)")) {
 					$newPrefix = $prefix . "availableAddress($i).";
 					$this->availableAddress[$i] = new Address();
@@ -5450,7 +5384,7 @@ class GetAvailableShippingAddressesResponse  {
 				$i++;
 			}
 			$i = 0;
-			while(true) {
+			while(TRUE) {
 				if (PPUtils::array_match_key($map, $prefix . "error($i)")) {
 					$newPrefix = $prefix . "error($i).";
 					$this->error[$i] = new ErrorData();
@@ -5474,8 +5408,8 @@ class GetShippingAddressesRequest  {
 
 	/**
 	 * 
-	 *@access public
-	 *@var RequestEnvelope
+	 * @access public
+	 * @var RequestEnvelope
 	 */ 
 	public $requestEnvelope;
 
@@ -5483,15 +5417,15 @@ class GetShippingAddressesRequest  {
 	 * The key for which to provide the available addresses. Key
 	 * can be an AdaptivePayments key such as payKey or
 	 * preapprovalKey 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $key;
 
 	/**
 	 * Constructor with arguments
 	 */
-	public function __construct($requestEnvelope = null, $key = null) {
+	public function __construct($requestEnvelope = NULL, $key = NULL) {
 		$this->requestEnvelope = $requestEnvelope;
 		$this->key = $key;
 	}
@@ -5500,18 +5434,17 @@ class GetShippingAddressesRequest  {
 	public function toNVPString($prefix = '') {
 		$str = '';
 		$delim = '';
-		if($this->requestEnvelope != null) {
+		if($this->requestEnvelope != NULL) {
 			$newPrefix = $prefix . 'requestEnvelope.';
 			$str .= $delim . call_user_func(array($this->requestEnvelope, 'toNVPString'), $newPrefix);
 			$delim = '&';
 		}
-		if($this->key != null) {
+		if($this->key != NULL) {
 			$str .= $delim .  $prefix . 'key=' . urlencode($this->key);
 			$delim = '&';
 		}
 		return $str;
 	}
-
 
 } 
 
@@ -5525,31 +5458,30 @@ class GetShippingAddressesResponse  {
 
 	/**
 	 * 
-	 *@access public
-	 *@var ResponseEnvelope
+	 * @access public
+	 * @var ResponseEnvelope
 	 */ 
 	public $responseEnvelope;
 
 	/**
 	 * 
-	 *@access public
-	 *@var Address
+	 * @access public
+	 * @var Address
 	 */ 
 	public $selectedAddress;
 
 	/**
 	 * 
-     *@array
-	 *@access public
-	 *@var ErrorData
+     * @array
+	 * @access public
+	 * @var ErrorData
 	 */ 
 	public $error;
 
 
 
-
-	public function init($map = null, $prefix = '') {
-		if($map != null) {
+	public function init($map = NULL, $prefix = '') {
+		if($map != NULL) {
 			if (PPUtils::array_match_key($map, $prefix . "responseEnvelope.")) {
 				$newPrefix = $prefix . "responseEnvelope.";
 				$this->responseEnvelope = new ResponseEnvelope();
@@ -5561,7 +5493,7 @@ class GetShippingAddressesResponse  {
 				$this->selectedAddress->init($map, $newPrefix);
 			}
 			$i = 0;
-			while(true) {
+			while(TRUE) {
 				if (PPUtils::array_match_key($map, $prefix . "error($i)")) {
 					$newPrefix = $prefix . "error($i).";
 					$this->error[$i] = new ErrorData();
@@ -5585,44 +5517,44 @@ class GetUserLimitsRequest  {
 
 	/**
 	 * 
-	 *@access public
-	 *@var RequestEnvelope
+	 * @access public
+	 * @var RequestEnvelope
 	 */ 
 	public $requestEnvelope;
 
 	/**
 	 * The account identifier for the user 
-	 *@access public
-	 *@var AccountIdentifier
+	 * @access public
+	 * @var AccountIdentifier
 	 */ 
 	public $user;
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $country;
 
 	/**
 	 * 
-	 *@access public
-	 *@var string
+	 * @access public
+	 * @var string
 	 */ 
 	public $currencyCode;
 
 	/**
 	 * List of limit types 
-     *@array
-	 *@access public
-	 *@var string
+     * @array
+	 * @access public
+	 * @var string
 	 */ 
 	public $limitType;
 
 	/**
 	 * Constructor with arguments
 	 */
-	public function __construct($requestEnvelope = null, $user = null, $country = null, $currencyCode = null, $limitType = null) {
+	public function __construct($requestEnvelope = NULL, $user = NULL, $country = NULL, $currencyCode = NULL, $limitType = NULL) {
 		$this->requestEnvelope = $requestEnvelope;
 		$this->user = $user;
 		$this->country = $country;
@@ -5634,21 +5566,21 @@ class GetUserLimitsRequest  {
 	public function toNVPString($prefix = '') {
 		$str = '';
 		$delim = '';
-		if($this->requestEnvelope != null) {
+		if($this->requestEnvelope != NULL) {
 			$newPrefix = $prefix . 'requestEnvelope.';
 			$str .= $delim . call_user_func(array($this->requestEnvelope, 'toNVPString'), $newPrefix);
 			$delim = '&';
 		}
-		if($this->user != null) {
+		if($this->user != NULL) {
 			$newPrefix = $prefix . 'user.';
 			$str .= $delim . call_user_func(array($this->user, 'toNVPString'), $newPrefix);
 			$delim = '&';
 		}
-		if($this->country != null) {
+		if($this->country != NULL) {
 			$str .= $delim .  $prefix . 'country=' . urlencode($this->country);
 			$delim = '&';
 		}
-		if($this->currencyCode != null) {
+		if($this->currencyCode != NULL) {
 			$str .= $delim .  $prefix . 'currencyCode=' . urlencode($this->currencyCode);
 			$delim = '&';
 		}
@@ -5658,7 +5590,6 @@ class GetUserLimitsRequest  {
 		}
 		return $str;
 	}
-
 
 } 
 
@@ -5671,46 +5602,45 @@ class GetUserLimitsResponse  {
 
 	/**
 	 * 
-	 *@access public
-	 *@var ResponseEnvelope
+	 * @access public
+	 * @var ResponseEnvelope
 	 */ 
 	public $responseEnvelope;
 
 	/**
 	 * 
-     *@array
-	 *@access public
-	 *@var UserLimit
+     * @array
+	 * @access public
+	 * @var UserLimit
 	 */ 
 	public $userLimit;
 
 	/**
 	 * 
-	 *@access public
-	 *@var WarningDataList
+	 * @access public
+	 * @var WarningDataList
 	 */ 
 	public $warningDataList;
 
 	/**
 	 * 
-     *@array
-	 *@access public
-	 *@var ErrorData
+     * @array
+	 * @access public
+	 * @var ErrorData
 	 */ 
 	public $error;
 
 
 
-
-	public function init($map = null, $prefix = '') {
-		if($map != null) {
+	public function init($map = NULL, $prefix = '') {
+		if($map != NULL) {
 			if (PPUtils::array_match_key($map, $prefix . "responseEnvelope.")) {
 				$newPrefix = $prefix . "responseEnvelope.";
 				$this->responseEnvelope = new ResponseEnvelope();
 				$this->responseEnvelope->init($map, $newPrefix);
 			}
 			$i = 0;
-			while(true) {
+			while(TRUE) {
 				if (PPUtils::array_match_key($map, $prefix . "userLimit($i)")) {
 					$newPrefix = $prefix . "userLimit($i).";
 					$this->userLimit[$i] = new UserLimit();
@@ -5726,7 +5656,7 @@ class GetUserLimitsResponse  {
 				$this->warningDataList->init($map, $newPrefix);
 			}
 			$i = 0;
-			while(true) {
+			while(TRUE) {
 				if (PPUtils::array_match_key($map, $prefix . "error($i)")) {
 					$newPrefix = $prefix . "error($i).";
 					$this->error[$i] = new ErrorData();
