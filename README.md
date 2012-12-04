@@ -93,4 +93,4 @@ If you need help using the SDK, a new feature that you need or have a issue to r
    
      OR
    
-   https://github.com/paypal/adaptivepayments-php-sdk/issues 
+   https://github.com/paypal/adaptivepayments-sdk-php/issues 

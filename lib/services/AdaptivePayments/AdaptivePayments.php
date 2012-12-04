@@ -17,8 +17,8 @@ class AccountIdentifier
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $email;
 
@@ -26,8 +26,8 @@ class AccountIdentifier
 	 * 
 	 * @access public
 	 
-	 
-	 * @var PhoneNumberType
+	 	 	 	 
+	 * @var PhoneNumberType 	 
 	 */ 
 	public $phone;
 
@@ -47,8 +47,8 @@ class BaseAddress
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $line1;
 
@@ -56,8 +56,8 @@ class BaseAddress
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $line2;
 
@@ -65,8 +65,8 @@ class BaseAddress
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $city;
 
@@ -74,8 +74,8 @@ class BaseAddress
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $state;
 
@@ -83,8 +83,8 @@ class BaseAddress
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $postalCode;
 
@@ -92,8 +92,8 @@ class BaseAddress
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $countryCode;
 
@@ -101,8 +101,8 @@ class BaseAddress
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $type;
 
@@ -123,8 +123,8 @@ class ClientDetailsType
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $ipAddress;
 
@@ -132,8 +132,8 @@ class ClientDetailsType
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $deviceId;
 
@@ -141,8 +141,8 @@ class ClientDetailsType
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $applicationId;
 
@@ -150,8 +150,8 @@ class ClientDetailsType
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $model;
 
@@ -159,8 +159,8 @@ class ClientDetailsType
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $geoLocation;
 
@@ -168,8 +168,8 @@ class ClientDetailsType
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $customerType;
 
@@ -177,8 +177,8 @@ class ClientDetailsType
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $partnerName;
 
@@ -186,8 +186,8 @@ class ClientDetailsType
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $customerId;
 
@@ -207,8 +207,8 @@ class CurrencyType
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $code;
 
@@ -216,8 +216,8 @@ class CurrencyType
 	 * 
 	 * @access public
 	 
-	 
-	 * @var double
+	 	 	 	 
+	 * @var double 	 
 	 */ 
 	public $amount;
 
@@ -246,8 +246,8 @@ class ErrorData
 	 * 
 	 * @access public
 	 
-	 
-	 * @var integer
+	 	 	 	 
+	 * @var integer 	 
 	 */ 
 	public $errorId;
 
@@ -255,8 +255,8 @@ class ErrorData
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $domain;
 
@@ -264,8 +264,8 @@ class ErrorData
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $subdomain;
 
@@ -273,8 +273,8 @@ class ErrorData
 	 * 
 	 * @access public
 	 
-	 
-	 * @var ErrorSeverity
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $severity;
 
@@ -282,8 +282,8 @@ class ErrorData
 	 * 
 	 * @access public
 	 
-	 
-	 * @var ErrorCategory
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $category;
 
@@ -291,8 +291,8 @@ class ErrorData
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $message;
 
@@ -300,8 +300,8 @@ class ErrorData
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $exceptionId;
 
@@ -311,7 +311,9 @@ class ErrorData
 	 * @access public
 	 
 	 
-	 * @var ErrorParameter
+	 * @value
+	 	 	 	 
+	 * @var ErrorParameter 	 
 	 */ 
 	public $parameter;
 
@@ -333,8 +335,8 @@ class ErrorParameter
 	 
 	 
 	 * @attribute 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $name;
 
@@ -342,8 +344,8 @@ class ErrorParameter
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $value;
 
@@ -364,8 +366,8 @@ class FaultMessage
 	 * 
 	 * @access public
 	 
-	 
-	 * @var ResponseEnvelope
+	 	 	 	 
+	 * @var ResponseEnvelope 	 
 	 */ 
 	public $responseEnvelope;
 
@@ -375,7 +377,9 @@ class FaultMessage
 	 * @access public
 	 
 	 
-	 * @var ErrorData
+	 * @value
+	 	 	 	 
+	 * @var ErrorData 	 
 	 */ 
 	public $error;
 
@@ -395,8 +399,8 @@ class PhoneNumberType
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $countryCode;
 
@@ -404,8 +408,8 @@ class PhoneNumberType
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $phoneNumber;
 
@@ -413,8 +417,8 @@ class PhoneNumberType
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $extension;
 
@@ -447,8 +451,8 @@ class RequestEnvelope
 	 * enumerated values of the detail level for each component. 
 	 * @access public
 	 
-	 
-	 * @var DetailLevelCode
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $detailLevel;
 
@@ -457,8 +461,8 @@ class RequestEnvelope
 	 * tag, e.g., en_US. 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $errorLanguage;
 
@@ -486,8 +490,8 @@ class ResponseEnvelope
 	 * 
 	 * @access public
 	 
-	 
-	 * @var dateTime
+	 	 	 	 
+	 * @var dateTime 	 
 	 */ 
 	public $timestamp;
 
@@ -495,8 +499,8 @@ class ResponseEnvelope
 	 * Application level acknowledgment code. 
 	 * @access public
 	 
-	 
-	 * @var AckCode
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $ack;
 
@@ -504,8 +508,8 @@ class ResponseEnvelope
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $correlationId;
 
@@ -513,8 +517,8 @@ class ResponseEnvelope
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $build;
 
@@ -534,8 +538,8 @@ class Address
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $addresseeName;
 
@@ -543,8 +547,8 @@ class Address
 	 * 
 	 * @access public
 	 
-	 
-	 * @var BaseAddress
+	 	 	 	 
+	 * @var BaseAddress 	 
 	 */ 
 	public $baseAddress;
 
@@ -552,8 +556,8 @@ class Address
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $addressId;
 
@@ -575,7 +579,9 @@ class AddressList
 	 * @access public
 	 
 	 
-	 * @var Address
+	 * @value
+	 	 	 	 
+	 * @var Address 	 
 	 */ 
 	public $address;
 
@@ -597,7 +603,9 @@ class CurrencyCodeList
 	 * @access public
 	 
 	 
-	 * @var string
+	 * @value
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $currencyCode;
 
@@ -625,8 +633,8 @@ class CurrencyConversionList
 	 * 
 	 * @access public
 	 
-	 
-	 * @var CurrencyType
+	 	 	 	 
+	 * @var CurrencyType 	 
 	 */ 
 	public $baseAmount;
 
@@ -634,8 +642,8 @@ class CurrencyConversionList
 	 * 
 	 * @access public
 	 
-	 
-	 * @var CurrencyList
+	 	 	 	 
+	 * @var CurrencyList 	 
 	 */ 
 	public $currencyList;
 
@@ -658,7 +666,9 @@ class CurrencyConversionTable
 	 * @access public
 	 
 	 
-	 * @var CurrencyConversionList
+	 * @value
+	 	 	 	 
+	 * @var CurrencyConversionList 	 
 	 */ 
 	public $currencyConversionList;
 
@@ -680,7 +690,9 @@ class CurrencyList
 	 * @access public
 	 
 	 
-	 * @var CurrencyType
+	 * @value
+	 	 	 	 
+	 * @var CurrencyType 	 
 	 */ 
 	public $currency;
 
@@ -708,8 +720,8 @@ class DisplayOptions
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $emailHeaderImageUrl;
 
@@ -717,8 +729,8 @@ class DisplayOptions
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $emailMarketingImageUrl;
 
@@ -726,8 +738,8 @@ class DisplayOptions
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $headerImageUrl;
 
@@ -735,8 +747,8 @@ class DisplayOptions
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $businessName;
 
@@ -758,7 +770,9 @@ class ErrorList
 	 * @access public
 	 
 	 
-	 * @var ErrorData
+	 * @value
+	 	 	 	 
+	 * @var ErrorData 	 
 	 */ 
 	public $error;
 
@@ -778,8 +792,8 @@ class FundingConstraint
 	 * 
 	 * @access public
 	 
-	 
-	 * @var FundingTypeList
+	 	 	 	 
+	 * @var FundingTypeList 	 
 	 */ 
 	public $allowedFundingType;
 
@@ -799,8 +813,8 @@ class FundingTypeInfo
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $fundingType;
 
@@ -829,7 +843,9 @@ class FundingTypeList
 	 * @access public
 	 
 	 
-	 * @var FundingTypeInfo
+	 * @value
+	 	 	 	 
+	 * @var FundingTypeInfo 	 
 	 */ 
 	public $fundingTypeInfo;
 
@@ -856,8 +872,8 @@ class CurrencyConversion
 	 * 
 	 * @access public
 	 
-	 
-	 * @var CurrencyType
+	 	 	 	 
+	 * @var CurrencyType 	 
 	 */ 
 	public $from;
 
@@ -865,8 +881,8 @@ class CurrencyConversion
 	 * 
 	 * @access public
 	 
-	 
-	 * @var CurrencyType
+	 	 	 	 
+	 * @var CurrencyType 	 
 	 */ 
 	public $to;
 
@@ -874,8 +890,8 @@ class CurrencyConversion
 	 * 
 	 * @access public
 	 
-	 
-	 * @var double
+	 	 	 	 
+	 * @var double 	 
 	 */ 
 	public $exchangeRate;
 
@@ -895,8 +911,8 @@ class FundingSource
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $lastFourOfAccountNumber;
 
@@ -904,8 +920,8 @@ class FundingSource
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $type;
 
@@ -913,8 +929,8 @@ class FundingSource
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $displayName;
 
@@ -922,8 +938,8 @@ class FundingSource
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $fundingSourceId;
 
@@ -931,8 +947,8 @@ class FundingSource
 	 * 
 	 * @access public
 	 
-	 
-	 * @var boolean
+	 	 	 	 
+	 * @var boolean 	 
 	 */ 
 	public $allowed;
 
@@ -952,8 +968,8 @@ class FundingPlanCharge
 	 * 
 	 * @access public
 	 
-	 
-	 * @var CurrencyType
+	 	 	 	 
+	 * @var CurrencyType 	 
 	 */ 
 	public $charge;
 
@@ -961,8 +977,8 @@ class FundingPlanCharge
 	 * 
 	 * @access public
 	 
-	 
-	 * @var FundingSource
+	 	 	 	 
+	 * @var FundingSource 	 
 	 */ 
 	public $fundingSource;
 
@@ -983,8 +999,8 @@ class FundingPlan
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $fundingPlanId;
 
@@ -992,8 +1008,8 @@ class FundingPlan
 	 * 
 	 * @access public
 	 
-	 
-	 * @var CurrencyType
+	 	 	 	 
+	 * @var CurrencyType 	 
 	 */ 
 	public $fundingAmount;
 
@@ -1001,8 +1017,8 @@ class FundingPlan
 	 * 
 	 * @access public
 	 
-	 
-	 * @var FundingSource
+	 	 	 	 
+	 * @var FundingSource 	 
 	 */ 
 	public $backupFundingSource;
 
@@ -1010,8 +1026,8 @@ class FundingPlan
 	 * 
 	 * @access public
 	 
-	 
-	 * @var CurrencyType
+	 	 	 	 
+	 * @var CurrencyType 	 
 	 */ 
 	public $senderFees;
 
@@ -1019,8 +1035,8 @@ class FundingPlan
 	 * 
 	 * @access public
 	 
-	 
-	 * @var CurrencyConversion
+	 	 	 	 
+	 * @var CurrencyConversion 	 
 	 */ 
 	public $currencyConversion;
 
@@ -1030,7 +1046,9 @@ class FundingPlan
 	 * @access public
 	 
 	 
-	 * @var FundingPlanCharge
+	 * @value
+	 	 	 	 
+	 * @var FundingPlanCharge 	 
 	 */ 
 	public $charge;
 
@@ -1053,8 +1071,8 @@ class InitiatingEntity
 	 * 
 	 * @access public
 	 
-	 
-	 * @var InstitutionCustomer
+	 	 	 	 
+	 * @var InstitutionCustomer 	 
 	 */ 
 	public $institutionCustomer;
 
@@ -1074,8 +1092,8 @@ class InstitutionCustomer
 	 * The unique identifier as assigned to the institution. 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $institutionId;
 
@@ -1084,8 +1102,8 @@ class InstitutionCustomer
 	 * institution. 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $firstName;
 
@@ -1094,8 +1112,8 @@ class InstitutionCustomer
 	 * institution. 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $lastName;
 
@@ -1104,8 +1122,8 @@ class InstitutionCustomer
 	 * institution. 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $displayName;
 
@@ -1114,8 +1132,8 @@ class InstitutionCustomer
 	 * institution. 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $institutionCustomerId;
 
@@ -1124,8 +1142,8 @@ class InstitutionCustomer
 	 * the end consumer 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $countryCode;
 
@@ -1133,8 +1151,8 @@ class InstitutionCustomer
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $email;
 
@@ -1166,8 +1184,8 @@ class InvoiceItem
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $name;
 
@@ -1175,8 +1193,8 @@ class InvoiceItem
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $identifier;
 
@@ -1184,8 +1202,8 @@ class InvoiceItem
 	 * 
 	 * @access public
 	 
-	 
-	 * @var double
+	 	 	 	 
+	 * @var double 	 
 	 */ 
 	public $price;
 
@@ -1193,8 +1211,8 @@ class InvoiceItem
 	 * 
 	 * @access public
 	 
-	 
-	 * @var double
+	 	 	 	 
+	 * @var double 	 
 	 */ 
 	public $itemPrice;
 
@@ -1202,8 +1220,8 @@ class InvoiceItem
 	 * 
 	 * @access public
 	 
-	 
-	 * @var integer
+	 	 	 	 
+	 * @var integer 	 
 	 */ 
 	public $itemCount;
 
@@ -1226,7 +1244,9 @@ class InvoiceData
 	 * @access public
 	 
 	 
-	 * @var InvoiceItem
+	 * @value
+	 	 	 	 
+	 * @var InvoiceItem 	 
 	 */ 
 	public $item;
 
@@ -1234,8 +1254,8 @@ class InvoiceData
 	 * 
 	 * @access public
 	 
-	 
-	 * @var double
+	 	 	 	 
+	 * @var double 	 
 	 */ 
 	public $totalTax;
 
@@ -1243,8 +1263,8 @@ class InvoiceData
 	 * 
 	 * @access public
 	 
-	 
-	 * @var double
+	 	 	 	 
+	 * @var double 	 
 	 */ 
 	public $totalShipping;
 
@@ -1265,8 +1285,8 @@ class PayError
 	 * 
 	 * @access public
 	 
-	 
-	 * @var Receiver
+	 	 	 	 
+	 * @var Receiver 	 
 	 */ 
 	public $receiver;
 
@@ -1274,8 +1294,8 @@ class PayError
 	 * 
 	 * @access public
 	 
-	 
-	 * @var ErrorData
+	 	 	 	 
+	 * @var ErrorData 	 
 	 */ 
 	public $error;
 
@@ -1297,7 +1317,9 @@ class PayErrorList
 	 * @access public
 	 
 	 
-	 * @var PayError
+	 * @value
+	 	 	 	 
+	 * @var PayError 	 
 	 */ 
 	public $payError;
 
@@ -1320,8 +1342,8 @@ class PaymentInfo
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $transactionId;
 
@@ -1329,8 +1351,8 @@ class PaymentInfo
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $transactionStatus;
 
@@ -1338,8 +1360,8 @@ class PaymentInfo
 	 * 
 	 * @access public
 	 
-	 
-	 * @var Receiver
+	 	 	 	 
+	 * @var Receiver 	 
 	 */ 
 	public $receiver;
 
@@ -1347,8 +1369,8 @@ class PaymentInfo
 	 * 
 	 * @access public
 	 
-	 
-	 * @var double
+	 	 	 	 
+	 * @var double 	 
 	 */ 
 	public $refundedAmount;
 
@@ -1356,8 +1378,8 @@ class PaymentInfo
 	 * 
 	 * @access public
 	 
-	 
-	 * @var boolean
+	 	 	 	 
+	 * @var boolean 	 
 	 */ 
 	public $pendingRefund;
 
@@ -1365,8 +1387,8 @@ class PaymentInfo
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $senderTransactionId;
 
@@ -1374,8 +1396,8 @@ class PaymentInfo
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $senderTransactionStatus;
 
@@ -1383,8 +1405,8 @@ class PaymentInfo
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $pendingReason;
 
@@ -1406,7 +1428,9 @@ class PaymentInfoList
 	 * @access public
 	 
 	 
-	 * @var PaymentInfo
+	 * @value
+	 	 	 	 
+	 * @var PaymentInfo 	 
 	 */ 
 	public $paymentInfo;
 
@@ -1429,8 +1453,8 @@ class Receiver
 	 * 
 	 * @access public
 	 
-	 
-	 * @var double
+	 	 	 	 
+	 * @var double 	 
 	 */ 
 	public $amount;
 
@@ -1438,8 +1462,8 @@ class Receiver
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $email;
 
@@ -1447,8 +1471,8 @@ class Receiver
 	 * 
 	 * @access public
 	 
-	 
-	 * @var PhoneNumberType
+	 	 	 	 
+	 * @var PhoneNumberType 	 
 	 */ 
 	public $phone;
 
@@ -1456,8 +1480,8 @@ class Receiver
 	 * 
 	 * @access public
 	 
-	 
-	 * @var boolean
+	 	 	 	 
+	 * @var boolean 	 
 	 */ 
 	public $primary;
 
@@ -1465,8 +1489,8 @@ class Receiver
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $invoiceId;
 
@@ -1474,8 +1498,8 @@ class Receiver
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $paymentType;
 
@@ -1483,8 +1507,8 @@ class Receiver
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $paymentSubType;
 
@@ -1513,7 +1537,9 @@ class ReceiverList
 	 * @access public
 	 
 	 
-	 * @var Receiver
+	 * @value
+	 	 	 	 
+	 * @var Receiver 	 
 	 */ 
 	public $receiver;
 
@@ -1554,8 +1580,8 @@ class ReceiverOptions
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $description;
 
@@ -1563,8 +1589,8 @@ class ReceiverOptions
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $customId;
 
@@ -1572,8 +1598,8 @@ class ReceiverOptions
 	 * 
 	 * @access public
 	 
-	 
-	 * @var InvoiceData
+	 	 	 	 
+	 * @var InvoiceData 	 
 	 */ 
 	public $invoiceData;
 
@@ -1581,8 +1607,8 @@ class ReceiverOptions
 	 * 
 	 * @access public
 	 
-	 
-	 * @var ReceiverIdentifier
+	 	 	 	 
+	 * @var ReceiverIdentifier 	 
 	 */ 
 	public $receiver;
 
@@ -1590,8 +1616,8 @@ class ReceiverOptions
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $referrerCode;
 
@@ -1619,8 +1645,8 @@ class RefundInfo
 	 * 
 	 * @access public
 	 
-	 
-	 * @var Receiver
+	 	 	 	 
+	 * @var Receiver 	 
 	 */ 
 	public $receiver;
 
@@ -1628,8 +1654,8 @@ class RefundInfo
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $refundStatus;
 
@@ -1637,8 +1663,8 @@ class RefundInfo
 	 * 
 	 * @access public
 	 
-	 
-	 * @var double
+	 	 	 	 
+	 * @var double 	 
 	 */ 
 	public $refundNetAmount;
 
@@ -1646,8 +1672,8 @@ class RefundInfo
 	 * 
 	 * @access public
 	 
-	 
-	 * @var double
+	 	 	 	 
+	 * @var double 	 
 	 */ 
 	public $refundFeeAmount;
 
@@ -1655,8 +1681,8 @@ class RefundInfo
 	 * 
 	 * @access public
 	 
-	 
-	 * @var double
+	 	 	 	 
+	 * @var double 	 
 	 */ 
 	public $refundGrossAmount;
 
@@ -1664,8 +1690,8 @@ class RefundInfo
 	 * 
 	 * @access public
 	 
-	 
-	 * @var double
+	 	 	 	 
+	 * @var double 	 
 	 */ 
 	public $totalOfAllRefunds;
 
@@ -1673,8 +1699,8 @@ class RefundInfo
 	 * 
 	 * @access public
 	 
-	 
-	 * @var boolean
+	 	 	 	 
+	 * @var boolean 	 
 	 */ 
 	public $refundHasBecomeFull;
 
@@ -1682,8 +1708,8 @@ class RefundInfo
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $encryptedRefundTransactionId;
 
@@ -1691,8 +1717,8 @@ class RefundInfo
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $refundTransactionStatus;
 
@@ -1700,8 +1726,8 @@ class RefundInfo
 	 * 
 	 * @access public
 	 
-	 
-	 * @var ErrorList
+	 	 	 	 
+	 * @var ErrorList 	 
 	 */ 
 	public $errorList;
 
@@ -1723,7 +1749,9 @@ class RefundInfoList
 	 * @access public
 	 
 	 
-	 * @var RefundInfo
+	 * @value
+	 	 	 	 
+	 * @var RefundInfo 	 
 	 */ 
 	public $refundInfo;
 
@@ -1744,8 +1772,8 @@ class SenderOptions
 	 * flow. 
 	 * @access public
 	 
-	 
-	 * @var boolean
+	 	 	 	 
+	 * @var boolean 	 
 	 */ 
 	public $requireShippingAddressSelection;
 
@@ -1753,8 +1781,8 @@ class SenderOptions
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $referrerCode;
 
@@ -1775,8 +1803,8 @@ class TaxIdDetails
 	 * Tax id of the merchant/business. 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $taxId;
 
@@ -1784,8 +1812,8 @@ class TaxIdDetails
 	 * Tax type of the Tax Id. 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $taxIdType;
 
@@ -1806,8 +1834,8 @@ class SenderIdentifier  extends AccountIdentifier
 	 * 
 	 * @access public
 	 
-	 
-	 * @var boolean
+	 	 	 	 
+	 * @var boolean 	 
 	 */ 
 	public $useCredentials;
 
@@ -1815,8 +1843,8 @@ class SenderIdentifier  extends AccountIdentifier
 	 * 
 	 * @access public
 	 
-	 
-	 * @var TaxIdDetails
+	 	 	 	 
+	 * @var TaxIdDetails 	 
 	 */ 
 	public $taxIdDetails;
 
@@ -1836,8 +1864,8 @@ class UserLimit
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $limitType;
 
@@ -1845,8 +1873,8 @@ class UserLimit
 	 * 
 	 * @access public
 	 
-	 
-	 * @var CurrencyType
+	 	 	 	 
+	 * @var CurrencyType 	 
 	 */ 
 	public $limitAmount;
 
@@ -1867,8 +1895,8 @@ class WarningData
 	 * 
 	 * @access public
 	 
-	 
-	 * @var integer
+	 	 	 	 
+	 * @var integer 	 
 	 */ 
 	public $warningId;
 
@@ -1876,8 +1904,8 @@ class WarningData
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $message;
 
@@ -1899,7 +1927,9 @@ class WarningDataList
 	 * @access public
 	 
 	 
-	 * @var WarningData
+	 * @value
+	 	 	 	 
+	 * @var WarningData 	 
 	 */ 
 	public $warningData;
 
@@ -1919,8 +1949,8 @@ class CancelPreapprovalRequest
 	 * 
 	 * @access public
 	 
-	 
-	 * @var RequestEnvelope
+	 	 	 	 
+	 * @var RequestEnvelope 	 
 	 */ 
 	public $requestEnvelope;
 
@@ -1928,8 +1958,8 @@ class CancelPreapprovalRequest
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $preapprovalKey;
 
@@ -1957,8 +1987,8 @@ class CancelPreapprovalResponse
 	 * 
 	 * @access public
 	 
-	 
-	 * @var ResponseEnvelope
+	 	 	 	 
+	 * @var ResponseEnvelope 	 
 	 */ 
 	public $responseEnvelope;
 
@@ -1968,7 +1998,9 @@ class CancelPreapprovalResponse
 	 * @access public
 	 
 	 
-	 * @var ErrorData
+	 * @value
+	 	 	 	 
+	 * @var ErrorData 	 
 	 */ 
 	public $error;
 
@@ -1988,8 +2020,8 @@ class ConfirmPreapprovalRequest
 	 * 
 	 * @access public
 	 
-	 
-	 * @var RequestEnvelope
+	 	 	 	 
+	 * @var RequestEnvelope 	 
 	 */ 
 	public $requestEnvelope;
 
@@ -1997,8 +2029,8 @@ class ConfirmPreapprovalRequest
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $preapprovalKey;
 
@@ -2006,8 +2038,8 @@ class ConfirmPreapprovalRequest
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $fundingSourceId;
 
@@ -2015,8 +2047,8 @@ class ConfirmPreapprovalRequest
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $pin;
 
@@ -2044,8 +2076,8 @@ class ConfirmPreapprovalResponse
 	 * 
 	 * @access public
 	 
-	 
-	 * @var ResponseEnvelope
+	 	 	 	 
+	 * @var ResponseEnvelope 	 
 	 */ 
 	public $responseEnvelope;
 
@@ -2055,7 +2087,9 @@ class ConfirmPreapprovalResponse
 	 * @access public
 	 
 	 
-	 * @var ErrorData
+	 * @value
+	 	 	 	 
+	 * @var ErrorData 	 
 	 */ 
 	public $error;
 
@@ -2076,8 +2110,8 @@ class ConvertCurrencyRequest
 	 * 
 	 * @access public
 	 
-	 
-	 * @var RequestEnvelope
+	 	 	 	 
+	 * @var RequestEnvelope 	 
 	 */ 
 	public $requestEnvelope;
 
@@ -2085,8 +2119,8 @@ class ConvertCurrencyRequest
 	 * 
 	 * @access public
 	 
-	 
-	 * @var CurrencyList
+	 	 	 	 
+	 * @var CurrencyList 	 
 	 */ 
 	public $baseAmountList;
 
@@ -2094,8 +2128,8 @@ class ConvertCurrencyRequest
 	 * 
 	 * @access public
 	 
-	 
-	 * @var CurrencyCodeList
+	 	 	 	 
+	 * @var CurrencyCodeList 	 
 	 */ 
 	public $convertToCurrencyList;
 
@@ -2104,8 +2138,8 @@ class ConvertCurrencyRequest
 	 * happen 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $countryCode;
 
@@ -2113,8 +2147,8 @@ class ConvertCurrencyRequest
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $conversionType;
 
@@ -2144,8 +2178,8 @@ class ConvertCurrencyResponse
 	 * 
 	 * @access public
 	 
-	 
-	 * @var ResponseEnvelope
+	 	 	 	 
+	 * @var ResponseEnvelope 	 
 	 */ 
 	public $responseEnvelope;
 
@@ -2153,8 +2187,8 @@ class ConvertCurrencyResponse
 	 * 
 	 * @access public
 	 
-	 
-	 * @var CurrencyConversionTable
+	 	 	 	 
+	 * @var CurrencyConversionTable 	 
 	 */ 
 	public $estimatedAmountTable;
 
@@ -2164,7 +2198,9 @@ class ConvertCurrencyResponse
 	 * @access public
 	 
 	 
-	 * @var ErrorData
+	 * @value
+	 	 	 	 
+	 * @var ErrorData 	 
 	 */ 
 	public $error;
 
@@ -2184,8 +2220,8 @@ class ExecutePaymentRequest
 	 * 
 	 * @access public
 	 
-	 
-	 * @var RequestEnvelope
+	 	 	 	 
+	 * @var RequestEnvelope 	 
 	 */ 
 	public $requestEnvelope;
 
@@ -2193,8 +2229,8 @@ class ExecutePaymentRequest
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $payKey;
 
@@ -2202,8 +2238,8 @@ class ExecutePaymentRequest
 	 * Describes the action that is performed by this API 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $actionType;
 
@@ -2211,8 +2247,8 @@ class ExecutePaymentRequest
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $fundingPlanId;
 
@@ -2240,8 +2276,8 @@ class ExecutePaymentResponse
 	 * 
 	 * @access public
 	 
-	 
-	 * @var ResponseEnvelope
+	 	 	 	 
+	 * @var ResponseEnvelope 	 
 	 */ 
 	public $responseEnvelope;
 
@@ -2249,8 +2285,8 @@ class ExecutePaymentResponse
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $paymentExecStatus;
 
@@ -2258,8 +2294,8 @@ class ExecutePaymentResponse
 	 * 
 	 * @access public
 	 
-	 
-	 * @var PayErrorList
+	 	 	 	 
+	 * @var PayErrorList 	 
 	 */ 
 	public $payErrorList;
 
@@ -2269,7 +2305,9 @@ class ExecutePaymentResponse
 	 * @access public
 	 
 	 
-	 * @var ErrorData
+	 * @value
+	 	 	 	 
+	 * @var ErrorData 	 
 	 */ 
 	public $error;
 
@@ -2290,8 +2328,8 @@ class GetAllowedFundingSourcesRequest
 	 * 
 	 * @access public
 	 
-	 
-	 * @var RequestEnvelope
+	 	 	 	 
+	 * @var RequestEnvelope 	 
 	 */ 
 	public $requestEnvelope;
 
@@ -2299,8 +2337,8 @@ class GetAllowedFundingSourcesRequest
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $key;
 
@@ -2329,8 +2367,8 @@ class GetAllowedFundingSourcesResponse
 	 * 
 	 * @access public
 	 
-	 
-	 * @var ResponseEnvelope
+	 	 	 	 
+	 * @var ResponseEnvelope 	 
 	 */ 
 	public $responseEnvelope;
 
@@ -2340,7 +2378,9 @@ class GetAllowedFundingSourcesResponse
 	 * @access public
 	 
 	 
-	 * @var FundingSource
+	 * @value
+	 	 	 	 
+	 * @var FundingSource 	 
 	 */ 
 	public $fundingSource;
 
@@ -2350,7 +2390,9 @@ class GetAllowedFundingSourcesResponse
 	 * @access public
 	 
 	 
-	 * @var ErrorData
+	 * @value
+	 	 	 	 
+	 * @var ErrorData 	 
 	 */ 
 	public $error;
 
@@ -2370,8 +2412,8 @@ class GetPaymentOptionsRequest
 	 * 
 	 * @access public
 	 
-	 
-	 * @var RequestEnvelope
+	 	 	 	 
+	 * @var RequestEnvelope 	 
 	 */ 
 	public $requestEnvelope;
 
@@ -2379,8 +2421,8 @@ class GetPaymentOptionsRequest
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $payKey;
 
@@ -2408,8 +2450,8 @@ class GetPaymentOptionsResponse
 	 * 
 	 * @access public
 	 
-	 
-	 * @var ResponseEnvelope
+	 	 	 	 
+	 * @var ResponseEnvelope 	 
 	 */ 
 	public $responseEnvelope;
 
@@ -2417,8 +2459,8 @@ class GetPaymentOptionsResponse
 	 * 
 	 * @access public
 	 
-	 
-	 * @var InitiatingEntity
+	 	 	 	 
+	 * @var InitiatingEntity 	 
 	 */ 
 	public $initiatingEntity;
 
@@ -2426,8 +2468,8 @@ class GetPaymentOptionsResponse
 	 * 
 	 * @access public
 	 
-	 
-	 * @var DisplayOptions
+	 	 	 	 
+	 * @var DisplayOptions 	 
 	 */ 
 	public $displayOptions;
 
@@ -2435,8 +2477,8 @@ class GetPaymentOptionsResponse
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $shippingAddressId;
 
@@ -2444,8 +2486,8 @@ class GetPaymentOptionsResponse
 	 * 
 	 * @access public
 	 
-	 
-	 * @var SenderOptions
+	 	 	 	 
+	 * @var SenderOptions 	 
 	 */ 
 	public $senderOptions;
 
@@ -2455,7 +2497,9 @@ class GetPaymentOptionsResponse
 	 * @access public
 	 
 	 
-	 * @var ReceiverOptions
+	 * @value
+	 	 	 	 
+	 * @var ReceiverOptions 	 
 	 */ 
 	public $receiverOptions;
 
@@ -2465,7 +2509,9 @@ class GetPaymentOptionsResponse
 	 * @access public
 	 
 	 
-	 * @var ErrorData
+	 * @value
+	 	 	 	 
+	 * @var ErrorData 	 
 	 */ 
 	public $error;
 
@@ -2487,8 +2533,8 @@ class PaymentDetailsRequest
 	 * 
 	 * @access public
 	 
-	 
-	 * @var RequestEnvelope
+	 	 	 	 
+	 * @var RequestEnvelope 	 
 	 */ 
 	public $requestEnvelope;
 
@@ -2496,8 +2542,8 @@ class PaymentDetailsRequest
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $payKey;
 
@@ -2505,8 +2551,8 @@ class PaymentDetailsRequest
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $transactionId;
 
@@ -2514,8 +2560,8 @@ class PaymentDetailsRequest
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $trackingId;
 
@@ -2543,8 +2589,8 @@ class PaymentDetailsResponse
 	 * 
 	 * @access public
 	 
-	 
-	 * @var ResponseEnvelope
+	 	 	 	 
+	 * @var ResponseEnvelope 	 
 	 */ 
 	public $responseEnvelope;
 
@@ -2552,8 +2598,8 @@ class PaymentDetailsResponse
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $cancelUrl;
 
@@ -2561,8 +2607,8 @@ class PaymentDetailsResponse
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $currencyCode;
 
@@ -2570,8 +2616,8 @@ class PaymentDetailsResponse
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $ipnNotificationUrl;
 
@@ -2579,8 +2625,8 @@ class PaymentDetailsResponse
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $memo;
 
@@ -2588,8 +2634,8 @@ class PaymentDetailsResponse
 	 * 
 	 * @access public
 	 
-	 
-	 * @var PaymentInfoList
+	 	 	 	 
+	 * @var PaymentInfoList 	 
 	 */ 
 	public $paymentInfoList;
 
@@ -2597,8 +2643,8 @@ class PaymentDetailsResponse
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $returnUrl;
 
@@ -2606,8 +2652,8 @@ class PaymentDetailsResponse
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $senderEmail;
 
@@ -2615,8 +2661,8 @@ class PaymentDetailsResponse
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $status;
 
@@ -2624,8 +2670,8 @@ class PaymentDetailsResponse
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $trackingId;
 
@@ -2633,8 +2679,8 @@ class PaymentDetailsResponse
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $payKey;
 
@@ -2642,8 +2688,8 @@ class PaymentDetailsResponse
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $actionType;
 
@@ -2651,8 +2697,8 @@ class PaymentDetailsResponse
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $feesPayer;
 
@@ -2660,8 +2706,8 @@ class PaymentDetailsResponse
 	 * 
 	 * @access public
 	 
-	 
-	 * @var boolean
+	 	 	 	 
+	 * @var boolean 	 
 	 */ 
 	public $reverseAllParallelPaymentsOnError;
 
@@ -2669,8 +2715,8 @@ class PaymentDetailsResponse
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $preapprovalKey;
 
@@ -2678,8 +2724,8 @@ class PaymentDetailsResponse
 	 * 
 	 * @access public
 	 
-	 
-	 * @var FundingConstraint
+	 	 	 	 
+	 * @var FundingConstraint 	 
 	 */ 
 	public $fundingConstraint;
 
@@ -2687,8 +2733,8 @@ class PaymentDetailsResponse
 	 * 
 	 * @access public
 	 
-	 
-	 * @var SenderIdentifier
+	 	 	 	 
+	 * @var SenderIdentifier 	 
 	 */ 
 	public $sender;
 
@@ -2698,7 +2744,9 @@ class PaymentDetailsResponse
 	 * @access public
 	 
 	 
-	 * @var ErrorData
+	 * @value
+	 	 	 	 
+	 * @var ErrorData 	 
 	 */ 
 	public $error;
 
@@ -2719,8 +2767,8 @@ class PayRequest
 	 * 
 	 * @access public
 	 
-	 
-	 * @var RequestEnvelope
+	 	 	 	 
+	 * @var RequestEnvelope 	 
 	 */ 
 	public $requestEnvelope;
 
@@ -2728,8 +2776,8 @@ class PayRequest
 	 * 
 	 * @access public
 	 
-	 
-	 * @var ClientDetailsType
+	 	 	 	 
+	 * @var ClientDetailsType 	 
 	 */ 
 	public $clientDetails;
 
@@ -2737,8 +2785,8 @@ class PayRequest
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $actionType;
 
@@ -2746,8 +2794,8 @@ class PayRequest
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $cancelUrl;
 
@@ -2755,8 +2803,8 @@ class PayRequest
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $currencyCode;
 
@@ -2764,8 +2812,8 @@ class PayRequest
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $feesPayer;
 
@@ -2773,8 +2821,8 @@ class PayRequest
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $ipnNotificationUrl;
 
@@ -2782,8 +2830,8 @@ class PayRequest
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $memo;
 
@@ -2791,8 +2839,8 @@ class PayRequest
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $pin;
 
@@ -2800,8 +2848,8 @@ class PayRequest
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $preapprovalKey;
 
@@ -2809,8 +2857,8 @@ class PayRequest
 	 * 
 	 * @access public
 	 
-	 
-	 * @var ReceiverList
+	 	 	 	 
+	 * @var ReceiverList 	 
 	 */ 
 	public $receiverList;
 
@@ -2818,8 +2866,8 @@ class PayRequest
 	 * 
 	 * @access public
 	 
-	 
-	 * @var boolean
+	 	 	 	 
+	 * @var boolean 	 
 	 */ 
 	public $reverseAllParallelPaymentsOnError;
 
@@ -2827,8 +2875,8 @@ class PayRequest
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $senderEmail;
 
@@ -2836,8 +2884,8 @@ class PayRequest
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $returnUrl;
 
@@ -2845,8 +2893,8 @@ class PayRequest
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $trackingId;
 
@@ -2854,8 +2902,8 @@ class PayRequest
 	 * 
 	 * @access public
 	 
-	 
-	 * @var FundingConstraint
+	 	 	 	 
+	 * @var FundingConstraint 	 
 	 */ 
 	public $fundingConstraint;
 
@@ -2863,8 +2911,8 @@ class PayRequest
 	 * 
 	 * @access public
 	 
-	 
-	 * @var SenderIdentifier
+	 	 	 	 
+	 * @var SenderIdentifier 	 
 	 */ 
 	public $sender;
 
@@ -2898,8 +2946,8 @@ class PayResponse
 	 * 
 	 * @access public
 	 
-	 
-	 * @var ResponseEnvelope
+	 	 	 	 
+	 * @var ResponseEnvelope 	 
 	 */ 
 	public $responseEnvelope;
 
@@ -2907,8 +2955,8 @@ class PayResponse
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $payKey;
 
@@ -2916,8 +2964,8 @@ class PayResponse
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $paymentExecStatus;
 
@@ -2925,8 +2973,8 @@ class PayResponse
 	 * 
 	 * @access public
 	 
-	 
-	 * @var PayErrorList
+	 	 	 	 
+	 * @var PayErrorList 	 
 	 */ 
 	public $payErrorList;
 
@@ -2934,8 +2982,8 @@ class PayResponse
 	 * 
 	 * @access public
 	 
-	 
-	 * @var FundingPlan
+	 	 	 	 
+	 * @var FundingPlan 	 
 	 */ 
 	public $defaultFundingPlan;
 
@@ -2943,8 +2991,8 @@ class PayResponse
 	 * 
 	 * @access public
 	 
-	 
-	 * @var WarningDataList
+	 	 	 	 
+	 * @var WarningDataList 	 
 	 */ 
 	public $warningDataList;
 
@@ -2954,7 +3002,9 @@ class PayResponse
 	 * @access public
 	 
 	 
-	 * @var ErrorData
+	 * @value
+	 	 	 	 
+	 * @var ErrorData 	 
 	 */ 
 	public $error;
 
@@ -2974,8 +3024,8 @@ class PreapprovalDetailsRequest
 	 * 
 	 * @access public
 	 
-	 
-	 * @var RequestEnvelope
+	 	 	 	 
+	 * @var RequestEnvelope 	 
 	 */ 
 	public $requestEnvelope;
 
@@ -2983,8 +3033,8 @@ class PreapprovalDetailsRequest
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $preapprovalKey;
 
@@ -2992,8 +3042,8 @@ class PreapprovalDetailsRequest
 	 * 
 	 * @access public
 	 
-	 
-	 * @var boolean
+	 	 	 	 
+	 * @var boolean 	 
 	 */ 
 	public $getBillingAddress;
 
@@ -3022,8 +3072,8 @@ class PreapprovalDetailsResponse
 	 * 
 	 * @access public
 	 
-	 
-	 * @var ResponseEnvelope
+	 	 	 	 
+	 * @var ResponseEnvelope 	 
 	 */ 
 	public $responseEnvelope;
 
@@ -3031,8 +3081,8 @@ class PreapprovalDetailsResponse
 	 * 
 	 * @access public
 	 
-	 
-	 * @var boolean
+	 	 	 	 
+	 * @var boolean 	 
 	 */ 
 	public $approved;
 
@@ -3040,8 +3090,8 @@ class PreapprovalDetailsResponse
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $cancelUrl;
 
@@ -3049,8 +3099,8 @@ class PreapprovalDetailsResponse
 	 * 
 	 * @access public
 	 
-	 
-	 * @var integer
+	 	 	 	 
+	 * @var integer 	 
 	 */ 
 	public $curPayments;
 
@@ -3058,8 +3108,8 @@ class PreapprovalDetailsResponse
 	 * 
 	 * @access public
 	 
-	 
-	 * @var double
+	 	 	 	 
+	 * @var double 	 
 	 */ 
 	public $curPaymentsAmount;
 
@@ -3067,8 +3117,8 @@ class PreapprovalDetailsResponse
 	 * 
 	 * @access public
 	 
-	 
-	 * @var integer
+	 	 	 	 
+	 * @var integer 	 
 	 */ 
 	public $curPeriodAttempts;
 
@@ -3076,8 +3126,8 @@ class PreapprovalDetailsResponse
 	 * 
 	 * @access public
 	 
-	 
-	 * @var dateTime
+	 	 	 	 
+	 * @var dateTime 	 
 	 */ 
 	public $curPeriodEndingDate;
 
@@ -3085,8 +3135,8 @@ class PreapprovalDetailsResponse
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $currencyCode;
 
@@ -3094,8 +3144,8 @@ class PreapprovalDetailsResponse
 	 * 
 	 * @access public
 	 
-	 
-	 * @var integer
+	 	 	 	 
+	 * @var integer 	 
 	 */ 
 	public $dateOfMonth;
 
@@ -3103,8 +3153,8 @@ class PreapprovalDetailsResponse
 	 * 
 	 * @access public
 	 
-	 
-	 * @var DayOfWeek
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $dayOfWeek;
 
@@ -3112,8 +3162,8 @@ class PreapprovalDetailsResponse
 	 * 
 	 * @access public
 	 
-	 
-	 * @var dateTime
+	 	 	 	 
+	 * @var dateTime 	 
 	 */ 
 	public $endingDate;
 
@@ -3121,8 +3171,8 @@ class PreapprovalDetailsResponse
 	 * 
 	 * @access public
 	 
-	 
-	 * @var double
+	 	 	 	 
+	 * @var double 	 
 	 */ 
 	public $maxAmountPerPayment;
 
@@ -3130,8 +3180,8 @@ class PreapprovalDetailsResponse
 	 * 
 	 * @access public
 	 
-	 
-	 * @var integer
+	 	 	 	 
+	 * @var integer 	 
 	 */ 
 	public $maxNumberOfPayments;
 
@@ -3139,8 +3189,8 @@ class PreapprovalDetailsResponse
 	 * 
 	 * @access public
 	 
-	 
-	 * @var integer
+	 	 	 	 
+	 * @var integer 	 
 	 */ 
 	public $maxNumberOfPaymentsPerPeriod;
 
@@ -3148,8 +3198,8 @@ class PreapprovalDetailsResponse
 	 * 
 	 * @access public
 	 
-	 
-	 * @var double
+	 	 	 	 
+	 * @var double 	 
 	 */ 
 	public $maxTotalAmountOfAllPayments;
 
@@ -3157,8 +3207,8 @@ class PreapprovalDetailsResponse
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $paymentPeriod;
 
@@ -3166,8 +3216,8 @@ class PreapprovalDetailsResponse
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $pinType;
 
@@ -3175,8 +3225,8 @@ class PreapprovalDetailsResponse
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $returnUrl;
 
@@ -3184,8 +3234,8 @@ class PreapprovalDetailsResponse
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $senderEmail;
 
@@ -3193,8 +3243,8 @@ class PreapprovalDetailsResponse
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $memo;
 
@@ -3202,8 +3252,8 @@ class PreapprovalDetailsResponse
 	 * 
 	 * @access public
 	 
-	 
-	 * @var dateTime
+	 	 	 	 
+	 * @var dateTime 	 
 	 */ 
 	public $startingDate;
 
@@ -3211,8 +3261,8 @@ class PreapprovalDetailsResponse
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $status;
 
@@ -3220,8 +3270,8 @@ class PreapprovalDetailsResponse
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $ipnNotificationUrl;
 
@@ -3229,8 +3279,8 @@ class PreapprovalDetailsResponse
 	 * 
 	 * @access public
 	 
-	 
-	 * @var AddressList
+	 	 	 	 
+	 * @var AddressList 	 
 	 */ 
 	public $addressList;
 
@@ -3238,8 +3288,8 @@ class PreapprovalDetailsResponse
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $feesPayer;
 
@@ -3247,8 +3297,8 @@ class PreapprovalDetailsResponse
 	 * 
 	 * @access public
 	 
-	 
-	 * @var boolean
+	 	 	 	 
+	 * @var boolean 	 
 	 */ 
 	public $displayMaxTotalAmount;
 
@@ -3258,7 +3308,9 @@ class PreapprovalDetailsResponse
 	 * @access public
 	 
 	 
-	 * @var ErrorData
+	 * @value
+	 	 	 	 
+	 * @var ErrorData 	 
 	 */ 
 	public $error;
 
@@ -3281,8 +3333,8 @@ class PreapprovalRequest
 	 * 
 	 * @access public
 	 
-	 
-	 * @var RequestEnvelope
+	 	 	 	 
+	 * @var RequestEnvelope 	 
 	 */ 
 	public $requestEnvelope;
 
@@ -3290,8 +3342,8 @@ class PreapprovalRequest
 	 * 
 	 * @access public
 	 
-	 
-	 * @var ClientDetailsType
+	 	 	 	 
+	 * @var ClientDetailsType 	 
 	 */ 
 	public $clientDetails;
 
@@ -3299,8 +3351,8 @@ class PreapprovalRequest
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $cancelUrl;
 
@@ -3308,8 +3360,8 @@ class PreapprovalRequest
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $currencyCode;
 
@@ -3317,8 +3369,8 @@ class PreapprovalRequest
 	 * 
 	 * @access public
 	 
-	 
-	 * @var integer
+	 	 	 	 
+	 * @var integer 	 
 	 */ 
 	public $dateOfMonth;
 
@@ -3326,8 +3378,8 @@ class PreapprovalRequest
 	 * 
 	 * @access public
 	 
-	 
-	 * @var DayOfWeek
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $dayOfWeek;
 
@@ -3335,8 +3387,8 @@ class PreapprovalRequest
 	 * 
 	 * @access public
 	 
-	 
-	 * @var dateTime
+	 	 	 	 
+	 * @var dateTime 	 
 	 */ 
 	public $endingDate;
 
@@ -3344,8 +3396,8 @@ class PreapprovalRequest
 	 * 
 	 * @access public
 	 
-	 
-	 * @var double
+	 	 	 	 
+	 * @var double 	 
 	 */ 
 	public $maxAmountPerPayment;
 
@@ -3353,8 +3405,8 @@ class PreapprovalRequest
 	 * 
 	 * @access public
 	 
-	 
-	 * @var integer
+	 	 	 	 
+	 * @var integer 	 
 	 */ 
 	public $maxNumberOfPayments;
 
@@ -3362,8 +3414,8 @@ class PreapprovalRequest
 	 * 
 	 * @access public
 	 
-	 
-	 * @var integer
+	 	 	 	 
+	 * @var integer 	 
 	 */ 
 	public $maxNumberOfPaymentsPerPeriod;
 
@@ -3371,8 +3423,8 @@ class PreapprovalRequest
 	 * 
 	 * @access public
 	 
-	 
-	 * @var double
+	 	 	 	 
+	 * @var double 	 
 	 */ 
 	public $maxTotalAmountOfAllPayments;
 
@@ -3380,8 +3432,8 @@ class PreapprovalRequest
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $paymentPeriod;
 
@@ -3389,8 +3441,8 @@ class PreapprovalRequest
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $returnUrl;
 
@@ -3398,8 +3450,8 @@ class PreapprovalRequest
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $memo;
 
@@ -3407,8 +3459,8 @@ class PreapprovalRequest
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $ipnNotificationUrl;
 
@@ -3416,8 +3468,8 @@ class PreapprovalRequest
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $senderEmail;
 
@@ -3425,8 +3477,8 @@ class PreapprovalRequest
 	 * 
 	 * @access public
 	 
-	 
-	 * @var dateTime
+	 	 	 	 
+	 * @var dateTime 	 
 	 */ 
 	public $startingDate;
 
@@ -3434,8 +3486,8 @@ class PreapprovalRequest
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $pinType;
 
@@ -3443,8 +3495,8 @@ class PreapprovalRequest
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $feesPayer;
 
@@ -3452,8 +3504,8 @@ class PreapprovalRequest
 	 * 
 	 * @access public
 	 
-	 
-	 * @var boolean
+	 	 	 	 
+	 * @var boolean 	 
 	 */ 
 	public $displayMaxTotalAmount;
 
@@ -3461,8 +3513,8 @@ class PreapprovalRequest
 	 * 
 	 * @access public
 	 
-	 
-	 * @var boolean
+	 	 	 	 
+	 * @var boolean 	 
 	 */ 
 	public $requireInstantFundingSource;
 
@@ -3493,8 +3545,8 @@ class PreapprovalResponse
 	 * 
 	 * @access public
 	 
-	 
-	 * @var ResponseEnvelope
+	 	 	 	 
+	 * @var ResponseEnvelope 	 
 	 */ 
 	public $responseEnvelope;
 
@@ -3502,8 +3554,8 @@ class PreapprovalResponse
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $preapprovalKey;
 
@@ -3513,7 +3565,9 @@ class PreapprovalResponse
 	 * @access public
 	 
 	 
-	 * @var ErrorData
+	 * @value
+	 	 	 	 
+	 * @var ErrorData 	 
 	 */ 
 	public $error;
 
@@ -3536,8 +3590,8 @@ class RefundRequest
 	 * 
 	 * @access public
 	 
-	 
-	 * @var RequestEnvelope
+	 	 	 	 
+	 * @var RequestEnvelope 	 
 	 */ 
 	public $requestEnvelope;
 
@@ -3545,8 +3599,8 @@ class RefundRequest
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $currencyCode;
 
@@ -3554,8 +3608,8 @@ class RefundRequest
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $payKey;
 
@@ -3563,8 +3617,8 @@ class RefundRequest
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $transactionId;
 
@@ -3572,8 +3626,8 @@ class RefundRequest
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $trackingId;
 
@@ -3581,8 +3635,8 @@ class RefundRequest
 	 * 
 	 * @access public
 	 
-	 
-	 * @var ReceiverList
+	 	 	 	 
+	 * @var ReceiverList 	 
 	 */ 
 	public $receiverList;
 
@@ -3609,8 +3663,8 @@ class RefundResponse
 	 * 
 	 * @access public
 	 
-	 
-	 * @var ResponseEnvelope
+	 	 	 	 
+	 * @var ResponseEnvelope 	 
 	 */ 
 	public $responseEnvelope;
 
@@ -3618,8 +3672,8 @@ class RefundResponse
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $currencyCode;
 
@@ -3627,8 +3681,8 @@ class RefundResponse
 	 * 
 	 * @access public
 	 
-	 
-	 * @var RefundInfoList
+	 	 	 	 
+	 * @var RefundInfoList 	 
 	 */ 
 	public $refundInfoList;
 
@@ -3638,7 +3692,9 @@ class RefundResponse
 	 * @access public
 	 
 	 
-	 * @var ErrorData
+	 * @value
+	 	 	 	 
+	 * @var ErrorData 	 
 	 */ 
 	public $error;
 
@@ -3658,8 +3714,8 @@ class SetPaymentOptionsRequest
 	 * 
 	 * @access public
 	 
-	 
-	 * @var RequestEnvelope
+	 	 	 	 
+	 * @var RequestEnvelope 	 
 	 */ 
 	public $requestEnvelope;
 
@@ -3667,8 +3723,8 @@ class SetPaymentOptionsRequest
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $payKey;
 
@@ -3676,8 +3732,8 @@ class SetPaymentOptionsRequest
 	 * 
 	 * @access public
 	 
-	 
-	 * @var InitiatingEntity
+	 	 	 	 
+	 * @var InitiatingEntity 	 
 	 */ 
 	public $initiatingEntity;
 
@@ -3685,8 +3741,8 @@ class SetPaymentOptionsRequest
 	 * 
 	 * @access public
 	 
-	 
-	 * @var DisplayOptions
+	 	 	 	 
+	 * @var DisplayOptions 	 
 	 */ 
 	public $displayOptions;
 
@@ -3694,8 +3750,8 @@ class SetPaymentOptionsRequest
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $shippingAddressId;
 
@@ -3703,8 +3759,8 @@ class SetPaymentOptionsRequest
 	 * 
 	 * @access public
 	 
-	 
-	 * @var SenderOptions
+	 	 	 	 
+	 * @var SenderOptions 	 
 	 */ 
 	public $senderOptions;
 
@@ -3714,7 +3770,9 @@ class SetPaymentOptionsRequest
 	 * @access public
 	 
 	 
-	 * @var ReceiverOptions
+	 * @value
+	 	 	 	 
+	 * @var ReceiverOptions 	 
 	 */ 
 	public $receiverOptions;
 
@@ -3742,8 +3800,8 @@ class SetPaymentOptionsResponse
 	 * 
 	 * @access public
 	 
-	 
-	 * @var ResponseEnvelope
+	 	 	 	 
+	 * @var ResponseEnvelope 	 
 	 */ 
 	public $responseEnvelope;
 
@@ -3753,7 +3811,9 @@ class SetPaymentOptionsResponse
 	 * @access public
 	 
 	 
-	 * @var ErrorData
+	 * @value
+	 	 	 	 
+	 * @var ErrorData 	 
 	 */ 
 	public $error;
 
@@ -3774,8 +3834,8 @@ class GetFundingPlansRequest
 	 * 
 	 * @access public
 	 
-	 
-	 * @var RequestEnvelope
+	 	 	 	 
+	 * @var RequestEnvelope 	 
 	 */ 
 	public $requestEnvelope;
 
@@ -3783,8 +3843,8 @@ class GetFundingPlansRequest
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $payKey;
 
@@ -3813,8 +3873,8 @@ class GetFundingPlansResponse
 	 * 
 	 * @access public
 	 
-	 
-	 * @var ResponseEnvelope
+	 	 	 	 
+	 * @var ResponseEnvelope 	 
 	 */ 
 	public $responseEnvelope;
 
@@ -3824,7 +3884,9 @@ class GetFundingPlansResponse
 	 * @access public
 	 
 	 
-	 * @var FundingPlan
+	 * @value
+	 	 	 	 
+	 * @var FundingPlan 	 
 	 */ 
 	public $fundingPlan;
 
@@ -3834,7 +3896,9 @@ class GetFundingPlansResponse
 	 * @access public
 	 
 	 
-	 * @var ErrorData
+	 * @value
+	 	 	 	 
+	 * @var ErrorData 	 
 	 */ 
 	public $error;
 
@@ -3854,8 +3918,8 @@ class GetAvailableShippingAddressesRequest
 	 * 
 	 * @access public
 	 
-	 
-	 * @var RequestEnvelope
+	 	 	 	 
+	 * @var RequestEnvelope 	 
 	 */ 
 	public $requestEnvelope;
 
@@ -3865,8 +3929,8 @@ class GetAvailableShippingAddressesRequest
 	 * preapprovalKey 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $key;
 
@@ -3895,8 +3959,8 @@ class GetAvailableShippingAddressesResponse
 	 * 
 	 * @access public
 	 
-	 
-	 * @var ResponseEnvelope
+	 	 	 	 
+	 * @var ResponseEnvelope 	 
 	 */ 
 	public $responseEnvelope;
 
@@ -3906,7 +3970,9 @@ class GetAvailableShippingAddressesResponse
 	 * @access public
 	 
 	 
-	 * @var Address
+	 * @value
+	 	 	 	 
+	 * @var Address 	 
 	 */ 
 	public $availableAddress;
 
@@ -3916,7 +3982,9 @@ class GetAvailableShippingAddressesResponse
 	 * @access public
 	 
 	 
-	 * @var ErrorData
+	 * @value
+	 	 	 	 
+	 * @var ErrorData 	 
 	 */ 
 	public $error;
 
@@ -3936,8 +4004,8 @@ class GetShippingAddressesRequest
 	 * 
 	 * @access public
 	 
-	 
-	 * @var RequestEnvelope
+	 	 	 	 
+	 * @var RequestEnvelope 	 
 	 */ 
 	public $requestEnvelope;
 
@@ -3947,8 +4015,8 @@ class GetShippingAddressesRequest
 	 * preapprovalKey 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $key;
 
@@ -3977,8 +4045,8 @@ class GetShippingAddressesResponse
 	 * 
 	 * @access public
 	 
-	 
-	 * @var ResponseEnvelope
+	 	 	 	 
+	 * @var ResponseEnvelope 	 
 	 */ 
 	public $responseEnvelope;
 
@@ -3986,8 +4054,8 @@ class GetShippingAddressesResponse
 	 * 
 	 * @access public
 	 
-	 
-	 * @var Address
+	 	 	 	 
+	 * @var Address 	 
 	 */ 
 	public $selectedAddress;
 
@@ -3997,7 +4065,9 @@ class GetShippingAddressesResponse
 	 * @access public
 	 
 	 
-	 * @var ErrorData
+	 * @value
+	 	 	 	 
+	 * @var ErrorData 	 
 	 */ 
 	public $error;
 
@@ -4017,8 +4087,8 @@ class GetUserLimitsRequest
 	 * 
 	 * @access public
 	 
-	 
-	 * @var RequestEnvelope
+	 	 	 	 
+	 * @var RequestEnvelope 	 
 	 */ 
 	public $requestEnvelope;
 
@@ -4026,8 +4096,8 @@ class GetUserLimitsRequest
 	 * The account identifier for the user 
 	 * @access public
 	 
-	 
-	 * @var AccountIdentifier
+	 	 	 	 
+	 * @var AccountIdentifier 	 
 	 */ 
 	public $user;
 
@@ -4035,8 +4105,8 @@ class GetUserLimitsRequest
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $country;
 
@@ -4044,8 +4114,8 @@ class GetUserLimitsRequest
 	 * 
 	 * @access public
 	 
-	 
-	 * @var string
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $currencyCode;
 
@@ -4055,7 +4125,9 @@ class GetUserLimitsRequest
 	 * @access public
 	 
 	 
-	 * @var string
+	 * @value
+	 	 	 	 
+	 * @var string 	 
 	 */ 
 	public $limitType;
 
@@ -4086,8 +4158,8 @@ class GetUserLimitsResponse
 	 * 
 	 * @access public
 	 
-	 
-	 * @var ResponseEnvelope
+	 	 	 	 
+	 * @var ResponseEnvelope 	 
 	 */ 
 	public $responseEnvelope;
 
@@ -4097,7 +4169,9 @@ class GetUserLimitsResponse
 	 * @access public
 	 
 	 
-	 * @var UserLimit
+	 * @value
+	 	 	 	 
+	 * @var UserLimit 	 
 	 */ 
 	public $userLimit;
 
@@ -4105,8 +4179,8 @@ class GetUserLimitsResponse
 	 * 
 	 * @access public
 	 
-	 
-	 * @var WarningDataList
+	 	 	 	 
+	 * @var WarningDataList 	 
 	 */ 
 	public $warningDataList;
 
@@ -4116,7 +4190,9 @@ class GetUserLimitsResponse
 	 * @access public
 	 
 	 
-	 * @var ErrorData
+	 * @value
+	 	 	 	 
+	 * @var ErrorData 	 
 	 */ 
 	public $error;
 
