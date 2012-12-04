@@ -310,8 +310,6 @@ class ErrorData
      * @array
 	 * @access public
 	 
-	 
-	 * @value
 	 	 	 	 
 	 * @var ErrorParameter 	 
 	 */ 
@@ -323,6 +321,7 @@ class ErrorData
 
 
 /**
+ * @hasAttribute
  * 
  */
  
@@ -344,6 +343,8 @@ class ErrorParameter
 	 * 
 	 * @access public
 	 
+	 
+	 * @value
 	 	 	 	 
 	 * @var string 	 
 	 */ 
@@ -376,8 +377,6 @@ class FaultMessage
      * @array
 	 * @access public
 	 
-	 
-	 * @value
 	 	 	 	 
 	 * @var ErrorData 	 
 	 */ 
@@ -578,8 +577,6 @@ class AddressList
      * @array
 	 * @access public
 	 
-	 
-	 * @value
 	 	 	 	 
 	 * @var Address 	 
 	 */ 
@@ -602,8 +599,6 @@ class CurrencyCodeList
      * @array
 	 * @access public
 	 
-	 
-	 * @value
 	 	 	 	 
 	 * @var string 	 
 	 */ 
@@ -665,8 +660,6 @@ class CurrencyConversionTable
      * @array
 	 * @access public
 	 
-	 
-	 * @value
 	 	 	 	 
 	 * @var CurrencyConversionList 	 
 	 */ 
@@ -689,8 +682,6 @@ class CurrencyList
      * @array
 	 * @access public
 	 
-	 
-	 * @value
 	 	 	 	 
 	 * @var CurrencyType 	 
 	 */ 
@@ -769,8 +760,6 @@ class ErrorList
      * @array
 	 * @access public
 	 
-	 
-	 * @value
 	 	 	 	 
 	 * @var ErrorData 	 
 	 */ 
@@ -842,8 +831,6 @@ class FundingTypeList
      * @array
 	 * @access public
 	 
-	 
-	 * @value
 	 	 	 	 
 	 * @var FundingTypeInfo 	 
 	 */ 
@@ -1045,8 +1032,6 @@ class FundingPlan
      * @array
 	 * @access public
 	 
-	 
-	 * @value
 	 	 	 	 
 	 * @var FundingPlanCharge 	 
 	 */ 
@@ -1243,8 +1228,6 @@ class InvoiceData
      * @array
 	 * @access public
 	 
-	 
-	 * @value
 	 	 	 	 
 	 * @var InvoiceItem 	 
 	 */ 
@@ -1316,8 +1299,6 @@ class PayErrorList
      * @array
 	 * @access public
 	 
-	 
-	 * @value
 	 	 	 	 
 	 * @var PayError 	 
 	 */ 
@@ -1427,8 +1408,6 @@ class PaymentInfoList
      * @array
 	 * @access public
 	 
-	 
-	 * @value
 	 	 	 	 
 	 * @var PaymentInfo 	 
 	 */ 
@@ -1536,8 +1515,6 @@ class ReceiverList
      * @array
 	 * @access public
 	 
-	 
-	 * @value
 	 	 	 	 
 	 * @var Receiver 	 
 	 */ 
@@ -1748,8 +1725,6 @@ class RefundInfoList
      * @array
 	 * @access public
 	 
-	 
-	 * @value
 	 	 	 	 
 	 * @var RefundInfo 	 
 	 */ 
@@ -1926,8 +1901,6 @@ class WarningDataList
      * @array
 	 * @access public
 	 
-	 
-	 * @value
 	 	 	 	 
 	 * @var WarningData 	 
 	 */ 
@@ -1997,8 +1970,6 @@ class CancelPreapprovalResponse
      * @array
 	 * @access public
 	 
-	 
-	 * @value
 	 	 	 	 
 	 * @var ErrorData 	 
 	 */ 
@@ -2086,8 +2057,6 @@ class ConfirmPreapprovalResponse
      * @array
 	 * @access public
 	 
-	 
-	 * @value
 	 	 	 	 
 	 * @var ErrorData 	 
 	 */ 
@@ -2197,8 +2166,6 @@ class ConvertCurrencyResponse
      * @array
 	 * @access public
 	 
-	 
-	 * @value
 	 	 	 	 
 	 * @var ErrorData 	 
 	 */ 
@@ -2304,8 +2271,6 @@ class ExecutePaymentResponse
      * @array
 	 * @access public
 	 
-	 
-	 * @value
 	 	 	 	 
 	 * @var ErrorData 	 
 	 */ 
@@ -2377,8 +2342,6 @@ class GetAllowedFundingSourcesResponse
      * @array
 	 * @access public
 	 
-	 
-	 * @value
 	 	 	 	 
 	 * @var FundingSource 	 
 	 */ 
@@ -2389,8 +2352,6 @@ class GetAllowedFundingSourcesResponse
      * @array
 	 * @access public
 	 
-	 
-	 * @value
 	 	 	 	 
 	 * @var ErrorData 	 
 	 */ 
@@ -2496,8 +2457,6 @@ class GetPaymentOptionsResponse
      * @array
 	 * @access public
 	 
-	 
-	 * @value
 	 	 	 	 
 	 * @var ReceiverOptions 	 
 	 */ 
@@ -2508,8 +2467,6 @@ class GetPaymentOptionsResponse
      * @array
 	 * @access public
 	 
-	 
-	 * @value
 	 	 	 	 
 	 * @var ErrorData 	 
 	 */ 
@@ -2743,8 +2700,6 @@ class PaymentDetailsResponse
      * @array
 	 * @access public
 	 
-	 
-	 * @value
 	 	 	 	 
 	 * @var ErrorData 	 
 	 */ 
@@ -3001,8 +2956,6 @@ class PayResponse
      * @array
 	 * @access public
 	 
-	 
-	 * @value
 	 	 	 	 
 	 * @var ErrorData 	 
 	 */ 
@@ -3307,8 +3260,6 @@ class PreapprovalDetailsResponse
      * @array
 	 * @access public
 	 
-	 
-	 * @value
 	 	 	 	 
 	 * @var ErrorData 	 
 	 */ 
@@ -3564,8 +3515,6 @@ class PreapprovalResponse
      * @array
 	 * @access public
 	 
-	 
-	 * @value
 	 	 	 	 
 	 * @var ErrorData 	 
 	 */ 
@@ -3691,8 +3640,6 @@ class RefundResponse
      * @array
 	 * @access public
 	 
-	 
-	 * @value
 	 	 	 	 
 	 * @var ErrorData 	 
 	 */ 
@@ -3769,8 +3716,6 @@ class SetPaymentOptionsRequest
      * @array
 	 * @access public
 	 
-	 
-	 * @value
 	 	 	 	 
 	 * @var ReceiverOptions 	 
 	 */ 
@@ -3810,8 +3755,6 @@ class SetPaymentOptionsResponse
      * @array
 	 * @access public
 	 
-	 
-	 * @value
 	 	 	 	 
 	 * @var ErrorData 	 
 	 */ 
@@ -3883,8 +3826,6 @@ class GetFundingPlansResponse
      * @array
 	 * @access public
 	 
-	 
-	 * @value
 	 	 	 	 
 	 * @var FundingPlan 	 
 	 */ 
@@ -3895,8 +3836,6 @@ class GetFundingPlansResponse
      * @array
 	 * @access public
 	 
-	 
-	 * @value
 	 	 	 	 
 	 * @var ErrorData 	 
 	 */ 
@@ -3969,8 +3908,6 @@ class GetAvailableShippingAddressesResponse
      * @array
 	 * @access public
 	 
-	 
-	 * @value
 	 	 	 	 
 	 * @var Address 	 
 	 */ 
@@ -3981,8 +3918,6 @@ class GetAvailableShippingAddressesResponse
      * @array
 	 * @access public
 	 
-	 
-	 * @value
 	 	 	 	 
 	 * @var ErrorData 	 
 	 */ 
@@ -4064,8 +3999,6 @@ class GetShippingAddressesResponse
      * @array
 	 * @access public
 	 
-	 
-	 * @value
 	 	 	 	 
 	 * @var ErrorData 	 
 	 */ 
@@ -4124,8 +4057,6 @@ class GetUserLimitsRequest
      * @array
 	 * @access public
 	 
-	 
-	 * @value
 	 	 	 	 
 	 * @var string 	 
 	 */ 
@@ -4168,8 +4099,6 @@ class GetUserLimitsResponse
      * @array
 	 * @access public
 	 
-	 
-	 * @value
 	 	 	 	 
 	 * @var UserLimit 	 
 	 */ 
@@ -4189,8 +4118,6 @@ class GetUserLimitsResponse
      * @array
 	 * @access public
 	 
-	 
-	 * @value
 	 	 	 	 
 	 * @var ErrorData 	 
 	 */ 
