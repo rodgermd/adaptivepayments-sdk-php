@@ -2944,6 +2944,15 @@ class PayResponse
 
 	/**
 	 * 
+	 * @access public
+	 
+	 	 	 	 
+	 * @var WarningDataList 	 
+	 */ 
+	public $warningDataList;
+
+	/**
+	 * 
      * @array
 	 * @access public
 	 
@@ -3450,6 +3459,15 @@ class PreapprovalRequest
 	 * @var boolean 	 
 	 */ 
 	public $displayMaxTotalAmount;
+
+	/**
+	 * 
+	 * @access public
+	 
+	 	 	 	 
+	 * @var boolean 	 
+	 */ 
+	public $requireInstantFundingSource;
 
 	/**
 	 * Constructor with arguments
