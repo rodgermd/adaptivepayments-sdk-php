@@ -1,5 +1,5 @@
 {
-    "name": "paypal/adaptivepayments-sdk-php",
+    "name": "ladela/paypal-adaptivepayments-sdk-php",
     "description": "Paypal PHP Adaptive Payments SDK",
     "keywords": ["paypal", "adaptive payments", "sdk"],
     "type": "library",
