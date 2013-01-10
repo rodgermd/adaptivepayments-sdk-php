@@ -46,9 +46,8 @@ class PPLoggingManager {
 		$this->isLoggingEnabled = (isset($loggingEnabled)) ? $loggingEnabled : false;
 		$loggingLevel = strtoupper($config->get('log.LogLevel'));
 		$this->loggingLevel = (isset($loggingLevel) && defined("PPLoggingLevel::$loggingLevel")) ? constant("PPLoggingLevel::$loggingLevel") : PPLoggingManager::DEFAULT_LOGGING_LEVEL;
-
 	}
-	
+
 	public function log($message, $level=PPLoggingLevel::INFO) {
 		if($this->isLoggingEnabled && ($level <= $this->loggingLevel)) {
 			error_log( $this->loggerName . ": $message\n", 3, $this->loggerFile);
