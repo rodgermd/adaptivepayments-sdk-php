@@ -1,6 +1,6 @@
 <?php //vim: foldmethod=marker
 
-class MockOAuthDataStore extends OAuthDataStore {/*{{{*/
+class MockOAuthDataStore extends PaypalAdaptiveSDK\OAuthDataStore {/*{{{*/
     private $consumer;
     private $request_token;
     private $access_token;

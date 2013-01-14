@@ -41,6 +41,15 @@ class PPConfigManager {
 		}
 	}
 
+  /**
+   * Sets logger file
+   * @param $loggerFile
+   */
+  public function setLoggerFile($loggerFile)
+  {
+    $this->config['log.FileName'] = $loggerFile;
+  }
+
 	/**
 	 * simple getter for configuration params
 	 * If an exact match for key is not found,
@@ -62,7 +71,6 @@ class PPConfigManager {
 			
 			return $arr;
 		}
-
 	}
 
 	/**
