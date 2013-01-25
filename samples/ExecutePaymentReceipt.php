@@ -1,9 +1,5 @@
 <?php
-$path = '../lib';
-set_include_path(get_include_path() . PATH_SEPARATOR . $path);
-require_once('services/AdaptivePayments/AdaptivePaymentsService.php');
-require_once('PPLoggingManager.php');
-define("DEFAULT_SELECT", "- Select -");
+require_once('PPBootStrap.php');
 
 $logger = new PPLoggingManager('ExecutePayment');
 

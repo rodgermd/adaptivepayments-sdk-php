@@ -6,11 +6,7 @@
  * user logs in to their PayPal account.
  * Called by Pay.php
  */
-$path = '../lib';
-set_include_path(get_include_path() . PATH_SEPARATOR . $path);
-require_once('services/AdaptivePayments/AdaptivePaymentsService.php');
-require_once('PPLoggingManager.php');
-require_once('Common/Constants.php');
+require_once('PPBootStrap.php');
 
 define("DEFAULT_SELECT", "- Select -");
 
