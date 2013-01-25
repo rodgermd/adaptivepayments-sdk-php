@@ -7,7 +7,7 @@
  * Called by Pay.php
  */
 require_once('PPBootStrap.php');
-
+require_once('Common/Constants.php');
 define("DEFAULT_SELECT", "- Select -");
 
 $logger = new PPLoggingManager('Pay');
