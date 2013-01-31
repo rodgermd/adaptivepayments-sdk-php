@@ -7,7 +7,7 @@
 /**
  * 
  */
- 
+if(!class_exists('AccountIdentifier')) {
 class AccountIdentifier  
   extends PPMessage   {
 
@@ -31,13 +31,14 @@ class AccountIdentifier
 
 
 }
+}
 
 
 
 /**
  * 
  */
- 
+if(!class_exists('BaseAddress')) {
 class BaseAddress  
   extends PPMessage   {
 
@@ -106,6 +107,7 @@ class BaseAddress
 
 
 }
+}
 
 
 
@@ -113,7 +115,7 @@ class BaseAddress
  * Details about the end user of the application invoking this
  * service. 
  */
- 
+if(!class_exists('ClientDetailsType')) {
 class ClientDetailsType  
   extends PPMessage   {
 
@@ -191,13 +193,14 @@ class ClientDetailsType
 
 
 }
+}
 
 
 
 /**
  * 
  */
- 
+if(!class_exists('CurrencyType')) {
 class CurrencyType  
   extends PPMessage   {
 
@@ -229,6 +232,7 @@ class CurrencyType
 
 
 }
+}
 
 
 
@@ -236,7 +240,7 @@ class CurrencyType
  * This type contains the detailed error information resulting
  * from the service operation. 
  */
- 
+if(!class_exists('ErrorData')) {
 class ErrorData  
   extends PPMessage   {
 
@@ -315,6 +319,7 @@ class ErrorData
 
 
 }
+}
 
 
 
@@ -322,7 +327,7 @@ class ErrorData
  * @hasAttribute
  * 
  */
- 
+if(!class_exists('ErrorParameter')) {
 class ErrorParameter  
   extends PPMessage   {
 
@@ -350,6 +355,7 @@ class ErrorParameter
 
 
 }
+}
 
 
 
@@ -357,7 +363,7 @@ class ErrorParameter
  * This specifies a fault, encapsulating error data, with
  * specific error codes. 
  */
- 
+if(!class_exists('FaultMessage')) {
 class FaultMessage  
   extends PPMessage   {
 
@@ -382,13 +388,14 @@ class FaultMessage
 
 
 }
+}
 
 
 
 /**
  * 
  */
- 
+if(!class_exists('PhoneNumberType')) {
 class PhoneNumberType  
   extends PPMessage   {
 
@@ -429,6 +436,7 @@ class PhoneNumberType
 
 
 }
+}
 
 
 
@@ -436,7 +444,7 @@ class PhoneNumberType
  * This specifies the list of parameters with every request to
  * the service. 
  */
- 
+if(!class_exists('RequestEnvelope')) {
 class RequestEnvelope  
   extends PPMessage   {
 
@@ -472,6 +480,7 @@ class RequestEnvelope
 
 
 }
+}
 
 
 
@@ -479,7 +488,7 @@ class RequestEnvelope
  * This specifies a list of parameters with every response from
  * a service. 
  */
- 
+if(!class_exists('ResponseEnvelope')) {
 class ResponseEnvelope  
   extends PPMessage   {
 
@@ -521,13 +530,13 @@ class ResponseEnvelope
 
 
 }
+}
 
 
 
 /**
  * 
  */
- 
 class Address  
   extends PPMessage   {
 
@@ -566,7 +575,6 @@ class Address
 /**
  * 
  */
- 
 class AddressList  
   extends PPMessage   {
 
@@ -588,7 +596,6 @@ class AddressList
 /**
  * A list of ISO currency codes. 
  */
- 
 class CurrencyCodeList  
   extends PPMessage   {
 
@@ -618,7 +625,6 @@ class CurrencyCodeList
  * A list of estimated currency conversions for a base
  * currency. 
  */
- 
 class CurrencyConversionList  
   extends PPMessage   {
 
@@ -649,7 +655,6 @@ class CurrencyConversionList
  * A table that contains a list of estimated currency
  * conversions for a base currency in each row. 
  */
- 
 class CurrencyConversionTable  
   extends PPMessage   {
 
@@ -671,7 +676,6 @@ class CurrencyConversionTable
 /**
  * A list of ISO currencies. 
  */
- 
 class CurrencyList  
   extends PPMessage   {
 
@@ -701,7 +705,6 @@ class CurrencyList
  * Customizable options that a client application can specify
  * for display purposes. 
  */
- 
 class DisplayOptions  
   extends PPMessage   {
 
@@ -749,7 +752,6 @@ class DisplayOptions
 /**
  * 
  */
- 
 class ErrorList  
   extends PPMessage   {
 
@@ -771,7 +773,6 @@ class ErrorList
 /**
  * 
  */
- 
 class FundingConstraint  
   extends PPMessage   {
 
@@ -792,7 +793,6 @@ class FundingConstraint
 /**
  * FundingTypeInfo represents one allowed funding type. 
  */
- 
 class FundingTypeInfo  
   extends PPMessage   {
 
@@ -820,7 +820,6 @@ class FundingTypeInfo
 /**
  * 
  */
- 
 class FundingTypeList  
   extends PPMessage   {
 
@@ -849,7 +848,6 @@ class FundingTypeList
 /**
  * Describes the conversion between 2 currencies. 
  */
- 
 class CurrencyConversion  
   extends PPMessage   {
 
@@ -888,7 +886,6 @@ class CurrencyConversion
 /**
  * Funding source information. 
  */
- 
 class FundingSource  
   extends PPMessage   {
 
@@ -945,7 +942,6 @@ class FundingSource
 /**
  * Amount to be charged to a particular funding source. 
  */
- 
 class FundingPlanCharge  
   extends PPMessage   {
 
@@ -976,7 +972,6 @@ class FundingPlanCharge
  * FundingPlan describes the funding sources to be used for a
  * specific payment. 
  */
- 
 class FundingPlan  
   extends PPMessage   {
 
@@ -1046,7 +1041,6 @@ class FundingPlan
  * initiator can simply be an institution or a customer of the
  * institution. 
  */
- 
 class InitiatingEntity  
   extends PPMessage   {
 
@@ -1067,7 +1061,6 @@ class InitiatingEntity
 /**
  * The customer of the initiating institution 
  */
- 
 class InstitutionCustomer  
   extends PPMessage   {
 
@@ -1159,7 +1152,6 @@ class InstitutionCustomer
 /**
  * Describes an individual item for an invoice. 
  */
- 
 class InvoiceItem  
   extends PPMessage   {
 
@@ -1217,7 +1209,6 @@ class InvoiceItem
  * Describes a payment for a particular receiver (merchant),
  * contains list of additional per item details. 
  */
- 
 class InvoiceData  
   extends PPMessage   {
 
@@ -1258,7 +1249,6 @@ class InvoiceData
  * The error that resulted from an attempt to make a payment to
  * a receiver. 
  */
- 
 class PayError  
   extends PPMessage   {
 
@@ -1288,7 +1278,6 @@ class PayError
 /**
  * 
  */
- 
 class PayErrorList  
   extends PPMessage   {
 
@@ -1313,7 +1302,6 @@ class PayErrorList
  * has not yet completed, there will not be any transaction
  * details. 
  */
- 
 class PaymentInfo  
   extends PPMessage   {
 
@@ -1397,7 +1385,6 @@ class PaymentInfo
 /**
  * 
  */
- 
 class PaymentInfoList  
   extends PPMessage   {
 
@@ -1422,7 +1409,6 @@ class PaymentInfoList
  * in a chained split payment. A primary receiver should not be
  * specified when making a single or parallel split payment. 
  */
- 
 class Receiver  
   extends PPMessage   {
 
@@ -1504,7 +1490,6 @@ class Receiver
 /**
  * 
  */
- 
 class ReceiverList  
   extends PPMessage   {
 
@@ -1534,7 +1519,6 @@ class ReceiverList
  * The sender identifier type contains information to identify
  * a PayPal account. 
  */
- 
 class ReceiverIdentifier  extends AccountIdentifier  
   {
 
@@ -1547,7 +1531,6 @@ class ReceiverIdentifier  extends AccountIdentifier
  * Options that apply to the receiver of a payment, allows
  * setting additional details for payment using invoice. 
  */
- 
 class ReceiverOptions  
   extends PPMessage   {
 
@@ -1612,7 +1595,6 @@ class ReceiverOptions
  * RefundInfo represents the refund attempt made to a Receiver
  * of a PayRequest. 
  */
- 
 class RefundInfo  
   extends PPMessage   {
 
@@ -1714,7 +1696,6 @@ class RefundInfo
 /**
  * 
  */
- 
 class RefundInfoList  
   extends PPMessage   {
 
@@ -1736,7 +1717,6 @@ class RefundInfoList
 /**
  * Options that apply to the sender of a payment. 
  */
- 
 class SenderOptions  
   extends PPMessage   {
 
@@ -1768,7 +1748,6 @@ class SenderOptions
  * Details about the payer's tax info passed in by the merchant
  * or partner. 
  */
- 
 class TaxIdDetails  
   extends PPMessage   {
 
@@ -1799,7 +1778,6 @@ class TaxIdDetails
  * The sender identifier type contains information to identify
  * a PayPal account. 
  */
- 
 class SenderIdentifier  extends AccountIdentifier  
   {
 
@@ -1829,7 +1807,6 @@ class SenderIdentifier  extends AccountIdentifier
 /**
  * 
  */
- 
 class UserLimit  
   extends PPMessage   {
 
@@ -1860,7 +1837,6 @@ class UserLimit
  * This type contains the detailed warning information
  * resulting from the service operation. 
  */
- 
 class WarningData  
   extends PPMessage   {
 
@@ -1890,7 +1866,6 @@ class WarningData
 /**
  * 
  */
- 
 class WarningDataList  
   extends PPMessage   {
 
@@ -1912,7 +1887,6 @@ class WarningDataList
 /**
  * The request to cancel a Preapproval. 
  */
- 
 class CancelPreapprovalRequest  
   extends PPMessage   {
 
@@ -1950,7 +1924,6 @@ class CancelPreapprovalRequest
 /**
  * The result of the CancelPreapprovalRequest. 
  */
- 
 class CancelPreapprovalResponse  
   extends PPMessage   {
 
@@ -1981,7 +1954,6 @@ class CancelPreapprovalResponse
 /**
  * The request to confirm a Preapproval. 
  */
- 
 class ConfirmPreapprovalRequest  
   extends PPMessage   {
 
@@ -2037,7 +2009,6 @@ class ConfirmPreapprovalRequest
 /**
  * The result of the ConfirmPreapprovalRequest. 
  */
- 
 class ConfirmPreapprovalResponse  
   extends PPMessage   {
 
@@ -2069,7 +2040,6 @@ class ConfirmPreapprovalResponse
  * A request to convert one or more currencies into their
  * estimated values in other currencies. 
  */
- 
 class ConvertCurrencyRequest  
   extends PPMessage   {
 
@@ -2137,7 +2107,6 @@ class ConvertCurrencyRequest
  * A response that contains a table of estimated converted
  * currencies based on the Convert Currency Request. 
  */
- 
 class ConvertCurrencyResponse  
   extends PPMessage   {
 
@@ -2177,7 +2146,6 @@ class ConvertCurrencyResponse
 /**
  * The request to execute the payment request. 
  */
- 
 class ExecutePaymentRequest  
   extends PPMessage   {
 
@@ -2233,7 +2201,6 @@ class ExecutePaymentRequest
 /**
  * The result of a payment execution. 
  */
- 
 class ExecutePaymentResponse  
   extends PPMessage   {
 
@@ -2283,7 +2250,6 @@ class ExecutePaymentResponse
  * The request to get the allowed funding sources available for
  * a preapproval. 
  */
- 
 class GetAllowedFundingSourcesRequest  
   extends PPMessage   {
 
@@ -2322,7 +2288,6 @@ class GetAllowedFundingSourcesRequest
  * The response to get the backup funding sources available for
  * a preapproval. 
  */
- 
 class GetAllowedFundingSourcesResponse  
   extends PPMessage   {
 
@@ -2363,7 +2328,6 @@ class GetAllowedFundingSourcesResponse
 /**
  * The request to get the options of a payment request. 
  */
- 
 class GetPaymentOptionsRequest  
   extends PPMessage   {
 
@@ -2401,7 +2365,6 @@ class GetPaymentOptionsRequest
 /**
  * The response message for the GetPaymentOption request 
  */
- 
 class GetPaymentOptionsResponse  
   extends PPMessage   {
 
@@ -2480,7 +2443,6 @@ class GetPaymentOptionsResponse
  * PaymentDetailsRequest can be made with either a payKey,
  * trackingId, or a transactionId of the PayRequest. 
  */
- 
 class PaymentDetailsRequest  
   extends PPMessage   {
 
@@ -2536,7 +2498,6 @@ class PaymentDetailsRequest
  * The details of the PayRequest as specified in the Pay
  * operation. 
  */
- 
 class PaymentDetailsResponse  
   extends PPMessage   {
 
@@ -2712,7 +2673,6 @@ class PaymentDetailsResponse
  * The PayRequest contains the payment instructions to make
  * from sender to receivers. 
  */
- 
 class PayRequest  
   extends PPMessage   {
 
@@ -2891,7 +2851,6 @@ class PayRequest
  * The payKey and execution status of the request should always
  * be provided. 
  */
- 
 class PayResponse  
   extends PPMessage   {
 
@@ -2967,7 +2926,6 @@ class PayResponse
 /**
  * The request to look up the details of a Preapproval. 
  */
- 
 class PreapprovalDetailsRequest  
   extends PPMessage   {
 
@@ -3015,7 +2973,6 @@ class PreapprovalDetailsRequest
  * The details of the Preapproval as specified in the
  * Preapproval operation. 
  */
- 
 class PreapprovalDetailsResponse  
   extends PPMessage   {
 
@@ -3274,7 +3231,6 @@ class PreapprovalDetailsResponse
  * the API caller (the service invoker) to make payment(s) on
  * the the sender's behalf with various limitations defined. 
  */
- 
 class PreapprovalRequest  
   extends PPMessage   {
 
@@ -3486,7 +3442,6 @@ class PreapprovalRequest
 /**
  * The result of the PreapprovalRequest is a preapprovalKey. 
  */
- 
 class PreapprovalResponse  
   extends PPMessage   {
 
@@ -3529,7 +3484,6 @@ class PreapprovalResponse
  * transaction belonging to a payKey, a tracking id, or a
  * specific receiver of a payKey. 
  */
- 
 class RefundRequest  
   extends PPMessage   {
 
@@ -3602,7 +3556,6 @@ class RefundRequest
 /**
  * The result of a Refund request. 
  */
- 
 class RefundResponse  
   extends PPMessage   {
 
@@ -3651,7 +3604,6 @@ class RefundResponse
 /**
  * The request to set the options of a payment request. 
  */
- 
 class SetPaymentOptionsRequest  
   extends PPMessage   {
 
@@ -3735,7 +3687,6 @@ class SetPaymentOptionsRequest
 /**
  * The response message for the SetPaymentOption request 
  */
- 
 class SetPaymentOptionsResponse  
   extends PPMessage   {
 
@@ -3767,7 +3718,6 @@ class SetPaymentOptionsResponse
  * The request to get the funding plans available for a
  * payment. 
  */
- 
 class GetFundingPlansRequest  
   extends PPMessage   {
 
@@ -3806,7 +3756,6 @@ class GetFundingPlansRequest
  * The response to get the funding plans available for a
  * payment. 
  */
- 
 class GetFundingPlansResponse  
   extends PPMessage   {
 
@@ -3847,7 +3796,6 @@ class GetFundingPlansResponse
 /**
  * The request to get the addresses available for a payment. 
  */
- 
 class GetAvailableShippingAddressesRequest  
   extends PPMessage   {
 
@@ -3888,7 +3836,6 @@ class GetAvailableShippingAddressesRequest
  * The response to get the shipping addresses available for a
  * payment. 
  */
- 
 class GetAvailableShippingAddressesResponse  
   extends PPMessage   {
 
@@ -3929,7 +3876,6 @@ class GetAvailableShippingAddressesResponse
 /**
  * The request to get the addresses available for a payment. 
  */
- 
 class GetShippingAddressesRequest  
   extends PPMessage   {
 
@@ -3970,7 +3916,6 @@ class GetShippingAddressesRequest
  * The response to get the shipping addresses available for a
  * payment. 
  */
- 
 class GetShippingAddressesResponse  
   extends PPMessage   {
 
@@ -4010,7 +3955,6 @@ class GetShippingAddressesResponse
 /**
  * The request to get the remaining limits for a user 
  */
- 
 class GetUserLimitsRequest  
   extends PPMessage   {
 
@@ -4079,7 +4023,6 @@ class GetUserLimitsRequest
 /**
  * A response that contains a list of remaining limits 
  */
- 
 class GetUserLimitsResponse  
   extends PPMessage   {
 
