@@ -7,7 +7,7 @@
 /**
  * 
  */
-if(!class_exists('AccountIdentifier')) {
+if(!class_exists('AccountIdentifier', false)) {
 class AccountIdentifier  
   extends PPMessage   {
 
@@ -38,7 +38,7 @@ class AccountIdentifier
 /**
  * 
  */
-if(!class_exists('BaseAddress')) {
+if(!class_exists('BaseAddress', false)) {
 class BaseAddress  
   extends PPMessage   {
 
@@ -115,7 +115,7 @@ class BaseAddress
  * Details about the end user of the application invoking this
  * service. 
  */
-if(!class_exists('ClientDetailsType')) {
+if(!class_exists('ClientDetailsType', false)) {
 class ClientDetailsType  
   extends PPMessage   {
 
@@ -200,7 +200,7 @@ class ClientDetailsType
 /**
  * 
  */
-if(!class_exists('CurrencyType')) {
+if(!class_exists('CurrencyType', false)) {
 class CurrencyType  
   extends PPMessage   {
 
@@ -240,7 +240,7 @@ class CurrencyType
  * This type contains the detailed error information resulting
  * from the service operation. 
  */
-if(!class_exists('ErrorData')) {
+if(!class_exists('ErrorData', false)) {
 class ErrorData  
   extends PPMessage   {
 
@@ -327,7 +327,7 @@ class ErrorData
  * @hasAttribute
  * 
  */
-if(!class_exists('ErrorParameter')) {
+if(!class_exists('ErrorParameter', false)) {
 class ErrorParameter  
   extends PPMessage   {
 
@@ -363,7 +363,7 @@ class ErrorParameter
  * This specifies a fault, encapsulating error data, with
  * specific error codes. 
  */
-if(!class_exists('FaultMessage')) {
+if(!class_exists('FaultMessage', false)) {
 class FaultMessage  
   extends PPMessage   {
 
@@ -395,7 +395,7 @@ class FaultMessage
 /**
  * 
  */
-if(!class_exists('PhoneNumberType')) {
+if(!class_exists('PhoneNumberType', false)) {
 class PhoneNumberType  
   extends PPMessage   {
 
@@ -444,7 +444,7 @@ class PhoneNumberType
  * This specifies the list of parameters with every request to
  * the service. 
  */
-if(!class_exists('RequestEnvelope')) {
+if(!class_exists('RequestEnvelope', false)) {
 class RequestEnvelope  
   extends PPMessage   {
 
@@ -488,7 +488,7 @@ class RequestEnvelope
  * This specifies a list of parameters with every response from
  * a service. 
  */
-if(!class_exists('ResponseEnvelope')) {
+if(!class_exists('ResponseEnvelope', false)) {
 class ResponseEnvelope  
   extends PPMessage   {
 
