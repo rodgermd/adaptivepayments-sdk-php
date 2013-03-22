@@ -56,6 +56,7 @@ For example,
 	......
 
 	$service = new AdaptivePaymentsService();
+
 	$response = $service->Pay($payRequest);	
 	$ack = strtoupper($response->responseEnvelope->ack); 
 	if($ack == 'SUCCESS') {
@@ -88,6 +89,10 @@ Replace the API credential in config/sdk_config.ini . You can use the configurat
    * Service endpoint and other HTTP connection parameters
    * Logging 
 
+   dynamic configuration values can be set by passing a map of credential and config values (if config map is passed the config file is ignored)
+   ex : 
+    $service  = new AdaptivePaymentsService($configMap); // where $configMap is a config array
+
 Please refer to the sample config file provided with this bundle.
 
 Using multiple SDKs together
@@ -97,53 +102,8 @@ Using multiple SDKs together
 
 Endpoint Configuration
 ---------------------------
-*The list below specifies endpoints for different services, in SANDBOX and PRODUCTION, with their 
-property keys and end-point as property values.
+*set 'mode' to 'SANDBOX' for testing and 'LIVE' for production
 
-
-------------------------------SANDBOX------------------------------  
-* Merchant/Button Manager Service (3 Token)  
-service.EndPoint.PayPalAPI=https://api-3t.sandbox.paypal.com/2.0  
-service.EndPoint.PayPalAPIAA=https://api-3t.sandbox.paypal.com/2.0  
-
-* Merchant/Button Manager Service (Certificate)  
-service.EndPoint.PayPalAPI=https://api.sandbox.paypal.com/2.0  
-service.EndPoint.PayPalAPIAA=https://api.sandbox.paypal.com/2.0  
-
-* AdaptiveAccounts Platform Service  
-service.EndPoint.AdaptiveAccounts=https://svcs.sandbox.paypal.com/  
-
-* AdaptivePayments Platform Service  
-service.EndPoint.AdaptivePayments=https://svcs.sandbox.paypal.com/  
-
-* Invoice Platform Service  
-service.EndPoint.Invoice=https://svcs.sandbox.paypal.com/  
-
-* Permissions Platform Service  
-service.EndPoint.Permissions=https://svcs.sandbox.paypal.com/  
-
-------------------------------PRODUCTION------------------------------  
-* Merchant/Button Manager Service (3 Token)  
-service.EndPoint.PayPalAPI=https://api-3t.paypal.com/2.0  
-service.EndPoint.PayPalAPIAA=https://api-3t.paypal.com/2.0  
-
-* Merchant/Button Manager Service (Certificate)  
-service.EndPoint.PayPalAPI=https://api.paypal.com/2.0  
-service.EndPoint.PayPalAPIAA=https://api.paypal.com/2.0  
-
-* AdaptiveAccounts Platform Service  
-service.EndPoint.AdaptiveAccounts=https://svcs.paypal.com/  
-
-* AdaptivePayments Platform Service  
-service.EndPoint.AdaptivePayments=https://svcs.paypal.com/  
-
-* Invoice Platform Service  
-service.EndPoint.Invoice=https://svcs.paypal.com/  
-
-* Permissions Platform Service  
-service.EndPoint.Permissions=https://svcs.paypal.com/  
-
-For additional information please refer to https://www.x.com/developers/paypal/documentation-tools/api
 
 Instant Payment Notification (IPN)
 -----------------------------------
