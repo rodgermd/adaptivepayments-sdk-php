@@ -1,8 +1,6 @@
 <?php
 require_once('PPBootStrap.php');
 
-$logger = new PPLoggingManager('ConvertCurrency');
-
 // create request
 $baseAmountList = new CurrencyList();
 foreach($_POST['currencyCode'] as $idx => $currencyCode) {
@@ -24,7 +22,6 @@ if($_POST['conversionType'] != "" && $_POST['conversionType'] != "- Select -") {
 	$convertCurrencyReq->conversionType = $_POST['conversionType'];
 }
 
-$logger->log("Created ConvertCurrencyRequest Object");
 
 
 $service  = new AdaptivePaymentsService();
@@ -48,7 +45,6 @@ try {
 <div id="response_form">
 <h3>Convert Currency</h3>
 <?php
-$logger->error("Received ConvertCurrencyResponse:");
 $ack = strtoupper($response->responseEnvelope->ack);
 if($ack != "SUCCESS"){
 	echo "<b>Error </b>";

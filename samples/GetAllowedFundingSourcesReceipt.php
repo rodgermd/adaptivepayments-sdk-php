@@ -1,12 +1,10 @@
 <?php
 require_once('PPBootStrap.php');
 
-$logger = new PPLoggingManager('GetAllowedFundingSources');
 
 // create request
 $requestEnvelope = new RequestEnvelope("en_US");
 $getAllowedFundingSourcesReq = new GetAllowedFundingSourcesRequest($requestEnvelope, $_POST['key']);
-$logger->log("Created GetAllowedFundingSourcesRequest Object");
 
 $service = new AdaptivePaymentsService();
 try {
@@ -29,7 +27,7 @@ try {
 		<div id="response_form">
 			<h3>Get Allowed Funding Sources</h3>
 <?php 
-$logger->error("Received GetAllowedFundingSourcesResponse:");
+
 $ack = strtoupper($response->responseEnvelope->ack);
 if($ack != "SUCCESS"){
 	echo "<b>Error </b>";

@@ -1,7 +1,6 @@
 <?php
 require_once('PPBootStrap.php');
 
-$logger = new PPLoggingManager('ExecutePayment');
 
 // create request
 $executePaymentRequest = new ExecutePaymentRequest(new RequestEnvelope("en_US"),$_POST['payKey']);
@@ -17,7 +16,7 @@ try {
 	require_once 'Common/Error.php';
 	exit;
 }
-$logger->error("Received ExecutePaymentResponse:");
+
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>

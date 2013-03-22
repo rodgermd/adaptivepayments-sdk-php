@@ -1,7 +1,6 @@
 <?php
 require_once('PPBootStrap.php');
 
-$logger = new PPLoggingManager('CancelPreapproval');
 
 // create request
 $requestEnvelope = new RequestEnvelope("en_US");
@@ -30,7 +29,7 @@ try {
 <div id="response_form">
 <h3>Cancel Preapproval</h3>
 <?php
-$logger->error("Received CancelPreapprovalResponse:");
+
 $ack = strtoupper($response->responseEnvelope->ack);
 if($ack != "SUCCESS"){
 	echo "<b>Error </b>";

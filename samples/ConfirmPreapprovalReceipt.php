@@ -1,7 +1,6 @@
 <?php
 require_once('PPBootStrap.php');
 
-$logger = new PPLoggingManager('ConfirmPreapproval');
 
 // create request
 $requestEnvelope = new RequestEnvelope("en_US");
@@ -37,7 +36,6 @@ try {
 		<div id="response_form">
 			<h3>Confirm Preapproval</h3>
 <?php
-$logger->error("Received ConfirmPreapprovalResponse:");
 $ack = strtoupper($response->responseEnvelope->ack);
 if($ack != "SUCCESS"){
 	echo "<b>Error </b>";
