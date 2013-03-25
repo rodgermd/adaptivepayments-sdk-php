@@ -5,14 +5,14 @@
   * 
   */
 /**
- * 
+ *  
  */
 if(!class_exists('AccountIdentifier', false)) {
 class AccountIdentifier  
   extends PPMessage   {
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -21,13 +21,22 @@ class AccountIdentifier
 	public $email;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
 	 * @var PhoneNumberType 	 
 	 */ 
 	public $phone;
+
+	/**
+	*  
+	 * @access public
+	 
+	 	 	 	 
+	 * @var string 	 
+	 */ 
+	public $accountId;
 
 
 }
@@ -36,14 +45,14 @@ class AccountIdentifier
 
 
 /**
- * 
+ *  
  */
 if(!class_exists('BaseAddress', false)) {
 class BaseAddress  
   extends PPMessage   {
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -52,7 +61,7 @@ class BaseAddress
 	public $line1;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -61,7 +70,7 @@ class BaseAddress
 	public $line2;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -70,7 +79,7 @@ class BaseAddress
 	public $city;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -79,7 +88,7 @@ class BaseAddress
 	public $state;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -88,7 +97,7 @@ class BaseAddress
 	public $postalCode;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -97,7 +106,7 @@ class BaseAddress
 	public $countryCode;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -112,15 +121,15 @@ class BaseAddress
 
 
 /**
- * Details about the end user of the application invoking this
- * service. 
+ *  Details about the end user of the application invoking this
+ *  service. 
  */
 if(!class_exists('ClientDetailsType', false)) {
 class ClientDetailsType  
   extends PPMessage   {
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -129,7 +138,7 @@ class ClientDetailsType
 	public $ipAddress;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -138,7 +147,7 @@ class ClientDetailsType
 	public $deviceId;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -147,7 +156,7 @@ class ClientDetailsType
 	public $applicationId;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -156,7 +165,7 @@ class ClientDetailsType
 	public $model;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -165,7 +174,7 @@ class ClientDetailsType
 	public $geoLocation;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -174,7 +183,7 @@ class ClientDetailsType
 	public $customerType;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -183,7 +192,7 @@ class ClientDetailsType
 	public $partnerName;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -198,14 +207,14 @@ class ClientDetailsType
 
 
 /**
- * 
+ *  
  */
 if(!class_exists('CurrencyType', false)) {
 class CurrencyType  
   extends PPMessage   {
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -214,7 +223,7 @@ class CurrencyType
 	public $code;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -237,15 +246,15 @@ class CurrencyType
 
 
 /**
- * This type contains the detailed error information resulting
- * from the service operation. 
+ *  This type contains the detailed error information resulting
+ *  from the service operation. 
  */
 if(!class_exists('ErrorData', false)) {
 class ErrorData  
   extends PPMessage   {
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -254,7 +263,7 @@ class ErrorData
 	public $errorId;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -263,7 +272,7 @@ class ErrorData
 	public $domain;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -272,7 +281,7 @@ class ErrorData
 	public $subdomain;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -281,7 +290,7 @@ class ErrorData
 	public $severity;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -290,7 +299,7 @@ class ErrorData
 	public $category;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -299,7 +308,7 @@ class ErrorData
 	public $message;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -308,7 +317,7 @@ class ErrorData
 	public $exceptionId;
 
 	/**
-	 * 
+	*  
      * @array
 	 * @access public
 	 
@@ -325,14 +334,14 @@ class ErrorData
 
 /**
  * @hasAttribute
- * 
+ *  
  */
 if(!class_exists('ErrorParameter', false)) {
 class ErrorParameter  
   extends PPMessage   {
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 
@@ -343,7 +352,7 @@ class ErrorParameter
 	public $name;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 
@@ -360,15 +369,15 @@ class ErrorParameter
 
 
 /**
- * This specifies a fault, encapsulating error data, with
- * specific error codes. 
+ *  This specifies a fault, encapsulating error data, with
+ *  specific error codes. 
  */
 if(!class_exists('FaultMessage', false)) {
 class FaultMessage  
   extends PPMessage   {
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -377,7 +386,7 @@ class FaultMessage
 	public $responseEnvelope;
 
 	/**
-	 * 
+	*  
      * @array
 	 * @access public
 	 
@@ -393,14 +402,14 @@ class FaultMessage
 
 
 /**
- * 
+ *  
  */
 if(!class_exists('PhoneNumberType', false)) {
 class PhoneNumberType  
   extends PPMessage   {
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -409,7 +418,7 @@ class PhoneNumberType
 	public $countryCode;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -418,7 +427,7 @@ class PhoneNumberType
 	public $phoneNumber;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -441,19 +450,19 @@ class PhoneNumberType
 
 
 /**
- * This specifies the list of parameters with every request to
- * the service. 
+ *  This specifies the list of parameters with every request to
+ *  the service. 
  */
 if(!class_exists('RequestEnvelope', false)) {
 class RequestEnvelope  
   extends PPMessage   {
 
 	/**
-	 * This specifies the required detail level that is needed by a
-	 * client application pertaining to a particular data component
-	 * (e.g., Item, Transaction, etc.). The detail level is
-	 * specified in the DetailLevelCodeType which has all the
-	 * enumerated values of the detail level for each component. 
+	*  This specifies the required detail level that is needed by a
+	*  client application pertaining to a particular data component
+	*  (e.g., Item, Transaction, etc.). The detail level is
+	*  specified in the DetailLevelCodeType which has all the
+	*  enumerated values of the detail level for each component. 
 	 * @access public
 	 
 	 	 	 	 
@@ -462,8 +471,8 @@ class RequestEnvelope
 	public $detailLevel;
 
 	/**
-	 * This should be the standard RFC 3066 language identification
-	 * tag, e.g., en_US. 
+	*  This should be the standard RFC 3066 language identification
+	*  tag, e.g., en_US. 
 	 * @access public
 	 
 	 	 	 	 
@@ -485,15 +494,15 @@ class RequestEnvelope
 
 
 /**
- * This specifies a list of parameters with every response from
- * a service. 
+ *  This specifies a list of parameters with every response from
+ *  a service. 
  */
 if(!class_exists('ResponseEnvelope', false)) {
 class ResponseEnvelope  
   extends PPMessage   {
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -502,7 +511,7 @@ class ResponseEnvelope
 	public $timestamp;
 
 	/**
-	 * Application level acknowledgment code. 
+	*  Application level acknowledgment code. 
 	 * @access public
 	 
 	 	 	 	 
@@ -511,7 +520,7 @@ class ResponseEnvelope
 	public $ack;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -520,7 +529,7 @@ class ResponseEnvelope
 	public $correlationId;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -535,13 +544,13 @@ class ResponseEnvelope
 
 
 /**
- * 
+ *  
  */
 class Address  
   extends PPMessage   {
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -550,7 +559,7 @@ class Address
 	public $addresseeName;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -559,7 +568,7 @@ class Address
 	public $baseAddress;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -573,13 +582,13 @@ class Address
 
 
 /**
- * 
+ *  
  */
 class AddressList  
   extends PPMessage   {
 
 	/**
-	 * 
+	*  
      * @array
 	 * @access public
 	 
@@ -594,13 +603,13 @@ class AddressList
 
 
 /**
- * A list of ISO currency codes. 
+ *  A list of ISO currency codes. 
  */
 class CurrencyCodeList  
   extends PPMessage   {
 
 	/**
-	 * 
+	*  
      * @array
 	 * @access public
 	 
@@ -622,14 +631,14 @@ class CurrencyCodeList
 
 
 /**
- * A list of estimated currency conversions for a base
- * currency. 
+ *  A list of estimated currency conversions for a base
+ *  currency. 
  */
 class CurrencyConversionList  
   extends PPMessage   {
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -638,7 +647,7 @@ class CurrencyConversionList
 	public $baseAmount;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -652,14 +661,14 @@ class CurrencyConversionList
 
 
 /**
- * A table that contains a list of estimated currency
- * conversions for a base currency in each row. 
+ *  A table that contains a list of estimated currency
+ *  conversions for a base currency in each row. 
  */
 class CurrencyConversionTable  
   extends PPMessage   {
 
 	/**
-	 * 
+	*  
      * @array
 	 * @access public
 	 
@@ -674,13 +683,13 @@ class CurrencyConversionTable
 
 
 /**
- * A list of ISO currencies. 
+ *  A list of ISO currencies. 
  */
 class CurrencyList  
   extends PPMessage   {
 
 	/**
-	 * 
+	*  
      * @array
 	 * @access public
 	 
@@ -702,14 +711,14 @@ class CurrencyList
 
 
 /**
- * Customizable options that a client application can specify
- * for display purposes. 
+ *  Customizable options that a client application can specify
+ *  for display purposes. 
  */
 class DisplayOptions  
   extends PPMessage   {
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -718,7 +727,7 @@ class DisplayOptions
 	public $emailHeaderImageUrl;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -727,7 +736,7 @@ class DisplayOptions
 	public $emailMarketingImageUrl;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -736,7 +745,7 @@ class DisplayOptions
 	public $headerImageUrl;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -750,13 +759,13 @@ class DisplayOptions
 
 
 /**
- * 
+ *  
  */
 class ErrorList  
   extends PPMessage   {
 
 	/**
-	 * 
+	*  
      * @array
 	 * @access public
 	 
@@ -771,13 +780,13 @@ class ErrorList
 
 
 /**
- * 
+ *  
  */
 class FundingConstraint  
   extends PPMessage   {
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -791,13 +800,13 @@ class FundingConstraint
 
 
 /**
- * FundingTypeInfo represents one allowed funding type. 
+ *  FundingTypeInfo represents one allowed funding type. 
  */
 class FundingTypeInfo  
   extends PPMessage   {
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -818,13 +827,13 @@ class FundingTypeInfo
 
 
 /**
- * 
+ *  
  */
 class FundingTypeList  
   extends PPMessage   {
 
 	/**
-	 * 
+	*  
      * @array
 	 * @access public
 	 
@@ -846,13 +855,13 @@ class FundingTypeList
 
 
 /**
- * Describes the conversion between 2 currencies. 
+ *  Describes the conversion between 2 currencies. 
  */
 class CurrencyConversion  
   extends PPMessage   {
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -861,7 +870,7 @@ class CurrencyConversion
 	public $from;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -870,7 +879,7 @@ class CurrencyConversion
 	public $to;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -884,13 +893,13 @@ class CurrencyConversion
 
 
 /**
- * Funding source information. 
+ *  Funding source information. 
  */
 class FundingSource  
   extends PPMessage   {
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -899,7 +908,7 @@ class FundingSource
 	public $lastFourOfAccountNumber;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -908,7 +917,7 @@ class FundingSource
 	public $type;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -917,7 +926,7 @@ class FundingSource
 	public $displayName;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -926,7 +935,7 @@ class FundingSource
 	public $fundingSourceId;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -940,13 +949,13 @@ class FundingSource
 
 
 /**
- * Amount to be charged to a particular funding source. 
+ *  Amount to be charged to a particular funding source. 
  */
 class FundingPlanCharge  
   extends PPMessage   {
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -955,7 +964,7 @@ class FundingPlanCharge
 	public $charge;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -969,14 +978,14 @@ class FundingPlanCharge
 
 
 /**
- * FundingPlan describes the funding sources to be used for a
- * specific payment. 
+ *  FundingPlan describes the funding sources to be used for a
+ *  specific payment. 
  */
 class FundingPlan  
   extends PPMessage   {
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -985,7 +994,7 @@ class FundingPlan
 	public $fundingPlanId;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -994,7 +1003,7 @@ class FundingPlan
 	public $fundingAmount;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -1003,7 +1012,7 @@ class FundingPlan
 	public $backupFundingSource;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -1012,7 +1021,7 @@ class FundingPlan
 	public $senderFees;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -1021,7 +1030,7 @@ class FundingPlan
 	public $currencyConversion;
 
 	/**
-	 * 
+	*  
      * @array
 	 * @access public
 	 
@@ -1036,16 +1045,16 @@ class FundingPlan
 
 
 /**
- * Details about the party that initiated this payment. The API
- * user is making this payment on behalf of the initiator. The
- * initiator can simply be an institution or a customer of the
- * institution. 
+ *  Details about the party that initiated this payment. The API
+ *  user is making this payment on behalf of the initiator. The
+ *  initiator can simply be an institution or a customer of the
+ *  institution. 
  */
 class InitiatingEntity  
   extends PPMessage   {
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -1059,13 +1068,13 @@ class InitiatingEntity
 
 
 /**
- * The customer of the initiating institution 
+ *  The customer of the initiating institution 
  */
 class InstitutionCustomer  
   extends PPMessage   {
 
 	/**
-	 * The unique identifier as assigned to the institution. 
+	*  The unique identifier as assigned to the institution. 
 	 * @access public
 	 
 	 	 	 	 
@@ -1074,8 +1083,8 @@ class InstitutionCustomer
 	public $institutionId;
 
 	/**
-	 * The first (given) name of the end consumer as known by the
-	 * institution. 
+	*  The first (given) name of the end consumer as known by the
+	*  institution. 
 	 * @access public
 	 
 	 	 	 	 
@@ -1084,8 +1093,8 @@ class InstitutionCustomer
 	public $firstName;
 
 	/**
-	 * The last (family) name of the end consumer as known by the
-	 * institution. 
+	*  The last (family) name of the end consumer as known by the
+	*  institution. 
 	 * @access public
 	 
 	 	 	 	 
@@ -1094,8 +1103,8 @@ class InstitutionCustomer
 	public $lastName;
 
 	/**
-	 * The full name of the end consumer as known by the
-	 * institution. 
+	*  The full name of the end consumer as known by the
+	*  institution. 
 	 * @access public
 	 
 	 	 	 	 
@@ -1104,8 +1113,8 @@ class InstitutionCustomer
 	public $displayName;
 
 	/**
-	 * The unique identifier as assigned to the end consumer by the
-	 * institution. 
+	*  The unique identifier as assigned to the end consumer by the
+	*  institution. 
 	 * @access public
 	 
 	 	 	 	 
@@ -1114,8 +1123,8 @@ class InstitutionCustomer
 	public $institutionCustomerId;
 
 	/**
-	 * The two-character ISO country code of the home country of
-	 * the end consumer 
+	*  The two-character ISO country code of the home country of
+	*  the end consumer 
 	 * @access public
 	 
 	 	 	 	 
@@ -1124,7 +1133,7 @@ class InstitutionCustomer
 	public $countryCode;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -1150,13 +1159,13 @@ class InstitutionCustomer
 
 
 /**
- * Describes an individual item for an invoice. 
+ *  Describes an individual item for an invoice. 
  */
 class InvoiceItem  
   extends PPMessage   {
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -1165,7 +1174,7 @@ class InvoiceItem
 	public $name;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -1174,7 +1183,7 @@ class InvoiceItem
 	public $identifier;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -1183,7 +1192,7 @@ class InvoiceItem
 	public $price;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -1192,7 +1201,7 @@ class InvoiceItem
 	public $itemPrice;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -1206,14 +1215,14 @@ class InvoiceItem
 
 
 /**
- * Describes a payment for a particular receiver (merchant),
- * contains list of additional per item details. 
+ *  Describes a payment for a particular receiver (merchant),
+ *  contains list of additional per item details. 
  */
 class InvoiceData  
   extends PPMessage   {
 
 	/**
-	 * 
+	*  
      * @array
 	 * @access public
 	 
@@ -1223,7 +1232,7 @@ class InvoiceData
 	public $item;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -1232,7 +1241,7 @@ class InvoiceData
 	public $totalTax;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -1246,14 +1255,14 @@ class InvoiceData
 
 
 /**
- * The error that resulted from an attempt to make a payment to
- * a receiver. 
+ *  The error that resulted from an attempt to make a payment to
+ *  a receiver. 
  */
 class PayError  
   extends PPMessage   {
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -1262,7 +1271,7 @@ class PayError
 	public $receiver;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -1276,13 +1285,13 @@ class PayError
 
 
 /**
- * 
+ *  
  */
 class PayErrorList  
   extends PPMessage   {
 
 	/**
-	 * 
+	*  
      * @array
 	 * @access public
 	 
@@ -1297,16 +1306,16 @@ class PayErrorList
 
 
 /**
- * PaymentInfo represents the payment attempt made to a
- * Receiver of a PayRequest. If the execution of the payment
- * has not yet completed, there will not be any transaction
- * details. 
+ *  PaymentInfo represents the payment attempt made to a
+ *  Receiver of a PayRequest. If the execution of the payment
+ *  has not yet completed, there will not be any transaction
+ *  details. 
  */
 class PaymentInfo  
   extends PPMessage   {
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -1315,7 +1324,7 @@ class PaymentInfo
 	public $transactionId;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -1324,7 +1333,7 @@ class PaymentInfo
 	public $transactionStatus;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -1333,7 +1342,7 @@ class PaymentInfo
 	public $receiver;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -1342,7 +1351,7 @@ class PaymentInfo
 	public $refundedAmount;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -1351,7 +1360,7 @@ class PaymentInfo
 	public $pendingRefund;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -1360,7 +1369,7 @@ class PaymentInfo
 	public $senderTransactionId;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -1369,7 +1378,7 @@ class PaymentInfo
 	public $senderTransactionStatus;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -1383,13 +1392,13 @@ class PaymentInfo
 
 
 /**
- * 
+ *  
  */
 class PaymentInfoList  
   extends PPMessage   {
 
 	/**
-	 * 
+	*  
      * @array
 	 * @access public
 	 
@@ -1404,16 +1413,16 @@ class PaymentInfoList
 
 
 /**
- * Receiver is the party where funds are transferred to. A
- * primary receiver receives a payment directly from the sender
- * in a chained split payment. A primary receiver should not be
- * specified when making a single or parallel split payment. 
+ *  Receiver is the party where funds are transferred to. A
+ *  primary receiver receives a payment directly from the sender
+ *  in a chained split payment. A primary receiver should not be
+ *  specified when making a single or parallel split payment. 
  */
 class Receiver  
   extends PPMessage   {
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -1422,7 +1431,7 @@ class Receiver
 	public $amount;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -1431,7 +1440,7 @@ class Receiver
 	public $email;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -1440,7 +1449,7 @@ class Receiver
 	public $phone;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -1449,7 +1458,7 @@ class Receiver
 	public $primary;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -1458,7 +1467,7 @@ class Receiver
 	public $invoiceId;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -1467,13 +1476,22 @@ class Receiver
 	public $paymentType;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
 	 * @var string 	 
 	 */ 
 	public $paymentSubType;
+
+	/**
+	*  
+	 * @access public
+	 
+	 	 	 	 
+	 * @var string 	 
+	 */ 
+	public $accountId;
 
 	/**
 	 * Constructor with arguments
@@ -1488,13 +1506,13 @@ class Receiver
 
 
 /**
- * 
+ *  
  */
 class ReceiverList  
   extends PPMessage   {
 
 	/**
-	 * 
+	*  
      * @array
 	 * @access public
 	 
@@ -1516,8 +1534,8 @@ class ReceiverList
 
 
 /**
- * The sender identifier type contains information to identify
- * a PayPal account. 
+ *  The sender identifier type contains information to identify
+ *  a PayPal account. 
  */
 class ReceiverIdentifier  extends AccountIdentifier  
   {
@@ -1528,14 +1546,14 @@ class ReceiverIdentifier  extends AccountIdentifier
 
 
 /**
- * Options that apply to the receiver of a payment, allows
- * setting additional details for payment using invoice. 
+ *  Options that apply to the receiver of a payment, allows
+ *  setting additional details for payment using invoice. 
  */
 class ReceiverOptions  
   extends PPMessage   {
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -1544,7 +1562,7 @@ class ReceiverOptions
 	public $description;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -1553,7 +1571,7 @@ class ReceiverOptions
 	public $customId;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -1562,7 +1580,7 @@ class ReceiverOptions
 	public $invoiceData;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -1571,7 +1589,7 @@ class ReceiverOptions
 	public $receiver;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -1592,14 +1610,14 @@ class ReceiverOptions
 
 
 /**
- * RefundInfo represents the refund attempt made to a Receiver
- * of a PayRequest. 
+ *  RefundInfo represents the refund attempt made to a Receiver
+ *  of a PayRequest. 
  */
 class RefundInfo  
   extends PPMessage   {
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -1608,7 +1626,7 @@ class RefundInfo
 	public $receiver;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -1617,7 +1635,7 @@ class RefundInfo
 	public $refundStatus;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -1626,7 +1644,7 @@ class RefundInfo
 	public $refundNetAmount;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -1635,7 +1653,7 @@ class RefundInfo
 	public $refundFeeAmount;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -1644,7 +1662,7 @@ class RefundInfo
 	public $refundGrossAmount;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -1653,7 +1671,7 @@ class RefundInfo
 	public $totalOfAllRefunds;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -1662,7 +1680,7 @@ class RefundInfo
 	public $refundHasBecomeFull;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -1671,7 +1689,7 @@ class RefundInfo
 	public $encryptedRefundTransactionId;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -1680,7 +1698,7 @@ class RefundInfo
 	public $refundTransactionStatus;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -1694,13 +1712,13 @@ class RefundInfo
 
 
 /**
- * 
+ *  
  */
 class RefundInfoList  
   extends PPMessage   {
 
 	/**
-	 * 
+	*  
      * @array
 	 * @access public
 	 
@@ -1715,14 +1733,14 @@ class RefundInfoList
 
 
 /**
- * Options that apply to the sender of a payment. 
+ *  Options that apply to the sender of a payment. 
  */
 class SenderOptions  
   extends PPMessage   {
 
 	/**
-	 * Require the user to select a shipping address during the web
-	 * flow. 
+	*  Require the user to select a shipping address during the web
+	*  flow. 
 	 * @access public
 	 
 	 	 	 	 
@@ -1731,7 +1749,7 @@ class SenderOptions
 	public $requireShippingAddressSelection;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -1745,14 +1763,14 @@ class SenderOptions
 
 
 /**
- * Details about the payer's tax info passed in by the merchant
- * or partner. 
+ *  Details about the payer's tax info passed in by the merchant
+ *  or partner. 
  */
 class TaxIdDetails  
   extends PPMessage   {
 
 	/**
-	 * Tax id of the merchant/business. 
+	*  Tax id of the merchant/business. 
 	 * @access public
 	 
 	 	 	 	 
@@ -1761,7 +1779,7 @@ class TaxIdDetails
 	public $taxId;
 
 	/**
-	 * Tax type of the Tax Id. 
+	*  Tax type of the Tax Id. 
 	 * @access public
 	 
 	 	 	 	 
@@ -1775,14 +1793,14 @@ class TaxIdDetails
 
 
 /**
- * The sender identifier type contains information to identify
- * a PayPal account. 
+ *  The sender identifier type contains information to identify
+ *  a PayPal account. 
  */
 class SenderIdentifier  extends AccountIdentifier  
   {
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -1791,7 +1809,7 @@ class SenderIdentifier  extends AccountIdentifier
 	public $useCredentials;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -1805,13 +1823,13 @@ class SenderIdentifier  extends AccountIdentifier
 
 
 /**
- * 
+ *  
  */
 class UserLimit  
   extends PPMessage   {
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -1820,7 +1838,7 @@ class UserLimit
 	public $limitType;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -1834,14 +1852,14 @@ class UserLimit
 
 
 /**
- * This type contains the detailed warning information
- * resulting from the service operation. 
+ *  This type contains the detailed warning information
+ *  resulting from the service operation. 
  */
 class WarningData  
   extends PPMessage   {
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -1850,7 +1868,7 @@ class WarningData
 	public $warningId;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -1864,13 +1882,13 @@ class WarningData
 
 
 /**
- * 
+ *  
  */
 class WarningDataList  
   extends PPMessage   {
 
 	/**
-	 * 
+	*  
      * @array
 	 * @access public
 	 
@@ -1885,13 +1903,13 @@ class WarningDataList
 
 
 /**
- * The request to cancel a Preapproval. 
+ *  The request to cancel a Preapproval. 
  */
 class CancelPreapprovalRequest  
   extends PPMessage   {
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -1900,7 +1918,7 @@ class CancelPreapprovalRequest
 	public $requestEnvelope;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -1922,13 +1940,13 @@ class CancelPreapprovalRequest
 
 
 /**
- * The result of the CancelPreapprovalRequest. 
+ *  The result of the CancelPreapprovalRequest. 
  */
 class CancelPreapprovalResponse  
   extends PPMessage   {
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -1937,7 +1955,7 @@ class CancelPreapprovalResponse
 	public $responseEnvelope;
 
 	/**
-	 * 
+	*  
      * @array
 	 * @access public
 	 
@@ -1952,13 +1970,13 @@ class CancelPreapprovalResponse
 
 
 /**
- * The request to confirm a Preapproval. 
+ *  The request to confirm a Preapproval. 
  */
 class ConfirmPreapprovalRequest  
   extends PPMessage   {
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -1967,7 +1985,7 @@ class ConfirmPreapprovalRequest
 	public $requestEnvelope;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -1976,7 +1994,7 @@ class ConfirmPreapprovalRequest
 	public $preapprovalKey;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -1985,7 +2003,7 @@ class ConfirmPreapprovalRequest
 	public $fundingSourceId;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -2007,13 +2025,13 @@ class ConfirmPreapprovalRequest
 
 
 /**
- * The result of the ConfirmPreapprovalRequest. 
+ *  The result of the ConfirmPreapprovalRequest. 
  */
 class ConfirmPreapprovalResponse  
   extends PPMessage   {
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -2022,7 +2040,7 @@ class ConfirmPreapprovalResponse
 	public $responseEnvelope;
 
 	/**
-	 * 
+	*  
      * @array
 	 * @access public
 	 
@@ -2037,14 +2055,14 @@ class ConfirmPreapprovalResponse
 
 
 /**
- * A request to convert one or more currencies into their
- * estimated values in other currencies. 
+ *  A request to convert one or more currencies into their
+ *  estimated values in other currencies. 
  */
 class ConvertCurrencyRequest  
   extends PPMessage   {
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -2053,7 +2071,7 @@ class ConvertCurrencyRequest
 	public $requestEnvelope;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -2062,7 +2080,7 @@ class ConvertCurrencyRequest
 	public $baseAmountList;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -2071,8 +2089,8 @@ class ConvertCurrencyRequest
 	public $convertToCurrencyList;
 
 	/**
-	 * The two-character ISO country code where fx suppposed to
-	 * happen 
+	*  The two-character ISO country code where fx suppposed to
+	*  happen 
 	 * @access public
 	 
 	 	 	 	 
@@ -2081,7 +2099,7 @@ class ConvertCurrencyRequest
 	public $countryCode;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -2104,14 +2122,14 @@ class ConvertCurrencyRequest
 
 
 /**
- * A response that contains a table of estimated converted
- * currencies based on the Convert Currency Request. 
+ *  A response that contains a table of estimated converted
+ *  currencies based on the Convert Currency Request. 
  */
 class ConvertCurrencyResponse  
   extends PPMessage   {
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -2120,7 +2138,7 @@ class ConvertCurrencyResponse
 	public $responseEnvelope;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -2129,7 +2147,7 @@ class ConvertCurrencyResponse
 	public $estimatedAmountTable;
 
 	/**
-	 * 
+	*  
      * @array
 	 * @access public
 	 
@@ -2144,13 +2162,13 @@ class ConvertCurrencyResponse
 
 
 /**
- * The request to execute the payment request. 
+ *  The request to execute the payment request. 
  */
 class ExecutePaymentRequest  
   extends PPMessage   {
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -2159,7 +2177,7 @@ class ExecutePaymentRequest
 	public $requestEnvelope;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -2168,7 +2186,7 @@ class ExecutePaymentRequest
 	public $payKey;
 
 	/**
-	 * Describes the action that is performed by this API 
+	*  Describes the action that is performed by this API 
 	 * @access public
 	 
 	 	 	 	 
@@ -2177,7 +2195,7 @@ class ExecutePaymentRequest
 	public $actionType;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -2199,13 +2217,74 @@ class ExecutePaymentRequest
 
 
 /**
- * The result of a payment execution. 
+ *  Contains information related to Post Payment Disclosure
+ *  Details This contains 1.Receivers information 2.Funds
+ *  Avalibility Date 
+ */
+class PostPaymentDisclosure  
+  extends PPMessage   {
+
+	/**
+	*  
+	 * @access public
+	 
+	 	 	 	 
+	 * @var AccountIdentifier 	 
+	 */ 
+	public $accountIdentifier;
+
+	/**
+	*  
+	 * @access public
+	 
+	 	 	 	 
+	 * @var date 	 
+	 */ 
+	public $fundsAvailabilityDate;
+
+	/**
+	*  
+	 * @access public
+	 
+	 	 	 	 
+	 * @var string 	 
+	 */ 
+	public $fundsAvailabilityDateDisclaimerText;
+
+
+}
+
+
+
+/**
+ *  
+ */
+class PostPaymentDisclosureList  
+  extends PPMessage   {
+
+	/**
+	*  
+     * @array
+	 * @access public
+	 
+	 	 	 	 
+	 * @var PostPaymentDisclosure 	 
+	 */ 
+	public $postPaymentDisclosure;
+
+
+}
+
+
+
+/**
+ *  The result of a payment execution. 
  */
 class ExecutePaymentResponse  
   extends PPMessage   {
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -2214,7 +2293,7 @@ class ExecutePaymentResponse
 	public $responseEnvelope;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -2223,7 +2302,7 @@ class ExecutePaymentResponse
 	public $paymentExecStatus;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -2232,7 +2311,16 @@ class ExecutePaymentResponse
 	public $payErrorList;
 
 	/**
-	 * 
+	*  
+	 * @access public
+	 
+	 	 	 	 
+	 * @var PostPaymentDisclosureList 	 
+	 */ 
+	public $postPaymentDisclosureList;
+
+	/**
+	*  
      * @array
 	 * @access public
 	 
@@ -2247,14 +2335,14 @@ class ExecutePaymentResponse
 
 
 /**
- * The request to get the allowed funding sources available for
- * a preapproval. 
+ *  The request to get the allowed funding sources available for
+ *  a preapproval. 
  */
 class GetAllowedFundingSourcesRequest  
   extends PPMessage   {
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -2263,7 +2351,7 @@ class GetAllowedFundingSourcesRequest
 	public $requestEnvelope;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -2285,14 +2373,14 @@ class GetAllowedFundingSourcesRequest
 
 
 /**
- * The response to get the backup funding sources available for
- * a preapproval. 
+ *  The response to get the backup funding sources available for
+ *  a preapproval. 
  */
 class GetAllowedFundingSourcesResponse  
   extends PPMessage   {
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -2301,7 +2389,7 @@ class GetAllowedFundingSourcesResponse
 	public $responseEnvelope;
 
 	/**
-	 * 
+	*  
      * @array
 	 * @access public
 	 
@@ -2311,7 +2399,7 @@ class GetAllowedFundingSourcesResponse
 	public $fundingSource;
 
 	/**
-	 * 
+	*  
      * @array
 	 * @access public
 	 
@@ -2326,13 +2414,13 @@ class GetAllowedFundingSourcesResponse
 
 
 /**
- * The request to get the options of a payment request. 
+ *  The request to get the options of a payment request. 
  */
 class GetPaymentOptionsRequest  
   extends PPMessage   {
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -2341,7 +2429,7 @@ class GetPaymentOptionsRequest
 	public $requestEnvelope;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -2363,13 +2451,13 @@ class GetPaymentOptionsRequest
 
 
 /**
- * The response message for the GetPaymentOption request 
+ *  The response message for the GetPaymentOption request 
  */
 class GetPaymentOptionsResponse  
   extends PPMessage   {
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -2378,7 +2466,7 @@ class GetPaymentOptionsResponse
 	public $responseEnvelope;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -2387,7 +2475,7 @@ class GetPaymentOptionsResponse
 	public $initiatingEntity;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -2396,7 +2484,7 @@ class GetPaymentOptionsResponse
 	public $displayOptions;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -2405,7 +2493,7 @@ class GetPaymentOptionsResponse
 	public $shippingAddressId;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -2414,7 +2502,7 @@ class GetPaymentOptionsResponse
 	public $senderOptions;
 
 	/**
-	 * 
+	*  
      * @array
 	 * @access public
 	 
@@ -2424,7 +2512,7 @@ class GetPaymentOptionsResponse
 	public $receiverOptions;
 
 	/**
-	 * 
+	*  
      * @array
 	 * @access public
 	 
@@ -2439,15 +2527,15 @@ class GetPaymentOptionsResponse
 
 
 /**
- * The request to look up the details of a PayRequest. The
- * PaymentDetailsRequest can be made with either a payKey,
- * trackingId, or a transactionId of the PayRequest. 
+ *  The request to look up the details of a PayRequest. The
+ *  PaymentDetailsRequest can be made with either a payKey,
+ *  trackingId, or a transactionId of the PayRequest. 
  */
 class PaymentDetailsRequest  
   extends PPMessage   {
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -2456,7 +2544,7 @@ class PaymentDetailsRequest
 	public $requestEnvelope;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -2465,7 +2553,7 @@ class PaymentDetailsRequest
 	public $payKey;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -2474,7 +2562,7 @@ class PaymentDetailsRequest
 	public $transactionId;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -2495,14 +2583,14 @@ class PaymentDetailsRequest
 
 
 /**
- * The details of the PayRequest as specified in the Pay
- * operation. 
+ *  The details of the PayRequest as specified in the Pay
+ *  operation. 
  */
 class PaymentDetailsResponse  
   extends PPMessage   {
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -2511,7 +2599,7 @@ class PaymentDetailsResponse
 	public $responseEnvelope;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -2520,7 +2608,7 @@ class PaymentDetailsResponse
 	public $cancelUrl;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -2529,7 +2617,7 @@ class PaymentDetailsResponse
 	public $currencyCode;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -2538,7 +2626,7 @@ class PaymentDetailsResponse
 	public $ipnNotificationUrl;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -2547,7 +2635,7 @@ class PaymentDetailsResponse
 	public $memo;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -2556,7 +2644,7 @@ class PaymentDetailsResponse
 	public $paymentInfoList;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -2565,7 +2653,7 @@ class PaymentDetailsResponse
 	public $returnUrl;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -2574,7 +2662,7 @@ class PaymentDetailsResponse
 	public $senderEmail;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -2583,7 +2671,7 @@ class PaymentDetailsResponse
 	public $status;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -2592,7 +2680,7 @@ class PaymentDetailsResponse
 	public $trackingId;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -2601,7 +2689,7 @@ class PaymentDetailsResponse
 	public $payKey;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -2610,7 +2698,7 @@ class PaymentDetailsResponse
 	public $actionType;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -2619,7 +2707,7 @@ class PaymentDetailsResponse
 	public $feesPayer;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -2628,7 +2716,7 @@ class PaymentDetailsResponse
 	public $reverseAllParallelPaymentsOnError;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -2637,7 +2725,7 @@ class PaymentDetailsResponse
 	public $preapprovalKey;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -2646,7 +2734,7 @@ class PaymentDetailsResponse
 	public $fundingConstraint;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -2655,7 +2743,7 @@ class PaymentDetailsResponse
 	public $sender;
 
 	/**
-	 * 
+	*  
      * @array
 	 * @access public
 	 
@@ -2670,14 +2758,14 @@ class PaymentDetailsResponse
 
 
 /**
- * The PayRequest contains the payment instructions to make
- * from sender to receivers. 
+ *  The PayRequest contains the payment instructions to make
+ *  from sender to receivers. 
  */
 class PayRequest  
   extends PPMessage   {
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -2686,7 +2774,7 @@ class PayRequest
 	public $requestEnvelope;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -2695,7 +2783,7 @@ class PayRequest
 	public $clientDetails;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -2704,7 +2792,7 @@ class PayRequest
 	public $actionType;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -2713,7 +2801,7 @@ class PayRequest
 	public $cancelUrl;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -2722,7 +2810,7 @@ class PayRequest
 	public $currencyCode;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -2731,7 +2819,7 @@ class PayRequest
 	public $feesPayer;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -2740,7 +2828,7 @@ class PayRequest
 	public $ipnNotificationUrl;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -2749,7 +2837,7 @@ class PayRequest
 	public $memo;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -2758,7 +2846,7 @@ class PayRequest
 	public $pin;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -2767,7 +2855,7 @@ class PayRequest
 	public $preapprovalKey;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -2776,7 +2864,7 @@ class PayRequest
 	public $receiverList;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -2785,7 +2873,7 @@ class PayRequest
 	public $reverseAllParallelPaymentsOnError;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -2794,7 +2882,7 @@ class PayRequest
 	public $senderEmail;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -2803,7 +2891,7 @@ class PayRequest
 	public $returnUrl;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -2812,7 +2900,7 @@ class PayRequest
 	public $trackingId;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -2821,7 +2909,7 @@ class PayRequest
 	public $fundingConstraint;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -2847,15 +2935,15 @@ class PayRequest
 
 
 /**
- * The PayResponse contains the result of the Pay operation.
- * The payKey and execution status of the request should always
- * be provided. 
+ *  The PayResponse contains the result of the Pay operation.
+ *  The payKey and execution status of the request should always
+ *  be provided. 
  */
 class PayResponse  
   extends PPMessage   {
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -2864,7 +2952,7 @@ class PayResponse
 	public $responseEnvelope;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -2873,7 +2961,7 @@ class PayResponse
 	public $payKey;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -2882,7 +2970,7 @@ class PayResponse
 	public $paymentExecStatus;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -2891,7 +2979,7 @@ class PayResponse
 	public $payErrorList;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -2900,7 +2988,7 @@ class PayResponse
 	public $defaultFundingPlan;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -2909,7 +2997,7 @@ class PayResponse
 	public $warningDataList;
 
 	/**
-	 * 
+	*  
      * @array
 	 * @access public
 	 
@@ -2924,13 +3012,13 @@ class PayResponse
 
 
 /**
- * The request to look up the details of a Preapproval. 
+ *  The request to look up the details of a Preapproval. 
  */
 class PreapprovalDetailsRequest  
   extends PPMessage   {
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -2939,7 +3027,7 @@ class PreapprovalDetailsRequest
 	public $requestEnvelope;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -2948,7 +3036,7 @@ class PreapprovalDetailsRequest
 	public $preapprovalKey;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -2970,14 +3058,14 @@ class PreapprovalDetailsRequest
 
 
 /**
- * The details of the Preapproval as specified in the
- * Preapproval operation. 
+ *  The details of the Preapproval as specified in the
+ *  Preapproval operation. 
  */
 class PreapprovalDetailsResponse  
   extends PPMessage   {
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -2986,7 +3074,7 @@ class PreapprovalDetailsResponse
 	public $responseEnvelope;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -2995,7 +3083,7 @@ class PreapprovalDetailsResponse
 	public $approved;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -3004,7 +3092,7 @@ class PreapprovalDetailsResponse
 	public $cancelUrl;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -3013,7 +3101,7 @@ class PreapprovalDetailsResponse
 	public $curPayments;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -3022,7 +3110,7 @@ class PreapprovalDetailsResponse
 	public $curPaymentsAmount;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -3031,7 +3119,7 @@ class PreapprovalDetailsResponse
 	public $curPeriodAttempts;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -3040,7 +3128,7 @@ class PreapprovalDetailsResponse
 	public $curPeriodEndingDate;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -3049,7 +3137,7 @@ class PreapprovalDetailsResponse
 	public $currencyCode;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -3058,7 +3146,7 @@ class PreapprovalDetailsResponse
 	public $dateOfMonth;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -3067,7 +3155,7 @@ class PreapprovalDetailsResponse
 	public $dayOfWeek;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -3076,7 +3164,7 @@ class PreapprovalDetailsResponse
 	public $endingDate;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -3085,7 +3173,7 @@ class PreapprovalDetailsResponse
 	public $maxAmountPerPayment;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -3094,7 +3182,7 @@ class PreapprovalDetailsResponse
 	public $maxNumberOfPayments;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -3103,7 +3191,7 @@ class PreapprovalDetailsResponse
 	public $maxNumberOfPaymentsPerPeriod;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -3112,7 +3200,7 @@ class PreapprovalDetailsResponse
 	public $maxTotalAmountOfAllPayments;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -3121,7 +3209,7 @@ class PreapprovalDetailsResponse
 	public $paymentPeriod;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -3130,7 +3218,7 @@ class PreapprovalDetailsResponse
 	public $pinType;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -3139,7 +3227,7 @@ class PreapprovalDetailsResponse
 	public $returnUrl;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -3148,7 +3236,7 @@ class PreapprovalDetailsResponse
 	public $senderEmail;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -3157,7 +3245,7 @@ class PreapprovalDetailsResponse
 	public $memo;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -3166,7 +3254,7 @@ class PreapprovalDetailsResponse
 	public $startingDate;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -3175,7 +3263,7 @@ class PreapprovalDetailsResponse
 	public $status;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -3184,7 +3272,7 @@ class PreapprovalDetailsResponse
 	public $ipnNotificationUrl;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -3193,7 +3281,7 @@ class PreapprovalDetailsResponse
 	public $addressList;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -3202,7 +3290,7 @@ class PreapprovalDetailsResponse
 	public $feesPayer;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -3211,7 +3299,16 @@ class PreapprovalDetailsResponse
 	public $displayMaxTotalAmount;
 
 	/**
-	 * 
+	*  
+	 * @access public
+	 
+	 	 	 	 
+	 * @var SenderIdentifier 	 
+	 */ 
+	public $sender;
+
+	/**
+	*  
      * @array
 	 * @access public
 	 
@@ -3226,16 +3323,16 @@ class PreapprovalDetailsResponse
 
 
 /**
- * A request to create a Preapproval. A Preapproval is an
- * agreement between a Paypal account holder (the sender) and
- * the API caller (the service invoker) to make payment(s) on
- * the the sender's behalf with various limitations defined. 
+ *  A request to create a Preapproval. A Preapproval is an
+ *  agreement between a Paypal account holder (the sender) and
+ *  the API caller (the service invoker) to make payment(s) on
+ *  the the sender's behalf with various limitations defined. 
  */
 class PreapprovalRequest  
   extends PPMessage   {
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -3244,7 +3341,7 @@ class PreapprovalRequest
 	public $requestEnvelope;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -3253,7 +3350,7 @@ class PreapprovalRequest
 	public $clientDetails;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -3262,7 +3359,7 @@ class PreapprovalRequest
 	public $cancelUrl;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -3271,7 +3368,7 @@ class PreapprovalRequest
 	public $currencyCode;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -3280,7 +3377,7 @@ class PreapprovalRequest
 	public $dateOfMonth;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -3289,7 +3386,7 @@ class PreapprovalRequest
 	public $dayOfWeek;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -3298,7 +3395,7 @@ class PreapprovalRequest
 	public $endingDate;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -3307,7 +3404,7 @@ class PreapprovalRequest
 	public $maxAmountPerPayment;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -3316,7 +3413,7 @@ class PreapprovalRequest
 	public $maxNumberOfPayments;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -3325,7 +3422,7 @@ class PreapprovalRequest
 	public $maxNumberOfPaymentsPerPeriod;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -3334,7 +3431,7 @@ class PreapprovalRequest
 	public $maxTotalAmountOfAllPayments;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -3343,7 +3440,7 @@ class PreapprovalRequest
 	public $paymentPeriod;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -3352,7 +3449,7 @@ class PreapprovalRequest
 	public $returnUrl;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -3361,7 +3458,7 @@ class PreapprovalRequest
 	public $memo;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -3370,7 +3467,7 @@ class PreapprovalRequest
 	public $ipnNotificationUrl;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -3379,7 +3476,7 @@ class PreapprovalRequest
 	public $senderEmail;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -3388,7 +3485,7 @@ class PreapprovalRequest
 	public $startingDate;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -3397,7 +3494,7 @@ class PreapprovalRequest
 	public $pinType;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -3406,7 +3503,7 @@ class PreapprovalRequest
 	public $feesPayer;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -3415,13 +3512,22 @@ class PreapprovalRequest
 	public $displayMaxTotalAmount;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
 	 * @var boolean 	 
 	 */ 
 	public $requireInstantFundingSource;
+
+	/**
+	*  
+	 * @access public
+	 
+	 	 	 	 
+	 * @var SenderIdentifier 	 
+	 */ 
+	public $sender;
 
 	/**
 	 * Constructor with arguments
@@ -3440,13 +3546,13 @@ class PreapprovalRequest
 
 
 /**
- * The result of the PreapprovalRequest is a preapprovalKey. 
+ *  The result of the PreapprovalRequest is a preapprovalKey. 
  */
 class PreapprovalResponse  
   extends PPMessage   {
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -3455,7 +3561,7 @@ class PreapprovalResponse
 	public $responseEnvelope;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -3464,7 +3570,7 @@ class PreapprovalResponse
 	public $preapprovalKey;
 
 	/**
-	 * 
+	*  
      * @array
 	 * @access public
 	 
@@ -3479,16 +3585,16 @@ class PreapprovalResponse
 
 
 /**
- * A request to make a refund based on various criteria. A
- * refund can be made against the entire payKey, an individual
- * transaction belonging to a payKey, a tracking id, or a
- * specific receiver of a payKey. 
+ *  A request to make a refund based on various criteria. A
+ *  refund can be made against the entire payKey, an individual
+ *  transaction belonging to a payKey, a tracking id, or a
+ *  specific receiver of a payKey. 
  */
 class RefundRequest  
   extends PPMessage   {
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -3497,7 +3603,7 @@ class RefundRequest
 	public $requestEnvelope;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -3506,7 +3612,7 @@ class RefundRequest
 	public $currencyCode;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -3515,7 +3621,7 @@ class RefundRequest
 	public $payKey;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -3524,7 +3630,7 @@ class RefundRequest
 	public $transactionId;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -3533,7 +3639,7 @@ class RefundRequest
 	public $trackingId;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -3554,13 +3660,13 @@ class RefundRequest
 
 
 /**
- * The result of a Refund request. 
+ *  The result of a Refund request. 
  */
 class RefundResponse  
   extends PPMessage   {
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -3569,7 +3675,7 @@ class RefundResponse
 	public $responseEnvelope;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -3578,7 +3684,7 @@ class RefundResponse
 	public $currencyCode;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -3587,7 +3693,7 @@ class RefundResponse
 	public $refundInfoList;
 
 	/**
-	 * 
+	*  
      * @array
 	 * @access public
 	 
@@ -3602,13 +3708,13 @@ class RefundResponse
 
 
 /**
- * The request to set the options of a payment request. 
+ *  The request to set the options of a payment request. 
  */
 class SetPaymentOptionsRequest  
   extends PPMessage   {
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -3617,7 +3723,7 @@ class SetPaymentOptionsRequest
 	public $requestEnvelope;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -3626,7 +3732,7 @@ class SetPaymentOptionsRequest
 	public $payKey;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -3635,7 +3741,7 @@ class SetPaymentOptionsRequest
 	public $initiatingEntity;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -3644,7 +3750,7 @@ class SetPaymentOptionsRequest
 	public $displayOptions;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -3653,7 +3759,7 @@ class SetPaymentOptionsRequest
 	public $shippingAddressId;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -3662,7 +3768,7 @@ class SetPaymentOptionsRequest
 	public $senderOptions;
 
 	/**
-	 * 
+	*  
      * @array
 	 * @access public
 	 
@@ -3685,13 +3791,13 @@ class SetPaymentOptionsRequest
 
 
 /**
- * The response message for the SetPaymentOption request 
+ *  The response message for the SetPaymentOption request 
  */
 class SetPaymentOptionsResponse  
   extends PPMessage   {
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -3700,7 +3806,7 @@ class SetPaymentOptionsResponse
 	public $responseEnvelope;
 
 	/**
-	 * 
+	*  
      * @array
 	 * @access public
 	 
@@ -3715,14 +3821,14 @@ class SetPaymentOptionsResponse
 
 
 /**
- * The request to get the funding plans available for a
- * payment. 
+ *  The request to get the funding plans available for a
+ *  payment. 
  */
 class GetFundingPlansRequest  
   extends PPMessage   {
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -3731,7 +3837,7 @@ class GetFundingPlansRequest
 	public $requestEnvelope;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -3753,14 +3859,14 @@ class GetFundingPlansRequest
 
 
 /**
- * The response to get the funding plans available for a
- * payment. 
+ *  The response to get the funding plans available for a
+ *  payment. 
  */
 class GetFundingPlansResponse  
   extends PPMessage   {
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -3769,7 +3875,7 @@ class GetFundingPlansResponse
 	public $responseEnvelope;
 
 	/**
-	 * 
+	*  
      * @array
 	 * @access public
 	 
@@ -3779,7 +3885,7 @@ class GetFundingPlansResponse
 	public $fundingPlan;
 
 	/**
-	 * 
+	*  
      * @array
 	 * @access public
 	 
@@ -3794,13 +3900,13 @@ class GetFundingPlansResponse
 
 
 /**
- * The request to get the addresses available for a payment. 
+ *  The request to get the addresses available for a payment. 
  */
 class GetAvailableShippingAddressesRequest  
   extends PPMessage   {
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -3809,9 +3915,9 @@ class GetAvailableShippingAddressesRequest
 	public $requestEnvelope;
 
 	/**
-	 * The key for which to provide the available addresses. Key
-	 * can be an AdaptivePayments key such as payKey or
-	 * preapprovalKey 
+	*  The key for which to provide the available addresses. Key
+	*  can be an AdaptivePayments key such as payKey or
+	*  preapprovalKey 
 	 * @access public
 	 
 	 	 	 	 
@@ -3833,14 +3939,14 @@ class GetAvailableShippingAddressesRequest
 
 
 /**
- * The response to get the shipping addresses available for a
- * payment. 
+ *  The response to get the shipping addresses available for a
+ *  payment. 
  */
 class GetAvailableShippingAddressesResponse  
   extends PPMessage   {
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -3849,7 +3955,7 @@ class GetAvailableShippingAddressesResponse
 	public $responseEnvelope;
 
 	/**
-	 * 
+	*  
      * @array
 	 * @access public
 	 
@@ -3859,7 +3965,7 @@ class GetAvailableShippingAddressesResponse
 	public $availableAddress;
 
 	/**
-	 * 
+	*  
      * @array
 	 * @access public
 	 
@@ -3874,13 +3980,13 @@ class GetAvailableShippingAddressesResponse
 
 
 /**
- * The request to get the addresses available for a payment. 
+ *  The request to get the addresses available for a payment. 
  */
 class GetShippingAddressesRequest  
   extends PPMessage   {
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -3889,9 +3995,9 @@ class GetShippingAddressesRequest
 	public $requestEnvelope;
 
 	/**
-	 * The key for which to provide the available addresses. Key
-	 * can be an AdaptivePayments key such as payKey or
-	 * preapprovalKey 
+	*  The key for which to provide the available addresses. Key
+	*  can be an AdaptivePayments key such as payKey or
+	*  preapprovalKey 
 	 * @access public
 	 
 	 	 	 	 
@@ -3913,14 +4019,14 @@ class GetShippingAddressesRequest
 
 
 /**
- * The response to get the shipping addresses available for a
- * payment. 
+ *  The response to get the shipping addresses available for a
+ *  payment. 
  */
 class GetShippingAddressesResponse  
   extends PPMessage   {
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -3929,7 +4035,7 @@ class GetShippingAddressesResponse
 	public $responseEnvelope;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -3938,7 +4044,7 @@ class GetShippingAddressesResponse
 	public $selectedAddress;
 
 	/**
-	 * 
+	*  
      * @array
 	 * @access public
 	 
@@ -3953,13 +4059,13 @@ class GetShippingAddressesResponse
 
 
 /**
- * The request to get the remaining limits for a user 
+ *  The request to get the remaining limits for a user 
  */
 class GetUserLimitsRequest  
   extends PPMessage   {
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -3968,7 +4074,7 @@ class GetUserLimitsRequest
 	public $requestEnvelope;
 
 	/**
-	 * The account identifier for the user 
+	*  The account identifier for the user 
 	 * @access public
 	 
 	 	 	 	 
@@ -3977,7 +4083,7 @@ class GetUserLimitsRequest
 	public $user;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -3986,7 +4092,7 @@ class GetUserLimitsRequest
 	public $country;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -3995,7 +4101,7 @@ class GetUserLimitsRequest
 	public $currencyCode;
 
 	/**
-	 * List of limit types 
+	*  List of limit types 
      * @array
 	 * @access public
 	 
@@ -4021,13 +4127,13 @@ class GetUserLimitsRequest
 
 
 /**
- * A response that contains a list of remaining limits 
+ *  A response that contains a list of remaining limits 
  */
 class GetUserLimitsResponse  
   extends PPMessage   {
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -4036,7 +4142,7 @@ class GetUserLimitsResponse
 	public $responseEnvelope;
 
 	/**
-	 * 
+	*  
      * @array
 	 * @access public
 	 
@@ -4046,7 +4152,7 @@ class GetUserLimitsResponse
 	public $userLimit;
 
 	/**
-	 * 
+	*  
 	 * @access public
 	 
 	 	 	 	 
@@ -4055,7 +4161,419 @@ class GetUserLimitsResponse
 	public $warningDataList;
 
 	/**
-	 * 
+	*  
+     * @array
+	 * @access public
+	 
+	 	 	 	 
+	 * @var ErrorData 	 
+	 */ 
+	public $error;
+
+
+}
+
+
+
+/**
+ *  ReceiverInfo needs to be populate for the receiver who
+ *  doesn't have paypal account. 
+ */
+class ReceiverInfo  extends AccountIdentifier  
+  {
+
+	/**
+	*  The two-character ISO country code of the home country of
+	*  the Receiver 
+	 * @access public
+	 
+	 	 	 	 
+	 * @var string 	 
+	 */ 
+	public $countryCode;
+
+	/**
+	*  
+	 * @access public
+	 
+	 	 	 	 
+	 * @var string 	 
+	 */ 
+	public $firstName;
+
+	/**
+	*  
+	 * @access public
+	 
+	 	 	 	 
+	 * @var string 	 
+	 */ 
+	public $lastName;
+
+
+}
+
+
+
+/**
+ *  FeeDisclosure contains the information related to Fees and
+ *  taxes. 
+ */
+class FeeDisclosure  
+  extends PPMessage   {
+
+	/**
+	*  
+	 * @access public
+	 
+	 	 	 	 
+	 * @var CurrencyType 	 
+	 */ 
+	public $fee;
+
+	/**
+	*  
+	 * @access public
+	 
+	 	 	 	 
+	 * @var CurrencyType 	 
+	 */ 
+	public $taxes;
+
+
+}
+
+
+
+/**
+ *  SenderDisclosure contains the disclosure related to Sender 
+ */
+class SenderDisclosure  
+  extends PPMessage   {
+
+	/**
+	*  
+	 * @access public
+	 
+	 	 	 	 
+	 * @var CurrencyType 	 
+	 */ 
+	public $amountToTransfer;
+
+	/**
+	*  
+	 * @access public
+	 
+	 	 	 	 
+	 * @var FeeDisclosure 	 
+	 */ 
+	public $feeDisclosure;
+
+	/**
+	*  
+	 * @access public
+	 
+	 	 	 	 
+	 * @var CurrencyType 	 
+	 */ 
+	public $totalAmountToTransfer;
+
+
+}
+
+
+
+/**
+ *  This holds the conversion rate from "Sender currency for one
+ *  bucks to equivalent value in the receivers currency" 
+ */
+class ConversionRate  
+  extends PPMessage   {
+
+	/**
+	*  
+	 * @access public
+	 
+	 	 	 	 
+	 * @var string 	 
+	 */ 
+	public $senderCurrency;
+
+	/**
+	*  
+	 * @access public
+	 
+	 	 	 	 
+	 * @var string 	 
+	 */ 
+	public $receiverCurrency;
+
+	/**
+	*  
+	 * @access public
+	 
+	 	 	 	 
+	 * @var double 	 
+	 */ 
+	public $exchangeRate;
+
+
+}
+
+
+
+/**
+ *  ReceiverDisclosure contains the disclosure related to
+ *  Receiver/Receivers. 
+ */
+class ReceiverDisclosure  
+  extends PPMessage   {
+
+	/**
+	*  
+	 * @access public
+	 
+	 	 	 	 
+	 * @var AccountIdentifier 	 
+	 */ 
+	public $accountIdentifier;
+
+	/**
+	*  
+	 * @access public
+	 
+	 	 	 	 
+	 * @var CurrencyType 	 
+	 */ 
+	public $amountReceivedFromSender;
+
+	/**
+	*  The two-character ISO country code of the home country of
+	*  the Receiver 
+	 * @access public
+	 
+	 	 	 	 
+	 * @var string 	 
+	 */ 
+	public $countryCode;
+
+	/**
+	*  
+	 * @access public
+	 
+	 	 	 	 
+	 * @var ConversionRate 	 
+	 */ 
+	public $conversionRate;
+
+	/**
+	*  
+	 * @access public
+	 
+	 	 	 	 
+	 * @var FeeDisclosure 	 
+	 */ 
+	public $feeDisclosure;
+
+	/**
+	*  
+	 * @access public
+	 
+	 	 	 	 
+	 * @var CurrencyType 	 
+	 */ 
+	public $totalAmountReceived;
+
+
+}
+
+
+
+/**
+ *  
+ */
+class ReceiverDisclosureList  
+  extends PPMessage   {
+
+	/**
+	*  
+     * @array
+	 * @access public
+	 
+	 	 	 	 
+	 * @var ReceiverDisclosure 	 
+	 */ 
+	public $receiverDisclosure;
+
+
+}
+
+
+
+/**
+ *  
+ */
+class ReceiverInfoList  
+  extends PPMessage   {
+
+	/**
+	*  
+     * @array
+	 * @access public
+	 
+	 	 	 	 
+	 * @var ReceiverInfo 	 
+	 */ 
+	public $receiverInfo;
+
+	/**
+	 * Constructor with arguments
+	 */
+	public function __construct($receiverInfo = NULL) {
+		$this->receiverInfo = $receiverInfo;
+	}
+
+
+}
+
+
+
+/**
+ *  GetPrePaymentDisclosureRequest is used to get the PrePayment
+ *  Disclosure.; GetPrePaymentDisclosureRequest contains
+ *  following parameters payKey :The pay key that identifies the
+ *  payment for which you want to retrieve details. this is the
+ *  pay key returned in the PayResponse message.
+ *  receiverInfoList : This is an optional.This needs to be
+ *  provided in case of Unilateral scenario. receiverInfoList
+ *  has a list of ReceiverInfo type. List is provided here to
+ *  support in future for Parallel/Chained Payemnts. Each
+ *  ReceiverInfo has following variables firstName : firstName
+ *  of recipient.  lastName : lastName of recipient. 
+ *  countryCode : CountryCode of Recipient. 
+ */
+class GetPrePaymentDisclosureRequest  
+  extends PPMessage   {
+
+	/**
+	*  
+	 * @access public
+	 
+	 	 	 	 
+	 * @var RequestEnvelope 	 
+	 */ 
+	public $requestEnvelope;
+
+	/**
+	*  
+	 * @access public
+	 
+	 	 	 	 
+	 * @var string 	 
+	 */ 
+	public $payKey;
+
+	/**
+	*  
+	 * @access public
+	 
+	 	 	 	 
+	 * @var ReceiverInfoList 	 
+	 */ 
+	public $receiverInfoList;
+
+	/**
+	 * Constructor with arguments
+	 */
+	public function __construct($requestEnvelope = NULL, $payKey = NULL) {
+		$this->requestEnvelope = $requestEnvelope;
+		$this->payKey = $payKey;
+	}
+
+
+}
+
+
+
+/**
+ *  GetPrePaymentDisclosureResponse contains the information
+ *  related to PrePayment disclosure. status : indicates the
+ *  status of response. If Status = RTR then it means that this
+ *  is RTR transaction. If Status = NON_RTR then it means that
+ *  this is non RTR transaction. If Status =
+ *  MISSING_RECEIVER_COUNTRY_INFORMATION then it means the
+ *  Receiver country information is not found in PayPal
+ *  database. So merchant has to call the API again with same
+ *  set of parameter along with Receiver country code.This is
+ *  useful in case of Unilateral scenario. where receiver is not
+ *  holding paypal account. feePayer:Indicates who has agreed to
+ *  Pay a Fee for the RTR transaction. Merchant can use this
+ *  information to decide who actually has to pay the fee .
+ *  senderDisclosure : This Variable Holds the disclosure
+ *  related to sender. receiverDisclosureList : This list
+ *  contains the disclosure information related to receivers.
+ *  Merchant can just parse the details what ever is avaliable
+ *  in the response and display the same to user. 
+ */
+class GetPrePaymentDisclosureResponse  
+  extends PPMessage   {
+
+	/**
+	*  
+	 * @access public
+	 
+	 	 	 	 
+	 * @var ResponseEnvelope 	 
+	 */ 
+	public $responseEnvelope;
+
+	/**
+	*  
+	 * @access public
+	 
+	 	 	 	 
+	 * @var string 	 
+	 */ 
+	public $status;
+
+	/**
+	*  
+	 * @access public
+	 
+	 	 	 	 
+	 * @var string 	 
+	 */ 
+	public $feesPayer;
+
+	/**
+	*  
+	 * @access public
+	 
+	 	 	 	 
+	 * @var SenderDisclosure 	 
+	 */ 
+	public $senderDisclosure;
+
+	/**
+	*  
+	 * @access public
+	 
+	 	 	 	 
+	 * @var ReceiverDisclosureList 	 
+	 */ 
+	public $receiverDisclosureList;
+
+	/**
+	*  
+	 * @access public
+	 
+	 	 	 	 
+	 * @var string 	 
+	 */ 
+	public $disclaimer;
+
+	/**
+	*  
      * @array
 	 * @access public
 	 

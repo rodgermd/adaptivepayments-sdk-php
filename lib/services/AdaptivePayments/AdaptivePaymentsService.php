@@ -1,12 +1,12 @@
 <?php 
 
 /**
- * AUTO GENERATED code for AdaptivePayments
+ *  AUTO GENERATED code for AdaptivePayments
  */
 class AdaptivePaymentsService extends PPBaseService {
 
 	// Service Version
-	private static $SERVICE_VERSION = "1.8.2";
+	private static $SERVICE_VERSION = "1.8.4";
 
 	// Service Name
 	private static $SERVICE_NAME = "AdaptivePayments";
@@ -15,7 +15,7 @@ class AdaptivePaymentsService extends PPBaseService {
 	protected static $SDK_NAME = "adaptivepayments-php-sdk";
 	
 	// SDK Version
-	protected static $SDK_VERSION = "2.2.98";
+	protected static $SDK_VERSION = "v2.3.100";
 
 	public function __construct($config = null) {
 		parent::__construct(self::$SERVICE_NAME, 'NV', array('PPPlatformServiceHandler'), $config);
@@ -291,6 +291,23 @@ class AdaptivePaymentsService extends PPBaseService {
 	public function GetUserLimits($getUserLimitsRequest, $apiCredential = NULL) {
 		$ret = new GetUserLimitsResponse();
 		$resp = $this->call('AdaptivePayments', 'GetUserLimits', $getUserLimitsRequest, $apiCredential);
+		$ret->init(PPUtils::nvpToMap($resp));
+		return $ret;
+	}
+	 
+
+	/**
+	 * Service Call: GetPrePaymentDisclosure
+	 * @param GetPrePaymentDisclosureRequest $getPrePaymentDisclosureRequest
+	 * @param mixed $apiCredential - Optional API credential - can either be
+	 * 		a username configured in sdk_config.ini or a ICredential object
+	 *      created dynamically 		
+	 * @return GetPrePaymentDisclosureResponse
+	 * @throws APIException
+	 */
+	public function GetPrePaymentDisclosure($getPrePaymentDisclosureRequest, $apiCredential = NULL) {
+		$ret = new GetPrePaymentDisclosureResponse();
+		$resp = $this->call('AdaptivePayments', 'GetPrePaymentDisclosure', $getPrePaymentDisclosureRequest, $apiCredential);
 		$ret->init(PPUtils::nvpToMap($resp));
 		return $ret;
 	}
