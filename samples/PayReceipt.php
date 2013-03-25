@@ -10,7 +10,6 @@ require_once('PPBootStrap.php');
 require_once('Common/Constants.php');
 define("DEFAULT_SELECT", "- Select -");
 
-$logger = new PPLoggingManager('Pay');
 if(isset($_POST['receiverEmail'])) {
 	$receiver = array();
 	for($i=0; $i<count($_POST['receiverEmail']); $i++) {
@@ -104,7 +103,6 @@ try {
 	require_once 'Common/Error.php';
 	exit;
 }
-$logger->log("Received payResponse:");
 /* Make the call to PayPal to get the Pay token
  If the API call succeded, then redirect the buyer to PayPal
 to begin to authorize payment.  If an error occured, show the
