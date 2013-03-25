@@ -15,7 +15,7 @@ class AdaptivePaymentsService extends PPBaseService {
 	protected static $SDK_NAME = "adaptivepayments-php-sdk";
 	
 	// SDK Version
-	protected static $SDK_VERSION = "v2.3.100";
+	protected static $SDK_VERSION = "2.3.100";
 
 	public function __construct($config = null) {
 		parent::__construct(self::$SERVICE_NAME, 'NV', array('PPPlatformServiceHandler'), $config);
