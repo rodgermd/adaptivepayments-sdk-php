@@ -13,6 +13,6 @@
     "require": {
         "php": ">=5.2.0",
         "ext-curl": "*",
-        "paypal/adaptivepayments-sdk-php":"v2.2.98"
+        "paypal/adaptivepayments-sdk-php":"dev-dev-dynamic-config"
     }
 }
