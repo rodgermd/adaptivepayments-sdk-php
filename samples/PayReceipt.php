@@ -129,7 +129,6 @@ $ack = strtoupper($response->responseEnvelope->ack);
 if($ack != "SUCCESS") {
 	echo "<b>Error </b>";
 	echo "<pre>";
-	print_r($response);
 	echo "</pre>";
 } else {
 	$payKey = $response->payKey;
@@ -142,7 +141,9 @@ if($ack != "SUCCESS") {
 	} else if(($_POST['actionType']== "PAY_PRIMARY")) {
 		$case ="4";
 	} else if(($_POST['actionType']== "CREATE") && ($response->paymentExecStatus == "CREATED" )) {
-		$apiCred = PPCredentialManager::getInstance()->getCredentialObject(null);
+		$configFile = PPConfigManager::getInstance();
+		$config = $configFile->getConfigHashmap();
+		$apiCred = PPCredentialManager::getInstance($config)->getCredentialObject(null);
 		if(str_replace('_api1.', '@', $apiCred->getUserName()) == $_POST["senderEmail"]) {
 			$case ="3";
 		} else {
