@@ -12,8 +12,6 @@ if($_POST['fundingSourceId'] != "") {
 if($_POST['pin'] != "") {
 	$confirmPreapprovalReq->pin = $_POST['pin'];
 }
-$logger->log("Created ConfirmPreapprovalRequest Object");
-
 
 $service  = new AdaptivePaymentsService();
 try {
