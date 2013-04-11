@@ -2,15 +2,28 @@
 require_once('PPBootStrap.php');
 define("DEFAULT_SELECT", "- Select -");
 
-$logger = new PPLoggingManager('PreApproval');
-
-// create request
+/*
+ * Use the PreapprovalDetails API operation to obtain information about an agreement between you and a sender for making payments on the sender’s behalf. 
+ */
+/*
+ * The PreapprovalDetailsRequest message specifies the key of the preapproval agreement whose details you want to obtain.
+ */
+/*
+ * (Required) Information common to each API operation, such as the language in which an error message is returned.
+ */
 $requestEnvelope = new RequestEnvelope("en_US");
+/*
+ * (Required) A preapproval key that identifies the preapproval for which you want to retrieve details. The preapproval key is returned in the PreapprovalResponse message.
+ */
 $preapprovalDetailsRequest = new PreapprovalDetailsRequest($requestEnvelope, $_POST['preapprovalKey']);
-$logger->log("Created PreapprovalDetailsRequest Object");
-
+/*
+ * 	 ## Creating service wrapper object
+Creating service wrapper object to make API call and loading
+configuration file for your credentials and endpoint
+*/
 $service = new AdaptivePaymentsService();
 try {
+	/* wrap API method calls on the service object with a try catch */
 	$response = $service->PreapprovalDetails($preapprovalDetailsRequest);
 } catch(Exception $ex) {
 	require_once 'Common/Error.php';
@@ -31,7 +44,6 @@ try {
 			<h3>Preapproval Details</h3>
 <?php 
 
-$logger->error("Received PreapprovalDetailsResponse:");
 $ack = strtoupper($response->responseEnvelope->ack);
 if($ack != "SUCCESS"){
 	echo "<b>Error </b>";

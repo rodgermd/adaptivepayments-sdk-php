@@ -1,19 +1,126 @@
 <?php
 require_once('PPBootStrap.php');
 
-// create request
+/*
+ *  # ConvertCurrency API
+ Use the ConvertCurrency API operation to request the current foreign exchange (FX) rate for a specific amount and currency.
+ This sample code uses AdaptivePayments PHP SDK to make API call
+ */
+
+/*
+ * 	 ##ConvertCurrencyRequest
+		 The ConvertCurrencyRequest message enables you to have your
+		 application get an estimated exchange rate for a list of amounts.
+		 This API operation does not affect PayPal balances.
+ */
+
+/*
+ *  `CurrencyList` which takes two arguments:
+		
+		 * `CurrencyCodeType` - The currency code. Allowable values are:
+		 * Australian Dollar - AUD
+		 * Brazilian Real - BRL
+		 `Note:
+		 The Real is supported as a payment currency and currency balance only
+		 for Brazilian PayPal accounts.`
+		 * Canadian Dollar - CAD
+		 * Czech Koruna - CZK
+		 * Danish Krone - DKK
+		 * Euro - EUR
+		 * Hong Kong Dollar - HKD
+		 * Hungarian Forint - HUF
+		 * Israeli New Sheqel - ILS
+		 * Japanese Yen - JPY
+		 * Malaysian Ringgit - MYR
+		 `Note:
+		 The Ringgit is supported as a payment currency and currency balance
+		 only for Malaysian PayPal accounts.`
+		 * Mexican Peso - MXN
+		 * Norwegian Krone - NOK
+		 * New Zealand Dollar - NZD
+		 * Philippine Peso - PHP
+		 * Polish Zloty - PLN
+		 * Pound Sterling - GBP
+		 * Singapore Dollar - SGD
+		 * Swedish Krona - SEK
+		 * Swiss Franc - CHF
+		 * Taiwan New Dollar - TWD
+		 * Thai Baht - THB
+		 * Turkish Lira - TRY
+		 `Note:
+		 The Turkish Lira is supported as a payment currency and currency
+		 balance only for Turkish PayPal accounts.`
+		 * U.S. Dollar - USD
+		 * `amount`
+ */
 $baseAmountList = new CurrencyList();
 foreach($_POST['currencyCode'] as $idx => $currencyCode) {
 	if($_POST['currencyCode'][$idx] != "" && $_POST['currencyAmount'][$idx] != "") {
 		$baseAmountList->currency[] = new CurrencyType($_POST['currencyCode'][$idx], $_POST['currencyAmount'][$idx]);
 	}
 }
+
+/*
+ *  `CurrencyCodeList` which contains
+		
+		 * `Currency Code` - Allowable values are:
+		 * Australian Dollar - AUD
+		 * Brazilian Real - BRL
+		 `Note:
+		 The Real is supported as a payment currency and currency balance only
+		 for Brazilian PayPal accounts.`
+		 * Canadian Dollar - CAD
+		 * Czech Koruna - CZK
+		 * Danish Krone - DKK
+		 * Euro - EUR
+		 * Hong Kong Dollar - HKD
+		 * Hungarian Forint - HUF
+		 * Israeli New Sheqel - ILS
+		 * Japanese Yen - JPY
+		 * Malaysian Ringgit - MYR
+		 `Note:
+		 The Ringgit is supported as a payment currency and currency balance
+		 only for Malaysian PayPal accounts.`
+		 * Mexican Peso - MXN
+		 * Norwegian Krone - NOK
+		 * New Zealand Dollar - NZD
+		 * Philippine Peso - PHP
+		 * Polish Zloty - PLN
+		 * Pound Sterling - GBP
+		 * Singapore Dollar - SGD
+		 * Swedish Krona - SEK
+		 * Swiss Franc - CHF
+		 * Taiwan New Dollar - TWD
+		 * Thai Baht - THB
+		 * Turkish Lira - TRY
+		 `Note:
+		 The Turkish Lira is supported as a payment currency and currency
+		 balance only for Turkish PayPal accounts.`
+		 * U.S. Dollar - USD
+ */
 $convertToCurrencyList = new CurrencyCodeList();
 foreach($_POST['toCurrencyCode'] as $idx => $currencyCode) {
 	if($currencyCode != "") {
 		$convertToCurrencyList->currencyCode[] = $currencyCode;
 	}
 }
+
+/*
+ * 	
+
+		 The code for the language in which errors are returned, which must be
+		 en_US.
+ */
+
+/*
+ *  `ConvertCurrencyRequest` which takes params:
+		
+		 * `Request Envelope` - Information common to each API operation, such
+		 as the language in which an error message is returned
+		 * `BaseAmountList` - A list of amounts with associated currencies to
+		 be converted.
+		 * `ConvertToCurrencyList` - A list of currencies to convert to.
+ */
 $convertCurrencyReq = new ConvertCurrencyRequest(new RequestEnvelope("en_US"), $baseAmountList, $convertToCurrencyList);
 if($_POST['countryCode'] != "") {
 	$convertCurrencyReq->countryCode = $_POST['countryCode'];
@@ -22,10 +129,15 @@ if($_POST['conversionType'] != "" && $_POST['conversionType'] != "- Select -") {
 	$convertCurrencyReq->conversionType = $_POST['conversionType'];
 }
 
-
-
+/*
+ * 	 ## Creating service wrapper object
+Creating service wrapper object to make API call and loading
+configuration file for your credentials and endpoint
+*/
 $service  = new AdaptivePaymentsService();
 try {
+	/* wrap API method calls on the service object with a try catch */
+	
 	$response = $service->ConvertCurrency($convertCurrencyReq);
 } catch(Exception $ex) {
 	require_once 'Common/Error.php';

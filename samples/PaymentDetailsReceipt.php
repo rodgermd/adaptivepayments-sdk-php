@@ -1,11 +1,32 @@
 <?php
 require_once('PPBootStrap.php');
-
-$logger = new PPLoggingManager('PaymentDetails');
-
-// create request
+/*
+ *  # PaymentDetails API
+ Use the PaymentDetails API operation to obtain information about a payment. You can identify the payment by your tracking ID, the PayPal transaction ID in an IPN message, or the pay key associated with the payment.
+ This sample code uses AdaptivePayments PHP SDK to make API call
+ */
+/*
+ * 
+		 PaymentDetailsRequest which takes,
+		 `Request Envelope` - Information common to each API operation, such
+		 as the language in which an error message is returned.
+ */
 $requestEnvelope = new RequestEnvelope("en_US");
+/*
+ * 		 PaymentDetailsRequest which takes,
+		 `Request Envelope` - Information common to each API operation, such
+		 as the language in which an error message is returned.
+ */
 $paymentDetailsReq = new PaymentDetailsRequest($requestEnvelope);
+/*
+ * 		 You must specify either,
+		
+		 * `Pay Key` - The pay key that identifies the payment for which you want to retrieve details. This is the pay key returned in the PayResponse message.
+		 * `Transaction ID` - The PayPal transaction ID associated with the payment. The IPN message associated with the payment contains the transaction ID.
+		 `paymentDetailsRequest.setTransactionId(transactionId)`
+		 * `Tracking ID` - The tracking ID that was specified for this payment in the PayRequest message.
+		 `paymentDetailsRequest.setTrackingId(trackingId)`
+ */
 if($_POST['payKey'] != "") {
 	$paymentDetailsReq->payKey = $_POST['payKey'];
 }
@@ -15,11 +36,15 @@ if($_POST['transactionId'] != "") {
 if($_POST['trackingId'] != "") {
 	$paymentDetailsReq->trackingId = $_POST['trackingId'];
 }
-$logger->log("Created paymentDetailsRequest Object");
 
-
+/*
+ * 	 ## Creating service wrapper object
+Creating service wrapper object to make API call and loading
+configuration file for your credentials and endpoint
+*/
 $service = new AdaptivePaymentsService();
 try {
+	/* wrap API method calls on the service object with a try catch */
 	$response = $service->PaymentDetails($paymentDetailsReq);
 } catch(Exception $ex) {
 	require_once 'Common/Error.php';
@@ -39,7 +64,6 @@ try {
 		<div id="response_form">
 			<h3>Payment Details</h3>
 <?php 
-$logger->error("Received paymentDetailsResponse:");
 $ack = strtoupper($response->responseEnvelope->ack);
 if($ack != "SUCCESS"){
 	echo "<b>Error </b>";
@@ -47,6 +71,22 @@ if($ack != "SUCCESS"){
 	print_r($response);
 	echo "</pre>";
 } else {
+/*
+ * 			 The status of the payment. Possible values are:
+			
+			 * CREATED - The payment request was received; funds will be
+			 transferred once the payment is approved
+			 * COMPLETED - The payment was successful
+			 * INCOMPLETE - Some transfers succeeded and some failed for a
+			 parallel payment or, for a delayed chained payment, secondary
+			 receivers have not been paid
+			 * ERROR - The payment failed and all attempted transfers failed
+			 or all completed transfers were successfully reversed
+			 * REVERSALERROR - One or more transfers failed when attempting
+			 to reverse a payment
+			 * PROCESSING - The payment is in progress
+			 * PENDING - The payment is awaiting processing
+ */
 	echo "<table>";
 	echo "<tr><td>Ack :</td><td><div id='Ack'>$ack</div> </td></tr>";
 	echo "<tr><td>PayKey :</td><td><div id='PayKey'>$response->payKey</div> </td></tr>";

@@ -2,13 +2,19 @@
 require_once('PPBootStrap.php');
 define("DEFAULT_SELECT", "- Select -");
 
-$logger = new PPLoggingManager('SetPaymentOptions');
-
-// create request
+/*
+ *  You use the SetPaymentOptions API operation to specify settings for a payment of the actionType CREATE. This actionType is specified in the PayRequest message. 
+ */
 $setPaymentOptionsRequest = new SetPaymentOptionsRequest(new RequestEnvelope("en_US"));
+/*
+ * (Required) The pay key that identifies the payment for which you want to set payment options. This is the pay key returned in the PayResponse message.
+ */
 $setPaymentOptionsRequest->payKey = $_POST["payKey"];
 
 // set optional params
+/*
+ *  (Optional) Sender's shipping address ID.
+ */
 if($_POST['shippingAddressId'] != "") {
 	$setPaymentOptionsRequest->shippingAddressId = $_POST['shippingAddressId'];
 }
@@ -16,11 +22,20 @@ if($_POST['shippingAddressId'] != "") {
 $receiverOptions = new ReceiverOptions();
 $setPaymentOptionsRequest->receiverOptions[] = $receiverOptions;
 if($_POST['description'] != "") {
+	/*
+	 * (Optional) A description you want to associate with the payment. This overrides the value of the memo in Pay API for each receiver. If this is not specified the value in the memo will be used.
+	 */
 	$receiverOptions->description = $_POST['description'];
 }
+/*
+ *  (Optional) An external reference or identifier you want to associate with the payment. 
+ */
 if($_POST['customId'] != "") {
 	$receiverOptions->customId = $_POST['customId'];
 }
+/*
+ * 
+ */
 if($_POST['receiverReferrerCode'] != "") {
 	$receiverOptions->referrerCode = $_POST['receiverReferrerCode'];
 }
@@ -45,6 +60,9 @@ for($i=0; $i<count($_POST['name']); $i++) {
 		if($_POST['name'][$i] != "" ) {
 			$item->name = $_POST['name'][$i]; 
 		}
+		/*
+		 * (Optional) External reference to item or item ID. 
+		 */
 		if($_POST['identifier'][$i] != "" ) {
 			$item->identifier = $_POST['identifier'][$i];
 		}
@@ -75,6 +93,9 @@ if(count($invoiceItems) > 0 || $_POST['totalTax'] != "" || $_POST['totalShipping
 if($_POST['requireShippingAddressSelection'] != "" || $_POST['senderReferrerCode'] != "" ) {
 	$setPaymentOptionsRequest->senderOptions = new SenderOptions();
 	if($_POST['requireShippingAddressSelection'] != "") {
+		/*
+		 * (Optional) If true, require the sender to select a shipping address during the embedded payment flow; default is false. 
+		 */
 		$setPaymentOptionsRequest->senderOptions->requireShippingAddressSelection = $_POST['requireShippingAddressSelection'];
 	}
 	if($_POST['senderReferrerCode'] != "") {
@@ -88,7 +109,11 @@ if($_POST['institutionId'] != "" || $_POST['firstName'] != "" || $_POST['lastNam
 	$institutionCustomer = new InstitutionCustomer();
 	$setPaymentOptionsRequest->initiatingEntity = new InitiatingEntity();
 	$setPaymentOptionsRequest->initiatingEntity->institutionCustomer = $institutionCustomer;
+/*
+ *  The unique identifier assigned to the institution.
 
+Maximum length: 64 characters
+ */
 	if($_POST['institutionId'] != "") {
 		$institutionCustomer->institutionId = $_POST['institutionId'];
 	}
@@ -104,6 +129,11 @@ if($_POST['institutionId'] != "" || $_POST['firstName'] != "" || $_POST['lastNam
 	if($_POST['institutionMail'] != "") {
 		$institutionCustomer->email = $_POST['institutionMail'];
 	}
+	/*
+	 * The unique identifier assigned to the consumer by the institution.
+
+Maximum length: 64 characters
+	 */
 	if($_POST['institutionCustomerId'] != "") {
 		$institutionCustomer->institutionCustomerId = $_POST['institutionCustomerId'];
 	}
@@ -129,9 +159,14 @@ if($_POST['emailHeaderImageUrl'] != "" || $_POST['emailMarketingImageUrl'] != ""
 	}
 }
 
-
+/*
+ * 	 ## Creating service wrapper object
+Creating service wrapper object to make API call and loading
+configuration file for your credentials and endpoint
+*/
 $service = new AdaptivePaymentsService();
 try {
+	/* wrap API method calls on the service object with a try catch */
 	$response = $service->SetPaymentOptions($setPaymentOptionsRequest);
 } catch(Exception $ex) {
 	require_once 'Common/Error.php';
@@ -151,7 +186,6 @@ try {
 		<div id="response_form">
 			<h3>Set Payment Options</h3>
 <?php 
-$logger->error("Received SetPaymentOptionsResponse:");
 $ack = strtoupper($response->responseEnvelope->ack);
 if($ack != "SUCCESS"){
 	echo "<b>Error </b>";

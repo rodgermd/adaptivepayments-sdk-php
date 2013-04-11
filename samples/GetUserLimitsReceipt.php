@@ -1,7 +1,6 @@
 <?php
 require_once('PPBootStrap.php');
 
-$logger = new PPLoggingManager('GetUserLimits');
 
 // create request
 $requestEnvelope = new RequestEnvelope("en_US");
@@ -20,7 +19,6 @@ if( $_POST['email'] != "" || ($_POST['phoneCountry'] != "" && $_POST['phoneNumbe
 		}
 	}
 }
-$logger->log("Created GetUserLimitsRequest Object");
 $service = new AdaptivePaymentsService();
 try {
 	$response = $service->GetUserLimits($getUserLimitsReq);
@@ -28,7 +26,6 @@ try {
 	require_once 'Common/Error.php';
 	exit;
 }
-$logger->error("Received GetUserLimitsResponse:");
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>

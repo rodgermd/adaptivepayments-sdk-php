@@ -1,15 +1,25 @@
 <?php
 require_once('PPBootStrap.php');
 
-$logger = new PPLoggingManager('GetPaymentOptions');
-
-// create request
+/*
+ *  You use the GetPaymentOptions API operation to retrieve the payment options passed with the SetPaymentOptionsRequest. 
+ */
+/*
+ * (Required) Information common to each API operation, such as the language in which an error message is returned.
+ */
 $requestEnvelope = new RequestEnvelope("en_US");
+/*
+ * (Required) The pay key that identifies the payment for which you want to get payment options. This is the pay key you used to set the payment options.
+ */
 $getPaymentOptionsReq = new GetPaymentOptionsRequest($requestEnvelope, $_POST['payKey']);
-$logger->log("Created GetPaymentOptionsRequest Object");
-
+/*
+ * 	 ## Creating service wrapper object
+Creating service wrapper object to make API call and loading
+configuration file for your credentials and endpoint
+*/
 $service = new AdaptivePaymentsService();
 try {
+	/* wrap API method calls on the service object with a try catch */
 	$response = $service->GetPaymentOptions($getPaymentOptionsReq);
 } catch(Exception $ex) {
 	require_once 'Common/Error.php';
@@ -29,7 +39,6 @@ try {
 		<div id="response_form">
 			<h3>Get Payment Options</h3>
 <?php 
-$logger->error("Received GetPaymentOptionsResponse:");
 $ack = strtoupper($response->responseEnvelope->ack);
 if($ack != "SUCCESS"){
 	echo "<b>Error </b>";

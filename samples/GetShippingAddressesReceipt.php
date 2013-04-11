@@ -1,19 +1,33 @@
 <?php
 require_once('PPBootStrap.php');
 
-$logger = new PPLoggingManager('GetShippingAddresses');
+/*
+ * Use the GetShippingAddresses API operation to obtain the selected shipping address. You must have created the payment or preapproval key that identifies the account holder whose shipping address you want to obtain, or be the primary receiver of the payment or one of the parallel receivers of the payment. The shipping address is available only if it was provided during the embedded payment flow. 
+ */
+/*
+ *  (Required) The payment paykey that identifies the account holder for whom you want to obtain the selected shipping address.
+Note:
 
-// create request
+Shipping information can only be retrieved through the payment payKey; not through the preapprovalKey.
+
+ */
+/*
+ * (Required) Information common to each API operation, such as the language in which an error message is returned.
+ */
 $getShippingAddressesReq = new GetShippingAddressesRequest(new RequestEnvelope("en_US"), $_POST['key']);
-$logger->log("Created GetShippingAddressesRequest Object");
+/*
+ * 	 ## Creating service wrapper object
+Creating service wrapper object to make API call and loading
+configuration file for your credentials and endpoint
+*/
 $service  = new AdaptivePaymentsService();
 try {
+	/* wrap API method calls on the service object with a try catch */
 	$response = $service->GetShippingAddresses($getShippingAddressesReq);
 } catch(Exception $ex) {
 	require_once 'Comon/Error.php';
 	exit;
 }
-$logger->error("Received GetShippingAddressesResponse:");
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>

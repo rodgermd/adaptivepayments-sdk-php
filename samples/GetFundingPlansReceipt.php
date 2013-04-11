@@ -1,20 +1,28 @@
 <?php
 require_once('PPBootStrap.php');
 
-$logger = new PPLoggingManager('GetFundingPlans');
-
-// create request
+/*
+ * Use the GetFundingPlans API operation to determine the funding sources that are available for a specified payment, identified by its key, which takes into account the preferences and country of the receiver as well as the payment amount. You must be both the sender of the payment and the caller of this API operation 
+ */
+/*
+ * The key used to create the payment whose funding sources you want to determine. 
+ * The code for the language in which errors are returned, which must be en_US.
+ */
 $getFundingPlansReq = new GetFundingPlansRequest(new RequestEnvelope("en_US"), $_POST['payKey']);
-$logger->log("Created GetFundingPlansRequest Object");
 
+/*
+ * 	 ## Creating service wrapper object
+Creating service wrapper object to make API call and loading
+configuration file for your credentials and endpoint
+*/
 $service = new AdaptivePaymentsService();
 try {
+	/* wrap API method calls on the service object with a try catch */
 	$response = $service->GetFundingPlans($getFundingPlansReq);
 } catch(Exception $ex) {
 	require_once 'Common/Error.php';
 	exit;
 }
-$logger->error("Received GetFundingPlansResponse:");
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>

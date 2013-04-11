@@ -1,16 +1,32 @@
 <?php
 require_once('PPBootStrap.php');
 
+/*
+ * The ExecutePayment API operation lets you execute a payment set up with the Pay API operation with the actionType CREATE. To pay receivers identified in the Pay call, set the pay key from the PayResponse message in the ExecutePaymentRequest message.
 
-// create request
+The ExecutePayment API operation lets you execute a payment set up with the Pay API operation with the actionType CREATE. To pay receivers identified in the Pay call, set the pay key from the PayResponse message in the ExecutePaymentRequest message. 
+ */
+
+/*
+ * (Optional) The pay key that identifies the payment to be executed. This is the pay key returned in the PayResponse message. 
+ */
 $executePaymentRequest = new ExecutePaymentRequest(new RequestEnvelope("en_US"),$_POST['payKey']);
 $executePaymentRequest->actionType = $_POST["actionType"];
+/*
+ * The ID of the funding plan from which to make this payment.
+ */
 if($_POST["fundingPlanID"] != "") {
 	$executePaymentRequest->fundingPlanId = $_POST["fundingPlanID"];
 }
-
+/*
+ * 	 ## Creating service wrapper object
+Creating service wrapper object to make API call and loading
+configuration file for your credentials and endpoint
+*/
 $service = new AdaptivePaymentsService();
 try {
+	/* wrap API method calls on the service object with a try catch */
+	
 	$response = $service->ExecutePayment($executePaymentRequest);
 } catch(Exception $ex) {
 	require_once 'Common/Error.php';
