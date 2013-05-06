@@ -1,7 +1,7 @@
 <?php 
 
 /**
- *  AUTO GENERATED code for AdaptivePayments
+ * AUTO GENERATED code for AdaptivePayments
  */
 class AdaptivePaymentsService extends PPBaseService {
 
@@ -12,10 +12,10 @@ class AdaptivePaymentsService extends PPBaseService {
 	private static $SERVICE_NAME = "AdaptivePayments";
 
     // SDK Name
-	protected static $SDK_NAME = "adaptivepayments-php-sdk";
+	protected static $SDK_NAME = "sdkname";
 	
 	// SDK Version
-	protected static $SDK_VERSION = "2.3.100";
+	protected static $SDK_VERSION = "sdkversion";
 
 	public function __construct($config = null) {
 		parent::__construct(self::$SERVICE_NAME, 'NV', array('PPPlatformServiceHandler'), $config);
