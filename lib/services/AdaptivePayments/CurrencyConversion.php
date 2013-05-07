@@ -1,5 +1,5 @@
 <?php 
-namespace PayPal\AdaptivePayments;
+namespace services\AdaptivePayments;
 /**
  * Describes the conversion between 2 currencies. 
  */

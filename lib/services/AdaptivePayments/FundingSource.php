@@ -1,5 +1,5 @@
 <?php 
-namespace PayPal\AdaptivePayments;
+namespace services\AdaptivePayments;
 /**
  * Funding source information. 
  */

@@ -1,5 +1,5 @@
 <?php 
-namespace PayPal\AdaptivePayments;
+namespace services\AdaptivePayments;
 /**
  * The request to look up the details of a Preapproval. 
  */

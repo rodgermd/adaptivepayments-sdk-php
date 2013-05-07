@@ -1,5 +1,5 @@
 <?php 
-namespace PayPal\AdaptivePayments;
+namespace services\AdaptivePayments;
 /**
  * SenderDisclosure contains the disclosure related to Sender 
  */

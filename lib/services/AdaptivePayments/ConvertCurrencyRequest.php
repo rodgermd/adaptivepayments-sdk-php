@@ -1,5 +1,5 @@
 <?php 
-namespace PayPal\AdaptivePayments;
+namespace services\AdaptivePayments;
 /**
  * A request to convert one or more currencies into their
  * estimated values in other currencies. 

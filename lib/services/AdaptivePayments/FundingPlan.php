@@ -1,5 +1,5 @@
 <?php 
-namespace PayPal\AdaptivePayments;
+namespace services\AdaptivePayments;
 /**
  * FundingPlan describes the funding sources to be used for a
  * specific payment. 

@@ -1,5 +1,5 @@
 <?php 
-namespace PayPal\AdaptivePayments;
+namespace services\AdaptivePayments;
 /**
  * Receiver is the party where funds are transferred to. A
  * primary receiver receives a payment directly from the sender

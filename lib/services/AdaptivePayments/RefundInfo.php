@@ -1,5 +1,5 @@
 <?php 
-namespace PayPal\AdaptivePayments;
+namespace services\AdaptivePayments;
 /**
  * RefundInfo represents the refund attempt made to a Receiver
  * of a PayRequest. 

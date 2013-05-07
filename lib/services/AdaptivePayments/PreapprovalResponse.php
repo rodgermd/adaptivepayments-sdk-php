@@ -1,5 +1,5 @@
 <?php 
-namespace PayPal\AdaptivePayments;
+namespace services\AdaptivePayments;
 /**
  * The result of the PreapprovalRequest is a preapprovalKey. 
  */

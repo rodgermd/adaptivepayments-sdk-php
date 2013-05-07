@@ -1,5 +1,5 @@
 <?php 
-namespace PayPal\AdaptivePayments;
+namespace services\AdaptivePayments;
 /**
  * The PayResponse contains the result of the Pay operation.
  * The payKey and execution status of the request should always

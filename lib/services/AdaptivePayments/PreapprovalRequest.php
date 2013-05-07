@@ -1,5 +1,5 @@
 <?php 
-namespace PayPal\AdaptivePayments;
+namespace services\AdaptivePayments;
 /**
  * A request to create a Preapproval. A Preapproval is an
  * agreement between a Paypal account holder (the sender) and

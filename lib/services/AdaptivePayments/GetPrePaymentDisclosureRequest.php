@@ -1,5 +1,5 @@
 <?php 
-namespace PayPal\AdaptivePayments;
+namespace services\AdaptivePayments;
 /**
  * GetPrePaymentDisclosureRequest is used to get the PrePayment
  * Disclosure.; GetPrePaymentDisclosureRequest contains

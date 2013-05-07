@@ -1,5 +1,5 @@
 <?php 
-namespace PayPal\AdaptivePayments;
+namespace services\AdaptivePayments;
 /**
  * Contains information related to Post Payment Disclosure
  * Details This contains 1.Receivers information 2.Funds

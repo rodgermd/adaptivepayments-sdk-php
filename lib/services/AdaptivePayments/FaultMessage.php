@@ -1,5 +1,5 @@
 <?php 
-namespace PayPal\AdaptivePayments;
+namespace services\AdaptivePayments;
 /**
  * This specifies a fault, encapsulating error data, with
  * specific error codes. 

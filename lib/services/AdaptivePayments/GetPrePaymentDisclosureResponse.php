@@ -1,5 +1,5 @@
 <?php 
-namespace PayPal\AdaptivePayments;
+namespace services\AdaptivePayments;
 /**
  * GetPrePaymentDisclosureResponse contains the information
  * related to PrePayment disclosure. status : indicates the

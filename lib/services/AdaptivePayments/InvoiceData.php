@@ -1,5 +1,5 @@
 <?php 
-namespace PayPal\AdaptivePayments;
+namespace services\AdaptivePayments;
 /**
  * Describes a payment for a particular receiver (merchant),
  * contains list of additional per item details. 

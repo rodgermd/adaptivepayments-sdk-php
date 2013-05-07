@@ -1,5 +1,5 @@
 <?php 
-namespace PayPal\AdaptivePayments;
+namespace services\AdaptivePayments;
 /**
  * ReceiverInfo needs to be populate for the receiver who
  * doesn't have paypal account. 

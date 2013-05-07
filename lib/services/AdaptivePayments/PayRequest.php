@@ -1,5 +1,5 @@
 <?php 
-namespace PayPal\AdaptivePayments;
+namespace services\AdaptivePayments;
 /**
  * The PayRequest contains the payment instructions to make
  * from sender to receivers. 

@@ -1,5 +1,5 @@
 <?php 
-namespace PayPal\AdaptivePayments;
+namespace services\AdaptivePayments;
 /**
  * The request to look up the details of a PayRequest. The
  * PaymentDetailsRequest can be made with either a payKey,

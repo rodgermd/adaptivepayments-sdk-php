@@ -1,5 +1,5 @@
 <?php 
-namespace PayPal\AdaptivePayments;
+namespace services\AdaptivePayments;
 /**
  * A table that contains a list of estimated currency
  * conversions for a base currency in each row. 

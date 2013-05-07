@@ -1,5 +1,5 @@
 <?php 
-namespace PayPal\AdaptivePayments;
+namespace services\AdaptivePayments;
 /**
  * A response that contains a table of estimated converted
  * currencies based on the Convert Currency Request. 

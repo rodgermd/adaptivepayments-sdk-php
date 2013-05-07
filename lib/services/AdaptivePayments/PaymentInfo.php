@@ -1,5 +1,5 @@
 <?php 
-namespace PayPal\AdaptivePayments;
+namespace services\AdaptivePayments;
 /**
  * PaymentInfo represents the payment attempt made to a
  * Receiver of a PayRequest. If the execution of the payment

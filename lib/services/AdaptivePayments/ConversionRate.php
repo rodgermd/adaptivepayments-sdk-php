@@ -1,5 +1,5 @@
 <?php 
-namespace PayPal\AdaptivePayments;
+namespace services\AdaptivePayments;
 /**
  * This holds the conversion rate from "Sender currency for one
  * bucks to equivalent value in the receivers currency" 
