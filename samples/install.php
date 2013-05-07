@@ -14,7 +14,7 @@ define('BOOTSTRAP_FILE', 'PPBootStrap.php');
 define('CONFIGURATION_FILE', 'sdk_config.ini');
 
 // URL from where the composer.json is downloaded if not present
-define('COMPOSER_URL', 'https://raw.github.com/paypal/adaptivepayments-sdk-php/composer/samples/composer.json');
+define('COMPOSER_URL', 'https://raw.github.com/paypal/adaptivepayments-sdk-php/stable/samples/composer.json');
 
 // Flag to control whether composer should be used for installation
 $useComposer = false;
@@ -304,10 +304,10 @@ function copyConfig($source, $destination ) {
  */
 function createConfig($configFile) {
 	if(!file_exists($configFile)) {
-		echo "Generating $configFile" . PHP_EOL;
+		echo "Generating $configFile. You must update it with your account details." . PHP_EOL;
 		$script = <<< SCRIPT
 
-; mode configuration which sets the endpoint
+; Integration mode - Must be one of sandbox/live
 mode = sandbox
 
 ;Account credentials
