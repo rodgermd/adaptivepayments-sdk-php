@@ -20,6 +20,8 @@
         "paypal/sdk-core-php":"dev-namespace-5.3"
     },
     "autoload": {
-        "classmap": ["lib/"]
-    }
+        "psr-0": {
+            "paypalservice": "lib/"
+        }
+    }    
 }
