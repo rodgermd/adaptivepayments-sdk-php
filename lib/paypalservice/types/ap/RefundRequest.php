@@ -1,0 +1,74 @@
+<?php 
+namespace paypalservice\types\ap;
+/**
+ * A request to make a refund based on various criteria. A
+ * refund can be made against the entire payKey, an individual
+ * transaction belonging to a payKey, a tracking id, or a
+ * specific receiver of a payKey. 
+ */
+class RefundRequest  
+  extends PPMessage   {
+
+	/**
+	 * 
+	 * @access public
+	 
+	 	 	 	 
+	 * @var RequestEnvelope 	 
+	 */ 
+	public $requestEnvelope;
+
+	/**
+	 * 
+	 * @access public
+	 
+	 	 	 	 
+	 * @var string 	 
+	 */ 
+	public $currencyCode;
+
+	/**
+	 * 
+	 * @access public
+	 
+	 	 	 	 
+	 * @var string 	 
+	 */ 
+	public $payKey;
+
+	/**
+	 * 
+	 * @access public
+	 
+	 	 	 	 
+	 * @var string 	 
+	 */ 
+	public $transactionId;
+
+	/**
+	 * 
+	 * @access public
+	 
+	 	 	 	 
+	 * @var string 	 
+	 */ 
+	public $trackingId;
+
+	/**
+	 * 
+	 * @access public
+	 
+	 	 	 	 
+	 * @var ReceiverList 	 
+	 */ 
+	public $receiverList;
+
+	/**
+	 * Constructor with arguments
+	 */
+	public function __construct($requestEnvelope = NULL) {
+		$this->requestEnvelope = $requestEnvelope;
+	}
+
+
+}
