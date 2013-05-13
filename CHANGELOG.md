@@ -1,11 +1,19 @@
-Version 2.3.101 - April 30, 2013
+# CHANGELOG
+ 
+## Version 2.4.101 - May 06, 2013
+
+   - Restructuring config file location. Updating installer script to reflect this.  
+   - Fix for dynamic configuration overwrite in previous release.
+--------------------------------------------------------------------------------------------------
+
+## Version 2.3.101 - April 30, 2013
 
 	- Updated stubs for 101 release
 
 You can see source code of this release in github under https://github.com/paypal/adaptivepayments-sdk-php/tree/v2.3.101
 --------------------------------------------------------------------------------------------------
 
-Version v2.3.100 - March 25, 2013
+## Version v2.3.100 - March 25, 2013
  
 	- Updated stubs for 100 release
 	- Added dynamic configuration support by passing configuration parameters using hash map.
@@ -13,7 +21,7 @@ Version v2.3.100 - March 25, 2013
 You can see source code of this release in github under https://github.com/paypal/adaptivepayments-sdk-php/tree/v2.3.100.
 --------------------------------------------------------------------------------------------------
 
-Version 2.2.98 - February 05, 2013
+## Version 2.2.98 - February 05, 2013
  
 	- Added support for composer.
     - Added installation script that fetches the dependencies and installs sdk if composer not present, contributed by: https://github.com/rrehbeindoi.
@@ -22,7 +30,7 @@ Version 2.2.98 - February 05, 2013
 You can see source code of this release in github under https://github.com/paypal/adaptivepayments-sdk-php/tree/v2.2.98.
 --------------------------------------------------------------------------------------------------
 
-Version 2.1.96 - December 14, 2012
+## Version 2.1.96 - December 14, 2012
  
 	- Added support for Instant Payment Notification (Refer IPN-README.md for more details)
 	- Added new feature for supporting multiple endpoints based on portname for using different sdks together.
@@ -30,7 +38,7 @@ Version 2.1.96 - December 14, 2012
 You can see source code of this release in github under https://github.com/paypal/adaptivepayments-sdk-php/tree/v2.1.96.
 --------------------------------------------------------------------------------------------------
 
-Version 2.0.96 - December 06, 2012
+## Version 2.0.96 - December 06, 2012
  
 	- SDK refreshed to Release 96
 	- Application ID is not mandatory now.
@@ -44,8 +52,7 @@ Version 2.0.96 - December 06, 2012
 	
 --------------------------------------------------------------------------------------------------
 
-
-Version 1.2.95 - September 28, 2012
+## Version 1.2.95 - September 28, 2012
  
 	- Sender details (eg:email,phno) serialization bug fixed(https://github.com/paypal/SDKs/issues/30)
 	- Bug fixed for 'PPLoggingManager.php' to pickup configuration entries.(https://github.com/paypal/SDKs/issues/28)
@@ -53,27 +60,27 @@ Version 1.2.95 - September 28, 2012
 	
 --------------------------------------------------------------------------------------------------
 
-
-Version 1.1.93 - August 13, 2012
+## Version 1.1.93 - August 13, 2012
  
 	- SDK refreshed to Release 1.8.1. Please refer https://www.x.com/developers/paypal/documentation-tools/release-notes#AdaptivePaymentsAPI
 	- SDK Core - Deserialization Logic Change
 --------------------------------------------------------------------------------------------------
 
-
-Version 1.0.92 - July 30, 2012
+## Version 1.0.92 - July 30, 2012
  
 	- Stable release
 -------------------------------------------------------------------------------------------------
-Version 0.7.92 - July 17, 2012 
+
+## Version 0.7.92 - July 17, 2012 
     - wsdl update version 0.7.92
-------------------------------------------
+
+-------------------------------------------------------------------------------------------------
 	
-Version 0.6.88 - Apr 17, 2012
-----------------------------------------
+## Version 0.6.88 - Apr 17, 2012
+
 	- Fix to get SDK working with Permissions API token
 	- wsdl update version 88.0
 	
-Version 0.6.86  - Feb 27, 2012
-----------------------------------------
+## Version 0.6.86  - Feb 27, 2012
+-------------------------------------------------------------------------------------------------
 	- Initial release
