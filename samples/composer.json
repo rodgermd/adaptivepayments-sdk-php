@@ -17,6 +17,6 @@
     "require": {
         "php": ">=5.2.0",
         "ext-curl": "*",
-        "paypal/adaptivepayments-sdk-php":"dev-namespace-5.3"
+        "paypal/adaptivepayments-sdk-php":"dev-namespace-php5.3"
     }
 }
