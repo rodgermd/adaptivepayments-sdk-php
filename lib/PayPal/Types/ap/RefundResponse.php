@@ -1,5 +1,6 @@
 <?php 
-namespace paypalservice\types\ap;
+namespace PayPal\Types\AP;
+use PayPal\Core\PPMessage;
 /**
  * The result of a Refund request. 
  */
@@ -11,7 +12,7 @@ class RefundResponse
 	 * @access public
 	 
 	 	 	 	 
-	 * @var ResponseEnvelope 	 
+	 * @var paypalservice\Types\Common\ResponseEnvelope	 
 	 */ 
 	public $responseEnvelope;
 
@@ -20,7 +21,7 @@ class RefundResponse
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $currencyCode;
 
@@ -29,7 +30,7 @@ class RefundResponse
 	 * @access public
 	 
 	 	 	 	 
-	 * @var RefundInfoList 	 
+	 * @var paypalservice\Types\AP\RefundInfoList	 
 	 */ 
 	public $refundInfoList;
 
@@ -39,7 +40,7 @@ class RefundResponse
 	 * @access public
 	 
 	 	 	 	 
-	 * @var ErrorData 	 
+	 * @var paypalservice\Types\Common\ErrorData	 
 	 */ 
 	public $error;
 

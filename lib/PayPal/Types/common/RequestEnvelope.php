@@ -1,5 +1,6 @@
 <?php 
-namespace paypalservice\types\common;
+namespace PayPal\Types\Common;
+use PayPal\Core\PPMessage;
 /**
  * This specifies the list of parameters with every request to
  * the service. 
@@ -27,7 +28,7 @@ class RequestEnvelope
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $errorLanguage;
 

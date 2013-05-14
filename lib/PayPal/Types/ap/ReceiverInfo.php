@@ -1,5 +1,6 @@
 <?php 
-namespace paypalservice\types\ap;
+namespace PayPal\Types\AP;
+use PayPal\Core\PPMessage;
 /**
  * ReceiverInfo needs to be populate for the receiver who
  * doesn't have paypal account. 
@@ -13,7 +14,7 @@ class ReceiverInfo  extends AccountIdentifier
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $countryCode;
 
@@ -22,7 +23,7 @@ class ReceiverInfo  extends AccountIdentifier
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $firstName;
 
@@ -31,7 +32,7 @@ class ReceiverInfo  extends AccountIdentifier
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $lastName;
 

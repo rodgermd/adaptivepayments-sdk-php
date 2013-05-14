@@ -1,5 +1,6 @@
 <?php 
-namespace paypalservice\types\ap;
+namespace PayPal\Types\AP;
+use PayPal\Core\PPMessage;
 /**
  * The response to get the shipping addresses available for a
  * payment. 
@@ -12,7 +13,7 @@ class GetShippingAddressesResponse
 	 * @access public
 	 
 	 	 	 	 
-	 * @var ResponseEnvelope 	 
+	 * @var paypalservice\Types\Common\ResponseEnvelope	 
 	 */ 
 	public $responseEnvelope;
 
@@ -21,7 +22,7 @@ class GetShippingAddressesResponse
 	 * @access public
 	 
 	 	 	 	 
-	 * @var Address 	 
+	 * @var paypalservice\Types\AP\Address	 
 	 */ 
 	public $selectedAddress;
 
@@ -31,7 +32,7 @@ class GetShippingAddressesResponse
 	 * @access public
 	 
 	 	 	 	 
-	 * @var ErrorData 	 
+	 * @var paypalservice\Types\Common\ErrorData	 
 	 */ 
 	public $error;
 

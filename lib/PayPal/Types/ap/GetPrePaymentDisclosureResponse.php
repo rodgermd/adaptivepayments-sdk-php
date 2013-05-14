@@ -1,5 +1,6 @@
 <?php 
-namespace paypalservice\types\ap;
+namespace PayPal\Types\AP;
+use PayPal\Core\PPMessage;
 /**
  * GetPrePaymentDisclosureResponse contains the information
  * related to PrePayment disclosure. status : indicates the
@@ -28,7 +29,7 @@ class GetPrePaymentDisclosureResponse
 	 * @access public
 	 
 	 	 	 	 
-	 * @var ResponseEnvelope 	 
+	 * @var paypalservice\Types\Common\ResponseEnvelope	 
 	 */ 
 	public $responseEnvelope;
 
@@ -46,7 +47,7 @@ class GetPrePaymentDisclosureResponse
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $feesPayer;
 
@@ -55,7 +56,7 @@ class GetPrePaymentDisclosureResponse
 	 * @access public
 	 
 	 	 	 	 
-	 * @var SenderDisclosure 	 
+	 * @var paypalservice\Types\AP\SenderDisclosure	 
 	 */ 
 	public $senderDisclosure;
 
@@ -64,7 +65,7 @@ class GetPrePaymentDisclosureResponse
 	 * @access public
 	 
 	 	 	 	 
-	 * @var ReceiverDisclosureList 	 
+	 * @var paypalservice\Types\AP\ReceiverDisclosureList	 
 	 */ 
 	public $receiverDisclosureList;
 
@@ -73,7 +74,7 @@ class GetPrePaymentDisclosureResponse
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $disclaimer;
 
@@ -83,7 +84,7 @@ class GetPrePaymentDisclosureResponse
 	 * @access public
 	 
 	 	 	 	 
-	 * @var ErrorData 	 
+	 * @var paypalservice\Types\Common\ErrorData	 
 	 */ 
 	public $error;
 

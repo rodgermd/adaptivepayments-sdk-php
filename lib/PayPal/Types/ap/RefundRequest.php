@@ -1,5 +1,6 @@
 <?php 
-namespace paypalservice\types\ap;
+namespace PayPal\Types\AP;
+use PayPal\Core\PPMessage;
 /**
  * A request to make a refund based on various criteria. A
  * refund can be made against the entire payKey, an individual
@@ -14,7 +15,7 @@ class RefundRequest
 	 * @access public
 	 
 	 	 	 	 
-	 * @var RequestEnvelope 	 
+	 * @var paypalservice\Types\Common\RequestEnvelope	 
 	 */ 
 	public $requestEnvelope;
 
@@ -23,7 +24,7 @@ class RefundRequest
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $currencyCode;
 
@@ -32,7 +33,7 @@ class RefundRequest
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $payKey;
 
@@ -41,7 +42,7 @@ class RefundRequest
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $transactionId;
 
@@ -50,7 +51,7 @@ class RefundRequest
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $trackingId;
 
@@ -59,7 +60,7 @@ class RefundRequest
 	 * @access public
 	 
 	 	 	 	 
-	 * @var ReceiverList 	 
+	 * @var paypalservice\Types\AP\ReceiverList	 
 	 */ 
 	public $receiverList;
 

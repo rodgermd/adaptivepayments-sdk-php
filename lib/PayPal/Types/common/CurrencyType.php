@@ -1,5 +1,6 @@
 <?php 
-namespace paypalservice\types\common;
+namespace PayPal\Types\Common;
+use PayPal\Core\PPMessage;
 /**
  * 
  */
@@ -12,7 +13,7 @@ class CurrencyType
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $code;
 
@@ -21,7 +22,7 @@ class CurrencyType
 	 * @access public
 	 
 	 	 	 	 
-	 * @var double 	 
+	 * @var double	 
 	 */ 
 	public $amount;
 

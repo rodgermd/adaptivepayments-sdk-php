@@ -1,5 +1,6 @@
 <?php 
-namespace paypalservice\types\ap;
+namespace PayPal\Types\AP;
+use PayPal\Core\PPMessage;
 /**
  * 
  */
@@ -11,7 +12,7 @@ class Address
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $addresseeName;
 
@@ -20,7 +21,7 @@ class Address
 	 * @access public
 	 
 	 	 	 	 
-	 * @var BaseAddress 	 
+	 * @var paypalservice\Types\Common\BaseAddress	 
 	 */ 
 	public $baseAddress;
 
@@ -29,7 +30,7 @@ class Address
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $addressId;
 

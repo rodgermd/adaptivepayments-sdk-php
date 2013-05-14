@@ -1,5 +1,6 @@
 <?php 
-namespace paypalservice\types\ap;
+namespace PayPal\Types\AP;
+use PayPal\Core\PPMessage;
 /**
  * FundingTypeInfo represents one allowed funding type. 
  */
@@ -11,7 +12,7 @@ class FundingTypeInfo
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $fundingType;
 

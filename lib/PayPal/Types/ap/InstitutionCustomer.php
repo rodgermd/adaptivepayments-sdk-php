@@ -1,5 +1,6 @@
 <?php 
-namespace paypalservice\types\ap;
+namespace PayPal\Types\AP;
+use PayPal\Core\PPMessage;
 /**
  * The customer of the initiating institution 
  */
@@ -11,7 +12,7 @@ class InstitutionCustomer
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $institutionId;
 
@@ -21,7 +22,7 @@ class InstitutionCustomer
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $firstName;
 
@@ -31,7 +32,7 @@ class InstitutionCustomer
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $lastName;
 
@@ -41,7 +42,7 @@ class InstitutionCustomer
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $displayName;
 
@@ -51,7 +52,7 @@ class InstitutionCustomer
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $institutionCustomerId;
 
@@ -61,7 +62,7 @@ class InstitutionCustomer
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $countryCode;
 
@@ -70,7 +71,7 @@ class InstitutionCustomer
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $email;
 

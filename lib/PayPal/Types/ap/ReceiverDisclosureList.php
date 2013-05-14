@@ -1,5 +1,6 @@
 <?php 
-namespace paypalservice\types\ap;
+namespace PayPal\Types\AP;
+use PayPal\Core\PPMessage;
 /**
  * 
  */
@@ -12,7 +13,7 @@ class ReceiverDisclosureList
 	 * @access public
 	 
 	 	 	 	 
-	 * @var ReceiverDisclosure 	 
+	 * @var paypalservice\Types\AP\ReceiverDisclosure	 
 	 */ 
 	public $receiverDisclosure;
 

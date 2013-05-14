@@ -1,5 +1,6 @@
 <?php 
-namespace paypalservice\types\common;
+namespace PayPal\Types\Common;
+use PayPal\Core\PPMessage;
 /**
  * 
  */
@@ -12,7 +13,7 @@ class BaseAddress
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $line1;
 
@@ -21,7 +22,7 @@ class BaseAddress
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $line2;
 
@@ -30,7 +31,7 @@ class BaseAddress
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $city;
 
@@ -39,7 +40,7 @@ class BaseAddress
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $state;
 
@@ -48,7 +49,7 @@ class BaseAddress
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $postalCode;
 
@@ -57,7 +58,7 @@ class BaseAddress
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $countryCode;
 
@@ -66,7 +67,7 @@ class BaseAddress
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $type;
 

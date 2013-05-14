@@ -1,5 +1,6 @@
 <?php 
-namespace paypalservice\types\ap;
+namespace PayPal\Types\AP;
+use PayPal\Core\PPMessage;
 /**
  * The PayResponse contains the result of the Pay operation.
  * The payKey and execution status of the request should always
@@ -13,7 +14,7 @@ class PayResponse
 	 * @access public
 	 
 	 	 	 	 
-	 * @var ResponseEnvelope 	 
+	 * @var paypalservice\Types\Common\ResponseEnvelope	 
 	 */ 
 	public $responseEnvelope;
 
@@ -22,7 +23,7 @@ class PayResponse
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $payKey;
 
@@ -31,7 +32,7 @@ class PayResponse
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $paymentExecStatus;
 
@@ -40,7 +41,7 @@ class PayResponse
 	 * @access public
 	 
 	 	 	 	 
-	 * @var PayErrorList 	 
+	 * @var paypalservice\Types\AP\PayErrorList	 
 	 */ 
 	public $payErrorList;
 
@@ -49,7 +50,7 @@ class PayResponse
 	 * @access public
 	 
 	 	 	 	 
-	 * @var PaymentInfoList 	 
+	 * @var paypalservice\Types\AP\PaymentInfoList	 
 	 */ 
 	public $paymentInfoList;
 
@@ -58,7 +59,7 @@ class PayResponse
 	 * @access public
 	 
 	 	 	 	 
-	 * @var SenderIdentifier 	 
+	 * @var paypalservice\Types\AP\SenderIdentifier	 
 	 */ 
 	public $sender;
 
@@ -67,7 +68,7 @@ class PayResponse
 	 * @access public
 	 
 	 	 	 	 
-	 * @var FundingPlan 	 
+	 * @var paypalservice\Types\AP\FundingPlan	 
 	 */ 
 	public $defaultFundingPlan;
 
@@ -76,7 +77,7 @@ class PayResponse
 	 * @access public
 	 
 	 	 	 	 
-	 * @var WarningDataList 	 
+	 * @var paypalservice\Types\AP\WarningDataList	 
 	 */ 
 	public $warningDataList;
 
@@ -86,7 +87,7 @@ class PayResponse
 	 * @access public
 	 
 	 	 	 	 
-	 * @var ErrorData 	 
+	 * @var paypalservice\Types\Common\ErrorData	 
 	 */ 
 	public $error;
 

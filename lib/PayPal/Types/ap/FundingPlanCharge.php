@@ -1,5 +1,6 @@
 <?php 
-namespace paypalservice\types\ap;
+namespace PayPal\Types\AP;
+use PayPal\Core\PPMessage;
 /**
  * Amount to be charged to a particular funding source. 
  */
@@ -11,7 +12,7 @@ class FundingPlanCharge
 	 * @access public
 	 
 	 	 	 	 
-	 * @var CurrencyType 	 
+	 * @var paypalservice\Types\Common\CurrencyType	 
 	 */ 
 	public $charge;
 
@@ -20,7 +21,7 @@ class FundingPlanCharge
 	 * @access public
 	 
 	 	 	 	 
-	 * @var FundingSource 	 
+	 * @var paypalservice\Types\AP\FundingSource	 
 	 */ 
 	public $fundingSource;
 

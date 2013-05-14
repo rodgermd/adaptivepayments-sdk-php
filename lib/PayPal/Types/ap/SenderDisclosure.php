@@ -1,5 +1,6 @@
 <?php 
-namespace paypalservice\types\ap;
+namespace PayPal\Types\AP;
+use PayPal\Core\PPMessage;
 /**
  * SenderDisclosure contains the disclosure related to Sender 
  */
@@ -11,7 +12,7 @@ class SenderDisclosure
 	 * @access public
 	 
 	 	 	 	 
-	 * @var CurrencyType 	 
+	 * @var paypalservice\Types\Common\CurrencyType	 
 	 */ 
 	public $amountToTransfer;
 
@@ -20,7 +21,7 @@ class SenderDisclosure
 	 * @access public
 	 
 	 	 	 	 
-	 * @var FeeDisclosure 	 
+	 * @var paypalservice\Types\AP\FeeDisclosure	 
 	 */ 
 	public $feeDisclosure;
 
@@ -29,7 +30,7 @@ class SenderDisclosure
 	 * @access public
 	 
 	 	 	 	 
-	 * @var CurrencyType 	 
+	 * @var paypalservice\Types\Common\CurrencyType	 
 	 */ 
 	public $totalAmountToTransfer;
 

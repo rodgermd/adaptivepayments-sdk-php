@@ -1,5 +1,6 @@
 <?php 
-namespace paypalservice\types\ap;
+namespace PayPal\Types\AP;
+use PayPal\Core\PPMessage;
 /**
  * The request to look up the details of a PayRequest. The
  * PaymentDetailsRequest can be made with either a payKey,
@@ -13,7 +14,7 @@ class PaymentDetailsRequest
 	 * @access public
 	 
 	 	 	 	 
-	 * @var RequestEnvelope 	 
+	 * @var paypalservice\Types\Common\RequestEnvelope	 
 	 */ 
 	public $requestEnvelope;
 
@@ -22,7 +23,7 @@ class PaymentDetailsRequest
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $payKey;
 
@@ -31,7 +32,7 @@ class PaymentDetailsRequest
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $transactionId;
 
@@ -40,7 +41,7 @@ class PaymentDetailsRequest
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $trackingId;
 

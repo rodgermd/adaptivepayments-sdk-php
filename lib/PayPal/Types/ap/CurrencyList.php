@@ -1,5 +1,6 @@
 <?php 
-namespace paypalservice\types\ap;
+namespace PayPal\Types\AP;
+use PayPal\Core\PPMessage;
 /**
  * A list of ISO currencies. 
  */
@@ -12,7 +13,7 @@ class CurrencyList
 	 * @access public
 	 
 	 	 	 	 
-	 * @var CurrencyType 	 
+	 * @var paypalservice\Types\Common\CurrencyType	 
 	 */ 
 	public $currency;
 

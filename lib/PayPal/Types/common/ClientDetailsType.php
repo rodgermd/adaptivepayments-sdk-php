@@ -1,5 +1,6 @@
 <?php 
-namespace paypalservice\types\common;
+namespace PayPal\Types\Common;
+use PayPal\Core\PPMessage;
 /**
  * Details about the end user of the application invoking this
  * service. 
@@ -13,7 +14,7 @@ class ClientDetailsType
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $ipAddress;
 
@@ -22,7 +23,7 @@ class ClientDetailsType
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $deviceId;
 
@@ -31,7 +32,7 @@ class ClientDetailsType
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $applicationId;
 
@@ -40,7 +41,7 @@ class ClientDetailsType
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $model;
 
@@ -49,7 +50,7 @@ class ClientDetailsType
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $geoLocation;
 
@@ -58,7 +59,7 @@ class ClientDetailsType
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $customerType;
 
@@ -67,7 +68,7 @@ class ClientDetailsType
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $partnerName;
 
@@ -76,7 +77,7 @@ class ClientDetailsType
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $customerId;
 

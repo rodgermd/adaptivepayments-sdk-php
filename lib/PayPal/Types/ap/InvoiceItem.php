@@ -1,5 +1,6 @@
 <?php 
-namespace paypalservice\types\ap;
+namespace PayPal\Types\AP;
+use PayPal\Core\PPMessage;
 /**
  * Describes an individual item for an invoice. 
  */
@@ -11,7 +12,7 @@ class InvoiceItem
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $name;
 
@@ -20,7 +21,7 @@ class InvoiceItem
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $identifier;
 
@@ -29,7 +30,7 @@ class InvoiceItem
 	 * @access public
 	 
 	 	 	 	 
-	 * @var double 	 
+	 * @var double	 
 	 */ 
 	public $price;
 
@@ -38,7 +39,7 @@ class InvoiceItem
 	 * @access public
 	 
 	 	 	 	 
-	 * @var double 	 
+	 * @var double	 
 	 */ 
 	public $itemPrice;
 
@@ -47,7 +48,7 @@ class InvoiceItem
 	 * @access public
 	 
 	 	 	 	 
-	 * @var integer 	 
+	 * @var integer	 
 	 */ 
 	public $itemCount;
 

@@ -1,5 +1,6 @@
 <?php 
-namespace paypalservice\types\ap;
+namespace PayPal\Types\AP;
+use PayPal\Core\PPMessage;
 /**
  * A response that contains a list of remaining limits 
  */
@@ -11,7 +12,7 @@ class GetUserLimitsResponse
 	 * @access public
 	 
 	 	 	 	 
-	 * @var ResponseEnvelope 	 
+	 * @var paypalservice\Types\Common\ResponseEnvelope	 
 	 */ 
 	public $responseEnvelope;
 
@@ -21,7 +22,7 @@ class GetUserLimitsResponse
 	 * @access public
 	 
 	 	 	 	 
-	 * @var UserLimit 	 
+	 * @var paypalservice\Types\AP\UserLimit	 
 	 */ 
 	public $userLimit;
 
@@ -30,7 +31,7 @@ class GetUserLimitsResponse
 	 * @access public
 	 
 	 	 	 	 
-	 * @var WarningDataList 	 
+	 * @var paypalservice\Types\AP\WarningDataList	 
 	 */ 
 	public $warningDataList;
 
@@ -40,7 +41,7 @@ class GetUserLimitsResponse
 	 * @access public
 	 
 	 	 	 	 
-	 * @var ErrorData 	 
+	 * @var paypalservice\Types\Common\ErrorData	 
 	 */ 
 	public $error;
 

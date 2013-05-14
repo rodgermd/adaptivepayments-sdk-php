@@ -1,5 +1,6 @@
 <?php 
-namespace paypalservice\types\ap;
+namespace PayPal\Types\AP;
+use PayPal\Core\PPMessage;
 /**
  * Customizable options that a client application can specify
  * for display purposes. 
@@ -12,7 +13,7 @@ class DisplayOptions
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $emailHeaderImageUrl;
 
@@ -21,7 +22,7 @@ class DisplayOptions
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $emailMarketingImageUrl;
 
@@ -30,7 +31,7 @@ class DisplayOptions
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $headerImageUrl;
 
@@ -39,7 +40,7 @@ class DisplayOptions
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $businessName;
 

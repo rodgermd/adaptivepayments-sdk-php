@@ -1,5 +1,6 @@
 <?php 
-namespace paypalservice\types\ap;
+namespace PayPal\Types\AP;
+use PayPal\Core\PPMessage;
 /**
  * FundingPlan describes the funding sources to be used for a
  * specific payment. 
@@ -12,7 +13,7 @@ class FundingPlan
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $fundingPlanId;
 
@@ -21,7 +22,7 @@ class FundingPlan
 	 * @access public
 	 
 	 	 	 	 
-	 * @var CurrencyType 	 
+	 * @var paypalservice\Types\Common\CurrencyType	 
 	 */ 
 	public $fundingAmount;
 
@@ -30,7 +31,7 @@ class FundingPlan
 	 * @access public
 	 
 	 	 	 	 
-	 * @var FundingSource 	 
+	 * @var paypalservice\Types\AP\FundingSource	 
 	 */ 
 	public $backupFundingSource;
 
@@ -39,7 +40,7 @@ class FundingPlan
 	 * @access public
 	 
 	 	 	 	 
-	 * @var CurrencyType 	 
+	 * @var paypalservice\Types\Common\CurrencyType	 
 	 */ 
 	public $senderFees;
 
@@ -48,7 +49,7 @@ class FundingPlan
 	 * @access public
 	 
 	 	 	 	 
-	 * @var CurrencyConversion 	 
+	 * @var paypalservice\Types\AP\CurrencyConversion	 
 	 */ 
 	public $currencyConversion;
 
@@ -58,7 +59,7 @@ class FundingPlan
 	 * @access public
 	 
 	 	 	 	 
-	 * @var FundingPlanCharge 	 
+	 * @var paypalservice\Types\AP\FundingPlanCharge	 
 	 */ 
 	public $charge;
 

@@ -1,5 +1,6 @@
 <?php 
-namespace paypalservice\types\ap;
+namespace PayPal\Types\AP;
+use PayPal\Core\PPMessage;
 /**
  * This holds the conversion rate from "Sender currency for one
  * bucks to equivalent value in the receivers currency" 
@@ -12,7 +13,7 @@ class ConversionRate
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $senderCurrency;
 
@@ -21,7 +22,7 @@ class ConversionRate
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $receiverCurrency;
 
@@ -30,7 +31,7 @@ class ConversionRate
 	 * @access public
 	 
 	 	 	 	 
-	 * @var double 	 
+	 * @var double	 
 	 */ 
 	public $exchangeRate;
 

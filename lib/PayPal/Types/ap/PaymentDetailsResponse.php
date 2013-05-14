@@ -1,5 +1,6 @@
 <?php 
-namespace paypalservice\types\ap;
+namespace PayPal\Types\AP;
+use PayPal\Core\PPMessage;
 /**
  * The details of the PayRequest as specified in the Pay
  * operation. 
@@ -12,7 +13,7 @@ class PaymentDetailsResponse
 	 * @access public
 	 
 	 	 	 	 
-	 * @var ResponseEnvelope 	 
+	 * @var paypalservice\Types\Common\ResponseEnvelope	 
 	 */ 
 	public $responseEnvelope;
 
@@ -21,7 +22,7 @@ class PaymentDetailsResponse
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $cancelUrl;
 
@@ -30,7 +31,7 @@ class PaymentDetailsResponse
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $currencyCode;
 
@@ -39,7 +40,7 @@ class PaymentDetailsResponse
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $ipnNotificationUrl;
 
@@ -48,7 +49,7 @@ class PaymentDetailsResponse
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $memo;
 
@@ -57,7 +58,7 @@ class PaymentDetailsResponse
 	 * @access public
 	 
 	 	 	 	 
-	 * @var PaymentInfoList 	 
+	 * @var paypalservice\Types\AP\PaymentInfoList	 
 	 */ 
 	public $paymentInfoList;
 
@@ -66,7 +67,7 @@ class PaymentDetailsResponse
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $returnUrl;
 
@@ -75,7 +76,7 @@ class PaymentDetailsResponse
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $senderEmail;
 
@@ -84,7 +85,7 @@ class PaymentDetailsResponse
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $status;
 
@@ -93,7 +94,7 @@ class PaymentDetailsResponse
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $trackingId;
 
@@ -102,7 +103,7 @@ class PaymentDetailsResponse
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $payKey;
 
@@ -111,7 +112,7 @@ class PaymentDetailsResponse
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $actionType;
 
@@ -120,7 +121,7 @@ class PaymentDetailsResponse
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $feesPayer;
 
@@ -129,7 +130,7 @@ class PaymentDetailsResponse
 	 * @access public
 	 
 	 	 	 	 
-	 * @var boolean 	 
+	 * @var boolean	 
 	 */ 
 	public $reverseAllParallelPaymentsOnError;
 
@@ -138,7 +139,7 @@ class PaymentDetailsResponse
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $preapprovalKey;
 
@@ -147,7 +148,7 @@ class PaymentDetailsResponse
 	 * @access public
 	 
 	 	 	 	 
-	 * @var FundingConstraint 	 
+	 * @var paypalservice\Types\AP\FundingConstraint	 
 	 */ 
 	public $fundingConstraint;
 
@@ -156,7 +157,7 @@ class PaymentDetailsResponse
 	 * @access public
 	 
 	 	 	 	 
-	 * @var SenderIdentifier 	 
+	 * @var paypalservice\Types\AP\SenderIdentifier	 
 	 */ 
 	public $sender;
 
@@ -166,7 +167,7 @@ class PaymentDetailsResponse
 	 * @access public
 	 
 	 	 	 	 
-	 * @var ErrorData 	 
+	 * @var paypalservice\Types\Common\ErrorData	 
 	 */ 
 	public $error;
 

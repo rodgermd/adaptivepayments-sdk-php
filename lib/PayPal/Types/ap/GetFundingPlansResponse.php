@@ -1,5 +1,6 @@
 <?php 
-namespace paypalservice\types\ap;
+namespace PayPal\Types\AP;
+use PayPal\Core\PPMessage;
 /**
  * The response to get the funding plans available for a
  * payment. 
@@ -12,7 +13,7 @@ class GetFundingPlansResponse
 	 * @access public
 	 
 	 	 	 	 
-	 * @var ResponseEnvelope 	 
+	 * @var paypalservice\Types\Common\ResponseEnvelope	 
 	 */ 
 	public $responseEnvelope;
 
@@ -22,7 +23,7 @@ class GetFundingPlansResponse
 	 * @access public
 	 
 	 	 	 	 
-	 * @var FundingPlan 	 
+	 * @var paypalservice\Types\AP\FundingPlan	 
 	 */ 
 	public $fundingPlan;
 
@@ -32,7 +33,7 @@ class GetFundingPlansResponse
 	 * @access public
 	 
 	 	 	 	 
-	 * @var ErrorData 	 
+	 * @var paypalservice\Types\Common\ErrorData	 
 	 */ 
 	public $error;
 

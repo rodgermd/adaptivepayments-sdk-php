@@ -1,5 +1,6 @@
 <?php 
-namespace paypalservice\types\ap;
+namespace PayPal\Types\AP;
+use PayPal\Core\PPMessage;
 /**
  * 
  */
@@ -12,7 +13,7 @@ class PostPaymentDisclosureList
 	 * @access public
 	 
 	 	 	 	 
-	 * @var PostPaymentDisclosure 	 
+	 * @var paypalservice\Types\AP\PostPaymentDisclosure	 
 	 */ 
 	public $postPaymentDisclosure;
 

@@ -1,5 +1,6 @@
 <?php 
-namespace paypalservice\types\ap;
+namespace PayPal\Types\AP;
+use PayPal\Core\PPMessage;
 /**
  * Receiver is the party where funds are transferred to. A
  * primary receiver receives a payment directly from the sender
@@ -14,7 +15,7 @@ class Receiver
 	 * @access public
 	 
 	 	 	 	 
-	 * @var double 	 
+	 * @var double	 
 	 */ 
 	public $amount;
 
@@ -23,7 +24,7 @@ class Receiver
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $email;
 
@@ -32,7 +33,7 @@ class Receiver
 	 * @access public
 	 
 	 	 	 	 
-	 * @var PhoneNumberType 	 
+	 * @var paypalservice\Types\Common\PhoneNumberType	 
 	 */ 
 	public $phone;
 
@@ -41,7 +42,7 @@ class Receiver
 	 * @access public
 	 
 	 	 	 	 
-	 * @var boolean 	 
+	 * @var boolean	 
 	 */ 
 	public $primary;
 
@@ -50,7 +51,7 @@ class Receiver
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $invoiceId;
 
@@ -59,7 +60,7 @@ class Receiver
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $paymentType;
 
@@ -68,7 +69,7 @@ class Receiver
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $paymentSubType;
 
@@ -77,7 +78,7 @@ class Receiver
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $accountId;
 

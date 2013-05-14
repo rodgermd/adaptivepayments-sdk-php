@@ -1,5 +1,6 @@
 <?php 
-namespace paypalservice\types\ap;
+namespace PayPal\Types\AP;
+use PayPal\Core\PPMessage;
 /**
  * The result of a payment execution. 
  */
@@ -11,7 +12,7 @@ class ExecutePaymentResponse
 	 * @access public
 	 
 	 	 	 	 
-	 * @var ResponseEnvelope 	 
+	 * @var paypalservice\Types\Common\ResponseEnvelope	 
 	 */ 
 	public $responseEnvelope;
 
@@ -20,7 +21,7 @@ class ExecutePaymentResponse
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $paymentExecStatus;
 
@@ -29,7 +30,7 @@ class ExecutePaymentResponse
 	 * @access public
 	 
 	 	 	 	 
-	 * @var PayErrorList 	 
+	 * @var paypalservice\Types\AP\PayErrorList	 
 	 */ 
 	public $payErrorList;
 
@@ -38,7 +39,7 @@ class ExecutePaymentResponse
 	 * @access public
 	 
 	 	 	 	 
-	 * @var PostPaymentDisclosureList 	 
+	 * @var paypalservice\Types\AP\PostPaymentDisclosureList	 
 	 */ 
 	public $postPaymentDisclosureList;
 
@@ -48,7 +49,7 @@ class ExecutePaymentResponse
 	 * @access public
 	 
 	 	 	 	 
-	 * @var ErrorData 	 
+	 * @var paypalservice\Types\Common\ErrorData	 
 	 */ 
 	public $error;
 

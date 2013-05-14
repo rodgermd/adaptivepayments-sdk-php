@@ -1,5 +1,6 @@
 <?php 
-namespace paypalservice\types\ap;
+namespace PayPal\Types\AP;
+use PayPal\Core\PPMessage;
 /**
  * Options that apply to the receiver of a payment, allows
  * setting additional details for payment using invoice. 
@@ -12,7 +13,7 @@ class ReceiverOptions
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $description;
 
@@ -21,7 +22,7 @@ class ReceiverOptions
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $customId;
 
@@ -30,7 +31,7 @@ class ReceiverOptions
 	 * @access public
 	 
 	 	 	 	 
-	 * @var InvoiceData 	 
+	 * @var paypalservice\Types\AP\InvoiceData	 
 	 */ 
 	public $invoiceData;
 
@@ -39,7 +40,7 @@ class ReceiverOptions
 	 * @access public
 	 
 	 	 	 	 
-	 * @var ReceiverIdentifier 	 
+	 * @var paypalservice\Types\AP\ReceiverIdentifier	 
 	 */ 
 	public $receiver;
 
@@ -48,7 +49,7 @@ class ReceiverOptions
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $referrerCode;
 

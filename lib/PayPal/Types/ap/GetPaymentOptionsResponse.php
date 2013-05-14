@@ -1,5 +1,6 @@
 <?php 
-namespace paypalservice\types\ap;
+namespace PayPal\Types\AP;
+use PayPal\Core\PPMessage;
 /**
  * The response message for the GetPaymentOption request 
  */
@@ -11,7 +12,7 @@ class GetPaymentOptionsResponse
 	 * @access public
 	 
 	 	 	 	 
-	 * @var ResponseEnvelope 	 
+	 * @var paypalservice\Types\Common\ResponseEnvelope	 
 	 */ 
 	public $responseEnvelope;
 
@@ -20,7 +21,7 @@ class GetPaymentOptionsResponse
 	 * @access public
 	 
 	 	 	 	 
-	 * @var InitiatingEntity 	 
+	 * @var paypalservice\Types\AP\InitiatingEntity	 
 	 */ 
 	public $initiatingEntity;
 
@@ -29,7 +30,7 @@ class GetPaymentOptionsResponse
 	 * @access public
 	 
 	 	 	 	 
-	 * @var DisplayOptions 	 
+	 * @var paypalservice\Types\AP\DisplayOptions	 
 	 */ 
 	public $displayOptions;
 
@@ -38,7 +39,7 @@ class GetPaymentOptionsResponse
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $shippingAddressId;
 
@@ -47,7 +48,7 @@ class GetPaymentOptionsResponse
 	 * @access public
 	 
 	 	 	 	 
-	 * @var SenderOptions 	 
+	 * @var paypalservice\Types\AP\SenderOptions	 
 	 */ 
 	public $senderOptions;
 
@@ -57,7 +58,7 @@ class GetPaymentOptionsResponse
 	 * @access public
 	 
 	 	 	 	 
-	 * @var ReceiverOptions 	 
+	 * @var paypalservice\Types\AP\ReceiverOptions	 
 	 */ 
 	public $receiverOptions;
 
@@ -67,7 +68,7 @@ class GetPaymentOptionsResponse
 	 * @access public
 	 
 	 	 	 	 
-	 * @var ErrorData 	 
+	 * @var paypalservice\Types\Common\ErrorData	 
 	 */ 
 	public $error;
 

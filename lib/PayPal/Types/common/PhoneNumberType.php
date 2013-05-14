@@ -1,5 +1,6 @@
 <?php 
-namespace paypalservice\types\common;
+namespace PayPal\Types\Common;
+use PayPal\Core\PPMessage;
 /**
  * 
  */
@@ -12,7 +13,7 @@ class PhoneNumberType
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $countryCode;
 
@@ -21,7 +22,7 @@ class PhoneNumberType
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $phoneNumber;
 
@@ -30,7 +31,7 @@ class PhoneNumberType
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $extension;
 

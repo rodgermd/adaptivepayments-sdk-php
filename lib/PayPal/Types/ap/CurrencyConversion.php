@@ -1,5 +1,6 @@
 <?php 
-namespace paypalservice\types\ap;
+namespace PayPal\Types\AP;
+use PayPal\Core\PPMessage;
 /**
  * Describes the conversion between 2 currencies. 
  */
@@ -11,7 +12,7 @@ class CurrencyConversion
 	 * @access public
 	 
 	 	 	 	 
-	 * @var CurrencyType 	 
+	 * @var paypalservice\Types\Common\CurrencyType	 
 	 */ 
 	public $from;
 
@@ -20,7 +21,7 @@ class CurrencyConversion
 	 * @access public
 	 
 	 	 	 	 
-	 * @var CurrencyType 	 
+	 * @var paypalservice\Types\Common\CurrencyType	 
 	 */ 
 	public $to;
 
@@ -29,7 +30,7 @@ class CurrencyConversion
 	 * @access public
 	 
 	 	 	 	 
-	 * @var double 	 
+	 * @var double	 
 	 */ 
 	public $exchangeRate;
 

@@ -1,5 +1,23 @@
 <?php 
-namespace paypalservice\services;
+namespace PayPal\Service;
+use PayPal\Core\PPMessage;
+use Types\AP\CancelPreapprovalResponse;
+use Types\AP\ConfirmPreapprovalResponse;
+use Types\AP\ConvertCurrencyResponse;
+use Types\AP\ExecutePaymentResponse;
+use Types\AP\GetAllowedFundingSourcesResponse;
+use Types\AP\GetPaymentOptionsResponse;
+use Types\AP\PaymentDetailsResponse;
+use Types\AP\PayResponse;
+use Types\AP\PreapprovalDetailsResponse;
+use Types\AP\PreapprovalResponse;
+use Types\AP\RefundResponse;
+use Types\AP\SetPaymentOptionsResponse;
+use Types\AP\GetFundingPlansResponse;
+use Types\AP\GetAvailableShippingAddressesResponse;
+use Types\AP\GetShippingAddressesResponse;
+use Types\AP\GetUserLimitsResponse;
+use Types\AP\GetPrePaymentDisclosureResponse;
 
 /**
  * AUTO GENERATED code for AdaptivePayments

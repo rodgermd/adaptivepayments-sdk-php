@@ -1,5 +1,6 @@
 <?php 
-namespace paypalservice\types\ap;
+namespace PayPal\Types\AP;
+use PayPal\Core\PPMessage;
 /**
  * RefundInfo represents the refund attempt made to a Receiver
  * of a PayRequest. 
@@ -12,7 +13,7 @@ class RefundInfo
 	 * @access public
 	 
 	 	 	 	 
-	 * @var Receiver 	 
+	 * @var paypalservice\Types\AP\Receiver	 
 	 */ 
 	public $receiver;
 
@@ -21,7 +22,7 @@ class RefundInfo
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $refundStatus;
 
@@ -30,7 +31,7 @@ class RefundInfo
 	 * @access public
 	 
 	 	 	 	 
-	 * @var double 	 
+	 * @var double	 
 	 */ 
 	public $refundNetAmount;
 
@@ -39,7 +40,7 @@ class RefundInfo
 	 * @access public
 	 
 	 	 	 	 
-	 * @var double 	 
+	 * @var double	 
 	 */ 
 	public $refundFeeAmount;
 
@@ -48,7 +49,7 @@ class RefundInfo
 	 * @access public
 	 
 	 	 	 	 
-	 * @var double 	 
+	 * @var double	 
 	 */ 
 	public $refundGrossAmount;
 
@@ -57,7 +58,7 @@ class RefundInfo
 	 * @access public
 	 
 	 	 	 	 
-	 * @var double 	 
+	 * @var double	 
 	 */ 
 	public $totalOfAllRefunds;
 
@@ -66,7 +67,7 @@ class RefundInfo
 	 * @access public
 	 
 	 	 	 	 
-	 * @var boolean 	 
+	 * @var boolean	 
 	 */ 
 	public $refundHasBecomeFull;
 
@@ -75,7 +76,7 @@ class RefundInfo
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $encryptedRefundTransactionId;
 
@@ -84,7 +85,7 @@ class RefundInfo
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $refundTransactionStatus;
 
@@ -93,7 +94,7 @@ class RefundInfo
 	 * @access public
 	 
 	 	 	 	 
-	 * @var ErrorList 	 
+	 * @var paypalservice\Types\AP\ErrorList	 
 	 */ 
 	public $errorList;
 

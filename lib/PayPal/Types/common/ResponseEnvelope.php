@@ -1,5 +1,6 @@
 <?php 
-namespace paypalservice\types\common;
+namespace PayPal\Types\Common;
+use PayPal\Core\PPMessage;
 /**
  * This specifies a list of parameters with every response from
  * a service. 
@@ -13,7 +14,7 @@ class ResponseEnvelope
 	 * @access public
 	 
 	 	 	 	 
-	 * @var dateTime 	 
+	 * @var dateTime	 
 	 */ 
 	public $timestamp;
 
@@ -31,7 +32,7 @@ class ResponseEnvelope
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $correlationId;
 
@@ -40,7 +41,7 @@ class ResponseEnvelope
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $build;
 

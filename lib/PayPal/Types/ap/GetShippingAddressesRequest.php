@@ -1,5 +1,6 @@
 <?php 
-namespace paypalservice\types\ap;
+namespace PayPal\Types\AP;
+use PayPal\Core\PPMessage;
 /**
  * The request to get the addresses available for a payment. 
  */
@@ -11,7 +12,7 @@ class GetShippingAddressesRequest
 	 * @access public
 	 
 	 	 	 	 
-	 * @var RequestEnvelope 	 
+	 * @var paypalservice\Types\Common\RequestEnvelope	 
 	 */ 
 	public $requestEnvelope;
 
@@ -22,7 +23,7 @@ class GetShippingAddressesRequest
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $key;
 

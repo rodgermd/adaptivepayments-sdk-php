@@ -1,5 +1,6 @@
 <?php 
-namespace paypalservice\types\common;
+namespace PayPal\Types\Common;
+use PayPal\Core\PPMessage;
 /**
  * @hasAttribute
  * 
@@ -15,7 +16,7 @@ class ErrorParameter
 	 
 	 * @attribute 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $name;
 
@@ -26,7 +27,7 @@ class ErrorParameter
 	 
 	 * @value
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $value;
 

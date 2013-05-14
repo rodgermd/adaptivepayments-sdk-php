@@ -1,5 +1,6 @@
 <?php 
-namespace paypalservice\types\ap;
+namespace PayPal\Types\AP;
+use PayPal\Core\PPMessage;
 /**
  * The request to set the options of a payment request. 
  */
@@ -11,7 +12,7 @@ class SetPaymentOptionsRequest
 	 * @access public
 	 
 	 	 	 	 
-	 * @var RequestEnvelope 	 
+	 * @var paypalservice\Types\Common\RequestEnvelope	 
 	 */ 
 	public $requestEnvelope;
 
@@ -20,7 +21,7 @@ class SetPaymentOptionsRequest
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $payKey;
 
@@ -29,7 +30,7 @@ class SetPaymentOptionsRequest
 	 * @access public
 	 
 	 	 	 	 
-	 * @var InitiatingEntity 	 
+	 * @var paypalservice\Types\AP\InitiatingEntity	 
 	 */ 
 	public $initiatingEntity;
 
@@ -38,7 +39,7 @@ class SetPaymentOptionsRequest
 	 * @access public
 	 
 	 	 	 	 
-	 * @var DisplayOptions 	 
+	 * @var paypalservice\Types\AP\DisplayOptions	 
 	 */ 
 	public $displayOptions;
 
@@ -47,7 +48,7 @@ class SetPaymentOptionsRequest
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $shippingAddressId;
 
@@ -56,7 +57,7 @@ class SetPaymentOptionsRequest
 	 * @access public
 	 
 	 	 	 	 
-	 * @var SenderOptions 	 
+	 * @var paypalservice\Types\AP\SenderOptions	 
 	 */ 
 	public $senderOptions;
 
@@ -66,7 +67,7 @@ class SetPaymentOptionsRequest
 	 * @access public
 	 
 	 	 	 	 
-	 * @var ReceiverOptions 	 
+	 * @var paypalservice\Types\AP\ReceiverOptions	 
 	 */ 
 	public $receiverOptions;
 

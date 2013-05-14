@@ -1,5 +1,6 @@
 <?php 
-namespace paypalservice\types\ap;
+namespace PayPal\Types\AP;
+use PayPal\Core\PPMessage;
 /**
  * The request to confirm a Preapproval. 
  */
@@ -11,7 +12,7 @@ class ConfirmPreapprovalRequest
 	 * @access public
 	 
 	 	 	 	 
-	 * @var RequestEnvelope 	 
+	 * @var paypalservice\Types\Common\RequestEnvelope	 
 	 */ 
 	public $requestEnvelope;
 
@@ -20,7 +21,7 @@ class ConfirmPreapprovalRequest
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $preapprovalKey;
 
@@ -29,7 +30,7 @@ class ConfirmPreapprovalRequest
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $fundingSourceId;
 
@@ -38,7 +39,7 @@ class ConfirmPreapprovalRequest
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $pin;
 

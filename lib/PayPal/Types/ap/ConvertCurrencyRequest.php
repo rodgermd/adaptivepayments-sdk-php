@@ -1,5 +1,6 @@
 <?php 
-namespace paypalservice\types\ap;
+namespace PayPal\Types\AP;
+use PayPal\Core\PPMessage;
 /**
  * A request to convert one or more currencies into their
  * estimated values in other currencies. 
@@ -12,7 +13,7 @@ class ConvertCurrencyRequest
 	 * @access public
 	 
 	 	 	 	 
-	 * @var RequestEnvelope 	 
+	 * @var paypalservice\Types\Common\RequestEnvelope	 
 	 */ 
 	public $requestEnvelope;
 
@@ -21,7 +22,7 @@ class ConvertCurrencyRequest
 	 * @access public
 	 
 	 	 	 	 
-	 * @var CurrencyList 	 
+	 * @var paypalservice\Types\AP\CurrencyList	 
 	 */ 
 	public $baseAmountList;
 
@@ -30,7 +31,7 @@ class ConvertCurrencyRequest
 	 * @access public
 	 
 	 	 	 	 
-	 * @var CurrencyCodeList 	 
+	 * @var paypalservice\Types\AP\CurrencyCodeList	 
 	 */ 
 	public $convertToCurrencyList;
 
@@ -40,7 +41,7 @@ class ConvertCurrencyRequest
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $countryCode;
 
@@ -49,7 +50,7 @@ class ConvertCurrencyRequest
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $conversionType;
 

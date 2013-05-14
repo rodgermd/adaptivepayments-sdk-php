@@ -1,5 +1,6 @@
 <?php 
-namespace paypalservice\types\ap;
+namespace PayPal\Types\AP;
+use PayPal\Core\PPMessage;
 /**
  * GetPrePaymentDisclosureRequest is used to get the PrePayment
  * Disclosure.; GetPrePaymentDisclosureRequest contains
@@ -22,7 +23,7 @@ class GetPrePaymentDisclosureRequest
 	 * @access public
 	 
 	 	 	 	 
-	 * @var RequestEnvelope 	 
+	 * @var paypalservice\Types\Common\RequestEnvelope	 
 	 */ 
 	public $requestEnvelope;
 
@@ -31,7 +32,7 @@ class GetPrePaymentDisclosureRequest
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $payKey;
 
@@ -40,7 +41,7 @@ class GetPrePaymentDisclosureRequest
 	 * @access public
 	 
 	 	 	 	 
-	 * @var ReceiverInfoList 	 
+	 * @var paypalservice\Types\AP\ReceiverInfoList	 
 	 */ 
 	public $receiverInfoList;
 

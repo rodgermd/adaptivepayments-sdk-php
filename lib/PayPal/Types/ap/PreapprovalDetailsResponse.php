@@ -1,5 +1,6 @@
 <?php 
-namespace paypalservice\types\ap;
+namespace PayPal\Types\AP;
+use PayPal\Core\PPMessage;
 /**
  * The details of the Preapproval as specified in the
  * Preapproval operation. 
@@ -12,7 +13,7 @@ class PreapprovalDetailsResponse
 	 * @access public
 	 
 	 	 	 	 
-	 * @var ResponseEnvelope 	 
+	 * @var paypalservice\Types\Common\ResponseEnvelope	 
 	 */ 
 	public $responseEnvelope;
 
@@ -21,7 +22,7 @@ class PreapprovalDetailsResponse
 	 * @access public
 	 
 	 	 	 	 
-	 * @var boolean 	 
+	 * @var boolean	 
 	 */ 
 	public $approved;
 
@@ -30,7 +31,7 @@ class PreapprovalDetailsResponse
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $cancelUrl;
 
@@ -39,7 +40,7 @@ class PreapprovalDetailsResponse
 	 * @access public
 	 
 	 	 	 	 
-	 * @var integer 	 
+	 * @var integer	 
 	 */ 
 	public $curPayments;
 
@@ -48,7 +49,7 @@ class PreapprovalDetailsResponse
 	 * @access public
 	 
 	 	 	 	 
-	 * @var double 	 
+	 * @var double	 
 	 */ 
 	public $curPaymentsAmount;
 
@@ -57,7 +58,7 @@ class PreapprovalDetailsResponse
 	 * @access public
 	 
 	 	 	 	 
-	 * @var integer 	 
+	 * @var integer	 
 	 */ 
 	public $curPeriodAttempts;
 
@@ -66,7 +67,7 @@ class PreapprovalDetailsResponse
 	 * @access public
 	 
 	 	 	 	 
-	 * @var dateTime 	 
+	 * @var dateTime	 
 	 */ 
 	public $curPeriodEndingDate;
 
@@ -75,7 +76,7 @@ class PreapprovalDetailsResponse
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $currencyCode;
 
@@ -84,7 +85,7 @@ class PreapprovalDetailsResponse
 	 * @access public
 	 
 	 	 	 	 
-	 * @var integer 	 
+	 * @var integer	 
 	 */ 
 	public $dateOfMonth;
 
@@ -102,7 +103,7 @@ class PreapprovalDetailsResponse
 	 * @access public
 	 
 	 	 	 	 
-	 * @var dateTime 	 
+	 * @var dateTime	 
 	 */ 
 	public $endingDate;
 
@@ -111,7 +112,7 @@ class PreapprovalDetailsResponse
 	 * @access public
 	 
 	 	 	 	 
-	 * @var double 	 
+	 * @var double	 
 	 */ 
 	public $maxAmountPerPayment;
 
@@ -120,7 +121,7 @@ class PreapprovalDetailsResponse
 	 * @access public
 	 
 	 	 	 	 
-	 * @var integer 	 
+	 * @var integer	 
 	 */ 
 	public $maxNumberOfPayments;
 
@@ -129,7 +130,7 @@ class PreapprovalDetailsResponse
 	 * @access public
 	 
 	 	 	 	 
-	 * @var integer 	 
+	 * @var integer	 
 	 */ 
 	public $maxNumberOfPaymentsPerPeriod;
 
@@ -138,7 +139,7 @@ class PreapprovalDetailsResponse
 	 * @access public
 	 
 	 	 	 	 
-	 * @var double 	 
+	 * @var double	 
 	 */ 
 	public $maxTotalAmountOfAllPayments;
 
@@ -147,7 +148,7 @@ class PreapprovalDetailsResponse
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $paymentPeriod;
 
@@ -156,7 +157,7 @@ class PreapprovalDetailsResponse
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $pinType;
 
@@ -165,7 +166,7 @@ class PreapprovalDetailsResponse
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $returnUrl;
 
@@ -174,7 +175,7 @@ class PreapprovalDetailsResponse
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $senderEmail;
 
@@ -183,7 +184,7 @@ class PreapprovalDetailsResponse
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $memo;
 
@@ -192,7 +193,7 @@ class PreapprovalDetailsResponse
 	 * @access public
 	 
 	 	 	 	 
-	 * @var dateTime 	 
+	 * @var dateTime	 
 	 */ 
 	public $startingDate;
 
@@ -201,7 +202,7 @@ class PreapprovalDetailsResponse
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $status;
 
@@ -210,7 +211,7 @@ class PreapprovalDetailsResponse
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $ipnNotificationUrl;
 
@@ -219,7 +220,7 @@ class PreapprovalDetailsResponse
 	 * @access public
 	 
 	 	 	 	 
-	 * @var AddressList 	 
+	 * @var paypalservice\Types\AP\AddressList	 
 	 */ 
 	public $addressList;
 
@@ -228,7 +229,7 @@ class PreapprovalDetailsResponse
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $feesPayer;
 
@@ -237,7 +238,7 @@ class PreapprovalDetailsResponse
 	 * @access public
 	 
 	 	 	 	 
-	 * @var boolean 	 
+	 * @var boolean	 
 	 */ 
 	public $displayMaxTotalAmount;
 
@@ -246,7 +247,7 @@ class PreapprovalDetailsResponse
 	 * @access public
 	 
 	 	 	 	 
-	 * @var SenderIdentifier 	 
+	 * @var paypalservice\Types\AP\SenderIdentifier	 
 	 */ 
 	public $sender;
 
@@ -256,7 +257,7 @@ class PreapprovalDetailsResponse
 	 * @access public
 	 
 	 	 	 	 
-	 * @var ErrorData 	 
+	 * @var paypalservice\Types\Common\ErrorData	 
 	 */ 
 	public $error;
 

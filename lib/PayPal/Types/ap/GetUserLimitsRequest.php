@@ -1,5 +1,6 @@
 <?php 
-namespace paypalservice\types\ap;
+namespace PayPal\Types\AP;
+use PayPal\Core\PPMessage;
 /**
  * The request to get the remaining limits for a user 
  */
@@ -11,7 +12,7 @@ class GetUserLimitsRequest
 	 * @access public
 	 
 	 	 	 	 
-	 * @var RequestEnvelope 	 
+	 * @var paypalservice\Types\Common\RequestEnvelope	 
 	 */ 
 	public $requestEnvelope;
 
@@ -20,7 +21,7 @@ class GetUserLimitsRequest
 	 * @access public
 	 
 	 	 	 	 
-	 * @var AccountIdentifier 	 
+	 * @var paypalservice\Types\Common\AccountIdentifier	 
 	 */ 
 	public $user;
 
@@ -29,7 +30,7 @@ class GetUserLimitsRequest
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $country;
 
@@ -38,7 +39,7 @@ class GetUserLimitsRequest
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $currencyCode;
 
@@ -48,7 +49,7 @@ class GetUserLimitsRequest
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $limitType;
 

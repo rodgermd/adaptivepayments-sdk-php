@@ -1,5 +1,6 @@
 <?php 
-namespace paypalservice\types\ap;
+namespace PayPal\Types\AP;
+use PayPal\Core\PPMessage;
 /**
  * The PayRequest contains the payment instructions to make
  * from sender to receivers. 
@@ -12,7 +13,7 @@ class PayRequest
 	 * @access public
 	 
 	 	 	 	 
-	 * @var RequestEnvelope 	 
+	 * @var paypalservice\Types\Common\RequestEnvelope	 
 	 */ 
 	public $requestEnvelope;
 
@@ -21,7 +22,7 @@ class PayRequest
 	 * @access public
 	 
 	 	 	 	 
-	 * @var ClientDetailsType 	 
+	 * @var paypalservice\Types\Common\ClientDetailsType	 
 	 */ 
 	public $clientDetails;
 
@@ -30,7 +31,7 @@ class PayRequest
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $actionType;
 
@@ -39,7 +40,7 @@ class PayRequest
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $cancelUrl;
 
@@ -48,7 +49,7 @@ class PayRequest
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $currencyCode;
 
@@ -57,7 +58,7 @@ class PayRequest
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $feesPayer;
 
@@ -66,7 +67,7 @@ class PayRequest
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $ipnNotificationUrl;
 
@@ -75,7 +76,7 @@ class PayRequest
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $memo;
 
@@ -84,7 +85,7 @@ class PayRequest
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $pin;
 
@@ -93,7 +94,7 @@ class PayRequest
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $preapprovalKey;
 
@@ -102,7 +103,7 @@ class PayRequest
 	 * @access public
 	 
 	 	 	 	 
-	 * @var ReceiverList 	 
+	 * @var paypalservice\Types\AP\ReceiverList	 
 	 */ 
 	public $receiverList;
 
@@ -111,7 +112,7 @@ class PayRequest
 	 * @access public
 	 
 	 	 	 	 
-	 * @var boolean 	 
+	 * @var boolean	 
 	 */ 
 	public $reverseAllParallelPaymentsOnError;
 
@@ -120,7 +121,7 @@ class PayRequest
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $senderEmail;
 
@@ -129,7 +130,7 @@ class PayRequest
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $returnUrl;
 
@@ -138,7 +139,7 @@ class PayRequest
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $trackingId;
 
@@ -147,7 +148,7 @@ class PayRequest
 	 * @access public
 	 
 	 	 	 	 
-	 * @var FundingConstraint 	 
+	 * @var paypalservice\Types\AP\FundingConstraint	 
 	 */ 
 	public $fundingConstraint;
 
@@ -156,7 +157,7 @@ class PayRequest
 	 * @access public
 	 
 	 	 	 	 
-	 * @var SenderIdentifier 	 
+	 * @var paypalservice\Types\AP\SenderIdentifier	 
 	 */ 
 	public $sender;
 

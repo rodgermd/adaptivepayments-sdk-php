@@ -1,5 +1,6 @@
 <?php 
-namespace paypalservice\types\ap;
+namespace PayPal\Types\AP;
+use PayPal\Core\PPMessage;
 /**
  * This type contains the detailed warning information
  * resulting from the service operation. 
@@ -12,7 +13,7 @@ class WarningData
 	 * @access public
 	 
 	 	 	 	 
-	 * @var integer 	 
+	 * @var integer	 
 	 */ 
 	public $warningId;
 
@@ -21,7 +22,7 @@ class WarningData
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $message;
 

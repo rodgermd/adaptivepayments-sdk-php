@@ -1,5 +1,6 @@
 <?php 
-namespace paypalservice\types\ap;
+namespace PayPal\Types\AP;
+use PayPal\Core\PPMessage;
 /**
  * Options that apply to the sender of a payment. 
  */
@@ -12,7 +13,7 @@ class SenderOptions
 	 * @access public
 	 
 	 	 	 	 
-	 * @var boolean 	 
+	 * @var boolean	 
 	 */ 
 	public $requireShippingAddressSelection;
 
@@ -21,7 +22,7 @@ class SenderOptions
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $referrerCode;
 

@@ -1,5 +1,6 @@
 <?php 
-namespace paypalservice\types\ap;
+namespace PayPal\Types\AP;
+use PayPal\Core\PPMessage;
 /**
  * ReceiverDisclosure contains the disclosure related to
  * Receiver/Receivers. 
@@ -12,7 +13,7 @@ class ReceiverDisclosure
 	 * @access public
 	 
 	 	 	 	 
-	 * @var AccountIdentifier 	 
+	 * @var paypalservice\Types\Common\AccountIdentifier	 
 	 */ 
 	public $accountIdentifier;
 
@@ -21,7 +22,7 @@ class ReceiverDisclosure
 	 * @access public
 	 
 	 	 	 	 
-	 * @var CurrencyType 	 
+	 * @var paypalservice\Types\Common\CurrencyType	 
 	 */ 
 	public $amountReceivedFromSender;
 
@@ -31,7 +32,7 @@ class ReceiverDisclosure
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $countryCode;
 
@@ -40,7 +41,7 @@ class ReceiverDisclosure
 	 * @access public
 	 
 	 	 	 	 
-	 * @var ConversionRate 	 
+	 * @var paypalservice\Types\AP\ConversionRate	 
 	 */ 
 	public $conversionRate;
 
@@ -49,7 +50,7 @@ class ReceiverDisclosure
 	 * @access public
 	 
 	 	 	 	 
-	 * @var FeeDisclosure 	 
+	 * @var paypalservice\Types\AP\FeeDisclosure	 
 	 */ 
 	public $feeDisclosure;
 
@@ -58,7 +59,7 @@ class ReceiverDisclosure
 	 * @access public
 	 
 	 	 	 	 
-	 * @var CurrencyType 	 
+	 * @var paypalservice\Types\Common\CurrencyType	 
 	 */ 
 	public $totalAmountReceived;
 

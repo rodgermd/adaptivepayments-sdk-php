@@ -1,5 +1,6 @@
 <?php 
-namespace paypalservice\types\ap;
+namespace PayPal\Types\AP;
+use PayPal\Core\PPMessage;
 /**
  * Contains information related to Post Payment Disclosure
  * Details This contains 1.Receivers information 2.Funds
@@ -13,7 +14,7 @@ class PostPaymentDisclosure
 	 * @access public
 	 
 	 	 	 	 
-	 * @var AccountIdentifier 	 
+	 * @var paypalservice\Types\Common\AccountIdentifier	 
 	 */ 
 	public $accountIdentifier;
 
@@ -22,7 +23,7 @@ class PostPaymentDisclosure
 	 * @access public
 	 
 	 	 	 	 
-	 * @var date 	 
+	 * @var date	 
 	 */ 
 	public $fundsAvailabilityDate;
 
@@ -31,7 +32,7 @@ class PostPaymentDisclosure
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $fundsAvailabilityDateDisclaimerText;
 

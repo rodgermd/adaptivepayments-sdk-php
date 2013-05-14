@@ -1,5 +1,6 @@
 <?php 
-namespace paypalservice\types\ap;
+namespace PayPal\Types\AP;
+use PayPal\Core\PPMessage;
 /**
  * Funding source information. 
  */
@@ -11,7 +12,7 @@ class FundingSource
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $lastFourOfAccountNumber;
 
@@ -20,7 +21,7 @@ class FundingSource
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $type;
 
@@ -29,7 +30,7 @@ class FundingSource
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $displayName;
 
@@ -38,7 +39,7 @@ class FundingSource
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $fundingSourceId;
 
@@ -47,7 +48,7 @@ class FundingSource
 	 * @access public
 	 
 	 	 	 	 
-	 * @var boolean 	 
+	 * @var boolean	 
 	 */ 
 	public $allowed;
 

@@ -1,5 +1,6 @@
 <?php 
-namespace paypalservice\types\ap;
+namespace PayPal\Types\AP;
+use PayPal\Core\PPMessage;
 /**
  * 
  */
@@ -12,7 +13,7 @@ class FundingTypeList
 	 * @access public
 	 
 	 	 	 	 
-	 * @var FundingTypeInfo 	 
+	 * @var paypalservice\Types\AP\FundingTypeInfo	 
 	 */ 
 	public $fundingTypeInfo;
 

@@ -1,5 +1,6 @@
 <?php 
-namespace paypalservice\types\ap;
+namespace PayPal\Types\AP;
+use PayPal\Core\PPMessage;
 /**
  * A request to create a Preapproval. A Preapproval is an
  * agreement between a Paypal account holder (the sender) and
@@ -14,7 +15,7 @@ class PreapprovalRequest
 	 * @access public
 	 
 	 	 	 	 
-	 * @var RequestEnvelope 	 
+	 * @var paypalservice\Types\Common\RequestEnvelope	 
 	 */ 
 	public $requestEnvelope;
 
@@ -23,7 +24,7 @@ class PreapprovalRequest
 	 * @access public
 	 
 	 	 	 	 
-	 * @var ClientDetailsType 	 
+	 * @var paypalservice\Types\Common\ClientDetailsType	 
 	 */ 
 	public $clientDetails;
 
@@ -32,7 +33,7 @@ class PreapprovalRequest
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $cancelUrl;
 
@@ -41,7 +42,7 @@ class PreapprovalRequest
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $currencyCode;
 
@@ -50,7 +51,7 @@ class PreapprovalRequest
 	 * @access public
 	 
 	 	 	 	 
-	 * @var integer 	 
+	 * @var integer	 
 	 */ 
 	public $dateOfMonth;
 
@@ -68,7 +69,7 @@ class PreapprovalRequest
 	 * @access public
 	 
 	 	 	 	 
-	 * @var dateTime 	 
+	 * @var dateTime	 
 	 */ 
 	public $endingDate;
 
@@ -77,7 +78,7 @@ class PreapprovalRequest
 	 * @access public
 	 
 	 	 	 	 
-	 * @var double 	 
+	 * @var double	 
 	 */ 
 	public $maxAmountPerPayment;
 
@@ -86,7 +87,7 @@ class PreapprovalRequest
 	 * @access public
 	 
 	 	 	 	 
-	 * @var integer 	 
+	 * @var integer	 
 	 */ 
 	public $maxNumberOfPayments;
 
@@ -95,7 +96,7 @@ class PreapprovalRequest
 	 * @access public
 	 
 	 	 	 	 
-	 * @var integer 	 
+	 * @var integer	 
 	 */ 
 	public $maxNumberOfPaymentsPerPeriod;
 
@@ -104,7 +105,7 @@ class PreapprovalRequest
 	 * @access public
 	 
 	 	 	 	 
-	 * @var double 	 
+	 * @var double	 
 	 */ 
 	public $maxTotalAmountOfAllPayments;
 
@@ -113,7 +114,7 @@ class PreapprovalRequest
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $paymentPeriod;
 
@@ -122,7 +123,7 @@ class PreapprovalRequest
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $returnUrl;
 
@@ -131,7 +132,7 @@ class PreapprovalRequest
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $memo;
 
@@ -140,7 +141,7 @@ class PreapprovalRequest
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $ipnNotificationUrl;
 
@@ -149,7 +150,7 @@ class PreapprovalRequest
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $senderEmail;
 
@@ -158,7 +159,7 @@ class PreapprovalRequest
 	 * @access public
 	 
 	 	 	 	 
-	 * @var dateTime 	 
+	 * @var dateTime	 
 	 */ 
 	public $startingDate;
 
@@ -167,7 +168,7 @@ class PreapprovalRequest
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $pinType;
 
@@ -176,7 +177,7 @@ class PreapprovalRequest
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $feesPayer;
 
@@ -185,7 +186,7 @@ class PreapprovalRequest
 	 * @access public
 	 
 	 	 	 	 
-	 * @var boolean 	 
+	 * @var boolean	 
 	 */ 
 	public $displayMaxTotalAmount;
 
@@ -194,7 +195,7 @@ class PreapprovalRequest
 	 * @access public
 	 
 	 	 	 	 
-	 * @var boolean 	 
+	 * @var boolean	 
 	 */ 
 	public $requireInstantFundingSource;
 
@@ -203,7 +204,7 @@ class PreapprovalRequest
 	 * @access public
 	 
 	 	 	 	 
-	 * @var SenderIdentifier 	 
+	 * @var paypalservice\Types\AP\SenderIdentifier	 
 	 */ 
 	public $sender;
 

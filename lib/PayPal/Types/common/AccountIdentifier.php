@@ -1,5 +1,6 @@
 <?php 
-namespace paypalservice\types\common;
+namespace PayPal\Types\Common;
+use PayPal\Core\PPMessage;
 /**
  * 
  */
@@ -12,7 +13,7 @@ class AccountIdentifier
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $email;
 
@@ -21,7 +22,7 @@ class AccountIdentifier
 	 * @access public
 	 
 	 	 	 	 
-	 * @var PhoneNumberType 	 
+	 * @var paypalservice\Types\Common\PhoneNumberType	 
 	 */ 
 	public $phone;
 
@@ -30,7 +31,7 @@ class AccountIdentifier
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $accountId;
 

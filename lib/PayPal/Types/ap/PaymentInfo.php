@@ -1,5 +1,6 @@
 <?php 
-namespace paypalservice\types\ap;
+namespace PayPal\Types\AP;
+use PayPal\Core\PPMessage;
 /**
  * PaymentInfo represents the payment attempt made to a
  * Receiver of a PayRequest. If the execution of the payment
@@ -14,7 +15,7 @@ class PaymentInfo
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $transactionId;
 
@@ -23,7 +24,7 @@ class PaymentInfo
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $transactionStatus;
 
@@ -32,7 +33,7 @@ class PaymentInfo
 	 * @access public
 	 
 	 	 	 	 
-	 * @var Receiver 	 
+	 * @var paypalservice\Types\AP\Receiver	 
 	 */ 
 	public $receiver;
 
@@ -41,7 +42,7 @@ class PaymentInfo
 	 * @access public
 	 
 	 	 	 	 
-	 * @var double 	 
+	 * @var double	 
 	 */ 
 	public $refundedAmount;
 
@@ -50,7 +51,7 @@ class PaymentInfo
 	 * @access public
 	 
 	 	 	 	 
-	 * @var boolean 	 
+	 * @var boolean	 
 	 */ 
 	public $pendingRefund;
 
@@ -59,7 +60,7 @@ class PaymentInfo
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $senderTransactionId;
 
@@ -68,7 +69,7 @@ class PaymentInfo
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $senderTransactionStatus;
 
@@ -77,7 +78,7 @@ class PaymentInfo
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $pendingReason;
 

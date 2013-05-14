@@ -1,5 +1,6 @@
 <?php 
-namespace paypalservice\types\common;
+namespace PayPal\Types\Common;
+use PayPal\Core\PPMessage;
 /**
  * This type contains the detailed error information resulting
  * from the service operation. 
@@ -13,7 +14,7 @@ class ErrorData
 	 * @access public
 	 
 	 	 	 	 
-	 * @var integer 	 
+	 * @var integer	 
 	 */ 
 	public $errorId;
 
@@ -22,7 +23,7 @@ class ErrorData
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $domain;
 
@@ -31,7 +32,7 @@ class ErrorData
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $subdomain;
 
@@ -58,7 +59,7 @@ class ErrorData
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $message;
 
@@ -67,7 +68,7 @@ class ErrorData
 	 * @access public
 	 
 	 	 	 	 
-	 * @var string 	 
+	 * @var string	 
 	 */ 
 	public $exceptionId;
 
@@ -77,7 +78,7 @@ class ErrorData
 	 * @access public
 	 
 	 	 	 	 
-	 * @var ErrorParameter 	 
+	 * @var paypalservice\Types\Common\ErrorParameter	 
 	 */ 
 	public $parameter;
 

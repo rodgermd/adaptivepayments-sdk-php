@@ -1,5 +1,6 @@
 <?php 
-namespace paypalservice\types\ap;
+namespace PayPal\Types\AP;
+use PayPal\Core\PPMessage;
 /**
  * The response to get the backup funding sources available for
  * a preapproval. 
@@ -12,7 +13,7 @@ class GetAllowedFundingSourcesResponse
 	 * @access public
 	 
 	 	 	 	 
-	 * @var ResponseEnvelope 	 
+	 * @var paypalservice\Types\Common\ResponseEnvelope	 
 	 */ 
 	public $responseEnvelope;
 
@@ -22,7 +23,7 @@ class GetAllowedFundingSourcesResponse
 	 * @access public
 	 
 	 	 	 	 
-	 * @var FundingSource 	 
+	 * @var paypalservice\Types\AP\FundingSource	 
 	 */ 
 	public $fundingSource;
 
@@ -32,7 +33,7 @@ class GetAllowedFundingSourcesResponse
 	 * @access public
 	 
 	 	 	 	 
-	 * @var ErrorData 	 
+	 * @var paypalservice\Types\Common\ErrorData	 
 	 */ 
 	public $error;
 

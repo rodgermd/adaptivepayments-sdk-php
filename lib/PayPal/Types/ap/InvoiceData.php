@@ -1,5 +1,6 @@
 <?php 
-namespace paypalservice\types\ap;
+namespace PayPal\Types\AP;
+use PayPal\Core\PPMessage;
 /**
  * Describes a payment for a particular receiver (merchant),
  * contains list of additional per item details. 
@@ -13,7 +14,7 @@ class InvoiceData
 	 * @access public
 	 
 	 	 	 	 
-	 * @var InvoiceItem 	 
+	 * @var paypalservice\Types\AP\InvoiceItem	 
 	 */ 
 	public $item;
 
@@ -22,7 +23,7 @@ class InvoiceData
 	 * @access public
 	 
 	 	 	 	 
-	 * @var double 	 
+	 * @var double	 
 	 */ 
 	public $totalTax;
 
@@ -31,7 +32,7 @@ class InvoiceData
 	 * @access public
 	 
 	 	 	 	 
-	 * @var double 	 
+	 * @var double	 
 	 */ 
 	public $totalShipping;
 
