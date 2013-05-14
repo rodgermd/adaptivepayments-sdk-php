@@ -12,7 +12,7 @@ class SetPaymentOptionsRequest
 	 * @access public
 	 
 	 	 	 	 
-	 * @var paypalservice\Types\Common\RequestEnvelope	 
+	 * @var PayPal\Types\Common\RequestEnvelope	 
 	 */ 
 	public $requestEnvelope;
 
@@ -30,7 +30,7 @@ class SetPaymentOptionsRequest
 	 * @access public
 	 
 	 	 	 	 
-	 * @var paypalservice\Types\AP\InitiatingEntity	 
+	 * @var PayPal\Types\AP\InitiatingEntity	 
 	 */ 
 	public $initiatingEntity;
 
@@ -39,7 +39,7 @@ class SetPaymentOptionsRequest
 	 * @access public
 	 
 	 	 	 	 
-	 * @var paypalservice\Types\AP\DisplayOptions	 
+	 * @var PayPal\Types\AP\DisplayOptions	 
 	 */ 
 	public $displayOptions;
 
@@ -57,7 +57,7 @@ class SetPaymentOptionsRequest
 	 * @access public
 	 
 	 	 	 	 
-	 * @var paypalservice\Types\AP\SenderOptions	 
+	 * @var PayPal\Types\AP\SenderOptions	 
 	 */ 
 	public $senderOptions;
 
@@ -67,7 +67,7 @@ class SetPaymentOptionsRequest
 	 * @access public
 	 
 	 	 	 	 
-	 * @var paypalservice\Types\AP\ReceiverOptions	 
+	 * @var PayPal\Types\AP\ReceiverOptions	 
 	 */ 
 	public $receiverOptions;
 

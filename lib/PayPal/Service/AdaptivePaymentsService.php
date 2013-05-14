@@ -1,23 +1,25 @@
 <?php 
 namespace PayPal\Service;
 use PayPal\Core\PPMessage;
-use Types\AP\CancelPreapprovalResponse;
-use Types\AP\ConfirmPreapprovalResponse;
-use Types\AP\ConvertCurrencyResponse;
-use Types\AP\ExecutePaymentResponse;
-use Types\AP\GetAllowedFundingSourcesResponse;
-use Types\AP\GetPaymentOptionsResponse;
-use Types\AP\PaymentDetailsResponse;
-use Types\AP\PayResponse;
-use Types\AP\PreapprovalDetailsResponse;
-use Types\AP\PreapprovalResponse;
-use Types\AP\RefundResponse;
-use Types\AP\SetPaymentOptionsResponse;
-use Types\AP\GetFundingPlansResponse;
-use Types\AP\GetAvailableShippingAddressesResponse;
-use Types\AP\GetShippingAddressesResponse;
-use Types\AP\GetUserLimitsResponse;
-use Types\AP\GetPrePaymentDisclosureResponse;
+use PayPal\Core\PPBaseService;
+use PayPal\Core\PPUtils;
+use PayPal\Types\AP\CancelPreapprovalResponse;
+use PayPal\Types\AP\ConfirmPreapprovalResponse;
+use PayPal\Types\AP\ConvertCurrencyResponse;
+use PayPal\Types\AP\ExecutePaymentResponse;
+use PayPal\Types\AP\GetAllowedFundingSourcesResponse;
+use PayPal\Types\AP\GetPaymentOptionsResponse;
+use PayPal\Types\AP\PaymentDetailsResponse;
+use PayPal\Types\AP\PayResponse;
+use PayPal\Types\AP\PreapprovalDetailsResponse;
+use PayPal\Types\AP\PreapprovalResponse;
+use PayPal\Types\AP\RefundResponse;
+use PayPal\Types\AP\SetPaymentOptionsResponse;
+use PayPal\Types\AP\GetFundingPlansResponse;
+use PayPal\Types\AP\GetAvailableShippingAddressesResponse;
+use PayPal\Types\AP\GetShippingAddressesResponse;
+use PayPal\Types\AP\GetUserLimitsResponse;
+use PayPal\Types\AP\GetPrePaymentDisclosureResponse;
 
 /**
  * AUTO GENERATED code for AdaptivePayments
@@ -37,7 +39,7 @@ class AdaptivePaymentsService extends PPBaseService {
 	protected static $SDK_VERSION = "sdkversion";
 
 	public function __construct($config = null) {
-		parent::__construct(self::$SERVICE_NAME, 'NV', array('PPPlatformServiceHandler'), $config);
+		parent::__construct(self::$SERVICE_NAME, 'NV', array('PayPal\Handler\PPPlatformServiceHandler'), $config);
         parent::$SDK_NAME    = self::$SDK_NAME ;
         parent::$SDK_VERSION = self::$SDK_VERSION;
 	}

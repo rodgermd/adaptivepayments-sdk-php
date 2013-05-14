@@ -13,7 +13,7 @@ class CurrencyConversionList
 	 * @access public
 	 
 	 	 	 	 
-	 * @var paypalservice\Types\Common\CurrencyType	 
+	 * @var PayPal\Types\Common\CurrencyType	 
 	 */ 
 	public $baseAmount;
 
@@ -22,7 +22,7 @@ class CurrencyConversionList
 	 * @access public
 	 
 	 	 	 	 
-	 * @var paypalservice\Types\AP\CurrencyList	 
+	 * @var PayPal\Types\AP\CurrencyList	 
 	 */ 
 	public $currencyList;
 

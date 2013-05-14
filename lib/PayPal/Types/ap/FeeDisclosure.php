@@ -13,7 +13,7 @@ class FeeDisclosure
 	 * @access public
 	 
 	 	 	 	 
-	 * @var paypalservice\Types\Common\CurrencyType	 
+	 * @var PayPal\Types\Common\CurrencyType	 
 	 */ 
 	public $fee;
 
@@ -22,7 +22,7 @@ class FeeDisclosure
 	 * @access public
 	 
 	 	 	 	 
-	 * @var paypalservice\Types\Common\CurrencyType	 
+	 * @var PayPal\Types\Common\CurrencyType	 
 	 */ 
 	public $taxes;
 

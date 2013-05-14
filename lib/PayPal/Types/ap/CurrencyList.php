@@ -13,7 +13,7 @@ class CurrencyList
 	 * @access public
 	 
 	 	 	 	 
-	 * @var paypalservice\Types\Common\CurrencyType	 
+	 * @var PayPal\Types\Common\CurrencyType	 
 	 */ 
 	public $currency;
 

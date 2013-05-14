@@ -14,7 +14,7 @@ class PayResponse
 	 * @access public
 	 
 	 	 	 	 
-	 * @var paypalservice\Types\Common\ResponseEnvelope	 
+	 * @var PayPal\Types\Common\ResponseEnvelope	 
 	 */ 
 	public $responseEnvelope;
 
@@ -41,7 +41,7 @@ class PayResponse
 	 * @access public
 	 
 	 	 	 	 
-	 * @var paypalservice\Types\AP\PayErrorList	 
+	 * @var PayPal\Types\AP\PayErrorList	 
 	 */ 
 	public $payErrorList;
 
@@ -50,7 +50,7 @@ class PayResponse
 	 * @access public
 	 
 	 	 	 	 
-	 * @var paypalservice\Types\AP\PaymentInfoList	 
+	 * @var PayPal\Types\AP\PaymentInfoList	 
 	 */ 
 	public $paymentInfoList;
 
@@ -59,7 +59,7 @@ class PayResponse
 	 * @access public
 	 
 	 	 	 	 
-	 * @var paypalservice\Types\AP\SenderIdentifier	 
+	 * @var PayPal\Types\AP\SenderIdentifier	 
 	 */ 
 	public $sender;
 
@@ -68,7 +68,7 @@ class PayResponse
 	 * @access public
 	 
 	 	 	 	 
-	 * @var paypalservice\Types\AP\FundingPlan	 
+	 * @var PayPal\Types\AP\FundingPlan	 
 	 */ 
 	public $defaultFundingPlan;
 
@@ -77,7 +77,7 @@ class PayResponse
 	 * @access public
 	 
 	 	 	 	 
-	 * @var paypalservice\Types\AP\WarningDataList	 
+	 * @var PayPal\Types\AP\WarningDataList	 
 	 */ 
 	public $warningDataList;
 
@@ -87,7 +87,7 @@ class PayResponse
 	 * @access public
 	 
 	 	 	 	 
-	 * @var paypalservice\Types\Common\ErrorData	 
+	 * @var PayPal\Types\Common\ErrorData	 
 	 */ 
 	public $error;
 

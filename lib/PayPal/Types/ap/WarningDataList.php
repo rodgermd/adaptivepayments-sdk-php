@@ -13,7 +13,7 @@ class WarningDataList
 	 * @access public
 	 
 	 	 	 	 
-	 * @var paypalservice\Types\AP\WarningData	 
+	 * @var PayPal\Types\AP\WarningData	 
 	 */ 
 	public $warningData;
 

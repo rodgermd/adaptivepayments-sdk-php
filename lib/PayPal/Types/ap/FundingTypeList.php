@@ -13,7 +13,7 @@ class FundingTypeList
 	 * @access public
 	 
 	 	 	 	 
-	 * @var paypalservice\Types\AP\FundingTypeInfo	 
+	 * @var PayPal\Types\AP\FundingTypeInfo	 
 	 */ 
 	public $fundingTypeInfo;
 

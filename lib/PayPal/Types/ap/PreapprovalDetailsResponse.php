@@ -13,7 +13,7 @@ class PreapprovalDetailsResponse
 	 * @access public
 	 
 	 	 	 	 
-	 * @var paypalservice\Types\Common\ResponseEnvelope	 
+	 * @var PayPal\Types\Common\ResponseEnvelope	 
 	 */ 
 	public $responseEnvelope;
 
@@ -220,7 +220,7 @@ class PreapprovalDetailsResponse
 	 * @access public
 	 
 	 	 	 	 
-	 * @var paypalservice\Types\AP\AddressList	 
+	 * @var PayPal\Types\AP\AddressList	 
 	 */ 
 	public $addressList;
 
@@ -247,7 +247,7 @@ class PreapprovalDetailsResponse
 	 * @access public
 	 
 	 	 	 	 
-	 * @var paypalservice\Types\AP\SenderIdentifier	 
+	 * @var PayPal\Types\AP\SenderIdentifier	 
 	 */ 
 	public $sender;
 
@@ -257,7 +257,7 @@ class PreapprovalDetailsResponse
 	 * @access public
 	 
 	 	 	 	 
-	 * @var paypalservice\Types\Common\ErrorData	 
+	 * @var PayPal\Types\Common\ErrorData	 
 	 */ 
 	public $error;
 

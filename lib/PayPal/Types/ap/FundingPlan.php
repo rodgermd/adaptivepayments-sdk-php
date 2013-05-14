@@ -22,7 +22,7 @@ class FundingPlan
 	 * @access public
 	 
 	 	 	 	 
-	 * @var paypalservice\Types\Common\CurrencyType	 
+	 * @var PayPal\Types\Common\CurrencyType	 
 	 */ 
 	public $fundingAmount;
 
@@ -31,7 +31,7 @@ class FundingPlan
 	 * @access public
 	 
 	 	 	 	 
-	 * @var paypalservice\Types\AP\FundingSource	 
+	 * @var PayPal\Types\AP\FundingSource	 
 	 */ 
 	public $backupFundingSource;
 
@@ -40,7 +40,7 @@ class FundingPlan
 	 * @access public
 	 
 	 	 	 	 
-	 * @var paypalservice\Types\Common\CurrencyType	 
+	 * @var PayPal\Types\Common\CurrencyType	 
 	 */ 
 	public $senderFees;
 
@@ -49,7 +49,7 @@ class FundingPlan
 	 * @access public
 	 
 	 	 	 	 
-	 * @var paypalservice\Types\AP\CurrencyConversion	 
+	 * @var PayPal\Types\AP\CurrencyConversion	 
 	 */ 
 	public $currencyConversion;
 
@@ -59,7 +59,7 @@ class FundingPlan
 	 * @access public
 	 
 	 	 	 	 
-	 * @var paypalservice\Types\AP\FundingPlanCharge	 
+	 * @var PayPal\Types\AP\FundingPlanCharge	 
 	 */ 
 	public $charge;
 

@@ -13,7 +13,7 @@ class PostPaymentDisclosureList
 	 * @access public
 	 
 	 	 	 	 
-	 * @var paypalservice\Types\AP\PostPaymentDisclosure	 
+	 * @var PayPal\Types\AP\PostPaymentDisclosure	 
 	 */ 
 	public $postPaymentDisclosure;
 

@@ -13,7 +13,7 @@ class PayErrorList
 	 * @access public
 	 
 	 	 	 	 
-	 * @var paypalservice\Types\AP\PayError	 
+	 * @var PayPal\Types\AP\PayError	 
 	 */ 
 	public $payError;
 

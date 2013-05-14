@@ -13,7 +13,7 @@ class GetAvailableShippingAddressesResponse
 	 * @access public
 	 
 	 	 	 	 
-	 * @var paypalservice\Types\Common\ResponseEnvelope	 
+	 * @var PayPal\Types\Common\ResponseEnvelope	 
 	 */ 
 	public $responseEnvelope;
 
@@ -23,7 +23,7 @@ class GetAvailableShippingAddressesResponse
 	 * @access public
 	 
 	 	 	 	 
-	 * @var paypalservice\Types\AP\Address	 
+	 * @var PayPal\Types\AP\Address	 
 	 */ 
 	public $availableAddress;
 
@@ -33,7 +33,7 @@ class GetAvailableShippingAddressesResponse
 	 * @access public
 	 
 	 	 	 	 
-	 * @var paypalservice\Types\Common\ErrorData	 
+	 * @var PayPal\Types\Common\ErrorData	 
 	 */ 
 	public $error;
 

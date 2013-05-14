@@ -13,7 +13,7 @@ class PaymentInfoList
 	 * @access public
 	 
 	 	 	 	 
-	 * @var paypalservice\Types\AP\PaymentInfo	 
+	 * @var PayPal\Types\AP\PaymentInfo	 
 	 */ 
 	public $paymentInfo;
 

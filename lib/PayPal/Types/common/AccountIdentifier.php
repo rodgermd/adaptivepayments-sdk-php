@@ -22,7 +22,7 @@ class AccountIdentifier
 	 * @access public
 	 
 	 	 	 	 
-	 * @var paypalservice\Types\Common\PhoneNumberType	 
+	 * @var PayPal\Types\Common\PhoneNumberType	 
 	 */ 
 	public $phone;
 

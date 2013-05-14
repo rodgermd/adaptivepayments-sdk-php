@@ -31,7 +31,7 @@ class ReceiverOptions
 	 * @access public
 	 
 	 	 	 	 
-	 * @var paypalservice\Types\AP\InvoiceData	 
+	 * @var PayPal\Types\AP\InvoiceData	 
 	 */ 
 	public $invoiceData;
 
@@ -40,7 +40,7 @@ class ReceiverOptions
 	 * @access public
 	 
 	 	 	 	 
-	 * @var paypalservice\Types\AP\ReceiverIdentifier	 
+	 * @var PayPal\Types\AP\ReceiverIdentifier	 
 	 */ 
 	public $receiver;
 

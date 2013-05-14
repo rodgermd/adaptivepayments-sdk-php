@@ -13,7 +13,7 @@ class ReceiverDisclosureList
 	 * @access public
 	 
 	 	 	 	 
-	 * @var paypalservice\Types\AP\ReceiverDisclosure	 
+	 * @var PayPal\Types\AP\ReceiverDisclosure	 
 	 */ 
 	public $receiverDisclosure;
 

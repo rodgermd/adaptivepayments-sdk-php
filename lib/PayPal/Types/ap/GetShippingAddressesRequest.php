@@ -12,7 +12,7 @@ class GetShippingAddressesRequest
 	 * @access public
 	 
 	 	 	 	 
-	 * @var paypalservice\Types\Common\RequestEnvelope	 
+	 * @var PayPal\Types\Common\RequestEnvelope	 
 	 */ 
 	public $requestEnvelope;
 

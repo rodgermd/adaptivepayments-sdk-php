@@ -13,7 +13,7 @@ class RefundInfoList
 	 * @access public
 	 
 	 	 	 	 
-	 * @var paypalservice\Types\AP\RefundInfo	 
+	 * @var PayPal\Types\AP\RefundInfo	 
 	 */ 
 	public $refundInfo;
 

@@ -13,7 +13,7 @@ class PayError
 	 * @access public
 	 
 	 	 	 	 
-	 * @var paypalservice\Types\AP\Receiver	 
+	 * @var PayPal\Types\AP\Receiver	 
 	 */ 
 	public $receiver;
 
@@ -22,7 +22,7 @@ class PayError
 	 * @access public
 	 
 	 	 	 	 
-	 * @var paypalservice\Types\Common\ErrorData	 
+	 * @var PayPal\Types\Common\ErrorData	 
 	 */ 
 	public $error;
 

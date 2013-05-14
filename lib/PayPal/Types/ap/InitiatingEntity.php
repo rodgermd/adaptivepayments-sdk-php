@@ -15,7 +15,7 @@ class InitiatingEntity
 	 * @access public
 	 
 	 	 	 	 
-	 * @var paypalservice\Types\AP\InstitutionCustomer	 
+	 * @var PayPal\Types\AP\InstitutionCustomer	 
 	 */ 
 	public $institutionCustomer;
 

@@ -21,7 +21,7 @@ class Address
 	 * @access public
 	 
 	 	 	 	 
-	 * @var paypalservice\Types\Common\BaseAddress	 
+	 * @var PayPal\Types\Common\BaseAddress	 
 	 */ 
 	public $baseAddress;
 

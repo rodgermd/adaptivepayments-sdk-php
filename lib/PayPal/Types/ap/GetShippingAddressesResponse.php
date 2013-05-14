@@ -13,7 +13,7 @@ class GetShippingAddressesResponse
 	 * @access public
 	 
 	 	 	 	 
-	 * @var paypalservice\Types\Common\ResponseEnvelope	 
+	 * @var PayPal\Types\Common\ResponseEnvelope	 
 	 */ 
 	public $responseEnvelope;
 
@@ -22,7 +22,7 @@ class GetShippingAddressesResponse
 	 * @access public
 	 
 	 	 	 	 
-	 * @var paypalservice\Types\AP\Address	 
+	 * @var PayPal\Types\AP\Address	 
 	 */ 
 	public $selectedAddress;
 
@@ -32,7 +32,7 @@ class GetShippingAddressesResponse
 	 * @access public
 	 
 	 	 	 	 
-	 * @var paypalservice\Types\Common\ErrorData	 
+	 * @var PayPal\Types\Common\ErrorData	 
 	 */ 
 	public $error;
 

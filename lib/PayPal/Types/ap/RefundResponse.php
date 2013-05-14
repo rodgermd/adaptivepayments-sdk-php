@@ -12,7 +12,7 @@ class RefundResponse
 	 * @access public
 	 
 	 	 	 	 
-	 * @var paypalservice\Types\Common\ResponseEnvelope	 
+	 * @var PayPal\Types\Common\ResponseEnvelope	 
 	 */ 
 	public $responseEnvelope;
 
@@ -30,7 +30,7 @@ class RefundResponse
 	 * @access public
 	 
 	 	 	 	 
-	 * @var paypalservice\Types\AP\RefundInfoList	 
+	 * @var PayPal\Types\AP\RefundInfoList	 
 	 */ 
 	public $refundInfoList;
 
@@ -40,7 +40,7 @@ class RefundResponse
 	 * @access public
 	 
 	 	 	 	 
-	 * @var paypalservice\Types\Common\ErrorData	 
+	 * @var PayPal\Types\Common\ErrorData	 
 	 */ 
 	public $error;
 

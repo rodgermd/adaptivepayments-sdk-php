@@ -13,7 +13,7 @@ class AddressList
 	 * @access public
 	 
 	 	 	 	 
-	 * @var paypalservice\Types\AP\Address	 
+	 * @var PayPal\Types\AP\Address	 
 	 */ 
 	public $address;
 

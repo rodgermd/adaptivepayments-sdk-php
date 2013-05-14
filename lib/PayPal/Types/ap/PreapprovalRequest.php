@@ -15,7 +15,7 @@ class PreapprovalRequest
 	 * @access public
 	 
 	 	 	 	 
-	 * @var paypalservice\Types\Common\RequestEnvelope	 
+	 * @var PayPal\Types\Common\RequestEnvelope	 
 	 */ 
 	public $requestEnvelope;
 
@@ -24,7 +24,7 @@ class PreapprovalRequest
 	 * @access public
 	 
 	 	 	 	 
-	 * @var paypalservice\Types\Common\ClientDetailsType	 
+	 * @var PayPal\Types\Common\ClientDetailsType	 
 	 */ 
 	public $clientDetails;
 
@@ -204,7 +204,7 @@ class PreapprovalRequest
 	 * @access public
 	 
 	 	 	 	 
-	 * @var paypalservice\Types\AP\SenderIdentifier	 
+	 * @var PayPal\Types\AP\SenderIdentifier	 
 	 */ 
 	public $sender;
 

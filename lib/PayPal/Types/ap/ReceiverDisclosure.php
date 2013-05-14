@@ -13,7 +13,7 @@ class ReceiverDisclosure
 	 * @access public
 	 
 	 	 	 	 
-	 * @var paypalservice\Types\Common\AccountIdentifier	 
+	 * @var PayPal\Types\Common\AccountIdentifier	 
 	 */ 
 	public $accountIdentifier;
 
@@ -22,7 +22,7 @@ class ReceiverDisclosure
 	 * @access public
 	 
 	 	 	 	 
-	 * @var paypalservice\Types\Common\CurrencyType	 
+	 * @var PayPal\Types\Common\CurrencyType	 
 	 */ 
 	public $amountReceivedFromSender;
 
@@ -41,7 +41,7 @@ class ReceiverDisclosure
 	 * @access public
 	 
 	 	 	 	 
-	 * @var paypalservice\Types\AP\ConversionRate	 
+	 * @var PayPal\Types\AP\ConversionRate	 
 	 */ 
 	public $conversionRate;
 
@@ -50,7 +50,7 @@ class ReceiverDisclosure
 	 * @access public
 	 
 	 	 	 	 
-	 * @var paypalservice\Types\AP\FeeDisclosure	 
+	 * @var PayPal\Types\AP\FeeDisclosure	 
 	 */ 
 	public $feeDisclosure;
 
@@ -59,7 +59,7 @@ class ReceiverDisclosure
 	 * @access public
 	 
 	 	 	 	 
-	 * @var paypalservice\Types\Common\CurrencyType	 
+	 * @var PayPal\Types\Common\CurrencyType	 
 	 */ 
 	public $totalAmountReceived;
 

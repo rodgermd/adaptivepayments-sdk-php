@@ -29,7 +29,7 @@ class GetPrePaymentDisclosureResponse
 	 * @access public
 	 
 	 	 	 	 
-	 * @var paypalservice\Types\Common\ResponseEnvelope	 
+	 * @var PayPal\Types\Common\ResponseEnvelope	 
 	 */ 
 	public $responseEnvelope;
 
@@ -56,7 +56,7 @@ class GetPrePaymentDisclosureResponse
 	 * @access public
 	 
 	 	 	 	 
-	 * @var paypalservice\Types\AP\SenderDisclosure	 
+	 * @var PayPal\Types\AP\SenderDisclosure	 
 	 */ 
 	public $senderDisclosure;
 
@@ -65,7 +65,7 @@ class GetPrePaymentDisclosureResponse
 	 * @access public
 	 
 	 	 	 	 
-	 * @var paypalservice\Types\AP\ReceiverDisclosureList	 
+	 * @var PayPal\Types\AP\ReceiverDisclosureList	 
 	 */ 
 	public $receiverDisclosureList;
 
@@ -84,7 +84,7 @@ class GetPrePaymentDisclosureResponse
 	 * @access public
 	 
 	 	 	 	 
-	 * @var paypalservice\Types\Common\ErrorData	 
+	 * @var PayPal\Types\Common\ErrorData	 
 	 */ 
 	public $error;
 

@@ -13,7 +13,7 @@ class ConvertCurrencyRequest
 	 * @access public
 	 
 	 	 	 	 
-	 * @var paypalservice\Types\Common\RequestEnvelope	 
+	 * @var PayPal\Types\Common\RequestEnvelope	 
 	 */ 
 	public $requestEnvelope;
 
@@ -22,7 +22,7 @@ class ConvertCurrencyRequest
 	 * @access public
 	 
 	 	 	 	 
-	 * @var paypalservice\Types\AP\CurrencyList	 
+	 * @var PayPal\Types\AP\CurrencyList	 
 	 */ 
 	public $baseAmountList;
 
@@ -31,7 +31,7 @@ class ConvertCurrencyRequest
 	 * @access public
 	 
 	 	 	 	 
-	 * @var paypalservice\Types\AP\CurrencyCodeList	 
+	 * @var PayPal\Types\AP\CurrencyCodeList	 
 	 */ 
 	public $convertToCurrencyList;
 

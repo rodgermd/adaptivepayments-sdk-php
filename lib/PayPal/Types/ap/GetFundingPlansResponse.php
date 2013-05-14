@@ -13,7 +13,7 @@ class GetFundingPlansResponse
 	 * @access public
 	 
 	 	 	 	 
-	 * @var paypalservice\Types\Common\ResponseEnvelope	 
+	 * @var PayPal\Types\Common\ResponseEnvelope	 
 	 */ 
 	public $responseEnvelope;
 
@@ -23,7 +23,7 @@ class GetFundingPlansResponse
 	 * @access public
 	 
 	 	 	 	 
-	 * @var paypalservice\Types\AP\FundingPlan	 
+	 * @var PayPal\Types\AP\FundingPlan	 
 	 */ 
 	public $fundingPlan;
 
@@ -33,7 +33,7 @@ class GetFundingPlansResponse
 	 * @access public
 	 
 	 	 	 	 
-	 * @var paypalservice\Types\Common\ErrorData	 
+	 * @var PayPal\Types\Common\ErrorData	 
 	 */ 
 	public $error;
 

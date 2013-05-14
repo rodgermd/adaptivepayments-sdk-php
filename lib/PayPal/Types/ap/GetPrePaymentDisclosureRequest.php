@@ -23,7 +23,7 @@ class GetPrePaymentDisclosureRequest
 	 * @access public
 	 
 	 	 	 	 
-	 * @var paypalservice\Types\Common\RequestEnvelope	 
+	 * @var PayPal\Types\Common\RequestEnvelope	 
 	 */ 
 	public $requestEnvelope;
 
@@ -41,7 +41,7 @@ class GetPrePaymentDisclosureRequest
 	 * @access public
 	 
 	 	 	 	 
-	 * @var paypalservice\Types\AP\ReceiverInfoList	 
+	 * @var PayPal\Types\AP\ReceiverInfoList	 
 	 */ 
 	public $receiverInfoList;
 

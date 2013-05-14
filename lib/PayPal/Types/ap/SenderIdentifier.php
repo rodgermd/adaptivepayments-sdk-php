@@ -22,7 +22,7 @@ class SenderIdentifier  extends AccountIdentifier
 	 * @access public
 	 
 	 	 	 	 
-	 * @var paypalservice\Types\AP\TaxIdDetails	 
+	 * @var PayPal\Types\AP\TaxIdDetails	 
 	 */ 
 	public $taxIdDetails;
 

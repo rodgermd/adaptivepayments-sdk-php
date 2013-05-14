@@ -13,7 +13,7 @@ class ReceiverList
 	 * @access public
 	 
 	 	 	 	 
-	 * @var paypalservice\Types\AP\Receiver	 
+	 * @var PayPal\Types\AP\Receiver	 
 	 */ 
 	public $receiver;
 

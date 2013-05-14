@@ -14,7 +14,7 @@ class PostPaymentDisclosure
 	 * @access public
 	 
 	 	 	 	 
-	 * @var paypalservice\Types\Common\AccountIdentifier	 
+	 * @var PayPal\Types\Common\AccountIdentifier	 
 	 */ 
 	public $accountIdentifier;
 

@@ -13,7 +13,7 @@ class PayRequest
 	 * @access public
 	 
 	 	 	 	 
-	 * @var paypalservice\Types\Common\RequestEnvelope	 
+	 * @var PayPal\Types\Common\RequestEnvelope	 
 	 */ 
 	public $requestEnvelope;
 
@@ -22,7 +22,7 @@ class PayRequest
 	 * @access public
 	 
 	 	 	 	 
-	 * @var paypalservice\Types\Common\ClientDetailsType	 
+	 * @var PayPal\Types\Common\ClientDetailsType	 
 	 */ 
 	public $clientDetails;
 
@@ -103,7 +103,7 @@ class PayRequest
 	 * @access public
 	 
 	 	 	 	 
-	 * @var paypalservice\Types\AP\ReceiverList	 
+	 * @var PayPal\Types\AP\ReceiverList	 
 	 */ 
 	public $receiverList;
 
@@ -148,7 +148,7 @@ class PayRequest
 	 * @access public
 	 
 	 	 	 	 
-	 * @var paypalservice\Types\AP\FundingConstraint	 
+	 * @var PayPal\Types\AP\FundingConstraint	 
 	 */ 
 	public $fundingConstraint;
 
@@ -157,7 +157,7 @@ class PayRequest
 	 * @access public
 	 
 	 	 	 	 
-	 * @var paypalservice\Types\AP\SenderIdentifier	 
+	 * @var PayPal\Types\AP\SenderIdentifier	 
 	 */ 
 	public $sender;
 

@@ -13,7 +13,7 @@ class PaymentDetailsResponse
 	 * @access public
 	 
 	 	 	 	 
-	 * @var paypalservice\Types\Common\ResponseEnvelope	 
+	 * @var PayPal\Types\Common\ResponseEnvelope	 
 	 */ 
 	public $responseEnvelope;
 
@@ -58,7 +58,7 @@ class PaymentDetailsResponse
 	 * @access public
 	 
 	 	 	 	 
-	 * @var paypalservice\Types\AP\PaymentInfoList	 
+	 * @var PayPal\Types\AP\PaymentInfoList	 
 	 */ 
 	public $paymentInfoList;
 
@@ -148,7 +148,7 @@ class PaymentDetailsResponse
 	 * @access public
 	 
 	 	 	 	 
-	 * @var paypalservice\Types\AP\FundingConstraint	 
+	 * @var PayPal\Types\AP\FundingConstraint	 
 	 */ 
 	public $fundingConstraint;
 
@@ -157,7 +157,7 @@ class PaymentDetailsResponse
 	 * @access public
 	 
 	 	 	 	 
-	 * @var paypalservice\Types\AP\SenderIdentifier	 
+	 * @var PayPal\Types\AP\SenderIdentifier	 
 	 */ 
 	public $sender;
 
@@ -167,7 +167,7 @@ class PaymentDetailsResponse
 	 * @access public
 	 
 	 	 	 	 
-	 * @var paypalservice\Types\Common\ErrorData	 
+	 * @var PayPal\Types\Common\ErrorData	 
 	 */ 
 	public $error;
 

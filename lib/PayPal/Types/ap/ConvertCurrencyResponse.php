@@ -13,7 +13,7 @@ class ConvertCurrencyResponse
 	 * @access public
 	 
 	 	 	 	 
-	 * @var paypalservice\Types\Common\ResponseEnvelope	 
+	 * @var PayPal\Types\Common\ResponseEnvelope	 
 	 */ 
 	public $responseEnvelope;
 
@@ -22,7 +22,7 @@ class ConvertCurrencyResponse
 	 * @access public
 	 
 	 	 	 	 
-	 * @var paypalservice\Types\AP\CurrencyConversionTable	 
+	 * @var PayPal\Types\AP\CurrencyConversionTable	 
 	 */ 
 	public $estimatedAmountTable;
 
@@ -32,7 +32,7 @@ class ConvertCurrencyResponse
 	 * @access public
 	 
 	 	 	 	 
-	 * @var paypalservice\Types\Common\ErrorData	 
+	 * @var PayPal\Types\Common\ErrorData	 
 	 */ 
 	public $error;
 
