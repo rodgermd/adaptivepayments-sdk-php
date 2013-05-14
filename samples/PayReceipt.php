@@ -8,7 +8,6 @@ use PayPal\Types\AP\Receiver;
 use PayPal\Types\AP\ReceiverList;
 use PayPal\Types\AP\SenderIdentifier;
 use PayPal\Types\Common\PhoneNumberType;
-use PayPal\Types\Common\PhoneNumberType;
 use PayPal\Types\Common\RequestEnvelope;
 /**
  * PayReceipt.php
