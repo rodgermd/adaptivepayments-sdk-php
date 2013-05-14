@@ -1,6 +1,6 @@
 <?php 
 namespace PayPal\Types\AP;
-use PayPal\Core\PPMessage;
+use PayPal\Core\PPMessage;  
 /**
  * The error that resulted from an attempt to make a payment to
  * a receiver. 

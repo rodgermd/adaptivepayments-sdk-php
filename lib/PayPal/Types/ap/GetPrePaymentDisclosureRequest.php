@@ -1,6 +1,6 @@
 <?php 
 namespace PayPal\Types\AP;
-use PayPal\Core\PPMessage;
+use PayPal\Core\PPMessage;  
 /**
  * GetPrePaymentDisclosureRequest is used to get the PrePayment
  * Disclosure.; GetPrePaymentDisclosureRequest contains

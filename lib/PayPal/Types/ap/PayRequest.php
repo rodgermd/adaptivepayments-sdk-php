@@ -1,6 +1,6 @@
 <?php 
 namespace PayPal\Types\AP;
-use PayPal\Core\PPMessage;
+use PayPal\Core\PPMessage;  
 /**
  * The PayRequest contains the payment instructions to make
  * from sender to receivers. 

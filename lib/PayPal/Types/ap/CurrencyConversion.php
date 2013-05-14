@@ -1,6 +1,6 @@
 <?php 
 namespace PayPal\Types\AP;
-use PayPal\Core\PPMessage;
+use PayPal\Core\PPMessage;  
 /**
  * Describes the conversion between 2 currencies. 
  */

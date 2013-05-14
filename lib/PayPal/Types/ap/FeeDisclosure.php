@@ -1,6 +1,6 @@
 <?php 
 namespace PayPal\Types\AP;
-use PayPal\Core\PPMessage;
+use PayPal\Core\PPMessage;  
 /**
  * FeeDisclosure contains the information related to Fees and
  * taxes. 

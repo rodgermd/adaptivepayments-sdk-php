@@ -1,6 +1,6 @@
 <?php 
 namespace PayPal\Types\AP;
-use PayPal\Core\PPMessage;
+use PayPal\Core\PPMessage;  
 /**
  * Contains information related to Post Payment Disclosure
  * Details This contains 1.Receivers information 2.Funds

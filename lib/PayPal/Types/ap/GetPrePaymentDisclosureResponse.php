@@ -1,6 +1,6 @@
 <?php 
 namespace PayPal\Types\AP;
-use PayPal\Core\PPMessage;
+use PayPal\Core\PPMessage;  
 /**
  * GetPrePaymentDisclosureResponse contains the information
  * related to PrePayment disclosure. status : indicates the

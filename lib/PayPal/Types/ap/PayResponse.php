@@ -1,6 +1,6 @@
 <?php 
 namespace PayPal\Types\AP;
-use PayPal\Core\PPMessage;
+use PayPal\Core\PPMessage;  
 /**
  * The PayResponse contains the result of the Pay operation.
  * The payKey and execution status of the request should always

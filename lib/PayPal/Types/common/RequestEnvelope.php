@@ -1,6 +1,6 @@
 <?php 
 namespace PayPal\Types\Common;
-use PayPal\Core\PPMessage;
+use PayPal\Core\PPMessage;  
 /**
  * This specifies the list of parameters with every request to
  * the service. 

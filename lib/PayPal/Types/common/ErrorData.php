@@ -1,6 +1,6 @@
 <?php 
 namespace PayPal\Types\Common;
-use PayPal\Core\PPMessage;
+use PayPal\Core\PPMessage;  
 /**
  * This type contains the detailed error information resulting
  * from the service operation. 

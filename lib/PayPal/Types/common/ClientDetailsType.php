@@ -1,6 +1,6 @@
 <?php 
 namespace PayPal\Types\Common;
-use PayPal\Core\PPMessage;
+use PayPal\Core\PPMessage;  
 /**
  * Details about the end user of the application invoking this
  * service. 

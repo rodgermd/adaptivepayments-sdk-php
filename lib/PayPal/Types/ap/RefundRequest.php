@@ -1,6 +1,6 @@
 <?php 
 namespace PayPal\Types\AP;
-use PayPal\Core\PPMessage;
+use PayPal\Core\PPMessage;  
 /**
  * A request to make a refund based on various criteria. A
  * refund can be made against the entire payKey, an individual

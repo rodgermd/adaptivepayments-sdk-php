@@ -1,6 +1,6 @@
 <?php 
 namespace PayPal\Types\AP;
-use PayPal\Core\PPMessage;
+use PayPal\Core\PPMessage;  
 /**
  * The request to look up the details of a PayRequest. The
  * PaymentDetailsRequest can be made with either a payKey,

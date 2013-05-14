@@ -1,6 +1,6 @@
 <?php 
 namespace PayPal\Types\AP;
-use PayPal\Core\PPMessage;
+use PayPal\Core\PPMessage;  
 /**
  * A request to create a Preapproval. A Preapproval is an
  * agreement between a Paypal account holder (the sender) and

@@ -1,6 +1,6 @@
 <?php 
 namespace PayPal\Types\AP;
-use PayPal\Core\PPMessage;
+use PayPal\Core\PPMessage;  
 /**
  * PaymentInfo represents the payment attempt made to a
  * Receiver of a PayRequest. If the execution of the payment

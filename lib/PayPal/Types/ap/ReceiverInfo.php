@@ -1,6 +1,6 @@
 <?php 
 namespace PayPal\Types\AP;
-use PayPal\Core\PPMessage;
+use PayPal\Types\Common\AccountIdentifier; 
 /**
  * ReceiverInfo needs to be populate for the receiver who
  * doesn't have paypal account. 

@@ -1,6 +1,6 @@
 <?php 
 namespace PayPal\Types\AP;
-use PayPal\Core\PPMessage;
+use PayPal\Core\PPMessage;  
 /**
  * Receiver is the party where funds are transferred to. A
  * primary receiver receives a payment directly from the sender
