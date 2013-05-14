@@ -1,8 +1,8 @@
 <?php
+use PayPal\Service\AdaptivePaymentsService;
+use PayPal\Types\AP\GetAvailableShippingAddressesRequest;
+use PayPal\Types\Common\RequestEnvelope;
 require_once('PPBootStrap.php');
-
-$logger = new PPLoggingManager('GetAvailableShippingAddresses');
-
 // create request
 $getAvailableShippingAddressesReq = new GetAvailableShippingAddressesRequest(new RequestEnvelope("en_US"), $_POST['key']);
 $logger->log("Created GetAvailableShippingAddressesRequest Object");
@@ -13,7 +13,6 @@ try {
 	require_once 'Common/Error.php';
 	exit;
 }
-$logger->error("Received GetAvailableShippingAddressesResponse:");
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>

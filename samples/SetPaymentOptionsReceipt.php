@@ -1,4 +1,16 @@
 <?php
+use PayPal\Service\AdaptivePaymentsService;
+use PayPal\Types\AP\DisplayOptions;
+use PayPal\Types\AP\InitiatingEntity;
+use PayPal\Types\AP\InstitutionCustomer;
+use PayPal\Types\AP\InvoiceData;
+use PayPal\Types\AP\InvoiceItem;
+use PayPal\Types\AP\ReceiverIdentifier;
+use PayPal\Types\AP\ReceiverOptions;
+use PayPal\Types\AP\SenderOptions;
+use PayPal\Types\AP\SetPaymentOptionsRequest;
+use PayPal\Types\Common\PhoneNumberType;
+use PayPal\Types\Common\RequestEnvelope;
 require_once('PPBootStrap.php');
 define("DEFAULT_SELECT", "- Select -");
 

@@ -1,4 +1,7 @@
 <?php
+use PayPal\Service\AdaptivePaymentsService;
+use PayPal\Types\AP\PaymentDetailsRequest;
+use PayPal\Types\Common\RequestEnvelope;
 require_once('PPBootStrap.php');
 /*
  *  # PaymentDetails API

@@ -1,4 +1,9 @@
 <?php
+use PayPal\Service\AdaptivePaymentsService;
+use PayPal\Types\AP\GetUserLimitsRequest;
+use PayPal\Types\Common\AccountIdentifier;
+use PayPal\Types\Common\PhoneNumberType;
+use PayPal\Types\Common\RequestEnvelope;
 require_once('PPBootStrap.php');
 
 

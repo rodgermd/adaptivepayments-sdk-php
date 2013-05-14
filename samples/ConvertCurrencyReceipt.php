@@ -1,4 +1,10 @@
 <?php
+use PayPal\Service\AdaptivePaymentsService;
+use PayPal\Types\AP\ConvertCurrencyRequest;
+use PayPal\Types\AP\CurrencyCodeList;
+use PayPal\Types\AP\CurrencyList;
+use PayPal\Types\Common\CurrencyType;
+use PayPal\Types\Common\RequestEnvelope;
 require_once('PPBootStrap.php');
 
 /*

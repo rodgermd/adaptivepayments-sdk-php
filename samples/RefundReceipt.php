@@ -1,4 +1,10 @@
 <?php
+use PayPal\Service\AdaptivePaymentsService;
+use PayPal\Types\AP\Receiver;
+use PayPal\Types\AP\ReceiverList;
+use PayPal\Types\AP\RefundRequest;
+use PayPal\Types\Common\PhoneNumberType;
+use PayPal\Types\Common\RequestEnvelope;
 require_once('PPBootStrap.php');
 define("DEFAULT_SELECT", "- Select -");
 

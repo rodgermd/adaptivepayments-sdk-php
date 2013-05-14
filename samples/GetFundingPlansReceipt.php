@@ -1,4 +1,8 @@
 <?php
+use PayPal\Service\AdaptivePaymentsService;
+use PayPal\Types\AP\GetFundingPlansRequest;
+use PayPal\Types\Common\RequestEnvelope;
+
 require_once('PPBootStrap.php');
 
 /*

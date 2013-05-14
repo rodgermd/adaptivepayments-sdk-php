@@ -1,4 +1,15 @@
 <?php
+use PayPal\Service\AdaptivePaymentsService;
+use PayPal\Types\AP\FundingConstraint;
+use PayPal\Types\AP\FundingTypeInfo;
+use PayPal\Types\AP\FundingTypeList;
+use PayPal\Types\AP\PayRequest;
+use PayPal\Types\AP\Receiver;
+use PayPal\Types\AP\ReceiverList;
+use PayPal\Types\AP\SenderIdentifier;
+use PayPal\Types\Common\PhoneNumberType;
+use PayPal\Types\Common\PhoneNumberType;
+use PayPal\Types\Common\RequestEnvelope;
 /**
  * PayReceipt.php
  * This file is called after the user clicks on a button during
