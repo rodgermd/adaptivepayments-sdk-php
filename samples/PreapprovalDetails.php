@@ -1,8 +1,5 @@
 <?php
 require_once('PPBootStrap.php');
-
-$logger = new PPLoggingManager('PreapprovalDetails');
-
 ?>
 <html>
 <head>
