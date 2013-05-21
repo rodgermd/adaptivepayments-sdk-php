@@ -38,6 +38,10 @@ class AdaptivePaymentsService extends PPBaseService {
 	// SDK Version
 	protected static $SDK_VERSION = "sdkversion";
 
+    /**
+    * @param $config - Dynamic config map. This takes the higher precedence if config file is also present.
+    *
+    */
 	public function __construct($config = null) {
 		parent::__construct(self::$SERVICE_NAME, 'NV', array('PayPal\Handler\PPPlatformServiceHandler'), $config);
         parent::$SDK_NAME    = self::$SDK_NAME ;
@@ -51,7 +55,7 @@ class AdaptivePaymentsService extends PPBaseService {
 	 * @param mixed $apiCredential - Optional API credential - can either be
 	 * 		a username configured in sdk_config.ini or a ICredential object
 	 *      created dynamically 		
-	 * @return CancelPreapprovalResponse
+	 * @return Types\AP\CancelPreapprovalResponse
 	 * @throws APIException
 	 */
 	public function CancelPreapproval($cancelPreapprovalRequest, $apiCredential = NULL) {
@@ -68,7 +72,7 @@ class AdaptivePaymentsService extends PPBaseService {
 	 * @param mixed $apiCredential - Optional API credential - can either be
 	 * 		a username configured in sdk_config.ini or a ICredential object
 	 *      created dynamically 		
-	 * @return ConfirmPreapprovalResponse
+	 * @return Types\AP\ConfirmPreapprovalResponse
 	 * @throws APIException
 	 */
 	public function ConfirmPreapproval($confirmPreapprovalRequest, $apiCredential = NULL) {
@@ -85,7 +89,7 @@ class AdaptivePaymentsService extends PPBaseService {
 	 * @param mixed $apiCredential - Optional API credential - can either be
 	 * 		a username configured in sdk_config.ini or a ICredential object
 	 *      created dynamically 		
-	 * @return ConvertCurrencyResponse
+	 * @return Types\AP\ConvertCurrencyResponse
 	 * @throws APIException
 	 */
 	public function ConvertCurrency($convertCurrencyRequest, $apiCredential = NULL) {
@@ -102,7 +106,7 @@ class AdaptivePaymentsService extends PPBaseService {
 	 * @param mixed $apiCredential - Optional API credential - can either be
 	 * 		a username configured in sdk_config.ini or a ICredential object
 	 *      created dynamically 		
-	 * @return ExecutePaymentResponse
+	 * @return Types\AP\ExecutePaymentResponse
 	 * @throws APIException
 	 */
 	public function ExecutePayment($executePaymentRequest, $apiCredential = NULL) {
@@ -119,7 +123,7 @@ class AdaptivePaymentsService extends PPBaseService {
 	 * @param mixed $apiCredential - Optional API credential - can either be
 	 * 		a username configured in sdk_config.ini or a ICredential object
 	 *      created dynamically 		
-	 * @return GetAllowedFundingSourcesResponse
+	 * @return Types\AP\GetAllowedFundingSourcesResponse
 	 * @throws APIException
 	 */
 	public function GetAllowedFundingSources($getAllowedFundingSourcesRequest, $apiCredential = NULL) {
@@ -136,7 +140,7 @@ class AdaptivePaymentsService extends PPBaseService {
 	 * @param mixed $apiCredential - Optional API credential - can either be
 	 * 		a username configured in sdk_config.ini or a ICredential object
 	 *      created dynamically 		
-	 * @return GetPaymentOptionsResponse
+	 * @return Types\AP\GetPaymentOptionsResponse
 	 * @throws APIException
 	 */
 	public function GetPaymentOptions($getPaymentOptionsRequest, $apiCredential = NULL) {
@@ -153,7 +157,7 @@ class AdaptivePaymentsService extends PPBaseService {
 	 * @param mixed $apiCredential - Optional API credential - can either be
 	 * 		a username configured in sdk_config.ini or a ICredential object
 	 *      created dynamically 		
-	 * @return PaymentDetailsResponse
+	 * @return Types\AP\PaymentDetailsResponse
 	 * @throws APIException
 	 */
 	public function PaymentDetails($paymentDetailsRequest, $apiCredential = NULL) {
@@ -170,7 +174,7 @@ class AdaptivePaymentsService extends PPBaseService {
 	 * @param mixed $apiCredential - Optional API credential - can either be
 	 * 		a username configured in sdk_config.ini or a ICredential object
 	 *      created dynamically 		
-	 * @return PayResponse
+	 * @return Types\AP\PayResponse
 	 * @throws APIException
 	 */
 	public function Pay($payRequest, $apiCredential = NULL) {
@@ -187,7 +191,7 @@ class AdaptivePaymentsService extends PPBaseService {
 	 * @param mixed $apiCredential - Optional API credential - can either be
 	 * 		a username configured in sdk_config.ini or a ICredential object
 	 *      created dynamically 		
-	 * @return PreapprovalDetailsResponse
+	 * @return Types\AP\PreapprovalDetailsResponse
 	 * @throws APIException
 	 */
 	public function PreapprovalDetails($preapprovalDetailsRequest, $apiCredential = NULL) {
@@ -204,7 +208,7 @@ class AdaptivePaymentsService extends PPBaseService {
 	 * @param mixed $apiCredential - Optional API credential - can either be
 	 * 		a username configured in sdk_config.ini or a ICredential object
 	 *      created dynamically 		
-	 * @return PreapprovalResponse
+	 * @return Types\AP\PreapprovalResponse
 	 * @throws APIException
 	 */
 	public function Preapproval($preapprovalRequest, $apiCredential = NULL) {
@@ -221,7 +225,7 @@ class AdaptivePaymentsService extends PPBaseService {
 	 * @param mixed $apiCredential - Optional API credential - can either be
 	 * 		a username configured in sdk_config.ini or a ICredential object
 	 *      created dynamically 		
-	 * @return RefundResponse
+	 * @return Types\AP\RefundResponse
 	 * @throws APIException
 	 */
 	public function Refund($refundRequest, $apiCredential = NULL) {
@@ -238,7 +242,7 @@ class AdaptivePaymentsService extends PPBaseService {
 	 * @param mixed $apiCredential - Optional API credential - can either be
 	 * 		a username configured in sdk_config.ini or a ICredential object
 	 *      created dynamically 		
-	 * @return SetPaymentOptionsResponse
+	 * @return Types\AP\SetPaymentOptionsResponse
 	 * @throws APIException
 	 */
 	public function SetPaymentOptions($setPaymentOptionsRequest, $apiCredential = NULL) {
@@ -255,7 +259,7 @@ class AdaptivePaymentsService extends PPBaseService {
 	 * @param mixed $apiCredential - Optional API credential - can either be
 	 * 		a username configured in sdk_config.ini or a ICredential object
 	 *      created dynamically 		
-	 * @return GetFundingPlansResponse
+	 * @return Types\AP\GetFundingPlansResponse
 	 * @throws APIException
 	 */
 	public function GetFundingPlans($getFundingPlansRequest, $apiCredential = NULL) {
@@ -272,7 +276,7 @@ class AdaptivePaymentsService extends PPBaseService {
 	 * @param mixed $apiCredential - Optional API credential - can either be
 	 * 		a username configured in sdk_config.ini or a ICredential object
 	 *      created dynamically 		
-	 * @return GetAvailableShippingAddressesResponse
+	 * @return Types\AP\GetAvailableShippingAddressesResponse
 	 * @throws APIException
 	 */
 	public function GetAvailableShippingAddresses($getAvailableShippingAddressesRequest, $apiCredential = NULL) {
@@ -289,7 +293,7 @@ class AdaptivePaymentsService extends PPBaseService {
 	 * @param mixed $apiCredential - Optional API credential - can either be
 	 * 		a username configured in sdk_config.ini or a ICredential object
 	 *      created dynamically 		
-	 * @return GetShippingAddressesResponse
+	 * @return Types\AP\GetShippingAddressesResponse
 	 * @throws APIException
 	 */
 	public function GetShippingAddresses($getShippingAddressesRequest, $apiCredential = NULL) {
@@ -306,7 +310,7 @@ class AdaptivePaymentsService extends PPBaseService {
 	 * @param mixed $apiCredential - Optional API credential - can either be
 	 * 		a username configured in sdk_config.ini or a ICredential object
 	 *      created dynamically 		
-	 * @return GetUserLimitsResponse
+	 * @return Types\AP\GetUserLimitsResponse
 	 * @throws APIException
 	 */
 	public function GetUserLimits($getUserLimitsRequest, $apiCredential = NULL) {
@@ -323,7 +327,7 @@ class AdaptivePaymentsService extends PPBaseService {
 	 * @param mixed $apiCredential - Optional API credential - can either be
 	 * 		a username configured in sdk_config.ini or a ICredential object
 	 *      created dynamically 		
-	 * @return GetPrePaymentDisclosureResponse
+	 * @return Types\AP\GetPrePaymentDisclosureResponse
 	 * @throws APIException
 	 */
 	public function GetPrePaymentDisclosure($getPrePaymentDisclosureRequest, $apiCredential = NULL) {
