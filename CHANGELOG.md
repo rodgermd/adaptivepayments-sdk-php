@@ -1,8 +1,7 @@
-# CHANGELOG
- 
- ## Version 3.4.102 - May 20, 2013
+### CHANGELOG
 
-    - Updating SDK to use NameSpaces
+#### Version 3.4.102 - May 20, 2013
+
+    - Updating SDK to use NameSpaces, Supported from PHP 5.3 and above
     
-You can see source code of this release in github under https://github.com/paypal/adaptivepayments-sdk-php/tree/v3.4.102 
---------------------------------------------------------------------------------------------------
+You can see source code of this release in github under https://github.com/paypal/adaptivepayments-sdk-php/tree/v3.4.102
