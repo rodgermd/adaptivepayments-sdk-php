@@ -8,8 +8,10 @@ require_once('PPBootStrap.php');
 // create request
 $requestEnvelope = new RequestEnvelope("en_US");
 $getAllowedFundingSourcesReq = new GetAllowedFundingSourcesRequest($requestEnvelope, $_POST['key']);
-
-$service = new AdaptivePaymentsService();
+/*
+Configuration::getSignatureConfig() returns array that contains credential and config parameters
+ */
+$service = new AdaptivePaymentsService(Configuration::getSignatureConfig());
 try {
 	$response = $service->GetAllowedFundingSources($getAllowedFundingSourcesReq);
 } catch(Exception $ex) {

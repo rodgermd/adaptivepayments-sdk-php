@@ -5,7 +5,10 @@ use PayPal\Types\Common\RequestEnvelope;
 require_once('PPBootStrap.php');
 // create request
 $getAvailableShippingAddressesReq = new GetAvailableShippingAddressesRequest(new RequestEnvelope("en_US"), $_POST['key']);
-$service  = new AdaptivePaymentsService();
+/*
+Configuration::getSignatureConfig() returns array that contains credential and config parameters
+ */
+$service = new AdaptivePaymentsService(Configuration::getSignatureConfig());
 try {
 	$response = $service->GetAvailableShippingAddresses($getAvailableShippingAddressesReq);
 } catch(Exception $ex) {

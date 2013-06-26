@@ -17,9 +17,9 @@ $getFundingPlansReq = new GetFundingPlansRequest(new RequestEnvelope("en_US"), $
 /*
  * 	 ## Creating service wrapper object
 Creating service wrapper object to make API call and loading
-configuration file for your credentials and endpoint
-*/
-$service = new AdaptivePaymentsService();
+Configuration::getSignatureConfig() returns array that contains credential and config parameters
+ */
+$service = new AdaptivePaymentsService(Configuration::getSignatureConfig());
 try {
 	/* wrap API method calls on the service object with a try catch */
 	$response = $service->GetFundingPlans($getFundingPlansReq);

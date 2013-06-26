@@ -15,8 +15,10 @@ if($_POST['fundingSourceId'] != "") {
 if($_POST['pin'] != "") {
 	$confirmPreapprovalReq->pin = $_POST['pin'];
 }
-
-$service  = new AdaptivePaymentsService();
+/*
+Configuration::getSignatureConfig() returns array that contains credential and config parameters
+ */
+$service = new AdaptivePaymentsService(Configuration::getSignatureConfig());
 try {
 	$response = $service->ConfirmPreapproval($confirmPreapprovalReq);
 } catch(Exception $ex) {
