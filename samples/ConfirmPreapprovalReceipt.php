@@ -36,6 +36,7 @@ try {
 
 <body>
 	<div id="wrapper">
+		<img src="https://devtools-paypal.com/image/bdg_payments_by_pp_2line.png">
 		<div id="response_form">
 			<h3>Confirm Preapproval</h3>
 <?php
