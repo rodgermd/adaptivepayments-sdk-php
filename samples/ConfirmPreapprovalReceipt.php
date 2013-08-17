@@ -16,9 +16,9 @@ if($_POST['pin'] != "") {
 	$confirmPreapprovalReq->pin = $_POST['pin'];
 }
 /*
-Configuration::getSignatureConfig() returns array that contains credential and config parameters
+Configuration::getAcctAndConfig() returns array that contains credential and config parameters
  */
-$service = new AdaptivePaymentsService(Configuration::getSignatureConfig());
+$service = new AdaptivePaymentsService(Configuration::getAcctAndConfig());
 try {
 	$response = $service->ConfirmPreapproval($confirmPreapprovalReq);
 } catch(Exception $ex) {
@@ -36,7 +36,7 @@ try {
 
 <body>
 	<div id="wrapper">
-		<img src="https://devtools-paypal.com/image/bdg_payments_by_pp_2line.png">
+		<img src="https://devtools-paypal.com/image/bdg_payments_by_pp_2line.png"/>
 		<div id="response_form">
 			<h3>Confirm Preapproval</h3>
 <?php
