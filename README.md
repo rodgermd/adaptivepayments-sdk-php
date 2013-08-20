@@ -106,11 +106,13 @@ The SDK allows you to configure the following parameters.
     );
 	$service  = new AdaptivePaymentsService($config);
 ```
-Alternatively, you can configure the SDK via the sdk_config.ini file. refer <https://github.com/paypal/adaptivepayments-sdk-php/wiki> for example
+Alternatively, you can configure the SDK via the sdk_config.ini file. 
 ```php
     define('PP_CONFIG_PATH', '/directory/that/contains/sdk_config.ini');
     $service  = new AdaptivePaymentsService();
 ```
+
+You can refer full list of configuration parameters in [wiki](https://github.com/paypal/sdk-core-php/wiki/Configuring-the-SDK) page.
 
 ## Instant Payment Notification (IPN)
 
