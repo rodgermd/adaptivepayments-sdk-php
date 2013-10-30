@@ -1,4 +1,3 @@
-
 PayPal PHP Adaptive Payments SDK
 ================================
 
@@ -26,6 +25,8 @@ To use the SDK,
 
 For example,
 
+``` php
+
 	require_once('services/AdaptivePayments/AdaptivePaymentsService.php');
 
     $payRequest = new PayRequest($requestEnvelope, $actionType, $cancelUrl, 
@@ -42,10 +43,11 @@ For example,
 	if($ack == 'SUCCESS') {
 		// Success
 	}
-  
+```  
   
 The SDK provides multiple ways to authenticate your API call.
 
+``` php
 	$service = new AdaptivePaymentsService();
 	
 	// Use the default account (the first account) configured in sdk_config.ini
@@ -58,7 +60,7 @@ The SDK provides multiple ways to authenticate your API call.
     $cred = new PPCertificateCredential("username", "password", "path-to-pem-file");
     $cred->setThirdPartyAuthorization(new PPTokenAuthorization("accessToken", "tokenSecret"));
 	$response = $service->Pay($payRequest, $cred);	
-
+```
 
 SDK Configuration
 -----------------
