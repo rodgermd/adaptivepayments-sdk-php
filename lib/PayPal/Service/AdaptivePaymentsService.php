@@ -1,4 +1,4 @@
-<?php 
+<?php
 namespace PayPal\Service;
 use PayPal\Common\PPApiContext;
 use PayPal\Core\PPMessage;
@@ -36,9 +36,9 @@ class AdaptivePaymentsService extends PPBaseService {
 
     // SDK Name
 	protected static $SDK_NAME = "adaptivepayments-php-sdk";
-	
+
 	// SDK Version
-	protected static $SDK_VERSION = "3.6.107";
+	protected static $SDK_VERSION = "3.9.0";
 
     /**
     * @param $config - Dynamic config map. This takes the higher precedence if config file is also present.
@@ -54,7 +54,7 @@ class AdaptivePaymentsService extends PPBaseService {
 	 * @param CancelPreapprovalRequest $cancelPreapprovalRequest
 	 * @param mixed $apiCredential - Optional API credential - can either be
 	 * 		a username configured in sdk_config.ini or a ICredential object
-	 *      created dynamically 		
+	 *      created dynamically
 	 * @return Types\AP\CancelPreapprovalResponse
 	 * @throws APIException
 	 */
@@ -68,14 +68,14 @@ class AdaptivePaymentsService extends PPBaseService {
 		$ret->init(PPUtils::nvpToMap($resp));
 		return $ret;
 	}
-	 
+
 
 	/**
 	 * Service Call: ConfirmPreapproval
 	 * @param ConfirmPreapprovalRequest $confirmPreapprovalRequest
 	 * @param mixed $apiCredential - Optional API credential - can either be
 	 * 		a username configured in sdk_config.ini or a ICredential object
-	 *      created dynamically 		
+	 *      created dynamically
 	 * @return Types\AP\ConfirmPreapprovalResponse
 	 * @throws APIException
 	 */
@@ -89,14 +89,14 @@ class AdaptivePaymentsService extends PPBaseService {
 		$ret->init(PPUtils::nvpToMap($resp));
 		return $ret;
 	}
-	 
+
 
 	/**
 	 * Service Call: ConvertCurrency
 	 * @param ConvertCurrencyRequest $convertCurrencyRequest
 	 * @param mixed $apiCredential - Optional API credential - can either be
 	 * 		a username configured in sdk_config.ini or a ICredential object
-	 *      created dynamically 		
+	 *      created dynamically
 	 * @return Types\AP\ConvertCurrencyResponse
 	 * @throws APIException
 	 */
@@ -110,14 +110,14 @@ class AdaptivePaymentsService extends PPBaseService {
 		$ret->init(PPUtils::nvpToMap($resp));
 		return $ret;
 	}
-	 
+
 
 	/**
 	 * Service Call: ExecutePayment
 	 * @param ExecutePaymentRequest $executePaymentRequest
 	 * @param mixed $apiCredential - Optional API credential - can either be
 	 * 		a username configured in sdk_config.ini or a ICredential object
-	 *      created dynamically 		
+	 *      created dynamically
 	 * @return Types\AP\ExecutePaymentResponse
 	 * @throws APIException
 	 */
@@ -131,14 +131,14 @@ class AdaptivePaymentsService extends PPBaseService {
 		$ret->init(PPUtils::nvpToMap($resp));
 		return $ret;
 	}
-	 
+
 
 	/**
 	 * Service Call: GetAllowedFundingSources
 	 * @param GetAllowedFundingSourcesRequest $getAllowedFundingSourcesRequest
 	 * @param mixed $apiCredential - Optional API credential - can either be
 	 * 		a username configured in sdk_config.ini or a ICredential object
-	 *      created dynamically 		
+	 *      created dynamically
 	 * @return Types\AP\GetAllowedFundingSourcesResponse
 	 * @throws APIException
 	 */
@@ -152,14 +152,14 @@ class AdaptivePaymentsService extends PPBaseService {
 		$ret->init(PPUtils::nvpToMap($resp));
 		return $ret;
 	}
-	 
+
 
 	/**
 	 * Service Call: GetPaymentOptions
 	 * @param GetPaymentOptionsRequest $getPaymentOptionsRequest
 	 * @param mixed $apiCredential - Optional API credential - can either be
 	 * 		a username configured in sdk_config.ini or a ICredential object
-	 *      created dynamically 		
+	 *      created dynamically
 	 * @return Types\AP\GetPaymentOptionsResponse
 	 * @throws APIException
 	 */
@@ -173,14 +173,14 @@ class AdaptivePaymentsService extends PPBaseService {
 		$ret->init(PPUtils::nvpToMap($resp));
 		return $ret;
 	}
-	 
+
 
 	/**
 	 * Service Call: PaymentDetails
 	 * @param PaymentDetailsRequest $paymentDetailsRequest
 	 * @param mixed $apiCredential - Optional API credential - can either be
 	 * 		a username configured in sdk_config.ini or a ICredential object
-	 *      created dynamically 		
+	 *      created dynamically
 	 * @return Types\AP\PaymentDetailsResponse
 	 * @throws APIException
 	 */
@@ -194,14 +194,14 @@ class AdaptivePaymentsService extends PPBaseService {
 		$ret->init(PPUtils::nvpToMap($resp));
 		return $ret;
 	}
-	 
+
 
 	/**
 	 * Service Call: Pay
 	 * @param PayRequest $payRequest
 	 * @param mixed $apiCredential - Optional API credential - can either be
 	 * 		a username configured in sdk_config.ini or a ICredential object
-	 *      created dynamically 		
+	 *      created dynamically
 	 * @return Types\AP\PayResponse
 	 * @throws APIException
 	 */
@@ -215,14 +215,14 @@ class AdaptivePaymentsService extends PPBaseService {
 		$ret->init(PPUtils::nvpToMap($resp));
 		return $ret;
 	}
-	 
+
 
 	/**
 	 * Service Call: PreapprovalDetails
 	 * @param PreapprovalDetailsRequest $preapprovalDetailsRequest
 	 * @param mixed $apiCredential - Optional API credential - can either be
 	 * 		a username configured in sdk_config.ini or a ICredential object
-	 *      created dynamically 		
+	 *      created dynamically
 	 * @return Types\AP\PreapprovalDetailsResponse
 	 * @throws APIException
 	 */
@@ -236,14 +236,14 @@ class AdaptivePaymentsService extends PPBaseService {
 		$ret->init(PPUtils::nvpToMap($resp));
 		return $ret;
 	}
-	 
+
 
 	/**
 	 * Service Call: Preapproval
 	 * @param PreapprovalRequest $preapprovalRequest
 	 * @param mixed $apiCredential - Optional API credential - can either be
 	 * 		a username configured in sdk_config.ini or a ICredential object
-	 *      created dynamically 		
+	 *      created dynamically
 	 * @return Types\AP\PreapprovalResponse
 	 * @throws APIException
 	 */
@@ -257,14 +257,14 @@ class AdaptivePaymentsService extends PPBaseService {
 		$ret->init(PPUtils::nvpToMap($resp));
 		return $ret;
 	}
-	 
+
 
 	/**
 	 * Service Call: Refund
 	 * @param RefundRequest $refundRequest
 	 * @param mixed $apiCredential - Optional API credential - can either be
 	 * 		a username configured in sdk_config.ini or a ICredential object
-	 *      created dynamically 		
+	 *      created dynamically
 	 * @return Types\AP\RefundResponse
 	 * @throws APIException
 	 */
@@ -278,14 +278,14 @@ class AdaptivePaymentsService extends PPBaseService {
 		$ret->init(PPUtils::nvpToMap($resp));
 		return $ret;
 	}
-	 
+
 
 	/**
 	 * Service Call: SetPaymentOptions
 	 * @param SetPaymentOptionsRequest $setPaymentOptionsRequest
 	 * @param mixed $apiCredential - Optional API credential - can either be
 	 * 		a username configured in sdk_config.ini or a ICredential object
-	 *      created dynamically 		
+	 *      created dynamically
 	 * @return Types\AP\SetPaymentOptionsResponse
 	 * @throws APIException
 	 */
@@ -299,14 +299,14 @@ class AdaptivePaymentsService extends PPBaseService {
 		$ret->init(PPUtils::nvpToMap($resp));
 		return $ret;
 	}
-	 
+
 
 	/**
 	 * Service Call: GetFundingPlans
 	 * @param GetFundingPlansRequest $getFundingPlansRequest
 	 * @param mixed $apiCredential - Optional API credential - can either be
 	 * 		a username configured in sdk_config.ini or a ICredential object
-	 *      created dynamically 		
+	 *      created dynamically
 	 * @return Types\AP\GetFundingPlansResponse
 	 * @throws APIException
 	 */
@@ -320,14 +320,14 @@ class AdaptivePaymentsService extends PPBaseService {
 		$ret->init(PPUtils::nvpToMap($resp));
 		return $ret;
 	}
-	 
+
 
 	/**
 	 * Service Call: GetAvailableShippingAddresses
 	 * @param GetAvailableShippingAddressesRequest $getAvailableShippingAddressesRequest
 	 * @param mixed $apiCredential - Optional API credential - can either be
 	 * 		a username configured in sdk_config.ini or a ICredential object
-	 *      created dynamically 		
+	 *      created dynamically
 	 * @return Types\AP\GetAvailableShippingAddressesResponse
 	 * @throws APIException
 	 */
@@ -341,14 +341,14 @@ class AdaptivePaymentsService extends PPBaseService {
 		$ret->init(PPUtils::nvpToMap($resp));
 		return $ret;
 	}
-	 
+
 
 	/**
 	 * Service Call: GetShippingAddresses
 	 * @param GetShippingAddressesRequest $getShippingAddressesRequest
 	 * @param mixed $apiCredential - Optional API credential - can either be
 	 * 		a username configured in sdk_config.ini or a ICredential object
-	 *      created dynamically 		
+	 *      created dynamically
 	 * @return Types\AP\GetShippingAddressesResponse
 	 * @throws APIException
 	 */
@@ -362,14 +362,14 @@ class AdaptivePaymentsService extends PPBaseService {
 		$ret->init(PPUtils::nvpToMap($resp));
 		return $ret;
 	}
-	 
+
 
 	/**
 	 * Service Call: GetUserLimits
 	 * @param GetUserLimitsRequest $getUserLimitsRequest
 	 * @param mixed $apiCredential - Optional API credential - can either be
 	 * 		a username configured in sdk_config.ini or a ICredential object
-	 *      created dynamically 		
+	 *      created dynamically
 	 * @return Types\AP\GetUserLimitsResponse
 	 * @throws APIException
 	 */
@@ -383,14 +383,14 @@ class AdaptivePaymentsService extends PPBaseService {
 		$ret->init(PPUtils::nvpToMap($resp));
 		return $ret;
 	}
-	 
+
 
 	/**
 	 * Service Call: GetPrePaymentDisclosure
 	 * @param GetPrePaymentDisclosureRequest $getPrePaymentDisclosureRequest
 	 * @param mixed $apiCredential - Optional API credential - can either be
 	 * 		a username configured in sdk_config.ini or a ICredential object
-	 *      created dynamically 		
+	 *      created dynamically
 	 * @return Types\AP\GetPrePaymentDisclosureResponse
 	 * @throws APIException
 	 */
@@ -404,5 +404,5 @@ class AdaptivePaymentsService extends PPBaseService {
 		$ret->init(PPUtils::nvpToMap($resp));
 		return $ret;
 	}
-	 
+
 }
