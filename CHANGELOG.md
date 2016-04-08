@@ -1,5 +1,9 @@
 ### CHANGELOG
 
+####Version 3.9.2 - Apr 8, 2016
+
+   - Removed Duplicate Directories.
+
 ####Version 3.9.1 - Dec 9, 2015
 
    - Added TLSv1.2 Endpoint support
