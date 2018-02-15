@@ -10,6 +10,10 @@
 
 > A new `mode` has been created to test if your server/machine handles TLSv1.2 connections. Please use `tls` mode instead of `sandbox` to verify. You can return back to `sandbox` mode once you have verified. Please have a look at this [Sample Configuration](https://github.com/paypal/adaptivepayments-sdk-php/blob/namespace-php5.3/samples/Configuration.php#L10-15).
 
+## Support
+
+> Please contact [PayPal Technical Support](https://developer.paypal.com/support/) for any live or account issues.
+
 ## Prerequisites
 
 PayPal's PHP Adaptive Payments SDK requires 
